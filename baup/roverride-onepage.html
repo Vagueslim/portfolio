@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Three-Portfolios</title>
+  <meta name="description" content="One-page HTML case study for Q-CHANG marketplace landing page redesign.">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #121417;
+      --muted: #5e6670;
+      --paper: #f6f4ee;
+      --panel: #ffffff;
+      --line: #d9ded8;
+      --night: #0a1017;
+      --navy: #12304d;
+      --orange: #e46d32;
+      --teal: #168f89;
+      --yellow: #e4b947;
+      --radius: 8px;
+      --shadow: 0 22px 60px rgba(18, 20, 23, 0.14);
+      font-family: Inter, "Segoe UI", Tahoma, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .topbar {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 18px clamp(20px, 5vw, 72px);
+      color: #fbfaf5;
+      background: linear-gradient(180deg, rgba(7, 11, 16, 0.9), rgba(7, 11, 16, 0));
+    }
+
+    .brand {
+      font-size: 14px;
+      font-weight: 780;
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: rgba(251, 250, 245, 0.78);
+      font-size: 13px;
+    }
+
+    .nav a {
+      padding: 6px 0;
+      border-bottom: 1px solid transparent;
+    }
+
+    .nav a:hover {
+      color: #ffffff;
+      border-color: currentColor;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 92svh;
+      display: grid;
+      align-items: end;
+      overflow: hidden;
+      color: #fbfaf5;
+      background: #080d12;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(7, 11, 16, 0.96) 0%, rgba(7, 11, 16, 0.76) 43%, rgba(7, 11, 16, 0.2) 100%),
+        linear-gradient(180deg, rgba(7, 11, 16, 0.06), rgba(7, 11, 16, 0.94)),
+        url("assets/roverride-source/roverride-01.png") center right / min(740px, 70vw) auto no-repeat;
+      transform: scale(1.02);
+    }
+
+    .hero-content {
+      position: relative;
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 128px 0 78px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #ffd0b7;
+      font-size: 13px;
+      font-weight: 780;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--orange);
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    figure {
+      margin: 0;
+    }
+
+    h1 {
+      max-width: 900px;
+      margin-top: 24px;
+      font-size: clamp(46px, 8vw, 108px);
+      line-height: 0.96;
+      letter-spacing: 0;
+    }
+
+    .hero-lead {
+      max-width: 760px;
+      margin-top: 28px;
+      color: rgba(251, 250, 245, 0.84);
+      font-size: clamp(18px, 2vw, 24px);
+      line-height: 1.45;
+    }
+
+    .hero-meta {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(120px, 1fr));
+      gap: 12px;
+      max-width: 920px;
+      margin-top: 44px;
+    }
+
+    .hero-meta div {
+      min-height: 90px;
+      padding: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(12px);
+    }
+
+    .hero-meta span {
+      display: block;
+      color: rgba(251, 250, 245, 0.58);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .hero-meta strong {
+      display: block;
+      margin-top: 6px;
+      font-size: 15px;
+      line-height: 1.35;
+    }
+
+    .section {
+      padding: clamp(56px, 8vw, 112px) clamp(20px, 5vw, 72px);
+    }
+
+    .section-inner {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+      gap: clamp(28px, 5vw, 76px);
+      align-items: start;
+    }
+
+    .section-kicker {
+      color: var(--orange);
+      font-size: 13px;
+      font-weight: 780;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      max-width: 830px;
+      margin-top: 10px;
+      font-size: clamp(30px, 5vw, 62px);
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+
+    .summary-copy {
+      display: grid;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .summary-copy strong {
+      color: var(--ink);
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 42px;
+    }
+
+    .problem-card {
+      min-height: 176px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      box-shadow: 0 10px 28px rgba(18, 20, 23, 0.05);
+    }
+
+    .problem-card strong {
+      display: block;
+      color: var(--navy);
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    .problem-card p {
+      margin-top: 14px;
+      color: #29323a;
+      font-size: 16px;
+    }
+
+    .dark-band {
+      background: var(--night);
+      color: #fbfaf5;
+    }
+
+    .dark-band .section-kicker {
+      color: #ffd0b7;
+    }
+
+    .dark-band .summary-copy {
+      color: rgba(251, 250, 245, 0.72);
+    }
+
+    .visual-frame {
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: var(--radius);
+      background: #101820;
+      box-shadow: var(--shadow);
+    }
+
+    .visual-frame img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 26px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 7px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 999px;
+      color: rgba(251, 250, 245, 0.82);
+      font-size: 13px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 46px;
+    }
+
+    .step {
+      min-height: 230px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #ffffff;
+      box-shadow: 0 10px 28px rgba(18, 20, 23, 0.05);
+    }
+
+    .step::before {
+      content: attr(data-step);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      margin-bottom: 22px;
+      border-radius: 999px;
+      color: #ffffff;
+      background: var(--orange);
+      font-size: 13px;
+      font-weight: 780;
+    }
+
+    .step h3 {
+      font-size: 21px;
+      line-height: 1.2;
+    }
+
+    .step p {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .showcase {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+      gap: 18px;
+      margin-top: 46px;
+    }
+
+    .showcase figure {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #ffffff;
+      box-shadow: 0 12px 34px rgba(18, 20, 23, 0.08);
+    }
+
+    .showcase img {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    .impact-band {
+      background: #ffffff;
+      border-block: 1px solid var(--line);
+    }
+
+    .impact-list {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .impact-list li {
+      position: relative;
+      padding: 18px 20px 18px 48px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #f8faf8;
+      color: #29323a;
+    }
+
+    .impact-list li::before {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 20px;
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
+      background: var(--teal);
+      box-shadow: 0 0 0 5px rgba(22, 143, 137, 0.18);
+    }
+
+    .quote-band {
+      color: #fbfaf5;
+      background:
+        linear-gradient(90deg, rgba(8, 13, 18, 0.96), rgba(8, 13, 18, 0.7)),
+        url("assets/roverride-source/roverride-01.png") center right / min(620px, 66vw) auto no-repeat;
+    }
+
+    .quote {
+      max-width: 940px;
+      font-size: clamp(30px, 5vw, 64px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .quote span {
+      color: #ffd0b7;
+    }
+
+    .footer {
+      padding: 42px clamp(20px, 5vw, 72px);
+      color: rgba(251, 250, 245, 0.68);
+      background: #080d12;
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .source-link {
+      color: #ffd0b7;
+      border-bottom: 1px solid rgba(255, 208, 183, 0.38);
+    }
+
+    @media (max-width: 920px) {
+      .nav {
+        display: none;
+      }
+
+      .hero::before {
+        background:
+          linear-gradient(180deg, rgba(7, 11, 16, 0.62), rgba(7, 11, 16, 0.94)),
+          url("assets/roverride-source/roverride-01.png") center 16% / min(540px, 92vw) auto no-repeat;
+      }
+
+      .hero-meta,
+      .problem-grid,
+      .process-grid,
+      .showcase,
+      .split {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-meta {
+        max-width: 540px;
+      }
+
+      .visual-frame img,
+      .showcase img {
+        aspect-ratio: auto;
+        min-height: 260px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .hero {
+        min-height: 94svh;
+      }
+
+      .hero-content {
+        width: min(100% - 32px, 1180px);
+        padding-bottom: 48px;
+      }
+
+      h1 {
+        font-size: 46px;
+      }
+
+      .hero-lead,
+      .summary-copy {
+        font-size: 16px;
+      }
+
+      .section {
+        padding-inline: 16px;
+      }
+
+      .hero-meta div,
+      .problem-card,
+      .step {
+        padding: 18px;
+      }
+
+      .quote-band {
+        background:
+          linear-gradient(180deg, rgba(8, 13, 18, 0.72), rgba(8, 13, 18, 0.96)),
+          url("assets/roverride-source/roverride-01.png") center top / 92vw auto no-repeat;
+      }
+    }
+  .topbar .brand {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+.topbar .brand .site-logo {
+  width: clamp(132px, 12vw, 174px);
+}
+</style>
+<style>
+.site-logo {
+  display: block;
+  width: clamp(132px, 12vw, 174px);
+  height: auto;
+}
+.p-header__logo h1,
+.p-header__logo a,
+.p-footer__logo {
+  display: inline-flex;
+  align-items: center;
+}
+</style>
+<style id="three-portfolios-theme">
+:root {
+  --three-theme-color: #105D4A;
+}
+.p-header__link,
+.p-footer__link,
+.p-header__btn,
+.p-header__btn span,
+.p-header__menu,
+.p-header__menuText,
+.p-header__sub::before,
+.p-footer__comment,
+.p-footer__more,
+.c-more,
+.c-more__text,
+.c-more__arrow,
+.c-tags__title,
+.p-tags__title,
+.p-tags__toggle,
+.about-framer__eyebrow,
+.about-framer__label,
+.about-framer__job-role,
+.about-framer__button,
+.framework-card__number,
+.framework-card__label {
+  color: #105D4A !important;
+}
+.p-header__hamburger span,
+.p-header__btn span,
+.p-footer__line,
+.about-framer__button:hover,
+.framework-card__label {
+  background-color: #105D4A !important;
+}
+.about-framer__button,
+.framework-card__label,
+.p-tags__toggle,
+.c-tags__toggle {
+  border-color: #105D4A !important;
+}
+.framework-card__label,
+.about-framer__button:hover {
+  color: #fff !important;
+}
+svg [fill="#105D4A"] {
+  fill: #105D4A !important;
+}
+svg [stroke="#105D4A"] {
+  stroke: #105D4A !important;
+}
+</style>
+</head>
+<body>
+  <header class="topbar" aria-label="Site header">
+  <a class="brand" href="../index.html"><img class="site-logo" src="../assets/logo.png" alt="dhittawat"></a>
+    <nav class="nav" aria-label="Page navigation">
+      <a href="#problem">Problem</a>
+      <a href="#foundation">Foundation</a>
+      <a href="#structure">Structure</a>
+      <a href="#outcome">Outcome</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Redesign landing hero">
+      <div class="hero-content">
+        <div class="eyebrow">Marketplace / Landing page / Booking entry point</div>
+        <h1>Redesign landing V1.5</h1>
+        <p class="hero-lead">
+          เคสสตัดดี้การปรับ homepage ของ Q-CHANG จากหน้าที่ทำให้ paid traffic หยุดอยู่กับที่
+          ให้กลายเป็นทางเข้า service discovery และ booking ที่พาผู้ใช้ไปต่อได้ชัดขึ้น
+        </p>
+        <div class="hero-meta" aria-label="Project facts">
+          <div>
+            <span>Year</span>
+            <strong>2023</strong>
+          </div>
+          <div>
+            <span>Focus</span>
+            <strong>Landing page, conversion UX</strong>
+          </div>
+          <div>
+            <span>Product</span>
+            <strong>Q-CHANG</strong>
+          </div>
+          <div>
+            <span>Category</span>
+            <strong>Marketplace, service booking</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="problem">
+      <div class="section-inner split">
+        <div>
+          <div class="section-kicker">Problem</div>
+          <h2 class="section-title">คนเข้าเว็บมาพร้อมความตั้งใจ แต่ homepage ไม่ช่วยให้เขาไปต่อ</h2>
+        </div>
+        <div class="summary-copy">
+          <p>
+            หน้า homepage เดิมทำหน้าที่เหมือนทางตันของ paid traffic มากกว่าจะเป็นสะพานเข้าสู่การค้นหาบริการและการจอง
+            ผู้ใช้อาจกดโฆษณางานล้างแอร์เข้ามา แต่เจอรายการบริการจำนวนมากโดยไม่มี next step ที่ชัด
+          </p>
+          <p>
+            ปัญหาไม่ได้อยู่ที่ความสนใจของลูกค้า แต่เป็น mismatch ระหว่าง <strong>user intent</strong> กับโครงสร้างเว็บไซต์
+            โดยเฉพาะในช่วงที่ traffic จาก Google และ Facebook Ads เริ่มเพิ่มขึ้น
+          </p>
+        </div>
+      </div>
+
+      <div class="section-inner">
+        <div class="problem-grid" aria-label="Homepage pain points">
+          <article class="problem-card">
+            <strong>Intent mismatch</strong>
+            <p>ผู้ใช้มาจากโฆษณาที่เฉพาะเจาะจง แต่ landing ปลายทางกลับกว้างเกินไป</p>
+          </article>
+          <article class="problem-card">
+            <strong>Unclear service path</strong>
+            <p>บริการหลายหมวดอยู่รวมกัน ทำให้ผู้ใช้ไม่รู้ว่าควรเริ่มคลิกตรงไหน</p>
+          </article>
+          <article class="problem-card">
+            <strong>Low trust signal</strong>
+            <p>ผู้ใช้ใหม่ยังไม่รู้ว่า Q-CHANG คืออะไร และไว้ใจการจองบริการบ้านผ่านเว็บได้แค่ไหน</p>
+          </article>
+          <article class="problem-card">
+            <strong>Scaling pressure</strong>
+            <p>ธุรกิจกำลังโต แต่เว็บยังไม่พร้อมรับ demand ที่มาจาก paid acquisition</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-band" id="foundation">
+      <div class="section-inner split">
+        <figure class="visual-frame">
+          <img src="assets/roverride-source/roverride-02.png" alt="Q-CHANG website redesign board">
+        </figure>
+        <div>
+          <div class="section-kicker">Design foundation</div>
+          <h2 class="section-title">รีดีไซน์นี้ไม่ใช่แค่ทำให้เว็บดูดีขึ้น แต่ทำให้ homepage ทำงานเป็นสะพาน</h2>
+          <div class="summary-copy">
+            <p>
+              แนวทางคือมอง homepage เป็นจุดเชื่อมระหว่าง intent จาก ads, service discovery และ trust-building
+              เพื่อให้ first-time visitors เข้าใจแบรนด์ เห็นบริการที่ต้องการ และมั่นใจพอที่จะเริ่มจอง
+            </p>
+            <p>
+              โครงสร้างใหม่จึงรวม navigation ที่ชัดขึ้น การจัดกลุ่มบริการให้ง่ายขึ้น และ proof of trust
+              เช่นผลงานจริง partner ที่คุ้นเคย และสถิติบริการที่มองเห็นได้ตั้งแต่ต้นทาง
+            </p>
+          </div>
+          <div class="pill-row" aria-label="Redesign tags">
+            <span class="pill">Clearer navigation</span>
+            <span class="pill">Service grouping</span>
+            <span class="pill">Trust-building UI</span>
+            <span class="pill">Booking entry point</span>
+            <span class="pill">Customer journey</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="structure">
+      <div class="section-inner">
+        <div class="section-kicker">Approach</div>
+        <h2 class="section-title">เริ่มจากคำถามว่าใครเข้ามา จากไหน และต้องการทำอะไรในไม่กี่วินาทีแรก</h2>
+
+        <div class="process-grid" aria-label="Design process">
+          <article class="step" data-step="01">
+            <h3>Clarify user intent</h3>
+            <p>แยกผู้ใช้จาก paid traffic ตามบริการที่เขากดเข้ามา เพื่อไม่ให้ homepage ตัดแรงตั้งใจของเขาทิ้ง</p>
+          </article>
+          <article class="step" data-step="02">
+            <h3>Group service discovery</h3>
+            <p>จัดหมวดบริการให้ผู้ใช้สแกนเร็วขึ้น ลดภาระการเลือกจากรายการบริการจำนวนมาก</p>
+          </article>
+          <article class="step" data-step="03">
+            <h3>Make trust visible</h3>
+            <p>นำ real works, partner familiarity และตัวเลขบริการมาช่วยตอบความกังวลของผู้ใช้ใหม่</p>
+          </article>
+        </div>
+
+        <div class="showcase" aria-label="Landing redesign screens">
+          <figure>
+            <img src="assets/roverride-source/roverride-02.png" alt="Q-CHANG redesign concept and screen layout">
+          </figure>
+          <figure>
+            <img src="assets/roverride-source/roverride-03.png" alt="Q-CHANG landing page long-form structure">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section impact-band" id="outcome">
+      <div class="section-inner split">
+        <div>
+          <div class="section-kicker">Outcome</div>
+          <h2 class="section-title">Homepage กลายเป็นจุดเริ่มต้นที่ช่วยทั้งผู้ใช้และทีมภายในเดินต่อ</h2>
+        </div>
+        <ul class="impact-list">
+          <li>ทำให้ผู้ใช้ใหม่เข้าใจ Q-CHANG ได้เร็วขึ้น ว่าเป็นแพลตฟอร์มบริการบ้านที่มีช่างและงานจริงรองรับ</li>
+          <li>ลดความคลุมเครือของทางเข้า booking ด้วยการจัดกลุ่มบริการและเส้นทางค้นหาที่ตรง intent มากขึ้น</li>
+          <li>เพิ่ม trust signal ที่มองเห็นได้ เช่นผลงานจริง partner และข้อมูลบริการ เพื่อช่วยลดความลังเลก่อนจอง</li>
+          <li>เปลี่ยน homepage จากหน้ารวมบริการกว้าง ๆ ให้เป็น bridge ระหว่าง ads, discovery และ conversion</li>
+          <li>ทำให้ทีมเห็นว่าการออกแบบ in-house บางครั้งต้องเริ่มจาก unmet needs ที่ยังไม่ได้ถูกเขียนเป็น requirement ชัดเจน</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section quote-band">
+      <div class="section-inner">
+        <p class="quote">
+          หน้าแรกที่ดีไม่ได้แค่แนะนำแบรนด์ แต่ต้อง <span>รักษาความตั้งใจของผู้ใช้</span> จนเขาไปต่อได้
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>Redesign landing V1.5 one-page case study</span>
+      <span>Content summarized from <a class="source-link" href="https://dhittawat.framer.ai/work/roverride/" target="_blank" rel="noreferrer">dhittawat.framer.ai/work/roverride</a></span>
+    </div>
+  </footer>
+</body>
+</html>

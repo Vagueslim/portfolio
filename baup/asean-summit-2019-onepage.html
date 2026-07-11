@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Three-Portfolios</title>
+  <meta name="description" content="One-page HTML case study for ASEAN Summit 2019 diplomatic registration and delegate workflow.">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #121417;
+      --muted: #5e6670;
+      --paper: #f6f4ee;
+      --panel: #ffffff;
+      --line: #d9ded8;
+      --night: #090e15;
+      --maroon: #8d2341;
+      --rose: #d95d74;
+      --blue: #1e5f9d;
+      --gold: #d3a944;
+      --green: #298f6d;
+      --radius: 8px;
+      --shadow: 0 22px 60px rgba(18, 20, 23, 0.14);
+      font-family: Inter, "Segoe UI", Tahoma, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .topbar {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 18px clamp(20px, 5vw, 72px);
+      color: #fbfaf5;
+      background: linear-gradient(180deg, rgba(7, 11, 16, 0.9), rgba(7, 11, 16, 0));
+    }
+
+    .brand {
+      font-size: 14px;
+      font-weight: 780;
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: rgba(251, 250, 245, 0.78);
+      font-size: 13px;
+    }
+
+    .nav a {
+      padding: 6px 0;
+      border-bottom: 1px solid transparent;
+    }
+
+    .nav a:hover {
+      color: #ffffff;
+      border-color: currentColor;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 92svh;
+      display: grid;
+      align-items: end;
+      overflow: hidden;
+      color: #fbfaf5;
+      background: #080d12;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(7, 11, 16, 0.96) 0%, rgba(7, 11, 16, 0.78) 43%, rgba(7, 11, 16, 0.18) 100%),
+        linear-gradient(180deg, rgba(7, 11, 16, 0.08), rgba(7, 11, 16, 0.94)),
+        url("assets/asean-summit-2019-source/asean-summit-01.png") center right / min(720px, 70vw) auto no-repeat;
+      transform: scale(1.02);
+    }
+
+    .hero-content {
+      position: relative;
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 128px 0 78px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #ffd1dc;
+      font-size: 13px;
+      font-weight: 780;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--rose);
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    figure {
+      margin: 0;
+    }
+
+    h1 {
+      max-width: 920px;
+      margin-top: 24px;
+      font-size: clamp(46px, 8vw, 108px);
+      line-height: 0.96;
+      letter-spacing: 0;
+    }
+
+    .hero-lead {
+      max-width: 800px;
+      margin-top: 28px;
+      color: rgba(251, 250, 245, 0.84);
+      font-size: clamp(18px, 2vw, 24px);
+      line-height: 1.45;
+    }
+
+    .hero-meta {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(120px, 1fr));
+      gap: 12px;
+      max-width: 920px;
+      margin-top: 44px;
+    }
+
+    .hero-meta div {
+      min-height: 90px;
+      padding: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(12px);
+    }
+
+    .hero-meta span {
+      display: block;
+      color: rgba(251, 250, 245, 0.58);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .hero-meta strong {
+      display: block;
+      margin-top: 6px;
+      font-size: 15px;
+      line-height: 1.35;
+    }
+
+    .section {
+      padding: clamp(56px, 8vw, 112px) clamp(20px, 5vw, 72px);
+    }
+
+    .section-inner {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+      gap: clamp(28px, 5vw, 76px);
+      align-items: start;
+    }
+
+    .section-kicker {
+      color: var(--maroon);
+      font-size: 13px;
+      font-weight: 780;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      max-width: 880px;
+      margin-top: 10px;
+      font-size: clamp(30px, 5vw, 62px);
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+
+    .summary-copy {
+      display: grid;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .summary-copy strong {
+      color: var(--ink);
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 42px;
+    }
+
+    .problem-card {
+      min-height: 176px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      box-shadow: 0 10px 28px rgba(18, 20, 23, 0.05);
+    }
+
+    .problem-card strong {
+      display: block;
+      color: var(--blue);
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    .problem-card p {
+      margin-top: 14px;
+      color: #29323a;
+      font-size: 16px;
+    }
+
+    .dark-band {
+      background: var(--night);
+      color: #fbfaf5;
+    }
+
+    .dark-band .section-kicker {
+      color: #ffd1dc;
+    }
+
+    .dark-band .summary-copy {
+      color: rgba(251, 250, 245, 0.72);
+    }
+
+    .visual-frame {
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: var(--radius);
+      background: #101820;
+      box-shadow: var(--shadow);
+    }
+
+    .visual-frame img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 26px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 7px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 999px;
+      color: rgba(251, 250, 245, 0.82);
+      font-size: 13px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .workflow-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 46px;
+    }
+
+    .step {
+      min-height: 244px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #ffffff;
+      box-shadow: 0 10px 28px rgba(18, 20, 23, 0.05);
+    }
+
+    .step::before {
+      content: attr(data-step);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      margin-bottom: 22px;
+      border-radius: 999px;
+      color: #ffffff;
+      background: var(--maroon);
+      font-size: 13px;
+      font-weight: 780;
+    }
+
+    .step h3 {
+      font-size: 21px;
+      line-height: 1.2;
+    }
+
+    .step p {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .showcase {
+      display: grid;
+      grid-template-columns: minmax(0, 1.06fr) minmax(0, 0.94fr);
+      gap: 18px;
+      margin-top: 46px;
+    }
+
+    .showcase figure {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #ffffff;
+      box-shadow: 0 12px 34px rgba(18, 20, 23, 0.08);
+    }
+
+    .showcase img {
+      width: 100%;
+      height: 100%;
+      min-height: 300px;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    .principle-band {
+      background: #ffffff;
+      border-block: 1px solid var(--line);
+    }
+
+    .principle-list {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .principle-list li {
+      position: relative;
+      padding: 18px 20px 18px 48px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #f8faf8;
+      color: #29323a;
+    }
+
+    .principle-list li::before {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 20px;
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
+      background: var(--gold);
+      box-shadow: 0 0 0 5px rgba(211, 169, 68, 0.18);
+    }
+
+    .wide-visual {
+      margin-top: 46px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #ffffff;
+      box-shadow: 0 12px 34px rgba(18, 20, 23, 0.08);
+    }
+
+    .wide-visual img {
+      width: 100%;
+      min-height: 230px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .quote-band {
+      color: #fbfaf5;
+      background:
+        linear-gradient(90deg, rgba(8, 13, 18, 0.96), rgba(8, 13, 18, 0.7)),
+        url("assets/asean-summit-2019-source/asean-summit-01.png") center right / min(620px, 66vw) auto no-repeat;
+    }
+
+    .quote {
+      max-width: 940px;
+      font-size: clamp(30px, 5vw, 64px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .quote span {
+      color: #ffd1dc;
+    }
+
+    .footer {
+      padding: 42px clamp(20px, 5vw, 72px);
+      color: rgba(251, 250, 245, 0.68);
+      background: #080d12;
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .source-link {
+      color: #ffd1dc;
+      border-bottom: 1px solid rgba(255, 209, 220, 0.38);
+    }
+
+    @media (max-width: 920px) {
+      .nav {
+        display: none;
+      }
+
+      .hero::before {
+        background:
+          linear-gradient(180deg, rgba(7, 11, 16, 0.62), rgba(7, 11, 16, 0.94)),
+          url("assets/asean-summit-2019-source/asean-summit-01.png") center 16% / min(540px, 92vw) auto no-repeat;
+      }
+
+      .hero-meta,
+      .problem-grid,
+      .workflow-grid,
+      .showcase,
+      .split {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-meta {
+        max-width: 540px;
+      }
+
+      .visual-frame img,
+      .showcase img {
+        aspect-ratio: auto;
+        min-height: 240px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .hero {
+        min-height: 94svh;
+      }
+
+      .hero-content {
+        width: min(100% - 32px, 1180px);
+        padding-bottom: 48px;
+      }
+
+      h1 {
+        font-size: 44px;
+      }
+
+      .hero-lead,
+      .summary-copy {
+        font-size: 16px;
+      }
+
+      .section {
+        padding-inline: 16px;
+      }
+
+      .hero-meta div,
+      .problem-card,
+      .step {
+        padding: 18px;
+      }
+
+      .quote-band {
+        background:
+          linear-gradient(180deg, rgba(8, 13, 18, 0.72), rgba(8, 13, 18, 0.96)),
+          url("assets/asean-summit-2019-source/asean-summit-01.png") center top / 92vw auto no-repeat;
+      }
+    }
+  .topbar .brand {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+.topbar .brand .site-logo {
+  width: clamp(132px, 12vw, 174px);
+}
+</style>
+<style>
+.site-logo {
+  display: block;
+  width: clamp(132px, 12vw, 174px);
+  height: auto;
+}
+.p-header__logo h1,
+.p-header__logo a,
+.p-footer__logo {
+  display: inline-flex;
+  align-items: center;
+}
+</style>
+<style id="three-portfolios-theme">
+:root {
+  --three-theme-color: #105D4A;
+}
+.p-header__link,
+.p-footer__link,
+.p-header__btn,
+.p-header__btn span,
+.p-header__menu,
+.p-header__menuText,
+.p-header__sub::before,
+.p-footer__comment,
+.p-footer__more,
+.c-more,
+.c-more__text,
+.c-more__arrow,
+.c-tags__title,
+.p-tags__title,
+.p-tags__toggle,
+.about-framer__eyebrow,
+.about-framer__label,
+.about-framer__job-role,
+.about-framer__button,
+.framework-card__number,
+.framework-card__label {
+  color: #105D4A !important;
+}
+.p-header__hamburger span,
+.p-header__btn span,
+.p-footer__line,
+.about-framer__button:hover,
+.framework-card__label {
+  background-color: #105D4A !important;
+}
+.about-framer__button,
+.framework-card__label,
+.p-tags__toggle,
+.c-tags__toggle {
+  border-color: #105D4A !important;
+}
+.framework-card__label,
+.about-framer__button:hover {
+  color: #fff !important;
+}
+svg [fill="#105D4A"] {
+  fill: #105D4A !important;
+}
+svg [stroke="#105D4A"] {
+  stroke: #105D4A !important;
+}
+</style>
+</head>
+<body>
+  <header class="topbar" aria-label="Site header">
+  <a class="brand" href="../index.html"><img class="site-logo" src="../assets/logo.png" alt="dhittawat"></a>
+    <nav class="nav" aria-label="Page navigation">
+      <a href="#problem">Problem</a>
+      <a href="#solution">Solution</a>
+      <a href="#challenges">Challenges</a>
+      <a href="#outcome">Outcome</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="ASEAN Summit hero">
+      <div class="hero-content">
+        <div class="eyebrow">Diplomatic registration / Delegate workflow / Multi-agency coordination</div>
+        <h1>ASEAN Summit 2019</h1>
+        <p class="hero-lead">
+          เคสสตัดดี้การออกแบบระบบ registration สำหรับงานประชุมระดับนานาชาติ
+          ที่ต้องคุมความถูกต้องของข้อมูล delegate ข้ามประเทศ ข้ามหน่วยงาน และลดความเสี่ยงของข้อมูลสำคัญที่แก้ผิดไม่ได้ง่าย
+        </p>
+        <div class="hero-meta" aria-label="Project facts">
+          <div>
+            <span>Year</span>
+            <strong>2018</strong>
+          </div>
+          <div>
+            <span>Contributor</span>
+            <strong>Three, P'Ann, Look Kleaw, P'WIN</strong>
+          </div>
+          <div>
+            <span>Context</span>
+            <strong>Ministry of Thailand</strong>
+          </div>
+          <div>
+            <span>Category</span>
+            <strong>Diplomatic workflow, registration system</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="problem">
+      <div class="section-inner split">
+        <div>
+          <div class="section-kicker">Problem</div>
+          <h2 class="section-title">ระบบเดิมเร็วเกินไปสำหรับข้อมูลที่ผิดพลาดไม่ได้</h2>
+        </div>
+        <div class="summary-copy">
+          <p>
+            โจทย์ของ ASEAN Summit 2019 คือระบบลงทะเบียน delegate ที่หลายประเทศส่งข้อมูลเข้าหา host กลาง
+            ถ้าข้อมูลชื่อ ตำแหน่ง บทบาท หรือข้อมูลเดินทางผิด ความผิดพลาดจะกระทบหลายหน่วยงานทันที
+          </p>
+          <p>
+            ปัญหาใหญ่คือข้อมูลสามารถถูกส่งเข้ากลางได้โดยยังไม่มีการตรวจระดับประเทศ
+            ทำให้ host กลายเป็น single point of failure และต้องรับภาระแก้ไขหลังบ้านในบริบทที่มีความอ่อนไหวสูง
+          </p>
+        </div>
+      </div>
+
+      <div class="section-inner">
+        <div class="problem-grid" aria-label="Diplomatic registration pain points">
+          <article class="problem-card">
+            <strong>Single point of failure</strong>
+            <p>ข้อมูลจากหลายประเทศไหลเข้ากลางโดยยังไม่มี layer ตรวจสอบก่อนถึง host</p>
+          </article>
+          <article class="problem-card">
+            <strong>Sensitive data</strong>
+            <p>ชื่อ ตำแหน่ง และรายละเอียดเดินทางผิดได้ยาก เพราะมีผลต่อพิธีการและหน่วยงานปลายทาง</p>
+          </article>
+          <article class="problem-card">
+            <strong>Manual habits</strong>
+            <p>ผู้ใช้จำนวนมากคุ้นกับ email-based workflow ทำให้ระบบใหม่ต้องสะท้อนวิธีประสานงานจริง</p>
+          </article>
+          <article class="problem-card">
+            <strong>Multi-agency pressure</strong>
+            <p>ระบบต้องรองรับ 25+ government agencies ที่มี protocol และจังหวะทำงานต่างกัน</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-band" id="solution">
+      <div class="section-inner split">
+        <figure class="visual-frame">
+          <img src="assets/asean-summit-2019-source/asean-summit-03.png" alt="ASEAN Summit 2019 system overview diagram">
+        </figure>
+        <div>
+          <div class="section-kicker">Solution</div>
+          <h2 class="section-title">เพิ่ม DAO validation layer เพื่อกระจายความรับผิดชอบก่อนข้อมูลถึง host</h2>
+          <div class="summary-copy">
+            <p>
+              ระบบใหม่กำหนดบทบาทหลักเป็น Host, DAO และ Delegate โดย DAO หรือ Delegate Affairs Officer
+              ทำหน้าที่ตรวจและยืนยันข้อมูล delegate ของประเทศตัวเองก่อนส่งถึง host กลาง
+            </p>
+            <p>
+              ความเสียดทานที่เพิ่มขึ้นไม่ใช่ความซับซ้อนส่วนเกิน แต่เป็น safeguard ที่ช่วยลด upstream errors
+              ทำให้การ track status, issue handling และ error recovery ชัดขึ้นในสภาพแวดล้อมหลายประเทศ
+            </p>
+          </div>
+          <div class="pill-row" aria-label="Solution tags">
+            <span class="pill">DAO validation</span>
+            <span class="pill">Host review</span>
+            <span class="pill">Delegate registration</span>
+            <span class="pill">Status tracking</span>
+            <span class="pill">Intentional friction</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="challenges">
+      <div class="section-inner">
+        <div class="section-kicker">Challenges & solutions</div>
+        <h2 class="section-title">ความยากของงานนี้อยู่ที่ต้องเริ่มสร้างระบบก่อนทุกอย่างนิ่ง</h2>
+
+        <div class="workflow-grid" aria-label="Challenges and solutions">
+          <article class="step" data-step="01">
+            <h3>Pending brand identity</h3>
+            <p>CI และ logo ยังไม่ final แต่ development ต้องเริ่ม จึงใช้ centralized stylesheet / pre-design system เพื่อเปลี่ยน branding ทีหลังได้ทั้งระบบ</p>
+          </article>
+          <article class="step" data-step="02">
+            <h3>Low digital literacy</h3>
+            <p>ทีม host คุ้นกับงาน manual และ email จึงต้องทำ contextual inquiry เพื่อ map flow ประสานงานจริง ไม่ใช่ flow ตามสมมติฐาน</p>
+          </article>
+          <article class="step" data-step="03">
+            <h3>Speed vs accuracy</h3>
+            <p>stakeholder อยากส่งข้อมูลเร็ว แต่ข้อมูล diplomatic ผิดไม่ได้ จึงต้อง defend data holding area และ DAO approval ให้เป็น friction ที่จำเป็น</p>
+          </article>
+        </div>
+
+        <div class="showcase" aria-label="ASEAN Summit flow and screen artifacts">
+          <figure>
+            <img src="assets/asean-summit-2019-source/asean-summit-04.png" alt="Delegated registration flow diagram">
+          </figure>
+          <figure>
+            <img src="assets/asean-summit-2019-source/asean-summit-05.png" alt="ASEAN Summit interface screens">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section principle-band" id="outcome">
+      <div class="section-inner split">
+        <div>
+          <div class="section-kicker">Outcome</div>
+          <h2 class="section-title">ผลลัพธ์คือ registration flow ที่คุมความถูกต้องโดยไม่ฝากภาระไว้ที่ host คนเดียว</h2>
+        </div>
+        <ul class="principle-list">
+          <li>เปลี่ยน flow จาก Host รับข้อมูลโดยตรง เป็น Host → DAO → Delegate → DAO Recheck → Host Review</li>
+          <li>ทำให้แต่ละประเทศมีจุดตรวจข้อมูลก่อนเข้าสู่ระบบกลาง ลดภาระแก้ไขหลัง submission</li>
+          <li>เพิ่ม visibility ของ invitation status, delegate verification และ need-attention requests</li>
+          <li>ช่วยให้ระบบรองรับหลายภาษา หลายบทบาท และหลายระดับ trust ในบริบทประชุมระหว่างประเทศ</li>
+          <li>ยืนยันหลักคิดว่า UX ที่ดีไม่ได้ลบ friction เสมอไป แต่ต้องวาง friction ให้ถูกจังหวะเพื่อปกป้องระบบ</li>
+        </ul>
+      </div>
+
+      <div class="section-inner">
+        <figure class="wide-visual">
+          <img src="assets/asean-summit-2019-source/asean-summit-02.png" alt="ASEAN Summit 2019 registration system board">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="section-kicker">Process evidence</div>
+        <h2 class="section-title">จาก email-based workflow สู่ flow ที่ตรวจสอบย้อนกลับได้</h2>
+        <div class="showcase" aria-label="Process artifacts">
+          <figure>
+            <img src="assets/asean-summit-2019-source/asean-summit-06.png" alt="Old and new process comparison">
+          </figure>
+          <figure>
+            <img src="assets/asean-summit-2019-source/asean-summit-07.png" alt="Information architecture and screen flow">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quote-band">
+      <div class="section-inner">
+        <p class="quote">
+          ในระบบข้อมูลอ่อนไหว friction ไม่ได้แปลว่า UX แย่เสมอไป บางครั้ง friction คือ <span>กลไกปกป้องความถูกต้อง</span>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>ASEAN Summit 2019 one-page case study</span>
+      <span>Content summarized from <a class="source-link" href="https://dhittawat.framer.ai/work/asean-summit-2019/" target="_blank" rel="noreferrer">dhittawat.framer.ai/work/asean-summit-2019</a></span>
+    </div>
+  </footer>
+</body>
+</html>

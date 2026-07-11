@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Three-Portfolios</title>
+  <meta name="description" content="One-page HTML case study for Buddy App 2.0 technician workflow redesign.">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #121417;
+      --muted: #5e6670;
+      --paper: #f6f4ee;
+      --panel: #ffffff;
+      --line: #d9ded8;
+      --night: #090e15;
+      --red: #e54f3d;
+      --blue: #2d6fb6;
+      --yellow: #e2b43d;
+      --green: #26916d;
+      --radius: 8px;
+      --shadow: 0 22px 60px rgba(18, 20, 23, 0.14);
+      font-family: Inter, "Segoe UI", Tahoma, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .topbar {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 18px clamp(20px, 5vw, 72px);
+      color: #fbfaf5;
+      background: linear-gradient(180deg, rgba(7, 11, 16, 0.9), rgba(7, 11, 16, 0));
+    }
+
+    .brand {
+      font-size: 14px;
+      font-weight: 780;
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: rgba(251, 250, 245, 0.78);
+      font-size: 13px;
+    }
+
+    .nav a {
+      padding: 6px 0;
+      border-bottom: 1px solid transparent;
+    }
+
+    .nav a:hover {
+      color: #ffffff;
+      border-color: currentColor;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 92svh;
+      display: grid;
+      align-items: end;
+      overflow: hidden;
+      color: #fbfaf5;
+      background: #080d12;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(7, 11, 16, 0.96) 0%, rgba(7, 11, 16, 0.76) 42%, rgba(7, 11, 16, 0.18) 100%),
+        linear-gradient(180deg, rgba(7, 11, 16, 0.06), rgba(7, 11, 16, 0.94)),
+        url("assets/buddy-app-source/buddy-app-01.png") center right / min(720px, 70vw) auto no-repeat;
+      transform: scale(1.02);
+    }
+
+    .hero-content {
+      position: relative;
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 128px 0 78px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #ffd2cb;
+      font-size: 13px;
+      font-weight: 780;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--red);
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    figure {
+      margin: 0;
+    }
+
+    h1 {
+      max-width: 900px;
+      margin-top: 24px;
+      font-size: clamp(48px, 8vw, 112px);
+      line-height: 0.96;
+      letter-spacing: 0;
+    }
+
+    .hero-lead {
+      max-width: 780px;
+      margin-top: 28px;
+      color: rgba(251, 250, 245, 0.84);
+      font-size: clamp(18px, 2vw, 24px);
+      line-height: 1.45;
+    }
+
+    .hero-meta {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(120px, 1fr));
+      gap: 12px;
+      max-width: 920px;
+      margin-top: 44px;
+    }
+
+    .hero-meta div {
+      min-height: 90px;
+      padding: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(12px);
+    }
+
+    .hero-meta span {
+      display: block;
+      color: rgba(251, 250, 245, 0.58);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .hero-meta strong {
+      display: block;
+      margin-top: 6px;
+      font-size: 15px;
+      line-height: 1.35;
+    }
+
+    .section {
+      padding: clamp(56px, 8vw, 112px) clamp(20px, 5vw, 72px);
+    }
+
+    .section-inner {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+      gap: clamp(28px, 5vw, 76px);
+      align-items: start;
+    }
+
+    .section-kicker {
+      color: var(--red);
+      font-size: 13px;
+      font-weight: 780;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      max-width: 860px;
+      margin-top: 10px;
+      font-size: clamp(30px, 5vw, 62px);
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+
+    .summary-copy {
+      display: grid;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .summary-copy strong {
+      color: var(--ink);
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 42px;
+    }
+
+    .problem-card {
+      min-height: 176px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      box-shadow: 0 10px 28px rgba(18, 20, 23, 0.05);
+    }
+
+    .problem-card strong {
+      display: block;
+      color: var(--blue);
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    .problem-card p {
+      margin-top: 14px;
+      color: #29323a;
+      font-size: 16px;
+    }
+
+    .dark-band {
+      background: var(--night);
+      color: #fbfaf5;
+    }
+
+    .dark-band .section-kicker {
+      color: #ffd2cb;
+    }
+
+    .dark-band .summary-copy {
+      color: rgba(251, 250, 245, 0.72);
+    }
+
+    .visual-frame {
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: var(--radius);
+      background: #101820;
+      box-shadow: var(--shadow);
+    }
+
+    .visual-frame img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 26px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 7px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 999px;
+      color: rgba(251, 250, 245, 0.82);
+      font-size: 13px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .workflow-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 46px;
+    }
+
+    .step {
+      min-height: 232px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #ffffff;
+      box-shadow: 0 10px 28px rgba(18, 20, 23, 0.05);
+    }
+
+    .step::before {
+      content: attr(data-step);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      margin-bottom: 22px;
+      border-radius: 999px;
+      color: #ffffff;
+      background: var(--red);
+      font-size: 13px;
+      font-weight: 780;
+    }
+
+    .step h3 {
+      font-size: 21px;
+      line-height: 1.2;
+    }
+
+    .step p {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .showcase {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+      gap: 18px;
+      margin-top: 46px;
+    }
+
+    .showcase figure {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #ffffff;
+      box-shadow: 0 12px 34px rgba(18, 20, 23, 0.08);
+    }
+
+    .showcase img {
+      width: 100%;
+      height: 100%;
+      min-height: 300px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .principle-band {
+      background: #ffffff;
+      border-block: 1px solid var(--line);
+    }
+
+    .principle-list {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .principle-list li {
+      position: relative;
+      padding: 18px 20px 18px 48px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #f8faf8;
+      color: #29323a;
+    }
+
+    .principle-list li::before {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 20px;
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
+      background: var(--yellow);
+      box-shadow: 0 0 0 5px rgba(226, 180, 61, 0.18);
+    }
+
+    .wide-visual {
+      margin-top: 46px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #ffffff;
+      box-shadow: 0 12px 34px rgba(18, 20, 23, 0.08);
+    }
+
+    .wide-visual img {
+      width: 100%;
+      min-height: 260px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .quote-band {
+      color: #fbfaf5;
+      background:
+        linear-gradient(90deg, rgba(8, 13, 18, 0.96), rgba(8, 13, 18, 0.68)),
+        url("assets/buddy-app-source/buddy-app-01.png") center right / min(620px, 66vw) auto no-repeat;
+    }
+
+    .quote {
+      max-width: 940px;
+      font-size: clamp(30px, 5vw, 64px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .quote span {
+      color: #ffd2cb;
+    }
+
+    .footer {
+      padding: 42px clamp(20px, 5vw, 72px);
+      color: rgba(251, 250, 245, 0.68);
+      background: #080d12;
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .source-link {
+      color: #ffd2cb;
+      border-bottom: 1px solid rgba(255, 210, 203, 0.38);
+    }
+
+    @media (max-width: 920px) {
+      .nav {
+        display: none;
+      }
+
+      .hero::before {
+        background:
+          linear-gradient(180deg, rgba(7, 11, 16, 0.62), rgba(7, 11, 16, 0.94)),
+          url("assets/buddy-app-source/buddy-app-01.png") center 16% / min(540px, 92vw) auto no-repeat;
+      }
+
+      .hero-meta,
+      .problem-grid,
+      .workflow-grid,
+      .showcase,
+      .split {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-meta {
+        max-width: 540px;
+      }
+
+      .visual-frame img,
+      .showcase img {
+        aspect-ratio: auto;
+        min-height: 240px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .hero {
+        min-height: 94svh;
+      }
+
+      .hero-content {
+        width: min(100% - 32px, 1180px);
+        padding-bottom: 48px;
+      }
+
+      h1 {
+        font-size: 48px;
+      }
+
+      .hero-lead,
+      .summary-copy {
+        font-size: 16px;
+      }
+
+      .section {
+        padding-inline: 16px;
+      }
+
+      .hero-meta div,
+      .problem-card,
+      .step {
+        padding: 18px;
+      }
+
+      .quote-band {
+        background:
+          linear-gradient(180deg, rgba(8, 13, 18, 0.72), rgba(8, 13, 18, 0.96)),
+          url("assets/buddy-app-source/buddy-app-01.png") center top / 92vw auto no-repeat;
+      }
+    }
+  .topbar .brand {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+.topbar .brand .site-logo {
+  width: clamp(132px, 12vw, 174px);
+}
+</style>
+<style>
+.site-logo {
+  display: block;
+  width: clamp(132px, 12vw, 174px);
+  height: auto;
+}
+.p-header__logo h1,
+.p-header__logo a,
+.p-footer__logo {
+  display: inline-flex;
+  align-items: center;
+}
+</style>
+<style id="three-portfolios-theme">
+:root {
+  --three-theme-color: #105D4A;
+}
+.p-header__link,
+.p-footer__link,
+.p-header__btn,
+.p-header__btn span,
+.p-header__menu,
+.p-header__menuText,
+.p-header__sub::before,
+.p-footer__comment,
+.p-footer__more,
+.c-more,
+.c-more__text,
+.c-more__arrow,
+.c-tags__title,
+.p-tags__title,
+.p-tags__toggle,
+.about-framer__eyebrow,
+.about-framer__label,
+.about-framer__job-role,
+.about-framer__button,
+.framework-card__number,
+.framework-card__label {
+  color: #105D4A !important;
+}
+.p-header__hamburger span,
+.p-header__btn span,
+.p-footer__line,
+.about-framer__button:hover,
+.framework-card__label {
+  background-color: #105D4A !important;
+}
+.about-framer__button,
+.framework-card__label,
+.p-tags__toggle,
+.c-tags__toggle {
+  border-color: #105D4A !important;
+}
+.framework-card__label,
+.about-framer__button:hover {
+  color: #fff !important;
+}
+svg [fill="#105D4A"] {
+  fill: #105D4A !important;
+}
+svg [stroke="#105D4A"] {
+  stroke: #105D4A !important;
+}
+</style>
+</head>
+<body>
+  <header class="topbar" aria-label="Site header">
+  <a class="brand" href="../index.html"><img class="site-logo" src="../assets/logo.png" alt="dhittawat"></a>
+    <nav class="nav" aria-label="Page navigation">
+      <a href="#problem">Problem</a>
+      <a href="#solution">Solution</a>
+      <a href="#research">Research</a>
+      <a href="#outcome">Outcome</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Buddy App hero">
+      <div class="hero-content">
+        <div class="eyebrow">Technician workflow / Job selection / Team coordination</div>
+        <h1>Buddy App 2.0</h1>
+        <p class="hero-lead">
+          เคสสตัดดี้การ redesign workflow สำหรับช่าง ให้การค้นหางาน รับงาน และประสานงานในทีมชัดขึ้นเร็วขึ้น
+          โดยไม่มองแค่หน้าจอเก่า แต่ลงไปดูต้นทุนจริงของการตัดสินใจรับงานในชีวิตภาคสนาม
+        </p>
+        <div class="hero-meta" aria-label="Project facts">
+          <div>
+            <span>Year</span>
+            <strong>2023</strong>
+          </div>
+          <div>
+            <span>Team</span>
+            <strong>Oopip, Mint, Pom, Three</strong>
+          </div>
+          <div>
+            <span>Tool</span>
+            <strong>Figma</strong>
+          </div>
+          <div>
+            <span>Category</span>
+            <strong>Mobile app, field service UX</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="problem">
+      <div class="section-inner split">
+        <div>
+          <div class="section-kicker">Problem</div>
+          <h2 class="section-title">Buddy App ไม่ได้ถูก redesign เพราะหน้าจอดูเก่า แต่เพราะ operation หลังบ้านซับซ้อนขึ้น</h2>
+        </div>
+        <div class="summary-copy">
+          <p>
+            แอปช่างเดิมต้องการมากกว่า visual refresh เพราะ workflow สำคัญยังแตกเป็นส่วน ๆ
+            โดยเฉพาะการหางานที่เหมาะสม การตัดสินใจรับงาน และการประสานงานภายในทีมช่าง
+          </p>
+          <p>
+            สำหรับ field users ความเร็วและความชัดเจนมีผลกับงานรายวันโดยตรง
+            ถ้า flow ไม่ชัด friction เล็ก ๆ จะทำให้การปฏิบัติงานช้าลง และลดความมั่นใจในการใช้งาน
+          </p>
+        </div>
+      </div>
+
+      <div class="section-inner">
+        <div class="problem-grid" aria-label="Technician workflow pain points">
+          <article class="problem-card">
+            <strong>Job relevance</strong>
+            <p>ช่างต้องมองให้ออกเร็วว่างานไหนเหมาะกับตัวเอง ทั้งระยะทาง เวลา และประเภทงาน</p>
+          </article>
+          <article class="problem-card">
+            <strong>Acceptance risk</strong>
+            <p>การรับงานมีต้นทุนแฝง ถ้ารับแล้วเปลี่ยนใจภายหลังอาจมีผลต่อความน่าเชื่อถือหรือคะแนน</p>
+          </article>
+          <article class="problem-card">
+            <strong>Team coordination</strong>
+            <p>งานภาคสนามไม่ได้เกิดจากคนเดียวเสมอไป ต้องมีการส่งต่อและประสานกับ sub-team</p>
+          </article>
+          <article class="problem-card">
+            <strong>Brand transition</strong>
+            <p>ระบบต้องสอดคล้องกับ identity ใหม่ โดยไม่ละทิ้ง behavior จริงของผู้ใช้ภาคสนาม</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-band" id="solution">
+      <div class="section-inner split">
+        <figure class="visual-frame">
+          <img src="assets/buddy-app-source/buddy-app-02.png" alt="Buddy App redesigned mobile screens">
+        </figure>
+        <div>
+          <div class="section-kicker">Solution</div>
+          <h2 class="section-title">เปลี่ยน mobile workflow ให้ช่างเห็นงานที่เกี่ยวข้องและตัดสินใจได้โดยลังเลน้อยลง</h2>
+          <div class="summary-copy">
+            <p>
+              Buddy 2.0 ถูกออกแบบให้ visual consistency ดีขึ้น พร้อมกับทำให้ task usability ชัดกว่าเดิม
+              โดยแปล research insight ให้กลายเป็น mobile workflow สำหรับ technician, worker และ sub-team
+            </p>
+            <p>
+              เป้าหมายคือช่วยให้ผู้ใช้หางานที่เกี่ยวข้องได้เร็วขึ้น เข้าใจ action ได้ง่ายขึ้น
+              และเดินผ่าน process ด้วยความมั่นใจมากขึ้น โดยยังสอดคล้องกับทิศทางแบรนด์ใหม่
+            </p>
+          </div>
+          <div class="pill-row" aria-label="Solution tags">
+            <span class="pill">Relevant job discovery</span>
+            <span class="pill">Clear acceptance flow</span>
+            <span class="pill">Technician team UX</span>
+            <span class="pill">Mobile task clarity</span>
+            <span class="pill">Brand-aligned UI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="section-inner">
+        <div class="section-kicker">Research into workflow</div>
+        <h2 class="section-title">ทีมไม่ได้เริ่มจากหน้าจอ แต่เริ่มจากต้นทุนที่ซ่อนอยู่หลังการรับงานแต่ละครั้ง</h2>
+
+        <div class="workflow-grid" aria-label="Design approach">
+          <article class="step" data-step="01">
+            <h3>Understand hidden cost</h3>
+            <p>ดูปัจจัยที่ช่างต้องคิดก่อนรับงาน เช่นระยะทาง เวลา ประเภทงาน แรงกาย และความเสี่ยงจากการปฏิเสธภายหลัง</p>
+          </article>
+          <article class="step" data-step="02">
+            <h3>Map worker onboarding</h3>
+            <p>จัดระบบ onboarding และเอกสารของ worker เพื่อให้ข้อมูลสำคัญถูกส่งต่อเป็น flow ที่ตรวจสอบได้</p>
+          </article>
+          <article class="step" data-step="03">
+            <h3>Translate into screens</h3>
+            <p>เปลี่ยน insight จาก user interview และ process map ให้เป็นหน้าจอที่ช่างใช้ตัดสินใจได้จริงในมือถือ</p>
+          </article>
+        </div>
+
+        <div class="showcase" aria-label="Research and design artifacts">
+          <figure>
+            <img src="assets/buddy-app-source/buddy-app-04.png" alt="Buddy App user interview and research artifacts">
+          </figure>
+          <figure>
+            <img src="assets/buddy-app-source/buddy-app-03.png" alt="Buddy App worker onboarding flow">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section principle-band" id="outcome">
+      <div class="section-inner split">
+        <div>
+          <div class="section-kicker">Outcome</div>
+          <h2 class="section-title">ผลลัพธ์คือ workflow ที่ช่วยให้ช่างตัดสินใจรับงานได้เร็วขึ้นและชัดขึ้น</h2>
+        </div>
+        <ul class="principle-list">
+          <li>ทำให้การเลือกงานชัดขึ้นด้วยข้อมูลที่เกี่ยวข้องกับการตัดสินใจจริงของช่าง</li>
+          <li>ลด hesitation ในขั้นตอนรับงาน เพราะ action และผลกระทบของการตัดสินใจถูกสื่อสารชัดขึ้น</li>
+          <li>รองรับการประสานงานระหว่าง technician, worker และ sub-team ใน flow เดียวกันมากขึ้น</li>
+          <li>ยกระดับหน้าตา interface ให้สอดคล้องกับแบรนด์ใหม่ โดยยัง grounded กับงานภาคสนาม</li>
+          <li>เปลี่ยน research insight ให้กลายเป็น mobile workflow ที่ใช้งานได้จริง ไม่ใช่แค่หน้าจอ mockup</li>
+        </ul>
+      </div>
+
+      <div class="section-inner">
+        <figure class="wide-visual">
+          <img src="assets/buddy-app-source/buddy-app-05.png" alt="Buddy App service flow and process map">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section quote-band">
+      <div class="section-inner">
+        <p class="quote">
+          การรับงานของช่างไม่ใช่แค่กดปุ่ม accept แต่เป็นการตัดสินใจบน <span>ต้นทุนจริงของงานภาคสนาม</span>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>Buddy App 2.0 one-page case study</span>
+      <span>Content summarized from <a class="source-link" href="https://dhittawat.framer.ai/work/buddy-app/" target="_blank" rel="noreferrer">dhittawat.framer.ai/work/buddy-app</a></span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Three-Portfolios</title>
+  <meta name="description" content="One-page HTML case study for WCF Digital, a compensation system for Thailand's Social Security Office.">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #101418;
+      --muted: #5b646d;
+      --line: #dbe2e8;
+      --paper: #f6f7f2;
+      --panel: #ffffff;
+      --night: #101820;
+      --green: #24a06b;
+      --blue: #1f6fbf;
+      --amber: #d29a2e;
+      --coral: #dd6758;
+      --radius: 8px;
+      --shadow: 0 22px 60px rgba(14, 22, 28, 0.16);
+      font-family: Inter, "Segoe UI", Tahoma, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .topbar {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 18px clamp(20px, 5vw, 72px);
+      color: #f9fbf7;
+      background: linear-gradient(180deg, rgba(8, 13, 17, 0.88), rgba(8, 13, 17, 0));
+    }
+
+    .brand {
+      font-size: 14px;
+      font-weight: 760;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      font-size: 13px;
+      color: rgba(249, 251, 247, 0.78);
+    }
+
+    .nav a {
+      padding: 6px 0;
+      border-bottom: 1px solid transparent;
+    }
+
+    .nav a:hover {
+      border-color: currentColor;
+      color: #ffffff;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 92svh;
+      display: grid;
+      align-items: end;
+      overflow: hidden;
+      color: #f9fbf7;
+      background: #091015;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(7, 12, 16, 0.94) 0%, rgba(7, 12, 16, 0.78) 40%, rgba(7, 12, 16, 0.2) 100%),
+        linear-gradient(180deg, rgba(7, 12, 16, 0.12), rgba(7, 12, 16, 0.92)),
+        url("assets/wcf-digital-source/wcf-01.png") center right / min(760px, 72vw) auto no-repeat;
+      transform: scale(1.02);
+    }
+
+    .hero-content {
+      position: relative;
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 128px 0 84px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      color: #bcebd5;
+      font-size: 13px;
+      font-weight: 760;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--green);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      max-width: 860px;
+      margin-top: 24px;
+      font-size: clamp(48px, 8vw, 112px);
+      line-height: 0.96;
+      letter-spacing: 0;
+    }
+
+    .hero-lead {
+      max-width: 740px;
+      margin-top: 28px;
+      color: rgba(249, 251, 247, 0.84);
+      font-size: clamp(18px, 2vw, 24px);
+      line-height: 1.45;
+    }
+
+    .hero-meta {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(120px, 1fr));
+      gap: 12px;
+      max-width: 920px;
+      margin-top: 44px;
+    }
+
+    .hero-meta div {
+      min-height: 90px;
+      padding: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(12px);
+      border-radius: var(--radius);
+    }
+
+    .hero-meta span {
+      display: block;
+      color: rgba(249, 251, 247, 0.58);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .hero-meta strong {
+      display: block;
+      margin-top: 6px;
+      font-size: 15px;
+      line-height: 1.35;
+    }
+
+    .section {
+      padding: clamp(56px, 8vw, 112px) clamp(20px, 5vw, 72px);
+    }
+
+    .section-inner {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+    }
+
+    .section-kicker {
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 760;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      max-width: 780px;
+      margin-top: 10px;
+      font-size: clamp(30px, 5vw, 62px);
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+      gap: clamp(28px, 5vw, 76px);
+      align-items: start;
+    }
+
+    .summary-copy {
+      display: grid;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .summary-copy strong {
+      color: var(--ink);
+    }
+
+    .challenge-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 42px;
+    }
+
+    .stat-card {
+      min-height: 170px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+    }
+
+    .stat-card strong {
+      display: block;
+      color: var(--coral);
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    .stat-card p {
+      margin-top: 14px;
+      font-size: 17px;
+      color: #27313a;
+    }
+
+    .dark-band {
+      background: var(--night);
+      color: #f8fbf5;
+    }
+
+    .dark-band .section-kicker {
+      color: #8ed9bd;
+    }
+
+    .dark-band .section-title {
+      color: #ffffff;
+    }
+
+    .dark-band .summary-copy {
+      color: rgba(248, 251, 245, 0.72);
+    }
+
+    .system-visual {
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius);
+      background: #0b1117;
+      box-shadow: var(--shadow);
+    }
+
+    .system-visual img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 26px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 7px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 999px;
+      color: rgba(248, 251, 245, 0.8);
+      font-size: 13px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 48px;
+    }
+
+    .step {
+      position: relative;
+      min-height: 240px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #ffffff;
+    }
+
+    .step::before {
+      content: attr(data-step);
+      display: inline-flex;
+      width: 34px;
+      height: 34px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+      border-radius: 999px;
+      color: #ffffff;
+      background: var(--ink);
+      font-size: 13px;
+      font-weight: 760;
+    }
+
+    .step h3 {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    .step p {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .module-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 46px;
+    }
+
+    .module {
+      display: grid;
+      grid-template-columns: 168px minmax(0, 1fr);
+      min-height: 210px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+    }
+
+    .module figure {
+      margin: 0;
+      min-height: 100%;
+      background: #111820;
+    }
+
+    .module img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .module-body {
+      padding: 24px;
+    }
+
+    .module-tag {
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 760;
+      text-transform: uppercase;
+    }
+
+    .module h3 {
+      margin-top: 8px;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+
+    .module p {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .showcase {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 18px;
+      margin-top: 46px;
+    }
+
+    .showcase figure {
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #ffffff;
+      box-shadow: 0 12px 34px rgba(14, 22, 28, 0.08);
+    }
+
+    .showcase img {
+      width: 100%;
+      height: 100%;
+      min-height: 280px;
+      object-fit: cover;
+    }
+
+    .quote-band {
+      background: #ffffff;
+      border-block: 1px solid var(--line);
+    }
+
+    .quote {
+      max-width: 900px;
+      font-size: clamp(30px, 5vw, 64px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .quote span {
+      color: var(--green);
+    }
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: clamp(28px, 5vw, 76px);
+      align-items: start;
+    }
+
+    .impact-list {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .impact-list li {
+      padding: 18px 20px;
+      border-left: 4px solid var(--amber);
+      background: #fff;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      color: #25303a;
+      box-shadow: 0 8px 26px rgba(14, 22, 28, 0.06);
+    }
+
+    .footer {
+      padding: 42px clamp(20px, 5vw, 72px);
+      color: rgba(248, 251, 245, 0.68);
+      background: #0b1117;
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .source-link {
+      color: #bcebd5;
+      border-bottom: 1px solid rgba(188, 235, 213, 0.38);
+    }
+
+    @media (max-width: 920px) {
+      .topbar {
+        align-items: flex-start;
+      }
+
+      .nav {
+        display: none;
+      }
+
+      .hero::before {
+        background:
+          linear-gradient(180deg, rgba(7, 12, 16, 0.66), rgba(7, 12, 16, 0.94)),
+          url("assets/wcf-digital-source/wcf-01.png") center 18% / min(560px, 92vw) auto no-repeat;
+      }
+
+      .hero-meta,
+      .challenge-grid,
+      .timeline,
+      .module-grid,
+      .showcase,
+      .impact-grid,
+      .split {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-meta {
+        max-width: 540px;
+      }
+
+      .module {
+        grid-template-columns: 1fr;
+      }
+
+      .module figure {
+        min-height: 220px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .hero {
+        min-height: 94svh;
+      }
+
+      .hero-content {
+        width: min(100% - 32px, 1180px);
+        padding-bottom: 48px;
+      }
+
+      h1 {
+        font-size: 48px;
+      }
+
+      .hero-lead,
+      .summary-copy {
+        font-size: 16px;
+      }
+
+      .hero-meta div,
+      .stat-card,
+      .step,
+      .module-body {
+        padding: 18px;
+      }
+
+      .section {
+        padding-inline: 16px;
+      }
+    }
+  .topbar .brand {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+.topbar .brand .site-logo {
+  width: clamp(132px, 12vw, 174px);
+}
+</style>
+<style>
+.site-logo {
+  display: block;
+  width: clamp(132px, 12vw, 174px);
+  height: auto;
+}
+.p-header__logo h1,
+.p-header__logo a,
+.p-footer__logo {
+  display: inline-flex;
+  align-items: center;
+}
+</style>
+<style id="three-portfolios-theme">
+:root {
+  --three-theme-color: #105D4A;
+}
+.p-header__link,
+.p-footer__link,
+.p-header__btn,
+.p-header__btn span,
+.p-header__menu,
+.p-header__menuText,
+.p-header__sub::before,
+.p-footer__comment,
+.p-footer__more,
+.c-more,
+.c-more__text,
+.c-more__arrow,
+.c-tags__title,
+.p-tags__title,
+.p-tags__toggle,
+.about-framer__eyebrow,
+.about-framer__label,
+.about-framer__job-role,
+.about-framer__button,
+.framework-card__number,
+.framework-card__label {
+  color: #105D4A !important;
+}
+.p-header__hamburger span,
+.p-header__btn span,
+.p-footer__line,
+.about-framer__button:hover,
+.framework-card__label {
+  background-color: #105D4A !important;
+}
+.about-framer__button,
+.framework-card__label,
+.p-tags__toggle,
+.c-tags__toggle {
+  border-color: #105D4A !important;
+}
+.framework-card__label,
+.about-framer__button:hover {
+  color: #fff !important;
+}
+svg [fill="#105D4A"] {
+  fill: #105D4A !important;
+}
+svg [stroke="#105D4A"] {
+  stroke: #105D4A !important;
+}
+</style>
+</head>
+<body>
+  <header class="topbar" aria-label="Site header">
+  <a class="brand" href="../index.html"><img class="site-logo" src="../assets/logo.png" alt="dhittawat"></a>
+    <nav class="nav" aria-label="Page navigation">
+      <a href="#problem">Problem</a>
+      <a href="#system">System</a>
+      <a href="#modules">Modules</a>
+      <a href="#impact">Impact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="WCF Digital hero">
+      <div class="hero-content">
+        <div class="eyebrow">GOV / Complex claims / Compensation system</div>
+        <h1>WCF Digital</h1>
+        <p class="hero-lead">
+          เคสสตัดดี้การออกแบบระบบหลักสำหรับจัดการเงินทดแทนจากการบาดเจ็บหรือเจ็บป่วยจากการทำงาน
+          ครอบคลุมตั้งแต่รับเรื่อง ตรวจเอกสาร วินิจฉัย ไปจนถึงการจ่ายเงินชดเชย
+        </p>
+        <div class="hero-meta" aria-label="Project facts">
+          <div>
+            <span>Year</span>
+            <strong>2025</strong>
+          </div>
+          <div>
+            <span>Role</span>
+            <strong>UX/UI design, system foundation</strong>
+          </div>
+          <div>
+            <span>Tool</span>
+            <strong>Figma</strong>
+          </div>
+          <div>
+            <span>Category</span>
+            <strong>Government service design</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="problem">
+      <div class="section-inner split">
+        <div>
+          <div class="section-kicker">Problem</div>
+          <h2 class="section-title">ระบบเดิมอายุยาวนาน แต่การทำงานจริงกระจายอยู่หลายบทบาท</h2>
+        </div>
+        <div class="summary-copy">
+          <p>
+            WCF เป็นระบบแกนกลางของสำนักงานประกันสังคมสำหรับงานเงินทดแทนที่มีขั้นตอนซับซ้อนและมีข้อกำหนดเฉพาะทางกฎหมายจำนวนมาก
+            งานที่พบไม่ได้เป็นเพียงหน้าจอไม่ครบ แต่เป็นปัญหาโครงสร้างที่แต่ละทีมเดินหน้าแยกกัน
+          </p>
+          <p>
+            โจทย์สำคัญคือทำให้กระบวนการจากเอกสารจริงเข้าสู่ระบบได้ชัดขึ้น ลดการพึ่งพาความจำของเจ้าหน้าที่
+            และทำให้สถานะงานกับการส่งต่อระหว่างหน่วยไม่หลุดหาย
+          </p>
+        </div>
+      </div>
+
+      <div class="section-inner">
+        <div class="challenge-grid" aria-label="Key challenges">
+          <article class="stat-card">
+            <strong>Legacy logic</strong>
+            <p>กฎงานสะสมมานาน ทำให้การออกแบบต้องคุมทั้งข้อบังคับและวิธีทำงานจริง</p>
+          </article>
+          <article class="stat-card">
+            <strong>Fragmented flow</strong>
+            <p>หลายบทบาทมีทางเดินงานของตัวเอง ทำให้ขอบเขตการรับผิดชอบไม่ชัด</p>
+          </article>
+          <article class="stat-card">
+            <strong>Manual workaround</strong>
+            <p>เจ้าหน้าที่ต้องจำขั้นตอนหรือทำงานนอกระบบเพื่อให้เคสเดินต่อได้</p>
+          </article>
+          <article class="stat-card">
+            <strong>Slow progression</strong>
+            <p>ความคลุมเครือของสถานะทำให้เคสคืบหน้าช้าและมีโอกาสผิดพลาดสูง</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-band" id="system">
+      <div class="section-inner split">
+        <div class="system-visual">
+          <img src="assets/wcf-digital-source/wcf-02.png" alt="WCF system structure diagram">
+        </div>
+        <div>
+          <div class="section-kicker">Solution</div>
+          <h2 class="section-title">เปลี่ยนงานที่แตกเป็นส่วน ๆ ให้กลายเป็นระบบที่ทุกทีมสร้างต่อได้</h2>
+          <div class="summary-copy">
+            <p>
+              แนวทางหลักคือกำหนด workflow แบบ case-centered ให้แต่ละเคสมีสถานะชัดเจน
+              พร้อมโครงสร้าง ownership และ handoff ที่ตรวจสอบย้อนหลังได้
+            </p>
+            <p>
+              งานออกแบบถูกยกระดับเป็น foundation กลาง ทั้ง pattern, variant, component logic และ Storybook
+              เพื่อให้ทีม vendor และทีมพัฒนาทำงานจากแหล่งอ้างอิงเดียวกัน
+            </p>
+          </div>
+          <div class="pill-row" aria-label="Solution tags">
+            <span class="pill">Case-centered workflow</span>
+            <span class="pill">Shared design system</span>
+            <span class="pill">Master data layer</span>
+            <span class="pill">Traceable handoff</span>
+            <span class="pill">Scalable development</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="section-kicker">Approach</div>
+        <h2 class="section-title">ออกแบบสิ่งที่ยังไม่ถูกนิยามให้จับต้องได้เร็วพอสำหรับการตัดสินใจ</h2>
+
+        <div class="timeline" aria-label="Design approach timeline">
+          <article class="step" data-step="01">
+            <h3>Map the real operation</h3>
+            <p>คุยกับ vendor, BA, backend lead และเจ้าหน้าที่ปฏิบัติงาน เพื่อแยกปัญหาหน้าจอออกจากปัญหากระบวนการจริง</p>
+          </article>
+          <article class="step" data-step="02">
+            <h3>Prototype to provoke truth</h3>
+            <p>ทำ mockup แบบเร็วและหยาบพอให้ผู้ใช้ตอบสนองจากของจริง แทนการคุยบนสมมติฐาน</p>
+          </article>
+          <article class="step" data-step="03">
+            <h3>Align UI with data</h3>
+            <p>ทำงานร่วมกับ backend เพื่อจัด UI, data model, master data และข้อจำกัดทางเทคนิคให้ไปทางเดียวกัน</p>
+          </article>
+          <article class="step" data-step="04">
+            <h3>Centralize patterns</h3>
+            <p>จัดระบบ component, variant และ asset management ให้ทีมพัฒนานำไปใช้ซ้ำได้อย่างสม่ำเสมอ</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="modules">
+      <div class="section-inner">
+        <div class="section-kicker">Core modules</div>
+        <h2 class="section-title">โมดูลสำคัญที่เชื่อมงานเอกสาร การวินิจฉัย และการติดตามเคส</h2>
+
+        <div class="module-grid" aria-label="Core module summaries">
+          <article class="module">
+            <figure>
+              <img src="assets/wcf-digital-source/wcf-04.png" alt="Adjudication interface screens">
+            </figure>
+            <div class="module-body">
+              <div class="module-tag">G1 Adjudication</div>
+              <h3>โครงสร้างวินิจฉัยเคส</h3>
+              <p>แปลงกระบวนการทำงานจริงเป็นหน้าจอที่ตรวจค่ารักษาและรองรับการตัดสินใจตามแนวทางและกรอบกฎหมาย</p>
+            </div>
+          </article>
+
+          <article class="module">
+            <figure>
+              <img src="assets/wcf-digital-source/wcf-07.png" alt="Data and batch processing interface">
+            </figure>
+            <div class="module-body">
+              <div class="module-tag">G2 Subvention</div>
+              <h3>ลดภาระงานปริมาณสูง</h3>
+              <p>ออกแบบการประมวลผลแบบ asynchronous และ feedback ผ่าน notification เพื่อลดการกดซ้ำและรองรับข้อมูลระดับ 400k+ records</p>
+            </div>
+          </article>
+
+          <article class="module">
+            <figure>
+              <img src="assets/wcf-digital-source/wcf-03.png" alt="Case tracking interface">
+            </figure>
+            <div class="module-body">
+              <div class="module-tag">G7 Referral</div>
+              <h3>ติดตามงานหลังส่งต่อ</h3>
+              <p>เพิ่ม tracking layer กลางให้เจ้าหน้าที่ค้นหา กลับมาติดตาม และทำงานต่อจากเคสของตัวเองได้โดยไม่ต้องเริ่มใหม่</p>
+            </div>
+          </article>
+
+          <article class="module">
+            <figure>
+              <img src="assets/wcf-digital-source/wcf-06.png" alt="Paper to screen process map">
+            </figure>
+            <div class="module-body">
+              <div class="module-tag">Paper to screen</div>
+              <h3>จากข้อมูลดิบสู่ insight งานบริการ</h3>
+              <p>เชื่อม contribution, debt tracking, hospital bill validation และการตรวจความสอดคล้องของ rate ให้ตรวจสอบย้อนกลับได้</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="showcase" aria-label="Design evidence images">
+          <figure>
+            <img src="assets/wcf-digital-source/wcf-05.png" alt="Service flow and screen mapping">
+          </figure>
+          <figure>
+            <img src="assets/wcf-digital-source/wcf-08.png" alt="System visualization with operational nodes">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quote-band">
+      <div class="section-inner">
+        <p class="quote">
+          การคุยให้สมมติฐาน แต่ <span>UI ทำให้ความจริงปรากฏ</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="impact">
+      <div class="section-inner impact-grid">
+        <div>
+          <div class="section-kicker">Outcome</div>
+          <h2 class="section-title">ผลลัพธ์คือฐานกลางที่ทำให้ระบบซับซ้อนเดินต่อได้</h2>
+        </div>
+        <ul class="impact-list">
+          <li>กำหนด workflow ที่ผูกกับเคสและสถานะงาน ลดความคลุมเครือระหว่างบทบาท</li>
+          <li>จัด ownership และ handoff ให้ทีมเห็นว่าขั้นตอนไหนเป็นของใครและส่งต่ออย่างไร</li>
+          <li>ลด duplication ใน master data และช่วยให้ implementation ทำได้จริงขึ้น</li>
+          <li>สร้าง design system กลางสำหรับหลาย vendor เพื่อคุมความสม่ำเสมอของ UI และ behavior</li>
+          <li>รองรับงานตรวจค่ารักษา การติดตามหนี้ และการตรวจจับความผิดปกติของการรักษาในภาพรวม</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>WCF Digital one-page case study</span>
+      <span>Content summarized from <a class="source-link" href="https://dhittawat.framer.ai/work/wcfdigital/" target="_blank" rel="noreferrer">dhittawat.framer.ai/work/wcfdigital</a></span>
+    </div>
+  </footer>
+</body>
+</html>
