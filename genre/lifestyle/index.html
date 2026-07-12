@@ -154,6 +154,87 @@ svg [stroke="#105D4A"] {
   stroke: #105D4A !important;
 }
 </style>
+<style id="three-portfolios-interview-footer">
+.footer-interview {
+  margin: clamp(34px, 5vw, 68px) 0 clamp(28px, 4vw, 54px);
+  padding: clamp(24px, 3.2vw, 42px) 0;
+  border-top: 1px solid rgba(16, 93, 74, .18);
+  border-bottom: 1px solid rgba(16, 93, 74, .18);
+  color: #27313b;
+}
+.footer-interview__head {
+  display: grid;
+  gap: 8px;
+  margin-bottom: clamp(18px, 2.4vw, 28px);
+}
+.footer-interview__eyebrow {
+  margin: 0;
+  color: #105D4A;
+  font-size: 13px;
+  line-height: 1.4;
+  letter-spacing: .04em;
+}
+.footer-interview__title {
+  margin: 0;
+  font-size: clamp(22px, 2.4vw, 34px);
+  line-height: 1.25;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+.footer-interview__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.footer-interview__item {
+  border: 1px solid rgba(16, 93, 74, .22);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, .72);
+  overflow: hidden;
+}
+.footer-interview__question {
+  cursor: pointer;
+  min-height: 92px;
+  padding: 18px 42px 18px 18px;
+  color: #105D4A;
+  font-size: 15px;
+  line-height: 1.55;
+  font-weight: 600;
+  letter-spacing: 0;
+  position: relative;
+  list-style: none;
+}
+.footer-interview__question::-webkit-details-marker {
+  display: none;
+}
+.footer-interview__question::after {
+  content: "+";
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 300;
+}
+.footer-interview__item[open] .footer-interview__question::after {
+  content: "-";
+}
+.footer-interview__answer {
+  margin: 0;
+  padding: 0 18px 20px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #3f474d;
+}
+@media (max-width: 960px) {
+  .footer-interview__list {
+    grid-template-columns: 1fr;
+  }
+  .footer-interview__question {
+    min-height: 0;
+  }
+}
+</style>
 </head>
 
 <body class="archive tax-genre term-lifestyle term-14 wp-theme-vivace-inccojp-renewal2025">
@@ -568,6 +649,26 @@ svg [stroke="#105D4A"] {
                 </div>
             </div>
         </div>
+        <section class="footer-interview" aria-labelledby="footer-interview-title">
+            <div class="footer-interview__head">
+                <p class="footer-interview__eyebrow">Before Interview</p>
+                <h2 class="footer-interview__title" id="footer-interview-title">ถามผมก่อนเริ่มสัมภาษณ์</h2>
+            </div>
+            <div class="footer-interview__list">
+                <details class="footer-interview__item">
+                    <summary class="footer-interview__question">ปัญหาที่เจอบ่อยที่สุดในงาน UX/Product Design คืออะไร และคุณรับมือยังไง?</summary>
+                    <p class="footer-interview__answer">ปัญหาที่เจอบ่อยที่สุดคือความไม่ชัดเจนที่สะสมอยู่ในระบบ ทั้ง requirement ที่กระจัดกระจาย ownership ที่ไม่แน่นอน และ flow ที่แต่ละทีมเข้าใจไม่ตรงกัน ผมเริ่มจากสัมภาษณ์คนทำงานจริง map ขั้นตอนและข้อจำกัด แล้วเปลี่ยนสิ่งที่คลุมเครือให้กลายเป็น workflow, screen logic และ decision point ที่ทีมออกแบบ พัฒนา และ operation ใช้ร่วมกันได้</p>
+                </details>
+                <details class="footer-interview__item">
+                    <summary class="footer-interview__question">คุณคิดว่าผู้นำที่ดีเป็นยังไง?</summary>
+                    <p class="footer-interview__answer">ผู้นำที่ดีคือคนที่ทำให้ทีมเห็นบริบทเดียวกันและตัดสินใจได้ชัดขึ้น ไม่ใช่แค่สั่งงานหรือมีคำตอบเร็วที่สุด แต่ต้องช่วยลด noise แยกเรื่องสำคัญออกจากเรื่องเร่งด่วน และสร้างพื้นที่ให้คนอื่นทำงานได้ดีขึ้น ผมให้ค่าน้ำหนักกับความชัดเจน ความรับผิดชอบ และการทำให้ทีมเดินต่อได้โดยไม่ต้องเดา</p>
+                </details>
+                <details class="footer-interview__item">
+                    <summary class="footer-interview__question">ทำไมถึงเลือกทำงานสาย UX/Product/System Design?</summary>
+                    <p class="footer-interview__answer">ผมเลือกสายนี้เพราะชอบเปลี่ยนปัญหาที่ซับซ้อน กระจัดกระจาย และพูดยาก ให้กลายเป็นโครงสร้างที่คนอื่นใช้งานต่อได้จริง งานที่ดีสำหรับผมไม่ใช่แค่หน้าจอสวย แต่คือระบบที่ช่วยให้คนเข้าใจงานของตัวเอง ลดการทำงานนอกระบบ และทำให้ทีมส่งต่องานกันได้อย่างมั่นใจขึ้น</p>
+                </details>
+            </div>
+        </section>
         <div class="p-footer__menu">
             <nav class="p-footer__nav">
                 <ul class="p-footer__list">
