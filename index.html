@@ -176,6 +176,49 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
   letter-spacing: 0;
 }
 </style>
+<style id="home-font-scale-150">
+body.home :is(
+  .p-header__sub,
+  .p-header__menuText,
+  .p-header__link,
+  .p-tags__title,
+  .p-tags__body,
+  .c-categories__item a,
+  .p-works__title,
+  .p-works__name,
+  .p-works__category,
+  .p-about__title,
+  .p-about__text,
+  .c-more__text,
+  .p-footer__text,
+  .p-footer__comment,
+  .p-footer__link,
+  .p-footer__copy,
+  .footer-interview__eyebrow,
+  .footer-interview__title,
+  .footer-interview__question,
+  .footer-interview__answer
+) {
+  font-size: 150% !important;
+  letter-spacing: 0;
+}
+body.home .p-works__title,
+body.home .p-about__text,
+body.home .footer-interview__title {
+  line-height: 1.18;
+}
+body.home .p-works__name,
+body.home .p-works__category,
+body.home .p-footer__text,
+body.home .footer-interview__question,
+body.home .footer-interview__answer {
+  line-height: 1.45;
+}
+body.home .p-works__title,
+body.home .p-works__name {
+  overflow-wrap: anywhere;
+}
+</style>
 <style id="three-portfolios-theme">
 :root {
   --three-theme-color: #105D4A;
