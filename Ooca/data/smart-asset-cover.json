@@ -1,0 +1,257 @@
+{
+  "heading": {
+    "en": "From master data to a site-ready asset",
+    "th": "จาก Master Data สู่ทรัพย์สินที่พร้อมใช้งานในไซต์"
+  },
+  "headingLines": {
+    "en": [
+      "From master data",
+      "to a site-ready asset"
+    ],
+    "th": [
+      "จาก Master Data",
+      "สู่ทรัพย์สินที่",
+      "พร้อมใช้งานในไซต์"
+    ]
+  },
+  "mobileHeadingLines": {
+    "en": [
+      "From master data",
+      "to a site-ready asset"
+    ],
+    "th": [
+      "จาก Master Data",
+      "สู่ทรัพย์สินที่",
+      "พร้อมใช้งาน",
+      "ในไซต์"
+    ]
+  },
+  "description": {
+    "en": "Category rules shape reusable SKU metadata. Each physical asset then receives its own identity, QR code, status, and site context.",
+    "th": "กติกาของ Category กำหนด metadata ที่ใช้ซ้ำใน SKU ก่อนที่ทรัพย์สินจริงแต่ละชิ้นจะได้รับ identity, QR, สถานะ และบริบทของไซต์"
+  },
+  "lanes": {
+    "master": {
+      "en": "Master data",
+      "th": "ข้อมูลตั้งต้น"
+    },
+    "operations": {
+      "en": "Site operations",
+      "th": "การทำงานที่ไซต์"
+    }
+  },
+  "nodes": [
+    {
+      "id": "category",
+      "stage": 1,
+      "mobilePriority": true,
+      "title": {
+        "en": "Define category",
+        "th": "กำหนด Category"
+      },
+      "description": {
+        "en": "Set the shared product structure.",
+        "th": "กำหนดโครงสร้างร่วมของสินค้า"
+      },
+      "media": {
+        "src": "assets/images/smart-asset-cover-flow/category.webp",
+        "width": 1455,
+        "height": 1267,
+        "alt": {
+          "en": "Product Category list defining Smart Asset product groups",
+          "th": "รายการ Product Category สำหรับกำหนดกลุ่มสินค้าใน Smart Asset"
+        }
+      }
+    },
+    {
+      "id": "category-rules",
+      "stage": 2,
+      "mobilePriority": false,
+      "title": {
+        "en": "Configure field rules",
+        "th": "จัดโครงข้อมูลเฉพาะ"
+      },
+      "description": {
+        "en": "Choose metadata required by the category.",
+        "th": "เลือก metadata ที่แต่ละ Category ต้องใช้"
+      },
+      "media": {
+        "src": "assets/images/smart-asset-cover-flow/category-rules.webp",
+        "width": 1327,
+        "height": 886,
+        "alt": {
+          "en": "Product group form configuring category-specific fields",
+          "th": "ฟอร์ม Product Group สำหรับกำหนดข้อมูลเฉพาะของ Category"
+        }
+      }
+    },
+    {
+      "id": "sku",
+      "stage": 3,
+      "mobilePriority": true,
+      "title": {
+        "en": "Create reusable SKU",
+        "th": "สร้าง SKU ที่ใช้ซ้ำ"
+      },
+      "description": {
+        "en": "Turn category rules into a reusable definition.",
+        "th": "เปลี่ยนกติกา Category เป็นแม่แบบที่นำกลับมาใช้ได้"
+      },
+      "media": {
+        "src": "assets/images/smart-asset-cover-flow/sku.webp",
+        "width": 1440,
+        "height": 735,
+        "alt": {
+          "en": "Smart Asset create SKU interface",
+          "th": "หน้าจอสร้าง SKU ใน Smart Asset"
+        }
+      }
+    },
+    {
+      "id": "sku-detail",
+      "stage": 3,
+      "mobilePriority": false,
+      "title": {
+        "en": "Carry metadata forward",
+        "th": "ส่งต่อ metadata"
+      },
+      "description": {
+        "en": "Reuse the definition across registered units.",
+        "th": "ใช้โครงเดียวกันกับทรัพย์สินที่ลงทะเบียนแต่ละชิ้น"
+      },
+      "media": {
+        "src": "assets/images/smart-asset-cover-flow/sku-detail.webp",
+        "width": 1440,
+        "height": 990,
+        "alt": {
+          "en": "SKU detail and registered inventory list",
+          "th": "รายละเอียด SKU และรายการทรัพย์สินที่ลงทะเบียน"
+        }
+      }
+    },
+    {
+      "id": "asset",
+      "stage": 4,
+      "mobilePriority": true,
+      "title": {
+        "en": "Register asset + QR",
+        "th": "ลงทะเบียน Asset + QR"
+      },
+      "description": {
+        "en": "Give each physical unit an identity.",
+        "th": "สร้าง identity ให้ทรัพย์สินจริงแต่ละชิ้น"
+      },
+      "media": {
+        "src": "assets/images/smart-asset-cover-flow/asset.webp",
+        "width": 1440,
+        "height": 1015,
+        "alt": {
+          "en": "Physical asset registration interface with QR identity",
+          "th": "หน้าจอลงทะเบียนทรัพย์สินจริงพร้อม QR identity"
+        }
+      }
+    },
+    {
+      "id": "site",
+      "stage": 5,
+      "mobilePriority": true,
+      "title": {
+        "en": "Place in site context",
+        "th": "ผูกเข้ากับ Site"
+      },
+      "description": {
+        "en": "Connect the asset to its operational owner and location.",
+        "th": "เชื่อมทรัพย์สินกับผู้รับผิดชอบและตำแหน่งใช้งาน"
+      },
+      "mobileTitle": {
+        "en": "Site + operational status",
+        "th": "Site + สถานะใช้งาน"
+      },
+      "mobileDescription": {
+        "en": "Keep ownership, location, status, and next action visible.",
+        "th": "แสดงเจ้าของ ตำแหน่ง สถานะ และสิ่งที่ต้องทำต่อในมุมมองเดียว"
+      },
+      "media": {
+        "src": "assets/images/smart-asset-cover-flow/site.webp",
+        "width": 1340,
+        "height": 843,
+        "alt": {
+          "en": "Site detail showing assigned Smart Asset records",
+          "th": "รายละเอียด Site พร้อมทรัพย์สินที่ได้รับมอบหมาย"
+        }
+      }
+    },
+    {
+      "id": "status",
+      "stage": 6,
+      "mobilePriority": false,
+      "title": {
+        "en": "Track operational status",
+        "th": "ติดตามสถานะใช้งาน"
+      },
+      "description": {
+        "en": "Keep the next action visible through the asset lifecycle.",
+        "th": "ทำให้สถานะและสิ่งที่ต้องทำต่อมองเห็นได้ตลอด lifecycle"
+      },
+      "media": {
+        "src": "assets/images/smart-asset-cover-flow/status.webp",
+        "width": 1360,
+        "height": 671,
+        "alt": {
+          "en": "Site asset list showing tracked items and assigned owners",
+          "th": "รายการทรัพย์สินในไซต์พร้อมรายการติดตามและผู้รับผิดชอบ"
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "category",
+      "to": "category-rules",
+      "label": {
+        "en": "defines fields",
+        "th": "กำหนดฟิลด์"
+      }
+    },
+    {
+      "from": "category-rules",
+      "to": "sku",
+      "label": {
+        "en": "maps metadata",
+        "th": "วาง metadata"
+      }
+    },
+    {
+      "from": "sku",
+      "to": "sku-detail",
+      "label": {
+        "en": "reuses structure",
+        "th": "ใช้โครงร่วม"
+      }
+    },
+    {
+      "from": "sku-detail",
+      "to": "asset",
+      "label": {
+        "en": "registers identity",
+        "th": "สร้าง identity"
+      }
+    },
+    {
+      "from": "asset",
+      "to": "site",
+      "label": {
+        "en": "assigns to site",
+        "th": "ผูกเข้ากับไซต์"
+      }
+    },
+    {
+      "from": "site",
+      "to": "status",
+      "label": {
+        "en": "tracks state",
+        "th": "ติดตามสถานะ"
+      }
+    }
+  ]
+}

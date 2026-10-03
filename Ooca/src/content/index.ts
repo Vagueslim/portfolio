@@ -30,6 +30,7 @@ export function getProject(id: string): Project {
 // Validate references before rendering rather than silently displaying broken images.
 getMedia(home.foil.backgroundMediaId);
 getMedia(home.smart.iconMediaId);
+getMedia(home.wcf.iconMediaId);
 home.foil.lines.forEach(line => getProject(line.projectId));
 Object.values(projects).forEach(project => getMedia(project.coverMediaId));
 for (const item of [...home.selected.items, home.wcf, home.smart]) {

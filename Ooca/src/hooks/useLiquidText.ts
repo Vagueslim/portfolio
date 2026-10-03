@@ -29,10 +29,11 @@ export function useLiquidText() {
       const elapsed = stamp - lastFrame;
       if (elapsed >= 32) {
         const dt = Math.min(elapsed, 70) / 1000;
-        phase += dt; lastFrame = stamp;
+        phase += dt * (1 + hoverLevel * .65); lastFrame = stamp;
         hoverLevel += (hoverTarget.current - hoverLevel) * (1 - Math.exp(-dt * 5));
-        noise.setAttribute('baseFrequency', `${(0.012 + Math.sin(phase * .72) * .004).toFixed(5)} ${(0.038 + Math.cos(phase * .48) * .012).toFixed(5)}`);
-        warp.setAttribute('scale', (fontSize * (.15 + hoverLevel * .13)).toFixed(2));
+        // Scale the veins with the font, so the marble stays visible on mobile.
+        noise.setAttribute('baseFrequency', `${((.42 + Math.sin(phase * .24) * .09) / fontSize).toFixed(5)} ${((.64 + Math.cos(phase * .19) * .14) / fontSize).toFixed(5)}`);
+        warp.setAttribute('scale', (fontSize * (.2 + hoverLevel * .22)).toFixed(2));
       }
       frameId = requestAnimationFrame(tick);
     };

@@ -21,24 +21,10 @@
 .ink-link{font-weight:800;letter-spacing:0;text-decoration:none;color:var(--link-ink);position:relative;padding-block:.1em;border-bottom:2px solid #b6bdc7;outline-offset:5px;transition:border-color .25s}
 .ink-link:hover,.ink-link:focus-visible{border-color:#556c8b}
 .ink-link:focus-visible{outline:2px solid var(--link-ink)}
-.liquid-ink{display:inline-block;white-space:nowrap;line-height:inherit;font-weight:inherit;color:var(--link-ink);vertical-align:baseline}
+.liquid-ink{display:inline-block;white-space:nowrap;line-height:inherit;font-weight:inherit;color:var(--marble-ink);vertical-align:baseline;filter:url(#liquid-text)}
 .liquid-filters{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}
-@supports ((background-clip:text) or (-webkit-background-clip:text)){
-  .liquid-ink{
-background-image:radial-gradient(ellipse at 15% 30%,#c1ad83 0%,transparent 47%),radial-gradient(ellipse at 75% 60%,#97aa9c 0%,transparent 44%),linear-gradient(110deg,#d4cfc7 0%,#ad9d89 25%,#d7d8d4 55%,#9caabc 80%,#d4cfc7 100%);
-background-size:240% 180%,200% 200%,220% 100%;
-background-position:0% 30%,100% 60%,0% 50%;
--webkit-background-clip:text;background-clip:text;color:transparent;
-mix-blend-mode:difference;filter:url(#liquid-text);
-animation:liquid-color-flow 9s ease-in-out infinite;
-  }
-}
-@keyframes liquid-color-flow{
-  0%,100%{background-position:0% 30%,100% 60%,0% 50%}
-  50%{background-position:100% 70%,0% 30%,100% 50%}
-}
-.motion-paused .liquid-ink{animation-play-state:paused}
-@media(prefers-reduced-motion:reduce){.liquid-ink{animation:none!important;filter:none;background:none;color:var(--link-ink);mix-blend-mode:normal}}
+/* All marble movement belongs to useLiquidText's single, visibility-aware loop. */
+@media(prefers-reduced-motion:reduce){.liquid-ink{filter:none;color:var(--marble-ink)}}
 
 .paper-foot{position:absolute;left:clamp(24px,4.5vw,72px);right:clamp(24px,4.5vw,72px);bottom:33px;display:flex;justify-content:space-between;align-items:center;gap:18px;font-size:13px;line-height:1.7;color:#393d44}
 .destination{font-weight:700;white-space:nowrap}

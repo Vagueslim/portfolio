@@ -23,6 +23,12 @@ function append(parent: Element, html: string) {
 export function localizePage(source: string, page: string, locale: Language, isHome = false) {
   const dictionary = JSON.parse(readFileSync('data/locales/en.json', 'utf8')) as Record<string, string>;
   const doc = parse(source, { scriptingEnabled: false });
+  // Editorial line breaks can differ by language. Keep only the matching variant
+  // before translating text so hidden duplicates never reach the output page.
+  visit(doc, node => {
+    if ('childNodes' in node) node.childNodes = node.childNodes.filter(child =>
+      !('tagName' in child) || !attr(child, 'data-language-only') || attr(child, 'data-language-only') === locale);
+  });
   const nodes: Node[] = [];
   visit(doc, node => nodes.push(node));
   const elements = nodes.filter((node): node is Element => 'tagName' in node);
@@ -64,7 +70,7 @@ export function localizePage(source: string, page: string, locale: Language, isH
   }
   // Assets are shared at the root; page links stay within the selected language.
   if (locale === 'th') visit(doc, node => {
-    if ('attrs' in node) for (const a of node.attrs) if (['href', 'src', 'data-image'].includes(a.name) && /^(?:\.\/)?(?:assets|home-assets)\//.test(a.value)) a.value = '../' + a.value.replace(/^\.\//, '');
+    if ('attrs' in node) for (const a of node.attrs) if (['href', 'src', 'data-image', 'data-flow-image'].includes(a.name) && /^(?:\.\/)?(?:assets|home-assets)\//.test(a.value)) a.value = '../' + a.value.replace(/^\.\//, '');
   });
   return serialize(doc);
 }

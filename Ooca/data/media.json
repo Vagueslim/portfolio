@@ -66,5 +66,23 @@
     "alt": "ภาพประกอบ Q-CHANG Change Date: วิเคราะห์คำขอเปลี่ยนวันนัด 3,999 รายการ ผ่านเจ้าหน้าที่ 3,545 รายการ และลูกค้าทำเอง 454 รายการ แสดงการประสานงานของลูกค้า ทีมงาน และช่าง เป็นข้อมูลที่ศึกษา ไม่ใช่ผลลัพธ์หลังออกแบบ",
     "width": 1672,
     "height": 941
+  },
+  "wcf-workflow": {
+    "src": "assets/images/wcf-workflow.webp",
+    "alt": "ภาพ Flow งาน WCF เชื่อมหน้าจอใบแจ้งหนี้ หมวดค่ารักษา และการตรวจข้อมูล",
+    "width": 2600,
+    "height": 1997
+  },
+  "wcf-notice-list": {
+    "src": "assets/images/wcf-notice-list.png",
+    "alt": "หน้าจอ WCF สำหรับค้นหาและแสดงรายการออกหนังสือ",
+    "width": 1976,
+    "height": 2229
+  },
+  "wcf-worker-illustration": {
+    "src": "assets/images/wcf-worker-illustration.webp",
+    "alt": "",
+    "width": 360,
+    "height": 270
   }
 }

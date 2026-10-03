@@ -9,12 +9,16 @@
   --active: #263c60;
   --accent: #eef0f4;
   --link-ink: #3e527c;
+  --marble-ink: #101522;
   --foil-surface: #d2d3d5;
   --editorial-ink: #181918;
   --editorial-line: #cccac2;
   --editorial-muted: #62625e;
   --panel-border: #deded9;
   --wcf-surface: #f2f5f2;
+  --wcf-badge: #060d2a;
+  --wcf-layout-gap: clamp(24px, 3vw, 48px);
+  --wcf-headline-size: clamp(32px, 4vw, 64px);
   --asset-surface: #eef0f3;
   --web-surface: #e3e7eb;
   --buddy-surface: #e1e9e3;
