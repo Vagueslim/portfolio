@@ -6,10 +6,10 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--surface-page);color:var(--ink);font-family:var(--ui);line-height:1.7}a{color:inherit}button{font:inherit;color:inherit;cursor:pointer}button,a{touch-action:manipulation;-webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-visible{outline:3px solid var(--active);outline-offset:5px}::selection{background:#e0d6ed}
 .masthead{padding:4px var(--gutter) 18px;background:var(--surface-page);container-type:inline-size}
 .topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:70px}
-.brand{position:relative;isolation:isolate;display:block;width:52px;flex:none;text-decoration:none;font-weight:800;font-size:42px;line-height:1.6;padding-left:8px}
-.brand::before,.brand::after{content:'';position:absolute;border:1px solid #e1e1e1;border-radius:50%;z-index:-1;width:24px;height:24px;top:7px;left:1px}.brand::after{width:18px;height:18px;left:23px;top:31px}
+.brand{display:block;width:52px;flex:none;text-decoration:none;padding:0;line-height:1} .brand-logo{display:block;width:52px;height:62px;object-fit:contain}
+
 .nav{display:flex;align-items:center;gap:clamp(12px,1.5vw,26px);font-size:clamp(18px,3.2vw,44px);font-weight:800;line-height:1.6;white-space:nowrap}
-.nav a{display:inline-block;text-decoration:none;min-height:44px}.nav a:last-of-type{text-decoration:underline;text-underline-offset:.14em;text-decoration-thickness:2px}.nav a:hover{text-decoration:underline;text-underline-offset:.14em}
+.nav a{display:inline-block;text-decoration:none;min-height:44px}.nav > .project-nav-link{text-decoration:underline;text-underline-offset:.14em;text-decoration-thickness:2px}.nav a:hover{text-decoration:underline;text-underline-offset:.14em}
 .nav .slash{font-weight:700}
 /* Size is based on the header content width so the name fits even beside a scrollbar. */
 .masthead-title{margin:0;font-family:var(--display);font-size:var(--masthead-size);font-weight:400;line-height:1.08;letter-spacing:.012em;white-space:nowrap;text-transform:uppercase}

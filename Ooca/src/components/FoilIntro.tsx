@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { getMedia, getProject, home } from '../content';
 import { useLiquidText } from '../hooks/useLiquidText';
+import { t } from '../content/localization';
 
 export function FoilIntro() {
   const { foil } = home;
@@ -22,7 +23,7 @@ export function FoilIntro() {
         {foil.lines.map(line => <p key={line.projectId}>
           <span className="project-thought">{line.thought}</span>{' '}
           <span className="project-reference"><span className="project-separator" aria-hidden="true">/</span>{' '}
-            <a className="ink-link" href={getProject(line.projectId).href} aria-label={`${line.label} — อ่านเคส`}
+            <a className="ink-link" href={getProject(line.projectId).href} aria-label={`${line.label} — ${t('อ่านเคส')}`}
               onPointerEnter={() => setHovered(line.destination)} onPointerLeave={() => setHovered(null)}
               onFocus={() => setFocused(line.destination)} onBlur={() => setFocused(null)}>
               <span className="liquid-ink" aria-hidden="true">{line.label}</span>

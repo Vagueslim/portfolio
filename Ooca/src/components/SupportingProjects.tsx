@@ -2,6 +2,7 @@ import { getProject, home } from '../content';
 import { resolveHomeVisual } from '../content/visuals';
 import { EditorialLink, Lines, MediaImage, SectionLabels } from './Shared';
 import { ProjectVisual } from './ProjectVisual';
+import { t } from '../content/localization';
 
 export function WcfProject() {
   const { wcf } = home;
@@ -11,7 +12,7 @@ export function WcfProject() {
     <SectionLabels labels={wcf.labels} />
     <div className="editorial-backup-panel">
       <div className="editorial-backup-copy"><p className="editorial-kicker">{wcf.kicker}</p><h2 id="backup-heading"><Lines text={wcf.title} /></h2><p>{wcf.description}</p><EditorialLink href={project.href} label={wcf.linkLabel} /></div>
-      <a className={`editorial-backup-image visual-kind-${visual.kind}`} href={project.href} aria-label={`อ่านเคส ${project.title}`}><ProjectVisual visual={visual} /></a>
+      <a className={`editorial-backup-image visual-kind-${visual.kind}`} href={project.href} aria-label={`${t('อ่านเคส')} ${project.title}`}><ProjectVisual visual={visual} /></a>
     </div>
   </section>;
 }
@@ -23,7 +24,7 @@ export function SmartAssetProject() {
   return <section className="smart-project editorial-wrap" id="smart-asset" aria-labelledby="smart-heading">
     <SectionLabels labels={smart.labels} />
     <div className="smart-panel">
-      <a className={`smart-stage visual-kind-${visual.kind}`} href={project.href} aria-label={`อ่านเคส ${project.title}`}><ProjectVisual visual={visual} /></a>
+      <a className={`smart-stage visual-kind-${visual.kind}`} href={project.href} aria-label={`${t('อ่านเคส')} ${project.title}`}><ProjectVisual visual={visual} /></a>
       <div className="smart-copy">
         <p className="smart-label" lang="en"><span>{smart.chip}</span> {smart.label}</p>
         <h2 id="smart-heading" lang="en"><span className="smart-title-line"><MediaImage id={smart.iconMediaId} /><span>{smart.title}</span></span><span className="smart-subtitle">{smart.subtitle}</span></h2>

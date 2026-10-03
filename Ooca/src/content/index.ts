@@ -3,20 +3,23 @@ import projectsJson from '../../data/projects.json' with { type: 'json' };
 import mediaJson from '../../data/media.json' with { type: 'json' };
 import type { HomeContent, MediaItem, Project } from './types';
 import { parseVisual, resolveHomeVisual, visualMediaIds } from './visuals.ts';
+import { language, translateContent, assetPath } from './localization.ts';
 
-export const media: Record<string, MediaItem> = mediaJson;
+export const media: Record<string, MediaItem> = translateContent(mediaJson, language);
 export const projects: Record<string, Project> = projectsJson;
-export const home: HomeContent = {
+const rawHome: HomeContent = {
   ...homeJson,
   selected: { ...homeJson.selected, items: homeJson.selected.items.map(item => ({ ...item, visual: parseVisual('visual' in item ? item.visual : undefined) })) },
   wcf: { ...homeJson.wcf, visual: parseVisual('visual' in homeJson.wcf ? homeJson.wcf.visual : undefined) },
   smart: { ...homeJson.smart, visual: parseVisual('visual' in homeJson.smart ? homeJson.smart.visual : undefined) },
 };
+export const home: HomeContent = translateContent(rawHome, language);
+export const getLocalizedHome = (locale: 'en' | 'th') => translateContent(rawHome, locale);
 
 export function getMedia(id: string): MediaItem {
   const item = media[id];
   if (!item) throw new Error(`Unknown media ID "${id}". Check data/media.json.`);
-  return item;
+  return { ...item, src: assetPath(item.src) };
 }
 export function getProject(id: string): Project {
   const project = projects[id];

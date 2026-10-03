@@ -2,6 +2,7 @@ import { getProject, home } from '../content';
 import { resolveHomeVisual } from '../content/visuals';
 import { EditorialLink, Lines } from './Shared';
 import { ProjectVisual, visualClass } from './ProjectVisual';
+import { t } from '../content/localization';
 
 export function EditorialIntro() {
   const { intro } = home;
@@ -21,8 +22,8 @@ export function SelectedWork() {
       return <article className="editorial-project" key={item.projectId} data-project={item.projectId}>
         <div className="editorial-meta"><p>{item.metaTitle}</p><p>{item.metaType}</p></div>
         <div className="editorial-project-grid">
-          <a className={`editorial-visual ${visualClass(visual)}`} href={project.href} aria-label={`อ่านเคส ${project.title}`}><ProjectVisual visual={visual} /></a>
-          <div className="editorial-project-copy"><p className="editorial-kicker">{item.kicker}</p><h3><Lines text={item.title} /></h3><p className="project-description">{item.description}</p><p className="project-role"><Lines text={item.role} /></p><EditorialLink href={project.href} label={item.linkLabel} ariaLabel={`อ่านเรื่อง ${project.title}`} /></div>
+          <a className={`editorial-visual ${visualClass(visual)}`} href={project.href} aria-label={`${t('อ่านเคส')} ${project.title}`}><ProjectVisual visual={visual} /></a>
+          <div className="editorial-project-copy"><p className="editorial-kicker">{item.kicker}</p><h3><Lines text={item.title} /></h3><p className="project-description">{item.description}</p><p className="project-role"><Lines text={item.role} /></p><EditorialLink href={project.href} label={item.linkLabel} ariaLabel={`${t('อ่านเรื่อง')} ${project.title}`} /></div>
         </div>
       </article>;
     })}

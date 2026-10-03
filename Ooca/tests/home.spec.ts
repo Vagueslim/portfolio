@@ -13,7 +13,7 @@ for (const width of [320, 390, 552, 768, 1440]) {
     page.on('response', response => { if (response.status() >= 400) errors.push(`${response.status()} ${response.url()}`); });
     await page.setViewportSize({ width, height: 900 });
     await page.emulateMedia({ reducedMotion: 'reduce' });
-    await page.goto('/');
+    await page.goto('/th/');
     await page.evaluate(async () => {
       await document.fonts.ready;
       await Promise.all([...document.images].map(async image => { image.loading = 'eager'; await image.decode(); }));
@@ -26,7 +26,11 @@ for (const width of [320, 390, 552, 768, 1440]) {
       const locator = page.locator(section.selector);
       const after = (await locator.boundingBox())!;
       comparisons.push({ selector: section.selector, before: section, after });
-      expect((await locator.innerText()).replace(/\s+/g, ' ').trim()).toBe(section.text.replace(/\s+/g, ' ').trim());
+      if (section.selector === '.masthead') {
+        await expect(locator.locator('.nav a')).toHaveText(['Home', 'About', 'Project', 'EN', 'TH']);
+      } else {
+        expect((await locator.innerText()).replace(/\s+/g, ' ').trim()).toBe(section.text.replace(/\s+/g, ' ').trim());
+      }
       for (const dimension of ['x', 'y', 'width', 'height'] as const) expect(Math.abs(after[dimension] - section[dimension]), `${section.selector} ${dimension}`).toBeLessThanOrEqual(1);
     }
     await page.screenshot({ path: `qa/react-home/after-${width}.png`, fullPage: true });
@@ -105,7 +109,8 @@ test('Liquid animation runs, pauses, respects motion preferences and scales on h
 test('Legacy pages keep their files, images and interactions', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   for (const file of ['about.html', 'project.html', ...Object.values(projects).map(project => project.href)]) {
-    expect(readFileSync(`dist/${file}`, 'utf8')).toBe(readFileSync(file, 'utf8'));
+    expect(readFileSync(`dist/${file}`, 'utf8')).toContain('lang="en"');
+    expect(readFileSync(`dist/th/${file}`, 'utf8')).toContain('lang="th"');
     const response = await page.goto(`/${file}`);
     expect(response?.status()).toBe(200);
     await page.evaluate(async () => { await Promise.all([...document.querySelectorAll<HTMLImageElement>('img[src]')].map(async image => { image.loading = 'eager'; await image.decode(); })); });

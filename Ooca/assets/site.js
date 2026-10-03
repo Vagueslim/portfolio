@@ -9,7 +9,7 @@ const projects=[...document.querySelectorAll('[data-category]')];
 filters.forEach(button=>button.addEventListener('click',()=>{
  filters.forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
  let count=0;projects.forEach(card=>{const visible=button.dataset.filter==='all'||card.dataset.category===button.dataset.filter;card.hidden=!visible;if(visible)count++;});
- const status=document.querySelector('.filter-count');if(status)status.textContent=`แสดง ${count} ผลงาน`;
+ const status=document.querySelector('.filter-count');if(status)status.textContent=document.documentElement.lang==='en'?`Showing ${count} projects`:`แสดง ${count} ผลงาน`;
 }));
 const dialog=document.querySelector('.dialog');let imageTrigger;
 document.querySelectorAll('[data-image]').forEach(button=>button.addEventListener('click',()=>{
