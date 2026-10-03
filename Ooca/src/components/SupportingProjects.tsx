@@ -1,6 +1,6 @@
 import { getProject, home } from '../content';
 import { resolveHomeVisual } from '../content/visuals';
-import { EditorialLink, Lines, MediaImage, SectionLabels } from './Shared';
+import { EditorialLink, MediaImage, SectionLabels } from './Shared';
 import { ProjectVisual } from './ProjectVisual';
 import { t } from '../content/localization';
 
@@ -8,11 +8,20 @@ export function WcfProject() {
   const { wcf } = home;
   const project = getProject(wcf.projectId);
   const visual = resolveHomeVisual(project, wcf.visual);
-  return <section className="editorial-backup editorial-wrap" aria-labelledby="backup-heading">
+  const [headline, ...supportingLines] = wcf.title.split('\n');
+  return <section className="editorial-backup editorial-wrap" id="wcf" aria-labelledby="backup-heading">
     <SectionLabels labels={wcf.labels} />
-    <div className="editorial-backup-panel">
-      <div className="editorial-backup-copy"><p className="editorial-kicker">{wcf.kicker}</p><h2 id="backup-heading"><Lines text={wcf.title} /></h2><p>{wcf.description}</p><EditorialLink href={project.href} label={wcf.linkLabel} /></div>
-      <a className={`editorial-backup-image visual-kind-${visual.kind}`} href={project.href} aria-label={`${t('อ่านเคส')} ${project.title}`}><ProjectVisual visual={visual} /></a>
+    <div className="wcf-panel">
+      <div className="wcf-copy">
+        <p className="wcf-label"><span>{wcf.kicker}</span>{wcf.descriptor}</p>
+        <h2 id="backup-heading">
+          <span className="wcf-title-line"><MediaImage id={wcf.iconMediaId} /><span>{headline}</span></span>
+          <span className="wcf-subtitle">{supportingLines.join(' ')}</span>
+        </h2>
+        <p className="wcf-description">{wcf.description}</p>
+        <EditorialLink href={project.href} label={wcf.linkLabel} />
+      </div>
+      <a className={`wcf-stage visual-kind-${visual.kind}`} href={project.href} aria-label={`${t('อ่านเคส')} ${project.title}`}><ProjectVisual visual={visual} /></a>
     </div>
   </section>;
 }

@@ -1,0 +1,60 @@
+{
+  "label": "ภาคผนวก",
+  "title": "หลักฐานการเข้าใจ flow ของระบบ",
+  "intro": "บันทึกแบบกระชับว่างานขยายจากการตัดสินใจบนหน้าจอไปสู่ขั้นตอนปฏิบัติการอย่างไร กดแต่ละภาพเพื่อดู activity diagram ฉบับเต็ม",
+  "open": "เปิดแผนภาพเต็ม",
+  "close": "ปิดแผนภาพ",
+  "original": "เปิดภาพความละเอียดต้นฉบับ",
+  "error": "โหลดภาพไม่สำเร็จ เปิดภาพต้นฉบับเพื่อลองอีกครั้ง",
+  "loading": "กำลังโหลดแผนภาพ…",
+  "items": [
+    {
+      "src": "assets/images/smart-asset-evidence/flow-order-to-invoice.png",
+      "width": 8400,
+      "height": 1280,
+      "title": "ภาพรวม Order-to-Invoice",
+      "description": "ภาพรวมสถานะตั้งแต่คำขอและใบเสนอราคา ไปจนถึงการส่งมอบ การคืน และการวางบิล",
+      "alt": "แผนภาพกิจกรรม ภาพรวม Order-to-Invoice"
+    },
+    {
+      "src": "assets/images/smart-asset-evidence/flow-01-request-to-order.png",
+      "width": 1784,
+      "height": 1736,
+      "title": "จากคำขอสู่ออเดอร์",
+      "description": "เปลี่ยนความต้องการเช่าเป็นใบเสนอราคาที่มีเวอร์ชัน การตัดสินใจของลูกค้า และออเดอร์ที่ยืนยันแล้ว",
+      "alt": "แผนภาพกิจกรรม จากคำขอสู่ออเดอร์"
+    },
+    {
+      "src": "assets/images/smart-asset-evidence/flow-02-reservation-to-delivery.png",
+      "width": 1784,
+      "height": 1763,
+      "title": "จากการจองสู่การส่งมอบ",
+      "description": "แยกการจอง การเตรียมของ รอบส่ง และการเคลื่อนย้ายทรัพย์สินหรือ lot จริงออกจากกัน",
+      "alt": "แผนภาพกิจกรรม จากการจองสู่การส่งมอบ"
+    },
+    {
+      "src": "assets/images/smart-asset-evidence/flow-03-site-receiving.png",
+      "width": 1784,
+      "height": 1673,
+      "title": "การรับของที่ไซต์",
+      "description": "ใช้ QR ของการส่งและ QR ถาวรของทรัพย์สินเพื่อบันทึกผลรับจริงและกรณียกเว้นที่ต้นทาง",
+      "alt": "แผนภาพกิจกรรม การรับของที่ไซต์"
+    },
+    {
+      "src": "assets/images/smart-asset-evidence/flow-04-use-and-extension.png",
+      "width": 1784,
+      "height": 1513,
+      "title": "การใช้งานและต่อระยะเวลา",
+      "description": "แยกสถานะทรัพย์สินออกจากการเตือนกำหนดคืนและการต่อระยะเวลาเช่าแบบ manual",
+      "alt": "แผนภาพกิจกรรม การใช้งานและต่อระยะเวลา"
+    },
+    {
+      "src": "assets/images/smart-asset-evidence/flow-05-return-intake-and-close.png",
+      "width": 1784,
+      "height": 1718,
+      "title": "การรับคืนและปิดงาน",
+      "description": "รองรับการคืนบางส่วน หลักฐาน การตรวจสภาพ การพักทรัพย์สิน และการปิดงานเชิงบริหาร",
+      "alt": "แผนภาพกิจกรรม การรับคืนและปิดงาน"
+    }
+  ]
+}

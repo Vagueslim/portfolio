@@ -68,6 +68,8 @@ npm.cmd test
 
 ลบ `visual` หรือกำหนดเป็น `null` เมื่อต้องการใช้ `coverMediaId` จากข้อมูลโปรเจกต์แทน
 
+ส่วน WCF บน Home ใช้ `wcf.visual.kind = "collage"`: `mediaIds[0]` เป็นภาพ Flow และ `mediaIds[1]` เป็นหน้าจอซ้อนมุมขวาบน ส่วนภาพเล็กข้างหัวเรื่องกำหนดที่ `wcf.iconMediaId` ตัวอักษรและตำแหน่งภาพยังแก้แยกกันได้ ไม่มีข้อความฝังเป็นภาพ
+
 รูปแบบที่รองรับ:
 
 - `single`: `mediaId` หนึ่งภาพ
@@ -96,12 +98,15 @@ npm.cmd test
 - ถ้าแก้แหล่งข้อมูลเหล่านี้ ให้รัน `python scripts/build.py` ก่อน `npm.cmd run build`
 - ตัวสร้าง Python เขียนเฉพาะ 7 หน้าเดิม ไม่เขียนทับ `index.html` ของ React
 - `assets/site.css` และ `assets/site.js` ดูแลหน้าเดิม ส่วน Home ใช้ CSS ใน `src/styles/`
+- Section ที่ 2 ของ Smart Asset เป็น System Flow Cover จาก `ProfiletoCoda/work/smart-asset-sa-ai/` ใช้ `data/smart-asset-cover.json` + `scripts/smart_asset_cover.py` และ `assets/smart-asset-cover.css` / `.js` แสดง 7 หน้าจอบนเดสก์ท็อปและ 4 ขั้นหลักบนมือถือ พร้อมเส้นเชื่อมที่ปรับตามขนาดจริงของแต่ละหน้าจอ
+- ส่วน Appendix / System flow evidence ของ Smart Asset ใช้ `data/smart-asset-evidence.json` กับ `scripts/smart_asset_evidence.py` และคำแปลใน `data/locales/en.json` รัน `python scripts/build.py` หลังแก้ข้อมูลเพื่อสร้าง HTML ใหม่
+- ไดอะแกรมทั้ง 6 นำมาจากส่วน Appendix ของ `portfoliothree/work/smart-asset-sa-ai/` โดยคัดลอกไฟล์ใน `portfoliothree/src/assets/images/work/smart-asset-sa-ai/` ตามลำดับเดิม เก็บภาพเต็มไว้ที่ `assets/images/smart-asset-evidence/`; รูปแบบและตัวเปิดภาพอยู่ใน `assets/smart-asset-evidence.css` และ `.js`
 - `text-intro-examples.html` และ `assets/portfolio-editorial.css` เป็นหน้าฟอยล์ต้นฉบับพร้อมตัวเลือกข้อความทดลอง ไม่ใช่ไฟล์ต้นทางของ React และไม่ถูกคัดลอกเป็นหน้าสาธารณะใน `dist`
 - สำเนาก่อนย้าย React และเอกสารร่างยังเก็บอยู่ในโฟลเดอร์งานต้นฉบับบนเครื่อง ไม่ได้รวมไว้ใน repository นี้
 
 ## หลักฐานตรวจรับ
 
-ชุดตรวจปัจจุบันมี 20 ข้อ ครอบคลุมขนาด 320, 390, 552, 768, 1440px รวมภาพ Change Date และ WCF ล่าสุด ตรวจ EN/TH ทุกหน้า การสลับภาษาด้วยคีย์บอร์ด เส้นทาง dev/production และ favicon ตามโหมดสี
+ชุดตรวจปัจจุบันมี 22 ข้อ ครอบคลุมขนาด 320, 390, 552, 768, 1440px รวมภาพ Change Date และ WCF ล่าสุด ตรวจ EN/TH ทุกหน้า การสลับภาษาด้วยคีย์บอร์ด เส้นทาง dev/production และ favicon ตามโหมดสี รวมถึงไดอะแกรม Smart Asset ทั้ง 6 และการเปิด–ปิดภาพด้วยคีย์บอร์ด
 
 `npm.cmd test` ตรวจ layout กับ baseline เดิม, ข้อความ, ลิงก์, ภาพ, keyboard, accordion, reduced motion, การหยุดเอฟเฟกต์, StrictMode/cleanup และหน้า legacy หากตั้งใจปรับดีไซน์หรือข้อความในอนาคต ให้รีวิวและปรับ baseline ด้วย; การทดสอบชุดนี้ตั้งใจจับความเปลี่ยนแปลงจากหน้าฟอยล์ที่อนุมัติ
 

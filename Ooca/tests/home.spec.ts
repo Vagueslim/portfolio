@@ -42,7 +42,7 @@ for (const width of [320, 390, 552, 768, 1440]) {
 
 test('Home image override, cover fallback and shared media IDs', async () => {
   const wcf = projects['wcf-digital'];
-  expect(resolveHomeVisual(wcf, home.wcf.visual)).toEqual({ kind: 'single', mediaId: 'wcf-cover' });
+  expect(resolveHomeVisual(wcf, home.wcf.visual)).toEqual({ kind: 'collage', mediaIds: ['wcf-workflow', 'wcf-notice-list'] });
   expect(resolveHomeVisual(wcf)).toEqual({ kind: 'single', mediaId: 'wcf-cover' });
   expect(resolveHomeVisual({ ...wcf, coverMediaId: 'replacement' })).toEqual({ kind: 'single', mediaId: 'replacement' });
   expect(resolveHomeVisual({ ...wcf, coverMediaId: 'replacement' }, home.wcf.visual)).toEqual(home.wcf.visual);

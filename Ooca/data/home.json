@@ -125,14 +125,19 @@
       "อีกมุมของงาน / INTERNAL SYSTEMS",
       "04 / WCF DIGITAL"
     ],
-    "kicker": "WCF DIGITAL",
+    "kicker": "WCF Digital",
     "title": "ให้กฎ ข้อมูล\nและข้อยกเว้น\nทำงานร่วมกัน",
     "description": "ออกแบบงานภายใน ตั้งแต่ใบแจ้งหนี้ถึงการตรวจเอกสารและหมวดค่ารักษา โดยเชื่อมความต้องการของเจ้าหน้าที่กับการทำงานของระบบ",
     "linkLabel": "ดูงานระบบภายใน",
     "visual": {
-      "kind": "single",
-      "mediaId": "wcf-cover"
-    }
+      "kind": "collage",
+      "mediaIds": [
+        "wcf-workflow",
+        "wcf-notice-list"
+      ]
+    },
+    "descriptor": "กระบวนการเงินทดแทน",
+    "iconMediaId": "wcf-worker-illustration"
   },
   "smart": {
     "projectId": "smart-asset",

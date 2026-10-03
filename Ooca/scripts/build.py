@@ -1,6 +1,8 @@
 from pathlib import Path
 from html import escape as e
 from about_page import render_about
+from smart_asset_evidence import render_flow_evidence
+from smart_asset_cover import render_cover_flow
 
 ROOT = Path(__file__).resolve().parents[1]
 IMAGE = 'assets/images/'
@@ -177,9 +179,9 @@ def nav(active):
 def footer():
     return f'''<footer class="contact"><div class="wrap"><div class="contact-inner"><div><p class="eyebrow">LET'S TALK ABOUT THE WORK</p><h2>A good conversation.<br>A clearer next step.</h2></div><div><p class="thai">ถ้ามีโจทย์ที่อยากทำความเข้าใจร่วมกัน<br>เริ่มจากคุยเรื่องคน งาน และข้อจำกัดที่เจอได้เลย</p><div class="contact-actions"><a class="button" href="mailto:{EMAIL}">คุยเรื่องงาน <span aria-hidden="true">↗</span></a><a class="text-link" href="{LINKEDIN}" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div></div><div class="footer-bottom"><span>© 2026 Dhittawat Thongkhum</span><span>PRODUCT DESIGN · BANGKOK</span><a href="#top">กลับด้านบน ↑</a></div></div></footer>'''
 
-def shell(title, description, content, active, dialog=False):
+def shell(title, description, content, active, dialog=False, extra_head=''):
     d='''<dialog class="dialog" aria-label="ภาพผลงานขนาดเต็ม"><button class="dialog-close" aria-label="ปิดภาพ">ปิด ×</button><figure><img alt=""><figcaption></figcaption></figure></dialog>''' if dialog else ''
-    return f'''<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="{e(description,quote=True)}"><meta name="theme-color" content="#ffffff"><title>{e(title)} — Dhittawat Thongkhum</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/site.css"><script src="assets/site.js" defer></script></head><body id="top">{nav(active)}<main id="main">{content}</main>{footer()}{d}</body></html>'''
+    return f'''<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="{e(description,quote=True)}"><meta name="theme-color" content="#ffffff"><title>{e(title)} — Dhittawat Thongkhum</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/site.css"><script src="assets/site.js" defer></script>{extra_head}</head><body id="top">{nav(active)}<main id="main">{content}</main>{footer()}{d}</body></html>'''
 
 def card(c):
     if c['visual']=='date': visual=date_map()
@@ -200,6 +202,8 @@ def about():
     return render_about(ROOT)
 
 def case_page(c):
+    appendix = '</div>' + render_flow_evidence() + '<div class="wrap">' if c['id'] == 'smart-asset' else ''
+    cover = '</div>' + render_cover_flow() + '<div class="wrap">' if c['id'] == 'smart-asset' else ''
     facts='<dl class="case-facts">'+''.join(f'<div><dt>{key}</dt><dd>{value}</dd></div>' for key,value in c['facts'])+'</dl>'
     if c['image']: hero=f'<div class="case-hero {c["visual"]}"><img src="{IMAGE+c["image"]}" alt="{e(c["caption"],quote=True)}"></div>'
     else: hero='<div class="visual-date" style="border-radius:12px">'+date_map()+'</div>'
@@ -208,12 +212,14 @@ def case_page(c):
     sources=''.join(f'<a href="{url}" target="_blank" rel="noopener noreferrer">{label} ↗</a>' for url,label in c['sources'])
     if sources: chapters+='<div class="source-links">'+sources+'</div>'
     next_c=CASES[(CASES.index(c)+1)%len(CASES)]
-    return f'''<div class="wrap"><section class="case-head"><div class="breadcrumb"><a href="project.html">Project</a><span aria-hidden="true">/</span><span>{c['title']}</span></div><p class="eyebrow">{c['number']} / {c['type']}</p><h1>{c['title']}</h1><p class="case-statement">{c['tagline']}</p><p class="case-intro thai">{c['summary']}</p>{facts}</section>{hero}<p class="caption" style="margin-top:13px">{c['caption']}</p><div class="case-layout">{toc}<div class="case-body">{chapters}</div></div><div class="next-case"><a href="{next_c['id']}.html"><div><p class="eyebrow">NEXT CASE / {next_c['type']}</p><h2>{next_c['title']}</h2></div><span class="next-arrow" aria-hidden="true">↗</span></a></div></div>'''
+    return f'''<div class="wrap"><section class="case-head"><div class="breadcrumb"><a href="project.html">Project</a><span aria-hidden="true">/</span><span>{c['title']}</span></div><p class="eyebrow">{c['number']} / {c['type']}</p><h1>{c['title']}</h1><p class="case-statement">{c['tagline']}</p><p class="case-intro thai">{c['summary']}</p>{facts}</section>{cover}{hero}<p class="caption" style="margin-top:13px">{c['caption']}</p><div class="case-layout">{toc}<div class="case-body">{chapters}</div></div>{appendix}<div class="next-case"><a href="{next_c['id']}.html"><div><p class="eyebrow">NEXT CASE / {next_c['type']}</p><h2>{next_c['title']}</h2></div><span class="next-arrow" aria-hidden="true">↗</span></a></div></div>'''
 
 def write(name, value): (ROOT/name).write_text(value,encoding='utf-8')
 
 # Home is owned by React/Vite. Keep index.html and the original foil exploration intact.
 write('project.html',shell('Project','ผลงานพร้อมเหตุผลและหลักฐาน: ประสบการณ์ลูกค้า แอปฝั่งช่าง การประสานบริการ และระบบภายใน',projects(),'project'))
 write('about.html',shell('About','รู้จัก Dhittawat Thongkhum และวิธีทำงาน Product / UX/UI Design กับคน ข้อมูล กฎ และ workflow',about(),'about'))
-for c in CASES: write(c['id']+'.html',shell(c['title'],c['summary'],case_page(c),'project',True))
+for c in CASES:
+    extra_head = '<link rel="stylesheet" href="assets/smart-asset-cover.css"><script src="assets/smart-asset-cover.js" defer></script><link rel="stylesheet" href="assets/smart-asset-evidence.css"><script src="assets/smart-asset-evidence.js" defer></script>' if c['id'] == 'smart-asset' else ''
+    write(c['id']+'.html',shell(c['title'],c['summary'],case_page(c),'project',True,extra_head))
 print(f'Built {2 + len(CASES)} legacy pages at', ROOT)

@@ -22,7 +22,7 @@ export interface HomeContent {
   foil: { label: string; backgroundMediaId: string; destination: string; lines: { thought: string; label: string; projectId: string; destination: string }[] };
   intro: { kicker: string; title: string; description: string; link: TextLink };
   selected: { title: string; link: TextLink; items: HomeProject[] };
-  wcf: { projectId: string; labels: string[]; kicker: string; title: string; description: string; linkLabel: string; visual?: HomeVisual };
+  wcf: { projectId: string; labels: string[]; kicker: string; descriptor: string; iconMediaId: string; title: string; description: string; linkLabel: string; visual?: HomeVisual };
   smart: { projectId: string; labels: string[]; chip: string; label: string; title: string; subtitle: string; iconMediaId: string; process: string; role: string; linkLabel: string; visual?: HomeVisual };
   approach: { kicker: string; title: string; description: string; link: TextLink; items: { id: string; title: string; answer: string; open: boolean }[] };
   contact: { kicker: string; title: string; description: string; link: TextLink };
