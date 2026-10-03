@@ -54,7 +54,8 @@ test('StrictMode and re-mounting keep one animation loop and clean up resources'
   });
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto('http://127.0.0.1:4176/tests/fixtures/lifecycle.html');
-  await expect(page.locator('[data-fallback] img')).toHaveAttribute('src', 'assets/images/smart-asset-cover.png');
+  // The Thai fixture shares assets with the root, like the /th/ pages.
+  await expect(page.locator('[data-fallback] img')).toHaveAttribute('src', '../assets/images/smart-asset-cover.png');
   expect(await page.locator('[data-fallback] img').evaluate(async image => { await (image as HTMLImageElement).decode(); return (image as HTMLImageElement).naturalWidth; })).toBe(868);
   const resources = () => page.evaluate(() => (window as unknown as { resources: () => object }).resources());
   for (let cycle = 0; cycle < 3; cycle++) {

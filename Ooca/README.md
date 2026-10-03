@@ -1,6 +1,6 @@
 # Dhittawat — Ooca portfolio
 
-Home เป็น **React + TypeScript + Vite** โดยย้ายหน้าฟอยล์ล่าสุดมาใช้ที่ `/` และ `index.html` คงหน้าตา ข้อความ และลำดับส่วนเดิม หน้า About, Project และเคสทั้ง 5 ยังเป็น HTML เดิม
+Home เป็น **React + TypeScript + Vite** โดยย้ายหน้าฟอยล์ล่าสุดมาใช้ที่ `/` และ `index.html` คงหน้าตาและลำดับส่วนเดิม หน้า About, Project และเคสทั้ง 5 ยังเป็น HTML โดยทุกหน้ารองรับ EN/TH
 
 ใน repository นี้ โปรเจกต์อยู่ที่ `Ooca/` ก่อนใช้คำสั่งด้านล่างให้ `cd Ooca` เว็บหลักที่ https://vagueslim.github.io/portfolio/ เผยแพร่จาก `Ooca/dist/` ผ่าน GitHub Actions เมื่อแก้โค้ดในโฟลเดอร์นี้แล้ว merge เข้า `main` ระบบจะ build และเผยแพร่อัตโนมัติ
 
@@ -22,7 +22,7 @@ npm.cmd run build
 npm.cmd test
 ```
 
-- `build` ตรวจชนิดข้อมูลและไฟล์อ้างอิง แล้วรวม Home ใหม่ + HTML เดิม 7 หน้า + assets ไว้ใน `dist/`
+- `build` ตรวจชนิดข้อมูลและไฟล์อ้างอิง แล้วรวม Home + HTML 7 หน้า ทั้ง EN/TH และ assets ไว้ใน `dist/`
 - `test` ใช้ Microsoft Edge ที่ติดตั้งในเครื่อง เปิด production preview ที่ 4175 และ dev fixture ที่ 4176 อัตโนมัติ
 - ดู production ด้วย `npm.cmd run preview` ที่ 4173 หลังหยุด dev server ด้วย Ctrl+C; หรือใช้ `npm.cmd run preview -- --port 4174`
 - ต้องเปิดผ่าน server เมื่อพัฒนา React; `index.html` ต้นทางไม่ได้ออกแบบให้ดับเบิลคลิกผ่าน `file://`
@@ -41,6 +41,8 @@ npm.cmd test
 | โครงหน้าและลำดับส่วน | `src/Home.tsx` |
 | Component รายส่วน | `src/components/` |
 | Liquid effect และ lifecycle | `src/hooks/useLiquidText.ts` |
+| คำแปลอังกฤษของ Home, alt และ HTML ทุกหน้า | `data/locales/en.json` |
+| รูปแบบปุ่มภาษาและโลโก้หน้า HTML | `assets/language.css` |
 
 เนื้อหาใช้ข้อความธรรมดา ถ้าต้องการขึ้นบรรทัดใหม่ใช้ `\n` ไม่ต้องเขียน HTML ลง JSON
 
@@ -77,6 +79,17 @@ npm.cmd test
 
 **ข้อมูลกลางรอบนี้ใช้กับ Home เท่านั้น** การแก้ JSON ยังไม่เปลี่ยนรูปหรือข้อความใน About, Project และเคสเดิม
 
+## ภาษาและโลโก้
+
+- **EN เป็นค่าเริ่มต้น** ที่ `/`; TH อยู่ที่ `/th/` ไม่เปลี่ยนตามภาษาของเบราว์เซอร์
+- ทั้งสองภาษามี 8 หน้าเหมือนกัน เช่น `about.html` กับ `th/about.html` ปุ่ม EN/TH อยู่หลัง Project และพากลับไปหน้าเดียวกันของอีกภาษา
+- เก็บข้อความต้นฉบับในแหล่งเดิม แล้วเพิ่มคำแปลใน `data/locales/en.json`: key คือข้อความไทยที่รวมช่องว่างและการขึ้นบรรทัดเป็นช่องว่างเดียว ส่วน value คือภาษาอังกฤษ ถ้าเพิ่มข้อความไทยแล้วไม่มีคำแปล build จะไม่ผ่าน
+- `src/content/localization.ts` แปลข้อมูล React; `scripts/localize-pages.ts` สร้าง HTML แต่ละภาษา ทั้งใน dev และ production ไม่เขียนทับ HTML ต้นฉบับ
+- ภาพและ screenshot ใช้ไฟล์ร่วมกัน ภาษาภายในรูปต้นฉบับไม่ถูกแก้ แต่ alt และ caption แปลตามภาษาของหน้า
+- `assets/brand/logo.svg` คือ SVG ที่ได้รับจากทรี ใช้เป็นโลโก้ทุกหน้า
+- `assets/favicon-light.svg` เป็นตัว t สีดำ; `assets/favicon-dark.svg` เป็นสีขาว; `assets/favicon.svg` เปลี่ยนสีในตัวตาม `prefers-color-scheme` ใช้เส้นรูปตัว t จาก SVG เดียวกัน ตัดเส้นร่างเล็ก ๆ ออกเพื่อให้อ่านออกที่ขนาด favicon
+- โหมดสีมีผลต่อ favicon เท่านั้น หน้าเว็บยังใช้พื้นขาวตามดีไซน์เดิม
+
 ## หน้า HTML เดิมและต้นฉบับ
 
 - `scripts/build.py`: ข้อมูล/แม่แบบของ Project และเคส; `scripts/about_page.py` + `data/about-profile.json`: About
@@ -88,7 +101,7 @@ npm.cmd test
 
 ## หลักฐานตรวจรับ
 
-ตรวจล่าสุดก่อนอัปโหลด: production build, TypeScript, ข้อมูลกลาง และการทดสอบอัตโนมัติ 11 ข้อผ่าน ครอบคลุมขนาด 320, 390, 552, 768, 1440px รวมภาพ Change Date และ WCF ล่าสุด
+ชุดตรวจปัจจุบันมี 20 ข้อ ครอบคลุมขนาด 320, 390, 552, 768, 1440px รวมภาพ Change Date และ WCF ล่าสุด ตรวจ EN/TH ทุกหน้า การสลับภาษาด้วยคีย์บอร์ด เส้นทาง dev/production และ favicon ตามโหมดสี
 
 `npm.cmd test` ตรวจ layout กับ baseline เดิม, ข้อความ, ลิงก์, ภาพ, keyboard, accordion, reduced motion, การหยุดเอฟเฟกต์, StrictMode/cleanup และหน้า legacy หากตั้งใจปรับดีไซน์หรือข้อความในอนาคต ให้รีวิวและปรับ baseline ด้วย; การทดสอบชุดนี้ตั้งใจจับความเปลี่ยนแปลงจากหน้าฟอยล์ที่อนุมัติ
 

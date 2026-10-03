@@ -4,5 +4,6 @@ import { Home } from './Home';
 import './styles/theme.css';
 import './styles/home.css';
 import './styles/editorial.css';
+import '../assets/language.css';
 
 createRoot(document.getElementById('root')!).render(<StrictMode><Home /></StrictMode>);
