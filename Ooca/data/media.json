@@ -1,0 +1,70 @@
+{
+  "qchang-overview": {
+    "src": "assets/images/qchang-overview.png",
+    "alt": "ภาพประกอบขอบเขตงาน Q-CHANG ตั้งแต่ค้นหาบริการจนถึงการจอง",
+    "width": 1086,
+    "height": 1448
+  },
+  "buddy-onboarding": {
+    "src": "assets/images/buddy-onboarding.png",
+    "alt": "Buddy แบ่งข้อมูลสมัครเป็นช่างออกเป็นส่วน แสดงสถานะของแต่ละส่วน",
+    "width": 372,
+    "height": 1016
+  },
+  "buddy-services": {
+    "src": "assets/images/buddy-services.png",
+    "alt": "หน้าจอเลือกบริการและรายละเอียดราคา อุปกรณ์ และมาตรฐานงานช่าง",
+    "width": 848,
+    "height": 1118
+  },
+  "wcf-medical-categories": {
+    "src": "assets/images/wcf-medical-categories.png",
+    "alt": "หน้าจอ WCF แบ่งหมวดค่ารักษาและเปรียบเทียบราคาสำหรับเจ้าหน้าที่",
+    "width": 1163,
+    "height": 857
+  },
+  "smart-asset-master-flow": {
+    "src": "assets/images/smart-asset-master-flow.png",
+    "alt": "ภาพ flow ของ Smart Asset จาก Category และ SKU ไปสู่การลงทะเบียนทรัพย์สินและการใช้งานในไซต์",
+    "width": 864,
+    "height": 556
+  },
+  "smart-asset-bu-permissions": {
+    "src": "assets/images/smart-asset-bu-permissions.png",
+    "alt": "ตัวอย่างหน้าจอความสัมพันธ์ระดับ BU และสิทธิ์ตาม Page หรือ Feature",
+    "width": 428,
+    "height": 264
+  },
+  "smart-asset-warehouse": {
+    "src": "assets/images/smart-asset-warehouse.png",
+    "alt": "",
+    "width": 167,
+    "height": 126
+  },
+  "silver-rainbow-foil-v1": {
+    "src": "assets/images/silver-rainbow-foil-v1.png",
+    "alt": ""
+  },
+  "smart-asset-cover": {
+    "src": "assets/images/smart-asset-cover.png",
+    "alt": "ภาพรวม Smart Asset พร้อม flow การจัดการทรัพย์สินและหน้าจอกำหนดสิทธิ์ระดับ BU",
+    "width": 868,
+    "height": 624
+  },
+  "wcf-cover": {
+    "src": "assets/images/wcf-cover.png",
+    "alt": "ภาพรวม WCF Digital แสดงหน้าจอและ flow การทำงานของระบบภายใน",
+    "width": 810,
+    "height": 630
+  },
+  "change-date-research": {
+    "src": "assets/images/change-date-research.png",
+    "alt": "ข้อมูลรายการเปลี่ยนวันนัดที่นำมาวิเคราะห์"
+  },
+  "change-date-home-overview": {
+    "src": "assets/images/change-date-home-overview.png",
+    "alt": "ภาพประกอบ Q-CHANG Change Date: วิเคราะห์คำขอเปลี่ยนวันนัด 3,999 รายการ ผ่านเจ้าหน้าที่ 3,545 รายการ และลูกค้าทำเอง 454 รายการ แสดงการประสานงานของลูกค้า ทีมงาน และช่าง เป็นข้อมูลที่ศึกษา ไม่ใช่ผลลัพธ์หลังออกแบบ",
+    "width": 1672,
+    "height": 941
+  }
+}

@@ -1,0 +1,33 @@
+/* Home theme: presentation tokens only. Content and image choices live in data/. */
+:root {
+  --ui: 'LINE Seed Sans TH', Arial, sans-serif;
+  --display: 'Anton', Impact, sans-serif;
+  --surface-page: #fff;
+  --ink: #0b0b0b;
+  --muted: #4b4d50;
+  --line: #c8c9cb;
+  --active: #263c60;
+  --accent: #eef0f4;
+  --link-ink: #3e527c;
+  --foil-surface: #d2d3d5;
+  --editorial-ink: #181918;
+  --editorial-line: #cccac2;
+  --editorial-muted: #62625e;
+  --panel-border: #deded9;
+  --wcf-surface: #f2f5f2;
+  --asset-surface: #eef0f3;
+  --web-surface: #e3e7eb;
+  --buddy-surface: #e1e9e3;
+  --date-surface: #e8e2ef;
+  --date-ink: #302737;
+  --date-border: #b9aec8;
+  --gutter: clamp(18px, 2.8vw, 44px);
+  --editorial-gutter: clamp(22px, 4.2vw, 72px);
+  --section-gap: 104px;
+  --foil-padding-top: 64px;
+  --foil-padding-bottom: 96px;
+  --masthead-size: 17cqw;
+  --foil-copy-size: clamp(24px, 2.6vw, 42px);
+  --intro-title-size: clamp(36px, 4.5vw, 70px);
+  --section-title-size: clamp(38px, 4.7vw, 72px);
+}
