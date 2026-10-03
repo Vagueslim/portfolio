@@ -1,9 +1,10 @@
 .language-switch{display:inline-flex;align-items:center;gap:2px;padding-left:12px;margin-left:4px;border-left:1px solid currentColor;flex:none;font-size:14px;font-weight:700;line-height:1}
-.nav .language-switch a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:34px;padding:0 5px;text-decoration:none;border-radius:3px;opacity:.55}
+.nav .language-switch a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:34px;padding:0 5px;gap:0;border:0;text-decoration:none;border-radius:3px;opacity:.55}
+.nav .language-switch a::after{display:none}
 .nav .language-switch a[aria-current="true"]{opacity:1;text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
 .nav .language-switch a:hover{opacity:1;background:#00000008}
 .language-switch a:focus-visible{outline:2px solid currentColor;outline-offset:2px}
 .site-header .brand-logo{display:block;width:42px;height:50px;object-fit:contain;flex:none}
 html[lang="en"] .thai{font-family:inherit}
-@media(min-width:761px) and (max-width:1050px){html[lang="en"] .visual-date .date-map{grid-template-columns:repeat(3,minmax(0,1fr))}html[lang="en"] .visual-date .date-node:nth-child(3)::after{display:none}}
+@media(min-width:761px) and (max-width:1050px){html[lang="en"] .visual-date .date-map{grid-template-columns:repeat(3,minmax(0,1fr))}html[lang="en"] .visual-date .date-node:nth-child(4)::before{display:none}}
 @media(max-width:600px){.masthead .topbar{gap:8px}.masthead .brand{width:32px}.masthead .brand-logo{width:32px;height:48px}.masthead .nav{font-size:clamp(14px,3.7vw,18px);gap:6px}.masthead .language-switch{font-size:11px;margin-left:0;padding-left:5px;gap:0}.masthead .language-switch a{min-width:26px;padding-inline:3px}.site-header .language-switch{margin:0;padding:8px 0 0;border:0;border-top:1px solid #dfe4dc;justify-content:flex-start}.site-header .language-switch a{width:auto;min-width:44px}}
