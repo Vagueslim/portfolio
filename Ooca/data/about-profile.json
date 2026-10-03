@@ -1,0 +1,186 @@
+{
+  "name": "Dhittawat Thongkhum",
+  "availability": "กรุงเทพฯ · On-site / Hybrid",
+  "languages": [
+    {
+      "label": "ภาษาไทย",
+      "level": "ภาษาแม่"
+    },
+    {
+      "label": "ภาษาอังกฤษ",
+      "level": "ใช้ในการทำงาน"
+    }
+  ],
+  "education": {
+    "degree": "ศิลปบัณฑิตด้านศิลปะและการออกแบบ",
+    "field": "การออกแบบนิเทศศิลป์",
+    "school": "มหาวิทยาลัยรังสิต ประเทศไทย",
+    "year": "2014",
+    "gpa": "2.91"
+  },
+  "capabilities": [
+    "การวิเคราะห์ระบบ",
+    "กลยุทธ์ UX",
+    "การออกแบบ workflow",
+    "สถาปัตยกรรมข้อมูล",
+    "Product UX/UI",
+    "การส่งมอบร่วมกับทีมข้ามสายงาน"
+  ],
+  "tools": [
+    "Figma",
+    "Framer",
+    "Adobe",
+    "Notion",
+    "Jira",
+    "Claude"
+  ],
+  "methods": [
+    "การทำต้นแบบโดยใช้ AI ช่วย"
+  ],
+  "timeline": [
+    {
+      "id": "capability-expansion",
+      "period": "2026—ปัจจุบัน",
+      "employer": "Code(Hard)",
+      "role": "UX × SA Intern",
+      "scope": "ต่อยอดงาน Product Design ด้วยการวิเคราะห์ระบบ กติกาข้อมูล และข้อจำกัดทางเทคนิค ทำงานใกล้ชิดกับ Software Engineer ใน Smart Asset ตั้งแต่ข้อกำหนดเบื้องต้น UX/UI ไปจนถึงฟีดแบ็กจากการใช้งาน",
+      "projects": [
+        {
+          "title": "Assets Management",
+          "href": "smart-asset.html"
+        }
+      ]
+    },
+    {
+      "id": "depthfirst",
+      "period": "2024—2026",
+      "employer": "Depthfirst Co., Ltd.",
+      "role": "Senior UX / Product Designer",
+      "scope": "ออกแบบบริการที่ขับเคลื่อนด้วยกฎและนโยบาย งานเงินทดแทน เอกสาร และการส่งต่องาน โดยร่วมกับ BA, SA และทีมพัฒนา รวมถึงสนับสนุนการทดสอบและการใช้งานของเจ้าหน้าที่",
+      "projects": [
+        {
+          "title": "WCF Digital",
+          "href": "wcf-digital.html"
+        },
+        {
+          "title": "SSO Core",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "codehard-consulting",
+      "period": "2023—2024",
+      "employer": "Code(Hard)",
+      "role": "UX Systems Consultant",
+      "scope": "เชื่อม UX strategy กับข้อเท็จจริงในการส่งมอบ ผ่าน requirement, task map, client review, proof of concept, testing และ production handoff",
+      "projects": [
+        {
+          "title": "Mobile POS",
+          "href": null
+        },
+        {
+          "title": "Cargo Project",
+          "href": null
+        },
+        {
+          "title": "Company Website",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "q-chang",
+      "period": "2021—2023",
+      "employer": "Q-CHANG",
+      "role": "Senior UX/UI · CX Strategy",
+      "scope": "ออกแบบประสบการณ์ของลูกค้า ช่าง และทีมปฏิบัติการในแพลตฟอร์มบริการบ้าน ตั้งแต่เว็บไซต์ค้นหาและจองบริการ การสมัครเป็นช่าง ไปจนถึงการวิเคราะห์ปัญหาเปลี่ยนวันนัด",
+      "projects": [
+        {
+          "title": "Q-CHANG Website",
+          "href": "q-chang-web.html"
+        },
+        {
+          "title": "Customer Change Date",
+          "href": "change-date.html"
+        },
+        {
+          "title": "Buddy 2.0 App",
+          "href": "buddy-2-0.html"
+        }
+      ]
+    },
+    {
+      "id": "wedev",
+      "period": "2020—2021",
+      "employer": "Wedev",
+      "role": "Senior UX/UI Designer",
+      "scope": "ขยายบทบาทสู่การทำงานร่วมกับทีมผลิตภัณฑ์ การส่งมอบแบบ Agile การดูแลนักออกแบบรุ่นน้อง และ operational dashboard",
+      "projects": []
+    },
+    {
+      "id": "benchachinda",
+      "period": "2019—2020",
+      "employer": "Benchachinda Group",
+      "role": "Senior UX/UI Designer",
+      "scope": "ออกแบบสำหรับทีมภาคสนามที่ดูแลทรัพย์สินโครงข่ายโทรคมนาคมจริงในไทย เมียนมา และลาว",
+      "projects": [
+        {
+          "title": "MAXI TASK (Telecom GIS)",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "clicknext",
+      "period": "2018—2019",
+      "employer": "ClickNext",
+      "role": "UX/UI Designer",
+      "scope": "แปลง requirement ที่ซับซ้อนและกระบวนการเดิมให้เป็น workflow ที่มีโครงสร้าง สำหรับผลิตภัณฑ์การเงิน การซื้อขาย compliance และการลงทะเบียน",
+      "projects": [
+        {
+          "title": "MY EXIM",
+          "href": null
+        },
+        {
+          "title": "InterGOLD",
+          "href": null
+        },
+        {
+          "title": "Oil Reserve Reporting System",
+          "href": null
+        },
+        {
+          "title": "ASEAN Summit 2019",
+          "href": null
+        }
+      ]
+    },
+    {
+      "id": "digitech",
+      "period": "2015—2018",
+      "employer": "Digitech 4.0 / iBusiness Corp.",
+      "role": "Web Designer",
+      "scope": "ออกแบบเว็บแอปพลิเคชันให้ลูกค้า ตั้งแต่ทำความเข้าใจ requirement, user flow และหน้าจอ รับฟีดแบ็ก จนถึงการส่งต่อแบบให้ทีมพัฒนา",
+      "projects": []
+    }
+  ],
+  "personal": [
+    {
+      "id": "thaiwater-war-room",
+      "title": "ThaiWater / War Room",
+      "year": "2020—2021",
+      "business": "การติดตามสถานการณ์น้ำและภัยพิบัติ",
+      "flow": "ข้อมูล realtime → monitoring dashboard → รับรู้เหตุการณ์ → ประสานงานภาคสนาม",
+      "responsibility": "ทำ journey mapping ออกแบบ Dashboard UX/UI สถานะปฏิบัติการ และทำงานร่วมกับทีมผลิตภัณฑ์"
+    },
+    {
+      "slug": "lccs-personal-research",
+      "business": "การประสานงานวิกฤต / การตอบสนองสาธารณะ",
+      "flow": "ตัวตนและบทบาท → ทะเบียนเหตุการณ์ → ทรัพยากร → สถานะภารกิจ",
+      "responsibility": "วางกรอบงานวิจัย ทำแผนที่ผู้เกี่ยวข้อง และออกแบบสถาปัตยกรรมข้อมูลสำหรับจัดการภารกิจ",
+      "title": "LCCS Personal Research",
+      "year": "2026"
+    }
+  ]
+}

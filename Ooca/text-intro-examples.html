@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Dhittawat’s selected product design work: Q-CHANG Web, Buddy 2.0, Change Date, WCF Digital, and PEC Smart Asset. Explore the people, decisions, and processes behind the interface.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Dhittawat · Silver foil portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <style>
+    @font-face{font-family:'LINE Seed Sans TH';src:url('assets/fonts/LINESeedSansTH_W_Rg.woff2') format('woff2');font-weight:400;font-display:swap}
+    @font-face{font-family:'LINE Seed Sans TH';src:url('assets/fonts/LINESeedSansTH_W_Bd.woff2') format('woff2');font-weight:700;font-display:swap}
+    @font-face{font-family:'LINE Seed Sans TH';src:url('assets/fonts/LINESeedSansTH_W_XBd.woff2') format('woff2');font-weight:800;font-display:swap}
+    @font-face{font-family:'Anton';src:url('assets/fonts/Anton-Regular.ttf') format('truetype');font-weight:400;font-display:swap;ascent-override:95%;descent-override:10%;line-gap-override:0%}
+    :root{--ink:#0b0b0b;--muted:#4b4d50;--line:#c8c9cb;--active:#263c60;--accent:#eef0f4;--gutter:clamp(18px,2.8vw,44px);--ui:'LINE Seed Sans TH',Arial,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font-family:var(--ui);line-height:1.7}a{color:inherit}button{font:inherit;color:inherit;cursor:pointer}button,a{touch-action:manipulation;-webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-visible{outline:3px solid var(--active);outline-offset:5px}::selection{background:#e0d6ed}
+    .masthead{padding:4px var(--gutter) 18px;background:#fff;container-type:inline-size}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:70px}
+    .brand{position:relative;isolation:isolate;display:block;width:52px;flex:none;text-decoration:none;font-weight:800;font-size:42px;line-height:1.6;padding-left:8px}
+    .brand::before,.brand::after{content:'';position:absolute;border:1px solid #e1e1e1;border-radius:50%;z-index:-1;width:24px;height:24px;top:7px;left:1px}.brand::after{width:18px;height:18px;left:23px;top:31px}
+    .nav{display:flex;align-items:center;gap:clamp(12px,1.5vw,26px);font-size:clamp(18px,3.2vw,44px);font-weight:800;line-height:1.6;white-space:nowrap}
+    .nav a{display:inline-block;text-decoration:none;min-height:44px}.nav a:last-of-type{text-decoration:underline;text-underline-offset:.14em;text-decoration-thickness:2px}.nav a:hover{text-decoration:underline;text-underline-offset:.14em}
+    .nav .slash{font-weight:700}
+    /* Size is based on the header content width so the name fits even beside a scrollbar. */
+    .masthead-title{margin:0;font-family:'Anton',Impact,sans-serif;font-size:17cqw;font-weight:400;line-height:1.08;letter-spacing:.012em;white-space:nowrap;text-transform:uppercase}
+    .role{margin:0;border-block:3px solid var(--ink);padding:4px 0 3px;font-size:clamp(16px,3.25vw,44px);font-weight:700;line-height:1.6;letter-spacing:-.025em}
+    .paper{position:relative;isolation:isolate;min-height:660px;padding:110px clamp(24px,4.5vw,72px) 118px;display:flex;align-items:center;background-color:#d2d3d5;background-image:url('assets/images/silver-rainbow-foil-v1.png');background-size:cover;background-position:center}
+    .paper::before{content:'';position:absolute;top:0;left:0;right:0;height:12px;background:linear-gradient(100deg,#e8cfed,#d5e6ed 16%,#d5ecdb 30%,#f2e6d2 43%,#e6cde8 55%,#d0e8ec 70%,#e4e8d1 84%,#dcd4f0);opacity:.85}
+    .copy{font-size:clamp(30px,4.5vw,68px);font-weight:400;line-height:1.6;letter-spacing:-.026em;max-width:1250px;width:100%;padding-block:6px}
+    .copy p{margin:0;padding-block:6px;line-height:inherit;text-wrap:balance}
+    .ink-link{font-weight:800;letter-spacing:0;text-decoration:none;color:#3e527c;position:relative;padding-block:.1em;border-bottom:2px solid #b6bdc7;outline-offset:5px;transition:border-color .25s}
+    .ink-link:hover,.ink-link:focus-visible{border-color:#556c8b}
+    .ink-link:focus-visible{outline:2px solid #3e527c}
+    .liquid-ink{display:inline-block;white-space:nowrap;line-height:inherit;font-weight:inherit;color:#3e527c;vertical-align:baseline}
+    .liquid-filters{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}
+    @supports ((background-clip:text) or (-webkit-background-clip:text)){
+      .liquid-ink{
+        background-image:radial-gradient(ellipse at 15% 30%,#c1ad83 0%,transparent 47%),radial-gradient(ellipse at 75% 60%,#97aa9c 0%,transparent 44%),linear-gradient(110deg,#d4cfc7 0%,#ad9d89 25%,#d7d8d4 55%,#9caabc 80%,#d4cfc7 100%);
+        background-size:240% 180%,200% 200%,220% 100%;
+        background-position:0% 30%,100% 60%,0% 50%;
+        -webkit-background-clip:text;background-clip:text;color:transparent;
+        mix-blend-mode:difference;filter:url(#liquid-text);
+        animation:liquid-color-flow 9s ease-in-out infinite;
+      }
+    }
+    @keyframes liquid-color-flow{
+      0%,100%{background-position:0% 30%,100% 60%,0% 50%}
+      50%{background-position:100% 70%,0% 30%,100% 50%}
+    }
+    .motion-paused .liquid-ink{animation-play-state:paused}
+    @media(prefers-reduced-motion:reduce){.liquid-ink{animation:none!important;filter:none;background:none;color:#3e527c;mix-blend-mode:normal}}
+
+    .paper-foot{position:absolute;left:clamp(24px,4.5vw,72px);right:clamp(24px,4.5vw,72px);bottom:33px;display:flex;justify-content:space-between;align-items:center;gap:18px;font-size:13px;line-height:1.7;color:#393d44}
+    .destination{font-weight:700;white-space:nowrap}
+    .exploration{padding:27px var(--gutter) 35px;border-top:1px solid #c8c9cb;background:#fff}
+    .exploration-top{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:17px}.eyebrow{font-size:11px;font-weight:700;letter-spacing:.13em}.back{font-size:12px;min-height:44px;display:flex;align-items:center;color:var(--muted);text-underline-offset:4px}
+    .picker{display:flex;flex-wrap:wrap;gap:8px}.pick{display:flex;align-items:center;gap:10px;min-height:46px;border:1px solid var(--line);background:#fff;padding:8px 16px;font-size:13px;line-height:1.7}.pick span{font-size:12px;color:var(--muted)}.pick:hover{background:#f0f0f0}.pick[aria-pressed=true]{background:#111;color:white;border-color:#111}.pick[aria-pressed=true] span{color:#fff}
+    .direction{margin:17px 0 0}.direction h2{font-size:14px;line-height:1.8;margin:0;font-weight:700}.direction p{font-size:12px;color:var(--muted);margin:3px 0 0;line-height:1.8}
+    .note{font-size:12px;line-height:1.8;margin:8px 0 0;color:var(--muted)}.note a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:4px}
+    .skip{position:fixed;top:10px;left:10px;background:#111;color:#fff;padding:10px 20px;transform:translateY(-150%);clip-path:inset(50%);z-index:5}.skip:focus{transform:translateY(0);clip-path:none}
+    @media(min-width:1800px){.copy{max-width:1400px}}
+    @media(max-width:900px){.paper{min-height:590px}.copy{font-size:clamp(30px,4.8vw,44px)}}
+    @media(max-width:600px){.masthead{padding-top:2px;padding-bottom:14px}.topbar{min-height:58px;gap:12px}.brand{font-size:34px;width:38px;padding-left:5px}.brand::before{width:19px;height:19px}.brand::after{width:15px;height:15px;left:19px;top:27px}.nav{font-size:18px;gap:10px}.nav a{display:flex;align-items:center}.masthead-title{line-height:1.13}.role{border-width:2px;font-size:clamp(13px,3.8vw,22px);padding-block:4px;line-height:1.6}.paper{min-height:560px;padding:95px 24px 113px;background-position:48% center}.paper::before{height:9px}.copy{font-size:30px;line-height:1.6;letter-spacing:-.025em}.paper-foot{left:24px;right:24px;bottom:28px;display:block;font-size:12px;line-height:1.8}.destination{display:block;margin-top:11px}.picker{gap:7px}.pick{padding:8px 0;flex:1;justify-content:center;min-width:44px}.pick b{display:none}.pick span{font-size:14px}.exploration-top{margin-bottom:11px}.eyebrow{font-size:11px;letter-spacing:.04em}.back{font-size:11px}.direction h2{font-size:14px}.direction p{font-size:12px}}
+    @media(max-width:360px){.nav{font-size:16px;gap:8px}.copy{font-size:26px}.paper{padding-inline:22px;min-height:550px}.paper-foot{left:22px;right:22px}.back{display:none}}
+    .paper--projects{min-height:0;padding-block:64px 96px}
+    .paper--projects .paper-foot{justify-content:flex-end}
+    .copy--projects{font-size:clamp(24px,2.6vw,42px);line-height:1.65;letter-spacing:-.025em}
+    .copy--projects p{text-wrap:pretty;padding-block:6px}
+    .copy--projects .project-reference{display:inline-block;white-space:nowrap;margin-left:.25em}
+    .copy--projects .ink-link{display:inline-block;min-height:44px}
+    .copy--projects .project-separator{margin-right:.2em;color:#545861;font-weight:400}
+    @media(max-width:760px){.copy--projects{font-size:clamp(22px,3.4vw,29px)}.copy--projects .project-reference{display:block;margin:2px 0 0}.copy--projects p{padding-block:10px}.paper--projects{padding-block:48px 88px}}
+    @media(max-width:360px){.copy--projects{font-size:21px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+  </style>
+  <link rel="stylesheet" href="assets/portfolio-editorial.css">
+</head>
+<body id="top">
+  <svg class="liquid-filters" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="liquid-text" x="-15%" y="-25%" width="130%" height="150%" color-interpolation-filters="sRGB">
+        <feTurbulence id="liquid-noise" type="fractalNoise" baseFrequency="0.012 0.04" numOctaves="1" seed="8" result="noise"/>
+        <feDisplacementMap id="liquid-warp" in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+  </svg>
+  <a class="skip" href="#main">ข้ามไปเนื้อหา</a>
+  <header class="masthead">
+    <div class="topbar"><a class="brand" href="index.html" aria-label="Dhittawat — Home"><span aria-hidden="true">t</span></a><nav class="nav" aria-label="เมนูหลัก"><a href="index.html">Home</a><span class="slash" aria-hidden="true">\</span><a href="about.html">About</a><span class="slash" aria-hidden="true">\</span><a href="project.html">Project</a></nav></div>
+    <h1 class="masthead-title" lang="en">I’M DHITTAWAT.</h1>
+    <p class="role" lang="en">Product Design \ UX/UI Designer</p>
+  </header>
+  <main id="main">
+    <section class="paper paper--projects" aria-label="Five sides of my work — ผลงานห้ามุมบนพื้นฟอยล์สีเงิน">
+      <div class="copy copy--projects" lang="en">
+        <p><span class="project-thought">Think through complexity.</span> <span class="project-reference"><span class="project-separator" aria-hidden="true">/</span> <a class="ink-link" href="wcf-digital.html">WCF</a></span></p>
+        <p><span class="project-thought">Look deeper into the problem.</span> <span class="project-reference"><span class="project-separator" aria-hidden="true">/</span> <a class="ink-link" href="change-date.html">Customer Change Date</a></span></p>
+        <p><span class="project-thought">Work closely with engineering.</span> <span class="project-reference"><span class="project-separator" aria-hidden="true">/</span> <a class="ink-link" href="smart-asset.html">Assets Management</a></span></p>
+        <p><span class="project-thought">Shape the customer journey on the web.</span> <span class="project-reference"><span class="project-separator" aria-hidden="true">/</span> <a class="ink-link" href="q-chang-web.html">Q-CHANG Website</a></span></p>
+        <p><span class="project-thought">Care for the details on mobile.</span> <span class="project-reference"><span class="project-separator" aria-hidden="true">/</span> <a class="ink-link" href="buddy-2-0.html">Buddy 2.0 App</a></span></p>
+      </div>
+      <div class="paper-foot"><span class="destination" aria-hidden="true">EXPLORE MY WORK ↗</span></div>
+    </section>
+    <div class="portfolio-lower">
+      <section class="editorial-intro editorial-wrap" aria-labelledby="intro-heading">
+        <p class="editorial-kicker">THREE PERSPECTIVES.<br>ONE SERVICE.</p>
+        <div>
+          <h2 id="intro-heading">ออกแบบให้คน<br>ไปต่อได้</h2>
+          <p class="intro-description">จากลูกค้าที่กำลังหาบริการ ช่างที่กำลังสมัครรับงาน ถึงทีมที่ช่วยประสานให้นัดหมายเกิดขึ้น — สามมุมของ Q-CHANG ที่ฉันได้เข้าไปทำความเข้าใจและออกแบบ</p>
+          <a class="editorial-link" href="about.html">รู้จักวิธีทำงาน <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="editorial-selected editorial-wrap" id="selected-work" aria-labelledby="selected-heading">
+        <div class="editorial-heading">
+          <h2 id="selected-heading">ผลงานที่เลือกมา<sup>03</sup></h2>
+          <a class="editorial-link" href="project.html">ดูผลงานทั้งหมด <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+
+        <article class="editorial-project">
+          <div class="editorial-meta"><p>01 / Q-CHANG Web</p><p>WEBSITE · UX/UI</p></div>
+          <div class="editorial-project-grid">
+            <a class="editorial-visual editorial-visual--web" href="q-chang-web.html" aria-label="อ่านเคส Q-CHANG Web">
+              <img src="assets/images/qchang-overview.png" alt="ภาพประกอบขอบเขตงาน Q-CHANG ตั้งแต่ค้นหาบริการจนถึงการจอง" loading="lazy">
+            </a>
+            <div class="editorial-project-copy">
+              <p class="editorial-kicker">01 — CUSTOMER EXPERIENCE</p>
+              <h3>จากค้นหาบริการ<br>ถึงจองและกลับมาใช้ซ้ำ</h3>
+              <p class="project-description">เริ่มจากหมวดบริการที่หายาก จัดกลุ่มตามสิ่งที่ลูกค้าอยากทำ แล้วเชื่อมไปถึงรายละเอียดบริการและการจอง</p>
+              <p class="project-role">UX/UI design · Information architecture · Usability testing</p>
+              <a class="editorial-link" href="q-chang-web.html" aria-label="อ่านเรื่อง Q-CHANG Web">อ่านเรื่องนี้ <span class="arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="editorial-project">
+          <div class="editorial-meta"><p>02 / Buddy App 2.0</p><p>MOBILE · UX/UI</p></div>
+          <div class="editorial-project-grid">
+            <a class="editorial-visual editorial-visual--buddy" href="buddy-2-0.html" aria-label="อ่านเคส Buddy App 2.0">
+              <img src="assets/images/buddy-onboarding.png" alt="Buddy แบ่งข้อมูลสมัครเป็นช่างออกเป็นส่วน แสดงสถานะของแต่ละส่วน" loading="lazy">
+              <img src="assets/images/buddy-services.png" alt="หน้าจอเลือกบริการและรายละเอียดราคา อุปกรณ์ และมาตรฐานงานช่าง" loading="lazy">
+            </a>
+            <div class="editorial-project-copy">
+              <p class="editorial-kicker">02 — TECHNICIAN EXPERIENCE</p>
+              <h3>สมัครตามความพร้อม<br>พักแล้วกลับมาทำต่อได้</h3>
+              <p class="project-description">แบ่งแบบฟอร์มยาวให้บันทึกเป็นส่วน ช่างเตรียมเอกสารและกลับมาสมัครต่อได้ โดยไม่ต้องกรอกทุกอย่างในครั้งเดียว</p>
+              <p class="project-role">Onboarding UX/UI · Prototype · Usability testing<br>ฟีดแบ็กจากการทดสอบก่อนเปิดใช้</p>
+              <a class="editorial-link" href="buddy-2-0.html" aria-label="อ่านเรื่อง Buddy App 2.0">อ่านเรื่องนี้ <span class="arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="editorial-project">
+          <div class="editorial-meta"><p>03 / Q-CHANG · Change Date</p><p>SERVICE & OPERATIONS</p></div>
+          <div class="editorial-project-grid">
+            <a class="editorial-visual editorial-visual--date" href="change-date.html" aria-label="อ่านเคส Change Date และข้อมูลการเปลี่ยนวันนัด">
+              <p class="date-caption">Q-CHANG / CHANGE DATE</p>
+              <div class="date-stat-grid">
+                <div class="date-total"><span>รายการที่นำมาวิเคราะห์</span><strong>3,999<i aria-hidden="true">.</i></strong><span>หนึ่งคำขอ หลายคนต้องประสาน</span></div>
+                <div><strong>3,545</strong><span>ผ่านเจ้าหน้าที่</span></div>
+                <div><strong>454</strong><span>ลูกค้าทำเอง</span></div>
+              </div>
+              <div class="date-visual-foot"><p>วันจอง → คน → การประสานงาน</p><p>ข้อมูลที่ศึกษา<br>ไม่ใช่ผลลัพธ์หลังออกแบบ</p></div>
+            </a>
+            <div class="editorial-project-copy">
+              <p class="editorial-kicker">03 — SERVICE & OPERATIONS</p>
+              <h3>การเปลี่ยนวันนัดหนึ่งครั้ง<br>กระทบใครบ้าง</h3>
+              <p class="project-description">ตามคำขอหนึ่งครั้งผ่านลูกค้า ช่าง และทีมประสาน เพื่อให้เห็นข้อจำกัดที่อยู่หลังวันที่เปลี่ยน ก่อนนำเสนอทางเลือกให้ทีม</p>
+              <p class="project-role">Research analysis · Workflow mapping · เสนอแนวทาง</p>
+              <a class="editorial-link" href="change-date.html" aria-label="อ่านเรื่อง Change Date">อ่านเรื่องนี้ <span class="arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="editorial-backup editorial-wrap" aria-labelledby="backup-heading">
+        <div class="editorial-section-line"><span>อีกมุมของงาน / INTERNAL SYSTEMS</span><span>04 / WCF DIGITAL</span></div>
+        <div class="editorial-backup-panel">
+          <div class="editorial-backup-copy">
+            <p class="editorial-kicker">WCF DIGITAL</p>
+            <h2 id="backup-heading">ให้กฎ ข้อมูล<br>และข้อยกเว้น<br>ทำงานร่วมกัน</h2>
+            <p>ออกแบบงานภายใน ตั้งแต่ใบแจ้งหนี้ถึงการตรวจเอกสารและหมวดค่ารักษา โดยเชื่อมความต้องการของเจ้าหน้าที่กับการทำงานของระบบ</p>
+            <a class="editorial-link" href="wcf-digital.html">ดูงานระบบภายใน <span class="arrow" aria-hidden="true">↗</span></a>
+          </div>
+          <a class="editorial-backup-image" href="wcf-digital.html" aria-label="อ่านเคส WCF Digital">
+            <img src="assets/images/wcf-medical-categories.png" alt="หน้าจอ WCF แบ่งหมวดค่ารักษาและเปรียบเทียบราคาสำหรับเจ้าหน้าที่" loading="lazy">
+          </a>
+        </div>
+      </section>
+
+      <section class="smart-project editorial-wrap" id="smart-asset" aria-labelledby="smart-heading">
+        <div class="editorial-section-line"><span>05 / PEC SMART ASSET</span><span>ASSET MANAGEMENT</span></div>
+        <div class="smart-panel">
+          <a class="smart-stage" href="smart-asset.html" aria-label="อ่านเคส PEC Smart Asset">
+            <img class="smart-flow" src="assets/images/smart-asset-master-flow.png" alt="ภาพ flow ของ Smart Asset จาก Category และ SKU ไปสู่การลงทะเบียนทรัพย์สินและการใช้งานในไซต์" width="864" height="556" loading="lazy">
+            <img class="smart-permissions" src="assets/images/smart-asset-bu-permissions.png" alt="ตัวอย่างหน้าจอความสัมพันธ์ระดับ BU และสิทธิ์ตาม Page หรือ Feature" width="428" height="264" loading="lazy">
+          </a>
+          <div class="smart-copy">
+            <p class="smart-label" lang="en"><span>Asset</span> Management</p>
+            <h2 id="smart-heading" lang="en"><span class="smart-title-line"><img src="assets/images/smart-asset-warehouse.png" alt="" width="167" height="126" loading="lazy"><span>Different assets</span></span><span class="smart-subtitle">One clear workflow.</span></h2>
+            <p class="smart-process" lang="en">Initial specifications → UX/UI → engineering collaboration → feedback from use</p>
+            <p class="smart-role">PEC Smart Asset · UX × SA Intern</p>
+            <a class="editorial-link" href="smart-asset.html">อ่านเรื่องนี้ <span class="arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <div class="editorial-wrap">
+        <section class="editorial-conversation" aria-labelledby="approach-heading">
+          <div class="editorial-conversation-heading">
+            <p class="editorial-kicker">BEHIND THE WORK / วิธีคิดและทำงาน</p>
+            <h2 id="approach-heading">หน้าจอที่ดี<br>เริ่มจากเข้าใจ<br>สิ่งที่คนต้องทำ</h2>
+            <p>มองตั้งแต่ความตั้งใจของคน กฎที่อยู่หลังงาน ไปจนถึงสิ่งที่เกิดขึ้นเมื่อได้ลองใช้</p>
+            <a class="editorial-link" href="about.html">อ่านเกี่ยวกับฉัน <span class="arrow" aria-hidden="true">↗</span></a>
+          </div>
+          <div class="editorial-qa">
+            <details open>
+              <summary><span class="qa-number">01</span><span>เริ่มจากความตั้งใจของผู้ใช้</span></summary>
+              <div class="qa-answer"><p>จัดหมวดบริการจากสิ่งที่ลูกค้าอยากทำ และให้ช่างสมัครตามความพร้อมของตัวเอง เพื่อให้ขั้นตอนสอดคล้องกับสถานการณ์ที่คนกำลังเจอ</p></div>
+            </details>
+            <details>
+              <summary><span class="qa-number">02</span><span>มองสิ่งที่อยู่หลังหน้าจอ</span></summary>
+              <div class="qa-answer"><p>กฎ ข้อมูล สถานะ และการส่งต่องานต้องเชื่อมกัน ก่อนออกมาเป็น interaction เช่น การเปลี่ยนวันนัดที่ต้องดูทั้งความพร้อมของลูกค้า ช่าง และทีมประสาน</p></div>
+            </details>
+            <details>
+              <summary><span class="qa-number">03</span><span>กลับมาดูสิ่งที่เกิดขึ้นจริง</span></summary>
+              <div class="qa-answer"><p>ใช้ฟีดแบ็กจากการทดสอบและข้อมูลการใช้งานทบทวนแนวคิด พร้อมบอกขอบเขตของหลักฐาน เช่น ตะกร้าที่ผู้ใช้บอกว่าสะดวก แต่ข้อมูลรายการซื้อทำให้เห็นว่าคนส่วนใหญ่จองเพียงบริการเดียว</p></div>
+            </details>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="portfolio-lower">
+    <div class="editorial-wrap">
+      <section class="editorial-contact" aria-labelledby="contact-heading">
+        <p class="editorial-kicker">LET’S TALK ABOUT THE WORK</p>
+        <h2 id="contact-heading" lang="en">A good conversation.<br>A clearer next step.</h2>
+        <div class="editorial-contact-row">
+          <p>ถ้ามีโจทย์ที่อยากทำความเข้าใจร่วมกัน<br>เริ่มจากคุยเรื่องคน งาน และข้อจำกัดที่เจอได้เลย</p>
+          <a class="editorial-link" href="mailto:dhittawat@gmail.com">คุยเรื่องงาน <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+      <div class="editorial-footer-top"><span class="editorial-footer-name">Dhittawat.</span><a class="editorial-link" href="https://www.linkedin.com/in/dhittaawat-thongkhum-44bb94a7" target="_blank" rel="noopener noreferrer">LinkedIn <span class="arrow" aria-hidden="true">↗</span></a></div>
+      <div class="editorial-footer-bottom"><span>© 2026 Dhittawat Thongkhum</span><span>PRODUCT DESIGN · BANGKOK</span><a href="#top">กลับด้านบน ↑</a></div>
+    </div>
+  </footer>
+
+    <aside class="exploration" aria-label="ตัวเลือกข้อความหน้าแรก">
+      <details class="copy-experiments"><summary>ลองข้อความหน้าแรก · 5 ชุด</summary><div class="exploration-body">
+      <div class="exploration-top"><span class="eyebrow">TEXT INTRO / 05 EXPLORATIONS</span><a class="back" href="index.html">กลับไปดูเว็บปัจจุบัน ↗</a></div>
+      <div class="picker" role="group" aria-label="เลือกชุดข้อความตัวอย่าง">
+        <button class="pick" data-set="0" aria-pressed="false" aria-label="ชุด 1 — Enjoy"><span>01</span><b>Enjoy</b></button>
+        <button class="pick" data-set="1" aria-pressed="false" aria-label="ชุด 2 — The most"><span>02</span><b>The most</b></button>
+        <button class="pick" data-set="2" aria-pressed="false" aria-label="ชุด 3 — Work with"><span>03</span><b>Work with</b></button>
+        <button class="pick" data-set="3" aria-pressed="false" aria-label="ชุด 4 — Make sense"><span>04</span><b>Make sense</b></button>
+        <button class="pick" data-set="4" aria-pressed="true" aria-label="ชุด 5 — Five sides of my work"><span>05</span><b>Five sides</b></button>
+      </div>
+      <div class="direction"><h2 id="direction-title" role="status" aria-live="polite">05 — Five sides of my work</h2><p id="direction-description">ชุดที่เลือก · ห้ามุมของงาน พร้อมชื่อโปรเจกต์ที่กดเข้าเคสได้</p></div>
+      <p class="note">ชุด 05 เชื่อมไปยัง 5 โปรเจกต์ · ชุด 01–04 เป็นข้อความทางเลือกก่อนหน้า · <a href="docs/text-intro-copy.md">อ่านข้อความ</a></p>
+      </div></details>
+    </aside>
+  <script>
+    // Editorial copy options. Links use the existing local portfolio pages.
+    const destinations={
+      projects:{href:'project.html',label:'VIEW PROJECTS'},
+      wcf:{href:'wcf-digital.html',label:'WCF'},
+      changeDate:{href:'change-date.html',label:'CUSTOMER CHANGE DATE'},
+      assets:{href:'smart-asset.html',label:'ASSETS MANAGEMENT'},
+      qchang:{href:'q-chang-web.html',label:'Q-CHANG WEBSITE'},
+      buddy:{href:'buddy-2-0.html',label:'BUDDY 2.0 APP'}
+    };
+    const options=[
+  {
+    "title": "Enjoy",
+    "description": "ชุดที่เลือก · enjoy กับสีที่ไหลและคลื่นนุ่ม ๆ แบบของเหลว",
+    "lines": [
+      [
+        "Hi, I’m Dhittawat."
+      ],
+      [
+        "I ",
+        {
+          "text": "enjoy",
+          "to": "projects"
+        },
+        " turning complicated journeys into experiences people can find their way through."
+      ]
+    ]
+  },
+  {
+    "title": "The most",
+    "description": "เริ่มจากสิ่งที่น่าสนใจในการออกแบบ แล้วชวนไปดูผลงาน",
+    "lines": [
+      [
+        "Hi, I’m Dhittawat."
+      ],
+      [
+        {
+          "text": "The most",
+          "to": "projects"
+        },
+        " interesting part of design? Understanding the people behind every step."
+      ]
+    ]
+  },
+  {
+    "title": "Work with",
+    "description": "เล่าถึงการทำงานร่วมกับคน และเชื่อมรายละเอียดเข้าด้วยกัน",
+    "lines": [
+      [
+        "Hi, I’m Dhittawat."
+      ],
+      [
+        "I ",
+        {
+          "text": "work with",
+          "to": "projects"
+        },
+        " people to connect the details, untangle the process, and shape a better experience."
+      ]
+    ]
+  },
+  {
+    "title": "Make sense",
+    "description": "เน้นการทำให้บริการที่ซับซ้อนเข้าใจได้ง่ายขึ้น",
+    "lines": [
+      [
+        "Hi, I’m Dhittawat."
+      ],
+      [
+        "I help complicated services ",
+        {
+          "text": "make sense",
+          "to": "projects"
+        },
+        "—from finding what you need to knowing what happens next."
+      ]
+    ]
+  },
+  {
+    "title": "Five sides of my work",
+    "description": "ชุดที่เลือก · ห้ามุมของงาน พร้อมชื่อโปรเจกต์ที่กดเข้าเคสได้",
+    "layout": "projects",
+    "lines": [
+      [
+        "Hi, I’m Dhittawat."
+      ],
+      [
+        "Think through complexity.",
+        {
+          "text": "WCF",
+          "to": "wcf"
+        }
+      ],
+      [
+        "Look deeper into the problem.",
+        {
+          "text": "Customer Change Date",
+          "to": "changeDate"
+        }
+      ],
+      [
+        "Work closely with engineering.",
+        {
+          "text": "Assets Management",
+          "to": "assets"
+        }
+      ],
+      [
+        "Shape the customer journey on the web.",
+        {
+          "text": "Q-CHANG Website",
+          "to": "qchang"
+        }
+      ],
+      [
+        "Care for the details on mobile.",
+        {
+          "text": "Buddy 2.0 App",
+          "to": "buddy"
+        }
+      ]
+    ]
+  }
+];
+    const copy=document.querySelector('.copy');
+    const picker=[...document.querySelectorAll('[data-set]')];
+    const destination=document.querySelector('.destination');
+    const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
+    const noise=document.querySelector('#liquid-noise');
+    const warp=document.querySelector('#liquid-warp');
+    let keywordVisible=true,frameId=0,lastFrame=0,phase=0;
+    let hoverTarget=0,hoverLevel=0,fontSize=40;
+    function motionAllowed(){return !reduceMotion.matches&&!document.hidden&&keywordVisible;}
+    function tick(stamp){
+      frameId=0;
+      if(!motionAllowed())return;
+      if(!lastFrame)lastFrame=stamp;
+      const elapsed=stamp-lastFrame;
+      // Update the tiny SVG field at 30fps; the text's layout never moves.
+      if(elapsed>=32){
+        const dt=Math.min(elapsed,70)/1000;
+        phase+=dt;lastFrame=stamp;
+        hoverLevel+=(hoverTarget-hoverLevel)*(1-Math.exp(-dt*5));
+        noise.setAttribute('baseFrequency',(0.012+Math.sin(phase*.72)*.004).toFixed(5)+' '+(0.038+Math.cos(phase*.48)*.012).toFixed(5));
+        warp.setAttribute('scale',(fontSize*(.15+hoverLevel*.13)).toFixed(2));
+      }
+      frameId=requestAnimationFrame(tick);
+    }
+    function syncMotion(){
+      const running=motionAllowed();
+      document.body.classList.toggle('motion-paused',!running);
+      document.body.dataset.motion=reduceMotion.matches?'reduced':running?'running':'paused';
+      if(!running){cancelAnimationFrame(frameId);frameId=0;lastFrame=0;}
+      else if(!frameId)frameId=requestAnimationFrame(tick);
+    }
+    function createLink(part){
+      const target=destinations[part.to];
+      const link=document.createElement('a');
+      link.className='ink-link';link.href=target.href;
+      link.setAttribute('aria-label',part.text+' — '+(part.to==='projects'?'VIEW PROJECTS':'อ่านเคส'));
+      link.dataset.destination=target.label;
+      const visual=document.createElement('span');
+      visual.className='liquid-ink';visual.setAttribute('aria-hidden','true');visual.textContent=part.text;
+      link.append(visual);
+      function activate(){destination.textContent=target.label+' ↗';hoverTarget=1;}
+      function rest(){
+        const focused=copy.contains(document.activeElement)&&document.activeElement.matches('.ink-link')?document.activeElement:null;
+        const active=focused||copy.querySelector('.ink-link:hover');
+        destination.textContent=active?active.dataset.destination+' ↗':copy.classList.contains('copy--projects')?'EXPLORE MY WORK ↗':'VIEW PROJECTS ↗';
+        hoverTarget=active?1:0;
+      }
+      for(const event of ['pointerenter','focus','pointerdown'])link.addEventListener(event,activate);
+      for(const event of ['pointerleave','blur'])link.addEventListener(event,rest);
+      return link;
+    }
+    function showOption(index){
+      const option=options[index];
+      const projectLayout=option.layout==='projects';
+      copy.classList.toggle('copy--projects',projectLayout);
+      document.querySelector('.paper').classList.toggle('paper--projects',projectLayout);
+      const fragment=document.createDocumentFragment();
+      option.lines.slice(1).forEach(parts=>{
+        const line=document.createElement('p');
+        if(projectLayout){
+            const thought=document.createElement('span');thought.className='project-thought';thought.textContent=parts[0];
+            const reference=document.createElement('span');reference.className='project-reference';
+            const separator=document.createElement('span');separator.className='project-separator';separator.setAttribute('aria-hidden','true');separator.textContent='/';
+            reference.append(separator,document.createTextNode(' '),createLink(parts[1]));
+            line.append(thought,document.createTextNode(' '),reference);
+          fragment.append(line);return;
+        }
+        const pieces=parts.slice();
+        for(let i=0;i<pieces.length;i++){
+          let part=pieces[i];
+          if(typeof part==='string'){line.append(document.createTextNode(part));continue;}
+          // Keep sentence punctuation with the last animated word on small screens.
+          const punctuation=typeof pieces[i+1]==='string'?pieces[i+1].match(/^[.,;:!?…”’]+/):null;
+          if(punctuation){part={...part,text:part.text+punctuation[0]};pieces[i+1]=pieces[i+1].slice(punctuation[0].length);}
+          line.append(createLink(part));
+        }
+        fragment.append(line);
+      });
+      copy.replaceChildren(fragment);
+      picker.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===index)));
+      document.querySelector('#direction-title').textContent=String(index+1).padStart(2,'0')+' — '+option.title;
+      document.querySelector('#direction-description').textContent=option.description;
+      destination.textContent=projectLayout?'EXPLORE MY WORK ↗':'VIEW PROJECTS ↗';
+      document.body.dataset.activeSet=String(index+1);
+      fontSize=parseFloat(getComputedStyle(copy.querySelector('.liquid-ink')).fontSize);
+      hoverTarget=0;
+    }
+    picker.forEach(button=>button.addEventListener('click',()=>showOption(Number(button.dataset.set))));
+    reduceMotion.addEventListener('change',syncMotion);
+    document.addEventListener('visibilitychange',syncMotion);
+    addEventListener('resize',()=>{fontSize=parseFloat(getComputedStyle(copy.querySelector('.liquid-ink')).fontSize);});
+    if('IntersectionObserver' in window){
+      const observer=new IntersectionObserver(([entry])=>{keywordVisible=entry.isIntersecting;syncMotion();});
+      observer.observe(copy);
+    }
+    showOption(4);syncMotion();
+  </script>
+</body>
+</html>

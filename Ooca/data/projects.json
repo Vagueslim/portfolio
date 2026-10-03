@@ -1,0 +1,27 @@
+{
+  "q-chang-web": {
+    "title": "Q-CHANG Web",
+    "href": "q-chang-web.html",
+    "coverMediaId": "qchang-overview"
+  },
+  "buddy-2-0": {
+    "title": "Buddy App 2.0",
+    "href": "buddy-2-0.html",
+    "coverMediaId": "buddy-onboarding"
+  },
+  "change-date": {
+    "title": "Change Date",
+    "href": "change-date.html",
+    "coverMediaId": "change-date-research"
+  },
+  "wcf-digital": {
+    "title": "WCF Digital",
+    "href": "wcf-digital.html",
+    "coverMediaId": "wcf-cover"
+  },
+  "smart-asset": {
+    "title": "PEC Smart Asset",
+    "href": "smart-asset.html",
+    "coverMediaId": "smart-asset-cover"
+  }
+}
