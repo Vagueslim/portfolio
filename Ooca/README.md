@@ -2,7 +2,7 @@
 
 Home เป็น **React + TypeScript + Vite** โดยย้ายหน้าฟอยล์ล่าสุดมาใช้ที่ `/` และ `index.html` คงหน้าตา ข้อความ และลำดับส่วนเดิม หน้า About, Project และเคสทั้ง 5 ยังเป็น HTML เดิม
 
-ใน repository นี้ โปรเจกต์อยู่ที่ `Ooca/` เพื่อเก็บงาน React แยกจากเว็บที่เผยแพร่อยู่ที่ root ก่อนใช้คำสั่งด้านล่างให้ `cd Ooca` การ merge โฟลเดอร์นี้ยังไม่เปลี่ยนเว็บหลักเป็น React; หากต้องการเผยแพร่เวอร์ชันนี้ ให้ build แล้วใช้ `Ooca/dist/` เป็นโฟลเดอร์เผยแพร่
+ใน repository นี้ โปรเจกต์อยู่ที่ `Ooca/` ก่อนใช้คำสั่งด้านล่างให้ `cd Ooca` เว็บหลักที่ https://vagueslim.github.io/portfolio/ เผยแพร่จาก `Ooca/dist/` ผ่าน GitHub Actions เมื่อแก้โค้ดในโฟลเดอร์นี้แล้ว merge เข้า `main` ระบบจะ build และเผยแพร่อัตโนมัติ
 
 ## เปิดและตรวจงาน
 
@@ -26,7 +26,8 @@ npm.cmd test
 - `test` ใช้ Microsoft Edge ที่ติดตั้งในเครื่อง เปิด production preview ที่ 4175 และ dev fixture ที่ 4176 อัตโนมัติ
 - ดู production ด้วย `npm.cmd run preview` ที่ 4173 หลังหยุด dev server ด้วย Ctrl+C; หรือใช้ `npm.cmd run preview -- --port 4174`
 - ต้องเปิดผ่าน server เมื่อพัฒนา React; `index.html` ต้นทางไม่ได้ออกแบบให้ดับเบิลคลิกผ่าน `file://`
-- ยังไม่ได้เผยแพร่เว็บ หากนำไป host ให้ใช้ไฟล์ทั้งหมดใน `dist/`
+- GitHub Pages ใช้ workflow `../.github/workflows/deploy-react.yml` เผยแพร่ไฟล์ทั้งหมดใน `dist/` ที่ URL หลัก `/portfolio/`; Vite ใช้ relative base เพื่อให้ภาพ ฟอนต์ และลิงก์ทำงานภายใต้ path นี้
+- ใน PR จะรัน `npm ci` และ `npm run build` เพื่อตรวจโค้ดก่อน merge; เผยแพร่เฉพาะ `main` โดยใช้ environment `github-pages`
 
 ## เปลี่ยนข้อความและภาพ Home
 
