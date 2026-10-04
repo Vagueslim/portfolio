@@ -1,9 +1,9 @@
 {
   "qchang-overview": {
-    "src": "assets/images/qchang-overview.png",
+    "src": "assets/images/qchang-service-booking-cover.png",
     "alt": "ภาพประกอบขอบเขตงาน Q-CHANG ตั้งแต่ค้นหาบริการจนถึงการจอง",
-    "width": 1086,
-    "height": 1448
+    "width": 1672,
+    "height": 941
   },
   "buddy-onboarding": {
     "src": "assets/images/buddy-onboarding.png",

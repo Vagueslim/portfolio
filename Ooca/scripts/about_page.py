@@ -5,9 +5,16 @@ from html import escape
 
 def render_about(root):
     data = json.loads((root / 'data/about-profile.json').read_text(encoding='utf-8'))
+    icons = json.loads((root / 'data/about-icons.json').read_text(encoding='utf-8'))
 
-    def items(values):
-        return '<ul>' + ''.join(f'<li>{escape(value)}</li>' for value in values) + '</ul>'
+    def icon(name):
+        return f'<svg class="about-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="assets/icons/ant-design-outlined.svg#{escape(name, quote=True)}" width="24" height="24"></use></svg>'
+
+    def items(values, icon_names):
+        return '<ul>' + ''.join(f'<li class="about-icon-row">{icon(icon_names[value])}<span>{escape(value)}</span></li>' for value in values) + '</ul>'
+
+    def education_row(field, text, class_name=''):
+        return f'<p class="about-icon-row thai {class_name}">{icon(icons["education"][field])}<span>{escape(text)}</span></p>'
 
     def career_entry(entry):
         projects = []
@@ -79,9 +86,9 @@ def render_about(root):
       <section class="section" id="capabilities" aria-labelledby="capabilities-title">
         <div class="section-heading"><p class="eyebrow">[ CAPABILITIES &amp; EDUCATION ]</p><h2 id="capabilities-title">What I bring<br>to the work.</h2></div>
         <div class="about-qualifications">
-          <article><h3>Capabilities</h3>{items(data['capabilities'])}</article>
-          <article><h3>Tools &amp; methods</h3>{items(data['tools'])}<p class="thai about-method">{escape(data['methods'][0])}</p></article>
-          <article><h3>Education</h3><p class="education-degree thai">{escape(education['degree'])}</p><p class="thai">{escape(education['field'])}</p><p class="thai">{escape(education['school'])} · {escape(education['year'])}</p><p class="education-meta">GPA {escape(education['gpa'])}</p></article>
+          <article><h3>{icon(icons['headings']['capabilities'])}<span>Capabilities</span></h3>{items(data['capabilities'], icons['capabilities'])}</article>
+          <article><h3>{icon(icons['headings']['tools'])}<span>Tools &amp; methods</span></h3>{items(data['tools'], icons['tools'])}<p class="thai about-method about-icon-row">{icon(icons['methods'][data['methods'][0]])}<span>{escape(data['methods'][0])}</span></p></article>
+          <article><h3>{icon(icons['headings']['education'])}<span>Education</span></h3>{education_row('degree', education['degree'], 'education-degree')}{education_row('field', education['field'])}{education_row('school', education['school'] + ' · ' + education['year'])}{education_row('gpa', 'GPA ' + education['gpa'], 'education-meta')}</article>
         </div>
       </section>
       <section class="section" aria-labelledby="working-title">
