@@ -1,0 +1,32 @@
+{
+  "headings": {
+    "capabilities": "bulb",
+    "tools": "tool",
+    "education": "read"
+  },
+  "capabilities": {
+    "การวิเคราะห์ระบบ": "cluster",
+    "กลยุทธ์ UX": "compass",
+    "การออกแบบ workflow": "branches",
+    "สถาปัตยกรรมข้อมูล": "apartment",
+    "Product UX/UI": "layout",
+    "การส่งมอบร่วมกับทีมข้ามสายงาน": "team"
+  },
+  "tools": {
+    "Figma": "border-outer",
+    "Framer": "play-circle",
+    "Adobe": "bg-colors",
+    "Notion": "file-text",
+    "Jira": "project",
+    "Claude": "robot"
+  },
+  "methods": {
+    "การทำต้นแบบโดยใช้ AI ช่วย": "experiment"
+  },
+  "education": {
+    "degree": "safety-certificate",
+    "field": "format-painter",
+    "school": "bank",
+    "gpa": "trophy"
+  }
+}

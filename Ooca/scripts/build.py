@@ -25,7 +25,7 @@ def date_map():
 
 CASES = [
   {
-    'id':'q-chang-web','number':'01','title':'Q-CHANG Web','type':'CUSTOMER EXPERIENCE','category':'customer','visual':'web','image':'qchang-overview.png',
+    'id':'q-chang-web','number':'01','title':'Q-CHANG Web','type':'CUSTOMER EXPERIENCE','category':'customer','visual':'web','image':'qchang-service-booking-cover.png',
     'tagline':'จากค้นหาบริการ ถึงจองและกลับมาใช้ซ้ำ',
     'summary':'ปรับเว็บไซต์ฝั่งลูกค้า ตั้งแต่ทางเข้าหมวดบริการ รายละเอียด ตะกร้า และการจอง โดยใช้ฟีดแบ็กทดสอบกับข้อมูลธุรกรรมทบทวนการออกแบบ',
     'facts':[('Role','UX/UI Design'),('Scope','Homepage → Category → PDP → Booking'),('Collaboration','รีวิวและทดสอบร่วมกับ PO และทีม'),('Evidence','Usability test + Transaction insight')],
