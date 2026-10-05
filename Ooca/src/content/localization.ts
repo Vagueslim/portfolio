@@ -1,23 +1,19 @@
-import english from '../../data/locales/en.json' with { type: 'json' };
-
+import { createContext, useContext } from 'react';
 export type Language = 'en' | 'th';
-export const language: Language = typeof document === 'undefined' ? 'th' : document.documentElement.lang === 'th' ? 'th' : 'en';
-export function translateText(text: string, locale: Language, dictionary: Record<string, string> = english): string {
-  if (locale === 'th' || !/[\u0e00-\u0e7f]/.test(text)) return text;
-  const key = text.replace(/\s+/g, ' ').trim();
-  const translated = dictionary[key];
-  if (translated === undefined) throw new Error(`Missing English translation: ${key}`);
-  return translated;
+export type LocalizedText = { en: string; th: string };
+export const LanguageContext = createContext<Language>('en');
+export const useLanguage = () => useContext(LanguageContext);
+export const basePath = import.meta.env?.BASE_URL || '/';
+export function assetPath(path: string) { return basePath + path.replace(/^\.?\//, ''); }
+export function localize<T>(value: unknown, language: Language): T {
+  if (Array.isArray(value)) return value.map(item => localize(item, language)) as T;
+  if (value && typeof value === 'object') {
+    const item = value as Record<string, unknown>;
+    if (Object.keys(item).length === 2 && 'en' in item && 'th' in item) return item[language] as T;
+    return Object.fromEntries(Object.entries(item).map(([key, v]) => [key, localize(v, language)])) as T;
+  }
+  return value as T;
 }
-export const t = (text: string) => translateText(text, language);
-export function translateContent<T>(value: T, locale: Language): T {
-  if (typeof value === 'string') return translateText(value, locale) as T;
-  if (Array.isArray(value)) return value.map(item => translateContent(item, locale)) as T;
-  if (value && typeof value === 'object') return Object.fromEntries(Object.entries(value).map(([key, item]) => [key, translateContent(item, locale)])) as T;
-  return value;
-}
-export const assetPath = (path: string) => typeof document !== 'undefined' && language === 'th' ? `../${path}` : path;
-
-export function languageHref(target: Language, page = 'index.html', current: Language = language) {
-  return target === current ? page : current === 'th' ? `../${page}` : `th/${page}`;
+export function languageHref(target: Language, page = 'index.html', current: Language = 'en') {
+  return target === current ? page : current === 'th' ? '../' + page : 'th/' + page;
 }

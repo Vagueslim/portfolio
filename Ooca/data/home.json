@@ -1,86 +1,197 @@
 {
   "masthead": {
-    "title": "I’M DHITTAWAT.",
-    "role": "Product Design \\ UX/UI Designer",
-    "brand": "t",
-    "skipLabel": "ข้ามไปเนื้อหา",
+    "title": {
+      "en": "I’M DHITTAWAT.",
+      "th": "I’M DHITTAWAT."
+    },
+    "role": {
+      "en": "Product Design \\ UX/UI Designer",
+      "th": "Product Design \\ UX/UI Designer"
+    },
+    "brand": {
+      "en": "t",
+      "th": "t"
+    },
+    "skipLabel": {
+      "en": "Skip to content",
+      "th": "ข้ามไปเนื้อหา"
+    },
     "navigation": [
       {
-        "label": "Home",
+        "label": {
+          "en": "Home",
+          "th": "Home"
+        },
         "href": "index.html"
       },
       {
-        "label": "About",
+        "label": {
+          "en": "About",
+          "th": "About"
+        },
         "href": "about.html"
       },
       {
-        "label": "Project",
+        "label": {
+          "en": "Project",
+          "th": "Project"
+        },
         "href": "project.html"
       }
     ]
   },
   "foil": {
-    "label": "Five sides of my work — ผลงานห้ามุมบนพื้นฟอยล์สีเงิน",
+    "label": {
+      "en": "Five sides of my work — on a silver foil background",
+      "th": "Five sides of my work — ผลงานห้ามุมบนพื้นฟอยล์สีเงิน"
+    },
     "backgroundMediaId": "silver-rainbow-foil-v1",
-    "destination": "EXPLORE MY WORK",
+    "destination": {
+      "en": "EXPLORE MY WORK",
+      "th": "EXPLORE MY WORK"
+    },
     "lines": [
       {
-        "thought": "Think through complexity.",
-        "label": "WCF",
+        "thought": {
+          "en": "Think through complexity.",
+          "th": "Think through complexity."
+        },
+        "label": {
+          "en": "WCF",
+          "th": "WCF"
+        },
         "projectId": "wcf-digital",
-        "destination": "WCF"
+        "destination": {
+          "en": "WCF",
+          "th": "WCF"
+        }
       },
       {
-        "thought": "Look deeper into the problem.",
-        "label": "Customer Change Date",
+        "thought": {
+          "en": "Look deeper into the problem.",
+          "th": "Look deeper into the problem."
+        },
+        "label": {
+          "en": "Customer Change Date",
+          "th": "Customer Change Date"
+        },
         "projectId": "change-date",
-        "destination": "CUSTOMER CHANGE DATE"
+        "destination": {
+          "en": "CUSTOMER CHANGE DATE",
+          "th": "CUSTOMER CHANGE DATE"
+        }
       },
       {
-        "thought": "Work closely with engineering.",
-        "label": "Assets Management",
+        "thought": {
+          "en": "Work closely with engineering.",
+          "th": "Work closely with engineering."
+        },
+        "label": {
+          "en": "Assets Management",
+          "th": "Assets Management"
+        },
         "projectId": "smart-asset",
-        "destination": "ASSETS MANAGEMENT"
+        "destination": {
+          "en": "ASSETS MANAGEMENT",
+          "th": "ASSETS MANAGEMENT"
+        }
       },
       {
-        "thought": "Shape the customer journey on the web.",
-        "label": "Q-CHANG Website",
+        "thought": {
+          "en": "Shape the customer journey on the web.",
+          "th": "Shape the customer journey on the web."
+        },
+        "label": {
+          "en": "Q-CHANG Website",
+          "th": "Q-CHANG Website"
+        },
         "projectId": "q-chang-web",
-        "destination": "Q-CHANG WEBSITE"
+        "destination": {
+          "en": "Q-CHANG WEBSITE",
+          "th": "Q-CHANG WEBSITE"
+        }
       },
       {
-        "thought": "Care for the details on mobile.",
-        "label": "Buddy 2.0 App",
+        "thought": {
+          "en": "Care for the details on mobile.",
+          "th": "Care for the details on mobile."
+        },
+        "label": {
+          "en": "Buddy 2.0 App",
+          "th": "Buddy 2.0 App"
+        },
         "projectId": "buddy-2-0",
-        "destination": "BUDDY 2.0 APP"
+        "destination": {
+          "en": "BUDDY 2.0 APP",
+          "th": "BUDDY 2.0 APP"
+        }
       }
     ]
   },
   "intro": {
-    "kicker": "THREE PERSPECTIVES.\nONE SERVICE.",
-    "title": "ออกแบบให้คน\nไปต่อได้",
-    "description": "จากลูกค้าที่กำลังหาบริการ ช่างที่กำลังสมัครรับงาน ถึงทีมที่ช่วยประสานให้นัดหมายเกิดขึ้น — สามมุมของ Q-CHANG ที่ฉันได้เข้าไปทำความเข้าใจและออกแบบ",
+    "kicker": {
+      "en": "THREE PERSPECTIVES.\nONE SERVICE.",
+      "th": "THREE PERSPECTIVES.\nONE SERVICE."
+    },
+    "title": {
+      "en": "Design that helps\npeople move forward",
+      "th": "ออกแบบให้คน\nไปต่อได้"
+    },
+    "description": {
+      "en": "Customers looking for a service. Technicians applying to work. Teams coordinating appointments. Three sides of Q-CHANG that I explored and designed for.",
+      "th": "จากลูกค้าที่กำลังหาบริการ ช่างที่กำลังสมัครรับงาน ถึงทีมที่ช่วยประสานให้นัดหมายเกิดขึ้น — สามมุมของ Q-CHANG ที่ฉันได้เข้าไปทำความเข้าใจและออกแบบ"
+    },
     "link": {
-      "label": "รู้จักวิธีทำงาน",
+      "label": {
+        "en": "How I work",
+        "th": "รู้จักวิธีทำงาน"
+      },
       "href": "about.html"
     }
   },
   "selected": {
-    "title": "ผลงานที่เลือกมา",
+    "title": {
+      "en": "Selected work",
+      "th": "ผลงานที่เลือกมา"
+    },
     "link": {
-      "label": "ดูผลงานทั้งหมด",
+      "label": {
+        "en": "View all projects",
+        "th": "ดูผลงานทั้งหมด"
+      },
       "href": "project.html"
     },
     "items": [
       {
         "projectId": "q-chang-web",
-        "metaTitle": "01 / Q-CHANG Web",
-        "metaType": "WEBSITE · UX/UI",
-        "kicker": "01 — CUSTOMER EXPERIENCE",
-        "title": "จากค้นหาบริการ\nถึงจองและกลับมาใช้ซ้ำ",
-        "description": "เริ่มจากหมวดบริการที่หายาก จัดกลุ่มตามสิ่งที่ลูกค้าอยากทำ แล้วเชื่อมไปถึงรายละเอียดบริการและการจอง",
-        "role": "UX/UI design · Information architecture · Usability testing",
-        "linkLabel": "อ่านเรื่องนี้",
+        "metaTitle": {
+          "en": "01 / Q-CHANG Web",
+          "th": "01 / Q-CHANG Web"
+        },
+        "metaType": {
+          "en": "WEBSITE · UX/UI",
+          "th": "WEBSITE · UX/UI"
+        },
+        "kicker": {
+          "en": "01 — CUSTOMER EXPERIENCE",
+          "th": "01 — CUSTOMER EXPERIENCE"
+        },
+        "title": {
+          "en": "From finding a service\nto booking and returning",
+          "th": "จากค้นหาบริการ\nถึงจองและกลับมาใช้ซ้ำ"
+        },
+        "description": {
+          "en": "Started with hard-to-find service categories, grouped them around what customers wanted to do, then connected discovery with service details and booking.",
+          "th": "เริ่มจากหมวดบริการที่หายาก จัดกลุ่มตามสิ่งที่ลูกค้าอยากทำ แล้วเชื่อมไปถึงรายละเอียดบริการและการจอง"
+        },
+        "role": {
+          "en": "UX/UI design · Information architecture · Usability testing",
+          "th": "UX/UI design · Information architecture · Usability testing"
+        },
+        "linkLabel": {
+          "en": "Read the story",
+          "th": "อ่านเรื่องนี้"
+        },
         "visual": {
           "kind": "single",
           "mediaId": "qchang-overview"
@@ -88,13 +199,34 @@
       },
       {
         "projectId": "buddy-2-0",
-        "metaTitle": "02 / Buddy App 2.0",
-        "metaType": "MOBILE · UX/UI",
-        "kicker": "02 — TECHNICIAN EXPERIENCE",
-        "title": "สมัครตามความพร้อม\nพักแล้วกลับมาทำต่อได้",
-        "description": "แบ่งแบบฟอร์มยาวให้บันทึกเป็นส่วน ช่างเตรียมเอกสารและกลับมาสมัครต่อได้ โดยไม่ต้องกรอกทุกอย่างในครั้งเดียว",
-        "role": "Onboarding UX/UI · Prototype · Usability testing\nฟีดแบ็กจากการทดสอบก่อนเปิดใช้",
-        "linkLabel": "อ่านเรื่องนี้",
+        "metaTitle": {
+          "en": "02 / Buddy App 2.0",
+          "th": "02 / Buddy App 2.0"
+        },
+        "metaType": {
+          "en": "MOBILE · UX/UI",
+          "th": "MOBILE · UX/UI"
+        },
+        "kicker": {
+          "en": "02 — TECHNICIAN EXPERIENCE",
+          "th": "02 — TECHNICIAN EXPERIENCE"
+        },
+        "title": {
+          "en": "Apply at your own pace.\nPause and come back.",
+          "th": "สมัครตามความพร้อม\nพักแล้วกลับมาทำต่อได้"
+        },
+        "description": {
+          "en": "Split a long form into separately saved sections so technicians could prepare documents and return to apply, without completing everything in one sitting.",
+          "th": "แบ่งแบบฟอร์มยาวให้บันทึกเป็นส่วน ช่างเตรียมเอกสารและกลับมาสมัครต่อได้ โดยไม่ต้องกรอกทุกอย่างในครั้งเดียว"
+        },
+        "role": {
+          "en": "Onboarding UX/UI · Prototype · Usability testing\nFeedback from pre-launch testing",
+          "th": "Onboarding UX/UI · Prototype · Usability testing\nฟีดแบ็กจากการทดสอบก่อนเปิดใช้"
+        },
+        "linkLabel": {
+          "en": "Read the story",
+          "th": "อ่านเรื่องนี้"
+        },
         "visual": {
           "kind": "pair",
           "mediaIds": [
@@ -105,13 +237,34 @@
       },
       {
         "projectId": "change-date",
-        "metaTitle": "03 / Q-CHANG · Change Date",
-        "metaType": "SERVICE & OPERATIONS",
-        "kicker": "03 — SERVICE & OPERATIONS",
-        "title": "การเปลี่ยนวันนัดหนึ่งครั้ง\nกระทบใครบ้าง",
-        "description": "ตามคำขอหนึ่งครั้งผ่านลูกค้า ช่าง และทีมประสาน เพื่อให้เห็นข้อจำกัดที่อยู่หลังวันที่เปลี่ยน ก่อนนำเสนอทางเลือกให้ทีม",
-        "role": "Research analysis · Workflow mapping · เสนอแนวทาง",
-        "linkLabel": "อ่านเรื่องนี้",
+        "metaTitle": {
+          "en": "03 / Q-CHANG · Change Date",
+          "th": "03 / Q-CHANG · Change Date"
+        },
+        "metaType": {
+          "en": "SERVICE & OPERATIONS",
+          "th": "SERVICE & OPERATIONS"
+        },
+        "kicker": {
+          "en": "03 — SERVICE & OPERATIONS",
+          "th": "03 — SERVICE & OPERATIONS"
+        },
+        "title": {
+          "en": "Who is affected\nwhen a booking date changes?",
+          "th": "การเปลี่ยนวันนัดหนึ่งครั้ง\nกระทบใครบ้าง"
+        },
+        "description": {
+          "en": "Traced a request through the customer, technician, and coordination teams to understand the constraints behind a date change before proposing options.",
+          "th": "ตามคำขอหนึ่งครั้งผ่านลูกค้า ช่าง และทีมประสาน เพื่อให้เห็นข้อจำกัดที่อยู่หลังวันที่เปลี่ยน ก่อนนำเสนอทางเลือกให้ทีม"
+        },
+        "role": {
+          "en": "Research analysis · Workflow mapping · Proposed options",
+          "th": "Research analysis · Workflow mapping · เสนอแนวทาง"
+        },
+        "linkLabel": {
+          "en": "Read the story",
+          "th": "อ่านเรื่องนี้"
+        },
         "visual": {
           "kind": "single",
           "mediaId": "change-date-home-overview"
@@ -122,13 +275,31 @@
   "wcf": {
     "projectId": "wcf-digital",
     "labels": [
-      "อีกมุมของงาน / INTERNAL SYSTEMS",
-      "04 / WCF DIGITAL"
+      {
+        "en": "ANOTHER SIDE OF THE WORK / INTERNAL SYSTEMS",
+        "th": "อีกมุมของงาน / INTERNAL SYSTEMS"
+      },
+      {
+        "en": "04 / WCF DIGITAL",
+        "th": "04 / WCF DIGITAL"
+      }
     ],
-    "kicker": "WCF Digital",
-    "title": "ให้กฎ ข้อมูล\nและข้อยกเว้น\nทำงานร่วมกัน",
-    "description": "ออกแบบงานภายใน ตั้งแต่ใบแจ้งหนี้ถึงการตรวจเอกสารและหมวดค่ารักษา โดยเชื่อมความต้องการของเจ้าหน้าที่กับการทำงานของระบบ",
-    "linkLabel": "ดูงานระบบภายใน",
+    "kicker": {
+      "en": "WCF Digital",
+      "th": "WCF Digital"
+    },
+    "title": {
+      "en": "Connecting rules,\ninformation,\nand exceptions",
+      "th": "ให้กฎ ข้อมูล\nและข้อยกเว้น\nทำงานร่วมกัน"
+    },
+    "description": {
+      "en": "Designed internal workflows from invoices to document checks and medical-expense categories, connecting staff needs with the way the system works.",
+      "th": "ออกแบบงานภายใน ตั้งแต่ใบแจ้งหนี้ถึงการตรวจเอกสารและหมวดค่ารักษา โดยเชื่อมความต้องการของเจ้าหน้าที่กับการทำงานของระบบ"
+    },
+    "linkLabel": {
+      "en": "Explore the internal system",
+      "th": "ดูงานระบบภายใน"
+    },
     "visual": {
       "kind": "collage",
       "mediaIds": [
@@ -136,23 +307,53 @@
         "wcf-notice-list"
       ]
     },
-    "descriptor": "กระบวนการเงินทดแทน",
+    "descriptor": {
+      "en": "Claim Workflow",
+      "th": "กระบวนการเงินทดแทน"
+    },
     "iconMediaId": "wcf-worker-illustration"
   },
   "smart": {
     "projectId": "smart-asset",
     "labels": [
-      "05 / PEC SMART ASSET",
-      "ASSET MANAGEMENT"
+      {
+        "en": "05 / PEC SMART ASSET",
+        "th": "05 / PEC SMART ASSET"
+      },
+      {
+        "en": "ASSET MANAGEMENT",
+        "th": "ASSET MANAGEMENT"
+      }
     ],
-    "chip": "Asset",
-    "label": "Management",
-    "title": "Different assets",
-    "subtitle": "One clear workflow.",
+    "chip": {
+      "en": "Asset",
+      "th": "Asset"
+    },
+    "label": {
+      "en": "Management",
+      "th": "Management"
+    },
+    "title": {
+      "en": "Different assets",
+      "th": "Different assets"
+    },
+    "subtitle": {
+      "en": "One clear workflow.",
+      "th": "One clear workflow."
+    },
     "iconMediaId": "smart-asset-warehouse",
-    "process": "Initial specifications → UX/UI → engineering collaboration → feedback from use",
-    "role": "PEC Smart Asset · UX × SA Intern",
-    "linkLabel": "อ่านเรื่องนี้",
+    "process": {
+      "en": "Initial specifications → UX/UI → engineering collaboration → feedback from use",
+      "th": "Initial specifications → UX/UI → engineering collaboration → feedback from use"
+    },
+    "role": {
+      "en": "PEC Smart Asset · UX × SA Intern",
+      "th": "PEC Smart Asset · UX × SA Intern"
+    },
+    "linkLabel": {
+      "en": "Read the story",
+      "th": "อ่านเรื่องนี้"
+    },
     "visual": {
       "kind": "collage",
       "mediaIds": [
@@ -162,51 +363,108 @@
     }
   },
   "approach": {
-    "kicker": "BEHIND THE WORK / วิธีคิดและทำงาน",
-    "title": "หน้าจอที่ดี\nเริ่มจากเข้าใจ\nสิ่งที่คนต้องทำ",
-    "description": "มองตั้งแต่ความตั้งใจของคน กฎที่อยู่หลังงาน ไปจนถึงสิ่งที่เกิดขึ้นเมื่อได้ลองใช้",
+    "kicker": {
+      "en": "BEHIND THE WORK / HOW I APPROACH DESIGN",
+      "th": "BEHIND THE WORK / วิธีคิดและทำงาน"
+    },
+    "title": {
+      "en": "Good screens start\nwith understanding\nthe work",
+      "th": "หน้าจอที่ดี\nเริ่มจากเข้าใจ\nสิ่งที่คนต้องทำ"
+    },
+    "description": {
+      "en": "Look at people’s intentions, the rules behind the task, and what happens when they try it.",
+      "th": "มองตั้งแต่ความตั้งใจของคน กฎที่อยู่หลังงาน ไปจนถึงสิ่งที่เกิดขึ้นเมื่อได้ลองใช้"
+    },
     "link": {
-      "label": "อ่านเกี่ยวกับฉัน",
+      "label": {
+        "en": "More about me",
+        "th": "อ่านเกี่ยวกับฉัน"
+      },
       "href": "about.html"
     },
     "items": [
       {
         "id": "principle-1",
-        "title": "เริ่มจากความตั้งใจของผู้ใช้",
-        "answer": "จัดหมวดบริการจากสิ่งที่ลูกค้าอยากทำ และให้ช่างสมัครตามความพร้อมของตัวเอง เพื่อให้ขั้นตอนสอดคล้องกับสถานการณ์ที่คนกำลังเจอ",
+        "title": {
+          "en": "Start with what people want to do",
+          "th": "เริ่มจากความตั้งใจของผู้ใช้"
+        },
+        "answer": {
+          "en": "Organize services around what customers want to do, and let technicians apply at their own pace, so the steps fit the situation people are in.",
+          "th": "จัดหมวดบริการจากสิ่งที่ลูกค้าอยากทำ และให้ช่างสมัครตามความพร้อมของตัวเอง เพื่อให้ขั้นตอนสอดคล้องกับสถานการณ์ที่คนกำลังเจอ"
+        },
         "open": true
       },
       {
         "id": "principle-2",
-        "title": "มองสิ่งที่อยู่หลังหน้าจอ",
-        "answer": "",
+        "title": {
+          "en": "Look behind the screen",
+          "th": "มองสิ่งที่อยู่หลังหน้าจอ"
+        },
+        "answer": {
+          "en": "",
+          "th": ""
+        },
         "open": false
       },
       {
         "id": "principle-3",
-        "title": "กลับมาดูสิ่งที่เกิดขึ้นจริง",
-        "answer": "",
+        "title": {
+          "en": "Return to what happens in practice",
+          "th": "กลับมาดูสิ่งที่เกิดขึ้นจริง"
+        },
+        "answer": {
+          "en": "",
+          "th": ""
+        },
         "open": false
       }
     ]
   },
   "contact": {
-    "kicker": "LET’S TALK ABOUT THE WORK",
-    "title": "A good conversation.\nA clearer next step.",
-    "description": "ถ้ามีโจทย์ที่อยากทำความเข้าใจร่วมกัน\nเริ่มจากคุยเรื่องคน งาน และข้อจำกัดที่เจอได้เลย",
+    "kicker": {
+      "en": "LET’S TALK ABOUT THE WORK",
+      "th": "LET’S TALK ABOUT THE WORK"
+    },
+    "title": {
+      "en": "A good conversation.\nA clearer next step.",
+      "th": "A good conversation.\nA clearer next step."
+    },
+    "description": {
+      "en": "Have a problem you would like to explore together?\nLet’s start with the people, the work, and the constraints.",
+      "th": "ถ้ามีโจทย์ที่อยากทำความเข้าใจร่วมกัน\nเริ่มจากคุยเรื่องคน งาน และข้อจำกัดที่เจอได้เลย"
+    },
     "link": {
-      "label": "คุยเรื่องงาน",
+      "label": {
+        "en": "Let’s talk",
+        "th": "คุยเรื่องงาน"
+      },
       "href": "mailto:dhittawat@gmail.com"
     }
   },
   "footer": {
-    "name": "Dhittawat.",
+    "name": {
+      "en": "Dhittawat.",
+      "th": "Dhittawat."
+    },
     "link": {
-      "label": "LinkedIn",
+      "label": {
+        "en": "LinkedIn",
+        "th": "LinkedIn"
+      },
       "href": "https://www.linkedin.com/in/dhittaawat-thongkhum-44bb94a7"
     },
-    "copyright": "© 2026 Dhittawat Thongkhum",
-    "location": "PRODUCT DESIGN · BANGKOK",
-    "backLabel": "กลับด้านบน ↑"
+    "copyright": {
+      "en": "© 2026 Dhittawat Thongkhum",
+      "th": "© 2026 Dhittawat Thongkhum"
+    },
+    "location": {
+      "en": "PRODUCT DESIGN · BANGKOK",
+      "th": "PRODUCT DESIGN · BANGKOK"
+    },
+    "backLabel": {
+      "en": "Back to top ↑",
+      "th": "กลับด้านบน ↑"
+    }
   }
 }

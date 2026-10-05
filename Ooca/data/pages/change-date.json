@@ -1,0 +1,1816 @@
+{
+  "metadata": {
+    "title": {
+      "en": "Change Date — Dhittawat Thongkhum",
+      "th": "Change Date — Dhittawat Thongkhum"
+    },
+    "description": {
+      "en": "Analyzed rescheduling records and made the coordination between customers, technicians, CS/IS, and promotions visible enough for the team to make further decisions.",
+      "th": "วิเคราะห์ข้อมูลการเปลี่ยนวันนัด และทำให้งานประสานระหว่างลูกค้า ช่าง CS/IS และโปรโมชั่นมองเห็นชัดพอที่ทีมจะนำไปตัดสินใจต่อ"
+    }
+  },
+  "head": {
+    "kind": "element",
+    "tag": "section",
+    "attributes": {
+      "class": "case-head"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "breadcrumb"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "project.html"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "Project",
+                  "th": "Project"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "/",
+                  "th": "/"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "Change Date",
+                  "th": "Change Date"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "eyebrow"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "03 / SERVICE & OPERATIONS",
+              "th": "03 / SERVICE & OPERATIONS"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "h1",
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Change Date",
+              "th": "Change Date"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "case-statement"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Who is affected\nwhen a booking date changes?",
+              "th": "การเปลี่ยนวันนัดหนึ่งครั้ง กระทบใครบ้าง"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "case-intro thai"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Analyzed rescheduling records and made the coordination between customers, technicians, CS/IS, and promotions visible enough for the team to make further decisions.",
+              "th": "วิเคราะห์ข้อมูลการเปลี่ยนวันนัด และทำให้งานประสานระหว่างลูกค้า ช่าง CS/IS และโปรโมชั่นมองเห็นชัดพอที่ทีมจะนำไปตัดสินใจต่อ"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "dl",
+        "attributes": {
+          "class": "case-facts"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Role",
+                      "th": "Role"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Research analysis · Workflow mapping",
+                      "th": "Research analysis · Workflow mapping"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Scope",
+                      "th": "Scope"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Analysis and proposed options",
+                      "th": "วิเคราะห์และนำเสนอทางเลือก"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Context",
+                      "th": "Context"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Q-CHANG · Mar–May 2022",
+                      "th": "Q-CHANG · มี.ค.–พ.ค. 2022"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Evidence",
+                      "th": "Evidence"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "3,999 records · Not an improvement metric",
+                      "th": "3,999 รายการ · ไม่ใช่ผลปรับปรุง"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "visualClass": "visual-date",
+  "caption": {
+    "kind": "element",
+    "tag": "p",
+    "attributes": {
+      "class": "caption",
+      "style": "margin-top:13px"
+    },
+    "children": [
+      {
+        "kind": "text",
+        "value": {
+          "en": "A simplified illustration of the existing coordination process, not a newly launched automated flow.",
+          "th": "ภาพอธิบายกระบวนการประสานเดิมแบบย่อ ไม่ใช่ flow อัตโนมัติที่เปิดใช้ใหม่"
+        }
+      }
+    ]
+  },
+  "toc": {
+    "kind": "element",
+    "tag": "aside",
+    "attributes": {
+      "class": "case-toc"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "eyebrow"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "IN THIS CASE",
+              "th": "IN THIS CASE"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "nav",
+        "attributes": {
+          "aria-label": {
+            "en": "Case study contents",
+            "th": "สารบัญเคส"
+          }
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#signal"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "01 / Signals from 3,999 records",
+                  "th": "01 / สัญญาณจาก 3,999 รายการ"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#coordination"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "02 / A date change moves more than a date",
+                  "th": "02 / หลังวันที่เปลี่ยน มีคนที่ต้องขยับตาม"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#reminder"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "03 / Give people time to coordinate",
+                  "th": "03 / เผื่อเวลาให้คนจัดการนัด"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#team-response"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "04 / The response went beyond the calendar",
+                  "th": "04 / การตอบโจทย์ไปไกลกว่าหน้าปฏิทิน"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#original-research"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "05 / Return to the source data",
+                  "th": "05 / กลับไปดูข้อมูลต้นทาง"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "chapters": [
+    {
+      "id": "signal",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "01 / SERVICE & OPERATIONS",
+                "th": "01 / SERVICE & OPERATIONS"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Signals from 3,999 records",
+                "th": "สัญญาณจาก 3,999 รายการ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "The March–May 2022 dataset contained 3,999 rescheduling records: 3,545 staff-assisted and 454 self-service. The volume handled by staff prompted an investigation into the coordination behind each request.",
+                "th": "ข้อมูลมีนาคม–พฤษภาคม 2022 มีรายการเปลี่ยนวันนัด 3,999 รายการ แบ่งเป็นผ่านเจ้าหน้าที่ 3,545 และลูกค้าทำเอง 454 รายการ ปริมาณที่ผ่านเจ้าหน้าที่เป็นจุดเริ่มต้นให้สำรวจงานประสานที่อยู่หลังคำขอหนึ่งครั้ง"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "div",
+          "attributes": {
+            "class": "number-strip"
+          },
+          "children": [
+            {
+              "kind": "element",
+              "tag": "div",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "strong",
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "3,999",
+                        "th": "3,999"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "span",
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Records in the source dataset",
+                        "th": "รายการในข้อมูลต้นทาง"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "div",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "strong",
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "3,545",
+                        "th": "3,545"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "span",
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Staff-assisted",
+                        "th": "ผ่านเจ้าหน้าที่"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "div",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "strong",
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "454",
+                        "th": "454"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "span",
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Self-service",
+                        "th": "ลูกค้าทำเอง"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "note"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "These figures count records during the stated period, not unique customers or outcomes achieved after the design work.",
+                "th": "ตัวเลขคือจำนวนรายการในช่วงเวลาที่ระบุ ไม่ใช่จำนวนลูกค้าไม่ซ้ำ และไม่ใช่ผลสำเร็จหลังออกแบบ"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coordination",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "02 / SERVICE & OPERATIONS",
+                "th": "02 / SERVICE & OPERATIONS"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "A date change moves more than a date",
+                "th": "หลังวันที่เปลี่ยน มีคนที่ต้องขยับตาม"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "If the original technician was unavailable, a request could pass through CS to check schedules and the IS team to arrange a replacement, before confirming with the customer. If no team was available, further coordination, another date, or a refund was needed.",
+                "th": "ถ้าช่างเดิมไม่ว่าง คำขออาจส่งผ่าน CS ไปตรวจคิวช่างและทีม IS เพื่อหาทีมทดแทน ก่อนกลับมายืนยันกับลูกค้า ถ้าไม่มีทีมว่างต้องประสานต่อ เลือกวันใหม่ หรือจัดการคืนเงิน"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "div",
+          "attributes": {
+            "class": "visual-date",
+            "style": "margin-top:25px;border-radius:8px"
+          },
+          "children": [
+            {
+              "kind": "element",
+              "tag": "div",
+              "attributes": {
+                "class": "date-map-label eyebrow"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "ONE DATE · MANY PEOPLE",
+                    "th": "ONE DATE · MANY PEOPLE"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "div",
+              "attributes": {
+                "class": "date-map"
+              },
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "date-node"
+                  },
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "span",
+                      "attributes": {
+                        "class": "node-icon",
+                        "aria-hidden": "true"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "↻",
+                            "th": "↻"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "strong",
+                      "attributes": {
+                        "class": "thai"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Customer",
+                            "th": "ลูกค้า"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "small",
+                      "attributes": {
+                        "class": "thai"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Requests a new date",
+                            "th": "ขอเปลี่ยนวันนัด"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "date-node"
+                  },
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "span",
+                      "attributes": {
+                        "class": "node-icon",
+                        "aria-hidden": "true"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "↔",
+                            "th": "↔"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "strong",
+                      "attributes": {
+                        "class": "thai"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "CS",
+                            "th": "CS"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "small",
+                      "attributes": {
+                        "class": "thai"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Reviews the request",
+                            "th": "ตรวจคำขอ"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "date-node"
+                  },
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "span",
+                      "attributes": {
+                        "class": "node-icon",
+                        "aria-hidden": "true"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "▦",
+                            "th": "▦"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "strong",
+                      "attributes": {
+                        "class": "thai"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Technician",
+                            "th": "ช่าง"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "small",
+                      "attributes": {
+                        "class": "thai"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Confirms availability",
+                            "th": "ยืนยันวันว่าง"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "date-node"
+                  },
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "span",
+                      "attributes": {
+                        "class": "node-icon",
+                        "aria-hidden": "true"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "⇄",
+                            "th": "⇄"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "strong",
+                      "attributes": {
+                        "class": "thai"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "IS",
+                            "th": "IS"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "small",
+                      "attributes": {
+                        "class": "thai"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Coordinates a replacement team",
+                            "th": "ประสานทีมทดแทน"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "div",
+                  "attributes": {
+                    "class": "date-node"
+                  },
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "span",
+                      "attributes": {
+                        "class": "node-icon",
+                        "aria-hidden": "true"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "✓",
+                            "th": "✓"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "strong",
+                      "attributes": {
+                        "class": "thai"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Customer",
+                            "th": "ลูกค้า"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "small",
+                      "attributes": {
+                        "class": "thai"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Confirms the new appointment",
+                            "th": "ยืนยันนัดใหม่"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "This brought the discussion back to people’s availability and the time needed to coordinate, before treating fees as the main solution.",
+                "th": "จึงนำการสนทนากลับมาที่ความพร้อมของคนและเวลาในการประสาน ก่อนจะมองค่าธรรมเนียมเป็นทางออกหลัก"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reminder",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "03 / SERVICE & OPERATIONS",
+                "th": "03 / SERVICE & OPERATIONS"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Give people time to coordinate",
+                "th": "เผื่อเวลาให้คนจัดการนัด"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "One hypothesis was that a reminder just one day before the appointment might prompt a last-minute change. I proposed a five-day reminder to give customers time to review the appointment and the team time to coordinate.",
+                "th": "สมมติฐานหนึ่งคือการเตือนก่อนนัดเพียงหนึ่งวันอาจทำให้ลูกค้าเพิ่งนึกถึงนัดแล้วขอเปลี่ยนในช่วงท้าย เสนอการเตือนล่วงหน้า 5 วันเพื่อให้มีเวลาตรวจนัดและประสานทีม"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "table",
+          "children": [
+            {
+              "kind": "element",
+              "tag": "thead",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "tr",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "th",
+                      "attributes": {
+                        "scope": "col"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Timing",
+                            "th": "เวลา"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "th",
+                      "attributes": {
+                        "scope": "col"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Idea",
+                            "th": "แนวคิด"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "tbody",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "tr",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "5 days before the appointment",
+                            "th": "ก่อนนัด 5 วัน"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Proposed reminder timing to allow coordination",
+                            "th": "แนวทางเตือนที่เสนอ เพื่อเผื่อเวลาประสาน"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "tr",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "1 day before the appointment",
+                            "th": "ก่อนนัด 1 วัน"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Previous reminder timing considered in the hypothesis",
+                            "th": "เวลาการเตือนเดิมที่ตั้งสมมติฐานไว้"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "tr",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Service day",
+                            "th": "วันบริการ"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "The customer and technician need an agreed plan",
+                            "th": "ลูกค้าและช่างต้องมีแผนร่วมกัน"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "note"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Five days was a coordination proposal, not a proven optimum. The launch status of the revised SMS and the final fee decision have not been confirmed.",
+                "th": "5 วันเป็นข้อเสนอด้านการประสาน ไม่ใช่ช่วงเวลาที่พิสูจน์ว่าเหมาะสมที่สุด ยังไม่ยืนยันสถานะเปิดใช้ SMS รูปแบบใหม่หรือการตัดสินใจสุดท้ายเรื่องค่าธรรมเนียม"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "team-response",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "04 / SERVICE & OPERATIONS",
+                "th": "04 / SERVICE & OPERATIONS"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "The response went beyond the calendar",
+                "th": "การตอบโจทย์ไปไกลกว่าหน้าปฏิทิน"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "I recall the team making changes after the presentation across several areas of communication and service preparation.",
+                "th": "สิ่งที่จำได้ว่าทีมปรับหลังนำเสนอครอบคลุมการสื่อสารและการเตรียมบริการหลายส่วน"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "ul",
+          "children": [
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "CS/IS: scripts explaining date changes and their consequences",
+                    "th": "CS/IS: สคริปต์อธิบายการเปลี่ยนวันและผลกระทบ"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Technician team: tighter rules for opening and closing calendar availability",
+                    "th": "ทีมช่าง: กติกาเปิด–ปิดปฏิทินที่เข้มงวดขึ้น"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Marketing and field consultants: alignment of promotional dates and technician availability",
+                    "th": "MKT และทีมที่ปรึกษาภาคสนาม: ประสานวันโปรโมชั่นและความพร้อมช่าง"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Technician onboarding: explaining what declared availability means",
+                    "th": "Onboarding ช่าง: อธิบายความหมายของการระบุวันที่รับงานได้"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "My role was to analyze and present the problem and possible responses. My manager decided how to proceed, and the relevant teams implemented the changes.",
+                "th": "บทบาทส่วนตัวคือวิเคราะห์และนำเสนอปัญหากับทางเลือก หัวหน้างานตัดสินใจวิธีดำเนินงาน และทีมที่เกี่ยวข้องเป็นผู้ทำการเปลี่ยนแปลง"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "note"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "I recall fewer rescheduling requests as a behavioral observation after the rules changed, but there are no before-and-after figures and the effect of each change cannot be isolated.",
+                "th": "จำได้ว่าการเปลี่ยนวันน้อยลงเชิงพฤติกรรมหลังปรับกติกา แต่ไม่มีตัวเลขก่อน–หลังและไม่สามารถแยกผลของแต่ละการเปลี่ยนแปลงได้"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "original-research",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "05 / SERVICE & OPERATIONS",
+                "th": "05 / SERVICE & OPERATIONS"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Return to the source data",
+                "th": "กลับไปดูข้อมูลต้นทาง"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "figure",
+          "attributes": {
+            "class": "evidence"
+          },
+          "children": [
+            {
+              "kind": "element",
+              "tag": "button",
+              "attributes": {
+                "class": "image-button",
+                "data-media-id": "change-date-research",
+                "data-caption": {
+                  "en": "Original presentation, page 3 — the heading rounds the total to approximately 4,000; the exact reference count is 3,999 records.",
+                  "th": "เอกสารนำเสนอเดิม หน้า 3 — หัวเรื่องปัดยอดเป็นประมาณ 4,000; ตัวเลขจริงที่ใช้อ้างคือ 3,999 รายการ"
+                },
+                "aria-label": {
+                  "en": "Enlarge image: Research slide showing rescheduling records and channels",
+                  "th": "ขยายภาพ: สไลด์ข้อมูลรายการเปลี่ยนวันและช่องทาง"
+                }
+              },
+              "children": [
+                {
+                  "kind": "image",
+                  "mediaId": "change-date-research",
+                  "alt": {
+                    "en": "Research slide showing rescheduling records and channels",
+                    "th": "สไลด์ข้อมูลรายการเปลี่ยนวันและช่องทาง"
+                  }
+                },
+                {
+                  "kind": "element",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "zoom-hint"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Enlarge image ↗",
+                        "th": "ขยายภาพ ↗"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "figcaption",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Original presentation, page 3 — the heading rounds the total to approximately 4,000; the exact reference count is 3,999 records.",
+                    "th": "เอกสารนำเสนอเดิม หน้า 3 — หัวเรื่องปัดยอดเป็นประมาณ 4,000; ตัวเลขจริงที่ใช้อ้างคือ 3,999 รายการ"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "The value of the work was to make the coordination problem clear enough for the team to act, while distinguishing my proposals from the changes made by the team.",
+                "th": "คุณค่าของงานคือการทำให้ปัญหาประสานงานมองเห็นชัดพอให้ทีมตัดสินใจ พร้อมระบุให้ตรงว่าส่วนไหนเป็นข้อเสนอ ส่วนไหนเป็นการเปลี่ยนแปลงของทีม"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "next": {
+    "kind": "element",
+    "tag": "div",
+    "attributes": {
+      "class": "next-case"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "wcf-digital.html"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "eyebrow"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "NEXT CASE / INTERNAL SYSTEMS",
+                      "th": "NEXT CASE / INTERNAL SYSTEMS"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "h2",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "WCF Digital",
+                      "th": "WCF Digital"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "class": "next-arrow",
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "↗",
+                  "th": "↗"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "overview": {
+    "kind": "flow",
+    "blocks": [
+      {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "date-map-label eyebrow"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "ONE DATE · MANY PEOPLE",
+              "th": "ONE DATE · MANY PEOPLE"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "date-map"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "attributes": {
+              "class": "date-node"
+            },
+            "children": [
+              {
+                "kind": "element",
+                "tag": "span",
+                "attributes": {
+                  "class": "node-icon",
+                  "aria-hidden": "true"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "↻",
+                      "th": "↻"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "strong",
+                "attributes": {
+                  "class": "thai"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Customer",
+                      "th": "ลูกค้า"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "small",
+                "attributes": {
+                  "class": "thai"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Requests a new date",
+                      "th": "ขอเปลี่ยนวันนัด"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "attributes": {
+              "class": "date-node"
+            },
+            "children": [
+              {
+                "kind": "element",
+                "tag": "span",
+                "attributes": {
+                  "class": "node-icon",
+                  "aria-hidden": "true"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "↔",
+                      "th": "↔"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "strong",
+                "attributes": {
+                  "class": "thai"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "CS",
+                      "th": "CS"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "small",
+                "attributes": {
+                  "class": "thai"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Reviews the request",
+                      "th": "ตรวจคำขอ"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "attributes": {
+              "class": "date-node"
+            },
+            "children": [
+              {
+                "kind": "element",
+                "tag": "span",
+                "attributes": {
+                  "class": "node-icon",
+                  "aria-hidden": "true"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "▦",
+                      "th": "▦"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "strong",
+                "attributes": {
+                  "class": "thai"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Technician",
+                      "th": "ช่าง"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "small",
+                "attributes": {
+                  "class": "thai"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Confirms availability",
+                      "th": "ยืนยันวันว่าง"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "attributes": {
+              "class": "date-node"
+            },
+            "children": [
+              {
+                "kind": "element",
+                "tag": "span",
+                "attributes": {
+                  "class": "node-icon",
+                  "aria-hidden": "true"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "⇄",
+                      "th": "⇄"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "strong",
+                "attributes": {
+                  "class": "thai"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "IS",
+                      "th": "IS"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "small",
+                "attributes": {
+                  "class": "thai"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Coordinates a replacement team",
+                      "th": "ประสานทีมทดแทน"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "attributes": {
+              "class": "date-node"
+            },
+            "children": [
+              {
+                "kind": "element",
+                "tag": "span",
+                "attributes": {
+                  "class": "node-icon",
+                  "aria-hidden": "true"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "✓",
+                      "th": "✓"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "strong",
+                "attributes": {
+                  "class": "thai"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Customer",
+                      "th": "ลูกค้า"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "small",
+                "attributes": {
+                  "class": "thai"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Confirms the new appointment",
+                      "th": "ยืนยันนัดใหม่"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

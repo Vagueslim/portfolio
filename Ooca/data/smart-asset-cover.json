@@ -53,15 +53,7 @@
         "en": "Set the shared product structure.",
         "th": "กำหนดโครงสร้างร่วมของสินค้า"
       },
-      "media": {
-        "src": "assets/images/smart-asset-cover-flow/category.webp",
-        "width": 1455,
-        "height": 1267,
-        "alt": {
-          "en": "Product Category list defining Smart Asset product groups",
-          "th": "รายการ Product Category สำหรับกำหนดกลุ่มสินค้าใน Smart Asset"
-        }
-      }
+      "mediaId": "smart-asset-cover-flow-category"
     },
     {
       "id": "category-rules",
@@ -75,15 +67,7 @@
         "en": "Choose metadata required by the category.",
         "th": "เลือก metadata ที่แต่ละ Category ต้องใช้"
       },
-      "media": {
-        "src": "assets/images/smart-asset-cover-flow/category-rules.webp",
-        "width": 1327,
-        "height": 886,
-        "alt": {
-          "en": "Product group form configuring category-specific fields",
-          "th": "ฟอร์ม Product Group สำหรับกำหนดข้อมูลเฉพาะของ Category"
-        }
-      }
+      "mediaId": "smart-asset-cover-flow-category-rules"
     },
     {
       "id": "sku",
@@ -97,15 +81,7 @@
         "en": "Turn category rules into a reusable definition.",
         "th": "เปลี่ยนกติกา Category เป็นแม่แบบที่นำกลับมาใช้ได้"
       },
-      "media": {
-        "src": "assets/images/smart-asset-cover-flow/sku.webp",
-        "width": 1440,
-        "height": 735,
-        "alt": {
-          "en": "Smart Asset create SKU interface",
-          "th": "หน้าจอสร้าง SKU ใน Smart Asset"
-        }
-      }
+      "mediaId": "smart-asset-cover-flow-sku"
     },
     {
       "id": "sku-detail",
@@ -119,15 +95,7 @@
         "en": "Reuse the definition across registered units.",
         "th": "ใช้โครงเดียวกันกับทรัพย์สินที่ลงทะเบียนแต่ละชิ้น"
       },
-      "media": {
-        "src": "assets/images/smart-asset-cover-flow/sku-detail.webp",
-        "width": 1440,
-        "height": 990,
-        "alt": {
-          "en": "SKU detail and registered inventory list",
-          "th": "รายละเอียด SKU และรายการทรัพย์สินที่ลงทะเบียน"
-        }
-      }
+      "mediaId": "smart-asset-cover-flow-sku-detail"
     },
     {
       "id": "asset",
@@ -141,15 +109,7 @@
         "en": "Give each physical unit an identity.",
         "th": "สร้าง identity ให้ทรัพย์สินจริงแต่ละชิ้น"
       },
-      "media": {
-        "src": "assets/images/smart-asset-cover-flow/asset.webp",
-        "width": 1440,
-        "height": 1015,
-        "alt": {
-          "en": "Physical asset registration interface with QR identity",
-          "th": "หน้าจอลงทะเบียนทรัพย์สินจริงพร้อม QR identity"
-        }
-      }
+      "mediaId": "smart-asset-cover-flow-asset"
     },
     {
       "id": "site",
@@ -171,15 +131,7 @@
         "en": "Keep ownership, location, status, and next action visible.",
         "th": "แสดงเจ้าของ ตำแหน่ง สถานะ และสิ่งที่ต้องทำต่อในมุมมองเดียว"
       },
-      "media": {
-        "src": "assets/images/smart-asset-cover-flow/site.webp",
-        "width": 1340,
-        "height": 843,
-        "alt": {
-          "en": "Site detail showing assigned Smart Asset records",
-          "th": "รายละเอียด Site พร้อมทรัพย์สินที่ได้รับมอบหมาย"
-        }
-      }
+      "mediaId": "smart-asset-cover-flow-site"
     },
     {
       "id": "status",
@@ -193,15 +145,7 @@
         "en": "Keep the next action visible through the asset lifecycle.",
         "th": "ทำให้สถานะและสิ่งที่ต้องทำต่อมองเห็นได้ตลอด lifecycle"
       },
-      "media": {
-        "src": "assets/images/smart-asset-cover-flow/status.webp",
-        "width": 1360,
-        "height": 671,
-        "alt": {
-          "en": "Site asset list showing tracked items and assigned owners",
-          "th": "รายการทรัพย์สินในไซต์พร้อมรายการติดตามและผู้รับผิดชอบ"
-        }
-      }
+      "mediaId": "smart-asset-cover-flow-status"
     }
   ],
   "edges": [

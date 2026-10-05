@@ -1,0 +1,26 @@
+{
+  "mainMenu": {
+    "en": "Main navigation",
+    "th": "เมนูหลัก"
+  },
+  "readCase": {
+    "en": "Read case study",
+    "th": "อ่านเคส"
+  },
+  "readStory": {
+    "en": "Read the story of",
+    "th": "อ่านเรื่อง"
+  },
+  "close": {
+    "en": "Close image",
+    "th": "ปิดภาพ"
+  },
+  "relatedProjects": {
+    "en": "Related projects",
+    "th": "โปรเจกต์ที่เกี่ยวข้อง"
+  },
+  "innerFooterKicker": {
+    "en": "LET'S TALK ABOUT THE WORK",
+    "th": "LET'S TALK ABOUT THE WORK"
+  }
+}

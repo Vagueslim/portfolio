@@ -1,113 +1,86 @@
-# Dhittawat — Ooca portfolio
+# Dhittawat — bilingual React portfolio
 
-Home เป็น **React + TypeScript + Vite** โดยย้ายหน้าฟอยล์ล่าสุดมาใช้ที่ `/` และ `index.html` คงหน้าตาและลำดับส่วนเดิม หน้า About, Project และเคสทั้ง 5 ยังเป็น HTML โดยทุกหน้ารองรับ EN/TH
+Home, About, Project และเคสทั้งห้าใช้ **React + TypeScript + Vite + React Router** ทั้งหมด ใช้ Node 24 และ npm เวอร์ชันที่มากับ Node
 
-ใน repository นี้ โปรเจกต์อยู่ที่ `Ooca/` ก่อนใช้คำสั่งด้านล่างให้ `cd Ooca` เว็บหลักที่ https://vagueslim.github.io/portfolio/ เผยแพร่จาก `Ooca/dist/` ผ่าน GitHub Actions เมื่อแก้โค้ดในโฟลเดอร์นี้แล้ว merge เข้า `main` ระบบจะ build และเผยแพร่อัตโนมัติ
-
-## เปิดและตรวจงาน
-
-ต้องมี Node.js 22.18+ (เครื่องนี้ทดสอบด้วย Node 24) ใน PowerShell ใช้:
+## รันบนเครื่อง
 
 ```powershell
+cd 'C:\Users\Admin\Documents\Custom_portfolio\React\Ooca'
 npm.cmd ci
-npm.cmd run dev
+npm.cmd run dev -- --port 4174
 ```
 
-เปิด http://127.0.0.1:4173/ — ข้อความ/ภาพใน JSON และ React/CSS จะอัปเดตระหว่างแก้ไข
+เปิด http://127.0.0.1:4174/ — EN เป็นค่าเริ่มต้น ส่วน TH อยู่ที่ /th/ และเปลี่ยนภาษาหน้าเดิมได้จากเมนู
+
+```powershell
+npm.cmd run build
+npm.cmd run preview -- --port 4174
+npm.cmd test
+```
+
+Build สร้าง HTML ล่วงหน้า 16 หน้า พร้อม React สำหรับการกดเปลี่ยนหน้าโดยไม่โหลด document ใหม่ และหน้า 404 สองภาษา ไฟล์ใน dist สร้างใหม่ได้เสมอ ไม่ใช่แหล่งแก้เนื้อหา
+
+## แก้ข้อความและลำดับ
+
+- data/home.json: ทุกส่วนของ Home; เรียง selected.items เพื่อเปลี่ยนลำดับงานเด่น และ foil.lines เพื่อเปลี่ยนรายการข้อความฟอยล์
+- data/pages/about.json: บทนำ ประสบการณ์ ทักษะ และการศึกษา
+- data/pages/project.json: ตัวกรองและลำดับรายการในหน้า Project
+- data/pages/<project-id>.json: บทนำ ข้อมูลโครงการ สารบัญ chapters หลักฐาน และเคสถัดไป
+- data/smart-asset-cover.json และ data/smart-asset-evidence.json: flow ส่วนที่สองและ appendix ของ Smart Asset
+- data/ui.json: ข้อความส่วนควบคุมที่ใช้ร่วมกัน
+
+ข้อความเก็บเป็นคู่ เช่น `{ "en": "Read case study", "th": "อ่านเคส" }` โดยตำแหน่งในข้อมูลมีรหัสคงที่ ไม่ใช้ข้อความไทยเป็น key ของคำแปล เปลี่ยนข้อความทั้งสองภาษาในตำแหน่งเดียว
+
+เนื้อหาเคสและ About ใช้ ContentNode: text (ข้อความคู่ภาษา), image (mediaId และ alt ของตำแหน่งนั้น), element (semantic tag, attributes, children) จึงยังแก้ย่อหน้า ลิงก์ ตาราง และตัวหนาแยกกันได้โดยไม่ฝัง HTML string เมื่อเปลี่ยนลำดับบท ให้เปลี่ยน chapters และรายการ toc ให้ตรงกัน และรักษา id เพื่อไม่ให้ลิงก์เดิมขาด
+
+รอบย้ายครั้งนี้คงคำตอบ accordion ที่ยังว่างและข้อความข้อจำกัดของหลักฐานตามเดิม
+
+## เปลี่ยนภาพจากข้อมูลกลาง
+
+1. วางไฟล์ใน assets/images แล้วเพิ่มรหัสใน data/media.json พร้อม src และ alt EN/TH
+2. เปลี่ยน coverMediaId ใน data/projects.json เพื่อเลือกภาพหลักของโปรเจกต์
+3. หน้า Project เปลี่ยนตามภาพหลักทันที; Home ใช้ visual และหน้าเคสใช้ overview เป็นตัวเลือกเฉพาะตำแหน่ง
+4. ลบ visual / overview หรือกำหนดเป็น null เมื่อต้องการกลับไปใช้ภาพหลัก
+5. ภาพที่ฝังอยู่ในบทความอ้าง mediaId ของหลักฐานแยกต่างหาก จึงไม่เปลี่ยนตาม coverMediaId
+
+การเปลี่ยน src ของ mediaId เดิมมีผลทุกตำแหน่งที่อ้างรหัสนั้น หากต้องการเปลี่ยนเพียงตำแหน่งเดียว ให้เพิ่ม mediaId ใหม่ Caption และ alt เฉพาะตำแหน่งยังแก้ในข้อมูลหน้านั้นได้
+
+รูปแบบภาพ: single ใช้ mediaId, pair/collage ใช้ mediaIds สองรหัส, statistics ใช้ข้อมูลตัวเลขเดิม หน้าเคสยังรองรับ flow ที่เก็บ blocks ของคำอธิบาย เช่น Change Date
+
+## โครงโค้ด
+
+- src/App.tsx: เลือกหน้าจาก URL; components/SiteLayout.tsx: ส่วนกลาง ภาษา metadata และ scroll/focus
+- src/pages/: About, Project และแม่แบบ Case
+- src/components/: Header/Footer, rich content, ภาพ, dialog, SystemFlow และ FlowEvidence
+- src/content/: types, ตัวเลือกภาพ, ข้อมูลตามภาษา; src/routes.ts เป็นทะเบียน URL
+- src/hooks/: การทำงานและ cleanup ของฟอยล์ dialog และลูกศร
+- src/styles/theme.css: สี ฟอนต์ ระยะ และขนาด; styles/pages*.css แยกขอบเขตดีไซน์หน้าด้านในจาก Home
+- src/entry-server.tsx + scripts/prerender.mjs: สร้าง HTML จาก React โดยไม่ต้องมี server ตอนเผยแพร่
+
+Home คงชื่อขนาดใหญ่และฟอยล์ ส่วนหน้าเคสเรียงบทนำ → ภาพรวม → เนื้อหาและสารบัญ → หลักฐานเพิ่มเติม (ถ้ามี) → เคสถัดไป Smart Asset คง interactive flow เป็นส่วนที่สอง
+
+## ตรวจรับและเผยแพร่
 
 ```powershell
 npm.cmd run typecheck
 npm.cmd run check:content
-npm.cmd run build
 npm.cmd test
+$env:PORTFOLIO_BASE_PATH = '/portfolio/'
+npm.cmd run build
+npm.cmd run verify:pages
+Remove-Item Env:PORTFOLIO_BASE_PATH
 ```
 
-- `build` ตรวจชนิดข้อมูลและไฟล์อ้างอิง แล้วรวม Home + HTML 7 หน้า ทั้ง EN/TH และ assets ไว้ใน `dist/`
-- `test` ใช้ Microsoft Edge ที่ติดตั้งในเครื่อง เปิด production preview ที่ 4175 และ dev fixture ที่ 4176 อัตโนมัติ
-- ดู production ด้วย `npm.cmd run preview` ที่ 4173 หลังหยุด dev server ด้วย Ctrl+C; หรือใช้ `npm.cmd run preview -- --port 4174`
-- ต้องเปิดผ่าน server เมื่อพัฒนา React; `index.html` ต้นทางไม่ได้ออกแบบให้ดับเบิลคลิกผ่าน `file://`
-- GitHub Pages ใช้ workflow `../.github/workflows/deploy-react.yml` เผยแพร่ไฟล์ทั้งหมดใน `dist/` ที่ URL หลัก `/portfolio/`; Vite ใช้ relative base เพื่อให้ภาพ ฟอนต์ และลิงก์ทำงานภายใต้ path นี้
-- ใน PR จะรัน `npm ci` และ `npm run build` เพื่อตรวจโค้ดก่อน merge; เผยแพร่เฉพาะ `main` โดยใช้ environment `github-pages`
+verify:pages ตรวจไฟล์ที่ build แล้วผ่าน static server ภายใต้ /portfolio/ ทั้งลิงก์ตรง refresh ภาษา และ client navigation ไม่ deploy เว็บ
 
-## เปลี่ยนข้อความและภาพ Home
+สำหรับภาพ QA ให้รัน preview บน 4177 แล้ว `npm.cmd run qa:visual` หรือ `node scripts/capture-migration.mjs http://127.0.0.1:4174` ตรวจ 80 หน้าจอหลักและ About อีก 4 ขนาด รายงานและ screenshots อยู่ใน qa/react-migration/
 
-| จุดแก้ | ไฟล์ |
-|---|---|
-| ข้อความ ลำดับงานในแต่ละส่วน และภาพเฉพาะ Home | `data/home.json` |
-| ชื่อโปรเจกต์ URL และภาพหลักสำรอง | `data/projects.json` |
-| รหัสภาพ → ไฟล์, alt และขนาดจริง | `data/media.json` |
-| ไฟล์ภาพ | `assets/images/` |
-| สี ฟอนต์ ขนาดหัวเรื่อง และระยะหลัก | `src/styles/theme.css` |
-| โครงหน้าและลำดับส่วน | `src/Home.tsx` |
-| Component รายส่วน | `src/components/` |
-| Liquid effect และ lifecycle | `src/hooks/useLiquidText.ts` |
-| คำแปลอังกฤษของ Home, alt และ HTML ทุกหน้า | `data/locales/en.json` |
-| รูปแบบปุ่มภาษาและโลโก้หน้า HTML | `assets/language.css` |
+ชุดทดสอบเทียบเนื้อหากับ qa/react-migration/content-baseline.json และ Home กับ baseline เดิม ห้ามอัปเดต baseline เพื่อกลบข้อความหายหรือ layout regression
 
-เนื้อหาใช้ข้อความธรรมดา ถ้าต้องการขึ้นบรรทัดใหม่ใช้ `\n` ไม่ต้องเขียน HTML ลง JSON
+GitHub Actions ทดสอบก่อน build ด้วยฐาน /portfolio/ และเผยแพร่ Ooca/dist เมื่อ merge/push main การทำงานบน branch ไม่เปลี่ยนเว็บจริง
 
-**ตัวอย่างเปลี่ยนเฉพาะภาพ Home ของ WCF**
+## ต้นฉบับและการย้อนกลับ
 
-1. เพิ่มภาพใหม่ใน `assets/images/`
-2. เพิ่มรายการใน `data/media.json` เช่น:
+legacy/ เป็นหลักฐานก่อนย้าย ไม่ถูก import, generate หรือเผยแพร่ใน build ใหม่ อย่ารันตัวสร้าง Python ใน legacy; ใช้ข้อมูล JSON และ React ด้านบน ต้นฉบับเต็มก่อนย้ายอยู่ที่ Git commit 59290b69e5b8f198261f97e6d7e09c2d84924ddf
 
-```json
-"wcf-home-new": {
-  "src": "assets/images/wcf-home-new.png",
-  "alt": "ภาพรวม flow งาน WCF",
-  "width": 810,
-  "height": 630
-}
-```
-
-3. เปลี่ยน `wcf.visual` ใน `data/home.json` เป็น:
-
-```json
-{ "kind": "single", "mediaId": "wcf-home-new" }
-```
-
-ลบ `visual` หรือกำหนดเป็น `null` เมื่อต้องการใช้ `coverMediaId` จากข้อมูลโปรเจกต์แทน
-
-ส่วน WCF บน Home ใช้ `wcf.visual.kind = "collage"`: `mediaIds[0]` เป็นภาพ Flow และ `mediaIds[1]` เป็นหน้าจอซ้อนมุมขวาบน ส่วนภาพเล็กข้างหัวเรื่องกำหนดที่ `wcf.iconMediaId` ตัวอักษรและตำแหน่งภาพยังแก้แยกกันได้ ไม่มีข้อความฝังเป็นภาพ
-
-รูปแบบที่รองรับ:
-
-- `single`: `mediaId` หนึ่งภาพ
-- `pair`: `mediaIds` สองภาพ เช่น Buddy
-- `collage`: `mediaIds` สองภาพ โดยภาพแรกเป็นฐาน ภาพที่สองซ้อนด้านบน เช่น Smart Asset
-- `statistics`: ตัวเลขและคำอธิบาย Change Date ตามข้อมูลเดิม โดยระบุชัดว่าเป็นข้อมูลที่ศึกษา
-
-จุดที่อ้างรหัสภาพเดียวกันจะใช้ไฟล์เดียวกัน เปลี่ยน `src` ใน registry จุดเดียวได้เลย หากต้องการเปลี่ยนเฉพาะ Home ให้เพิ่มไฟล์ใหม่แทนการเขียนทับไฟล์ที่ HTML เดิมใช้อยู่
-
-**ข้อมูลกลางรอบนี้ใช้กับ Home เท่านั้น** การแก้ JSON ยังไม่เปลี่ยนรูปหรือข้อความใน About, Project และเคสเดิม
-
-## ภาษาและโลโก้
-
-- **EN เป็นค่าเริ่มต้น** ที่ `/`; TH อยู่ที่ `/th/` ไม่เปลี่ยนตามภาษาของเบราว์เซอร์
-- ทั้งสองภาษามี 8 หน้าเหมือนกัน เช่น `about.html` กับ `th/about.html` ปุ่ม EN/TH อยู่หลัง Project และพากลับไปหน้าเดียวกันของอีกภาษา
-- เก็บข้อความต้นฉบับในแหล่งเดิม แล้วเพิ่มคำแปลใน `data/locales/en.json`: key คือข้อความไทยที่รวมช่องว่างและการขึ้นบรรทัดเป็นช่องว่างเดียว ส่วน value คือภาษาอังกฤษ ถ้าเพิ่มข้อความไทยแล้วไม่มีคำแปล build จะไม่ผ่าน
-- `src/content/localization.ts` แปลข้อมูล React; `scripts/localize-pages.ts` สร้าง HTML แต่ละภาษา ทั้งใน dev และ production ไม่เขียนทับ HTML ต้นฉบับ
-- ภาพและ screenshot ใช้ไฟล์ร่วมกัน ภาษาภายในรูปต้นฉบับไม่ถูกแก้ แต่ alt และ caption แปลตามภาษาของหน้า
-- `assets/brand/logo.svg` คือ SVG ที่ได้รับจากทรี ใช้เป็นโลโก้ทุกหน้า
-- `assets/favicon-light.svg` เป็นตัว t สีดำ; `assets/favicon-dark.svg` เป็นสีขาว; `assets/favicon.svg` เปลี่ยนสีในตัวตาม `prefers-color-scheme` ใช้เส้นรูปตัว t จาก SVG เดียวกัน ตัดเส้นร่างเล็ก ๆ ออกเพื่อให้อ่านออกที่ขนาด favicon
-- โหมดสีมีผลต่อ favicon เท่านั้น หน้าเว็บยังใช้พื้นขาวตามดีไซน์เดิม
-
-## หน้า HTML เดิมและต้นฉบับ
-
-- `scripts/build.py`: ข้อมูล/แม่แบบของ Project และเคส; `scripts/about_page.py` + `data/about-profile.json`: About
-- ถ้าแก้แหล่งข้อมูลเหล่านี้ ให้รัน `python scripts/build.py` ก่อน `npm.cmd run build`
-- ตัวสร้าง Python เขียนเฉพาะ 7 หน้าเดิม ไม่เขียนทับ `index.html` ของ React
-- `assets/site.css` และ `assets/site.js` ดูแลหน้าเดิม ส่วน Home ใช้ CSS ใน `src/styles/`
-- Section ที่ 2 ของ Smart Asset เป็น System Flow Cover จาก `ProfiletoCoda/work/smart-asset-sa-ai/` ใช้ `data/smart-asset-cover.json` + `scripts/smart_asset_cover.py` และ `assets/smart-asset-cover.css` / `.js` แสดง 7 หน้าจอบนเดสก์ท็อปและ 4 ขั้นหลักบนมือถือ พร้อมเส้นเชื่อมที่ปรับตามขนาดจริงของแต่ละหน้าจอ
-- ส่วน Appendix / System flow evidence ของ Smart Asset ใช้ `data/smart-asset-evidence.json` กับ `scripts/smart_asset_evidence.py` และคำแปลใน `data/locales/en.json` รัน `python scripts/build.py` หลังแก้ข้อมูลเพื่อสร้าง HTML ใหม่
-- ไดอะแกรมทั้ง 6 นำมาจากส่วน Appendix ของ `portfoliothree/work/smart-asset-sa-ai/` โดยคัดลอกไฟล์ใน `portfoliothree/src/assets/images/work/smart-asset-sa-ai/` ตามลำดับเดิม เก็บภาพเต็มไว้ที่ `assets/images/smart-asset-evidence/`; รูปแบบและตัวเปิดภาพอยู่ใน `assets/smart-asset-evidence.css` และ `.js`
-- `text-intro-examples.html` และ `assets/portfolio-editorial.css` เป็นหน้าฟอยล์ต้นฉบับพร้อมตัวเลือกข้อความทดลอง ไม่ใช่ไฟล์ต้นทางของ React และไม่ถูกคัดลอกเป็นหน้าสาธารณะใน `dist`
-- สำเนาก่อนย้าย React และเอกสารร่างยังเก็บอยู่ในโฟลเดอร์งานต้นฉบับบนเครื่อง ไม่ได้รวมไว้ใน repository นี้
-
-## หลักฐานตรวจรับ
-
-ชุดตรวจปัจจุบันมี 22 ข้อ ครอบคลุมขนาด 320, 390, 552, 768, 1440px รวมภาพ Change Date และ WCF ล่าสุด ตรวจ EN/TH ทุกหน้า การสลับภาษาด้วยคีย์บอร์ด เส้นทาง dev/production และ favicon ตามโหมดสี รวมถึงไดอะแกรม Smart Asset ทั้ง 6 และการเปิด–ปิดภาพด้วยคีย์บอร์ด
-
-`npm.cmd test` ตรวจ layout กับ baseline เดิม, ข้อความ, ลิงก์, ภาพ, keyboard, accordion, reduced motion, การหยุดเอฟเฟกต์, StrictMode/cleanup และหน้า legacy หากตั้งใจปรับดีไซน์หรือข้อความในอนาคต ให้รีวิวและปรับ baseline ด้วย; การทดสอบชุดนี้ตั้งใจจับความเปลี่ยนแปลงจากหน้าฟอยล์ที่อนุมัติ
-
-`node scripts/qa.mjs` เรียกชุดทดสอบปัจจุบันเช่นเดียวกับ `npm.cmd test` ใน repository เก็บ `qa/react-home/baseline.json` ซึ่งชุดทดสอบต้องใช้ ส่วนภาพและรายงานที่สร้างระหว่างทดสอบถูกละเว้นจาก Git
+รายละเอียดศัพท์อยู่ใน CONTEXT.md และการเลือกสถาปัตยกรรมอยู่ใน docs/adr/0001-react-static-pages.md เว็บไซต์เก่านอกโฟลเดอร์ Ooca ไม่อยู่ในขอบเขตการย้ายนี้

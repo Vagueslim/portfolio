@@ -1,0 +1,1263 @@
+{
+  "metadata": {
+    "title": {
+      "en": "Buddy App 2.0 — Dhittawat Thongkhum",
+      "th": "Buddy App 2.0 — Dhittawat Thongkhum"
+    },
+    "description": {
+      "en": "Redesigned technician onboarding from a single long form into sections that applicants could complete separately and return to, alongside job details and an introductory learning framework.",
+      "th": "ปรับ Onboarding ฝั่งช่างจากการกรอกทั้งหมดในครั้งเดียว เป็นส่วนที่เลือกทำและกลับมาทำต่อได้ พร้อมรายละเอียดงานและกรอบการเรียนรู้เบื้องต้น"
+    }
+  },
+  "head": {
+    "kind": "element",
+    "tag": "section",
+    "attributes": {
+      "class": "case-head"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "breadcrumb"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "project.html"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "Project",
+                  "th": "Project"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "/",
+                  "th": "/"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "Buddy App 2.0",
+                  "th": "Buddy App 2.0"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "eyebrow"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "02 / TECHNICIAN EXPERIENCE",
+              "th": "02 / TECHNICIAN EXPERIENCE"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "h1",
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Buddy App 2.0",
+              "th": "Buddy App 2.0"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "case-statement"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Apply at your own pace.\nPause and come back.",
+              "th": "สมัครตามความพร้อม พักแล้วกลับมาทำต่อได้"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "case-intro thai"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Redesigned technician onboarding from a single long form into sections that applicants could complete separately and return to, alongside job details and an introductory learning framework.",
+              "th": "ปรับ Onboarding ฝั่งช่างจากการกรอกทั้งหมดในครั้งเดียว เป็นส่วนที่เลือกทำและกลับมาทำต่อได้ พร้อมรายละเอียดงานและกรอบการเรียนรู้เบื้องต้น"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "dl",
+        "attributes": {
+          "class": "case-facts"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Role",
+                      "th": "Role"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "UX/UI Design",
+                      "th": "UX/UI Design"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Scope",
+                      "th": "Scope"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Onboarding · Service selection",
+                      "th": "Onboarding · Service selection"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Team",
+                      "th": "Team"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Home designed with two other designers",
+                      "th": "Home ทำร่วมกับ Designer อีก 2 คน"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Evidence",
+                      "th": "Evidence"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Usability testing · Before app launch",
+                      "th": "Usability test · ก่อนเปิดใช้แอป"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "overview": {
+    "kind": "single",
+    "mediaId": "buddy-onboarding",
+    "alt": {
+      "en": "Technician registration overview — an example of the pending-approval state",
+      "th": "หน้าภาพรวมสมัครเป็นช่าง — ตัวอย่างสถานะรอการอนุมัติ"
+    }
+  },
+  "visualClass": "case-hero buddy",
+  "caption": {
+    "kind": "element",
+    "tag": "p",
+    "attributes": {
+      "class": "caption",
+      "style": "margin-top:13px"
+    },
+    "children": [
+      {
+        "kind": "text",
+        "value": {
+          "en": "Technician registration overview — an example of the pending-approval state",
+          "th": "หน้าภาพรวมสมัครเป็นช่าง — ตัวอย่างสถานะรอการอนุมัติ"
+        }
+      }
+    ]
+  },
+  "toc": {
+    "kind": "element",
+    "tag": "aside",
+    "attributes": {
+      "class": "case-toc"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "eyebrow"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "IN THIS CASE",
+              "th": "IN THIS CASE"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "nav",
+        "attributes": {
+          "aria-label": {
+            "en": "Case study contents",
+            "th": "สารบัญเคส"
+          }
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#unfinished"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "01 / Discouraged before registration is complete",
+                  "th": "01 / ช่างท้อ ก่อนสมัครเสร็จ"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#sections"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "02 / Complete what you can, then return",
+                  "th": "02 / ทำเท่าที่พร้อม แล้วกลับมาทำต่อ"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#feedback"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "03 / Test participants valued gradual completion",
+                  "th": "03 / ผู้ทดสอบเห็นคุณค่าของการค่อย ๆ ทำ"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#service-details"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "04 / Understand pay and scope before selecting work",
+                  "th": "04 / รู้ค่าจ้างและขอบเขตก่อนเลือกงาน"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#learning"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "05 / A learning framework for technician development",
+                  "th": "05 / กรอบการเรียนรู้สำหรับฝ่ายพัฒนาช่าง"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "chapters": [
+    {
+      "id": "unfinished",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "01 / TECHNICIAN EXPERIENCE",
+                "th": "01 / TECHNICIAN EXPERIENCE"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Discouraged before registration is complete",
+                "th": "ช่างท้อ ก่อนสมัครเสร็จ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "The old app required applicants to enter everything in one sitting and saved only at the end. The main goal was to let people return if they felt discouraged or were not yet ready to finish.",
+                "th": "แอปเดิมให้กรอกข้อมูลทั้งหมดในคราวเดียวและบันทึกเมื่อเสร็จ เป้าหมายหลักของการปรับครั้งนี้คือเปิดทางให้ผู้สมัครที่ท้อหรือยังไม่พร้อมสามารถกลับมาทำต่อได้"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Some documents might not be available, and some information might still be incomplete. We also considered technicians applying after a tiring workday, so we divided the workload into sections.",
+                "th": "เอกสารบางอย่างอาจยังไม่อยู่กับตัว ข้อมูลบางเรื่องยังให้ไม่ได้ครบ ทีมคำนึงถึงการสมัครหลังเลิกงานที่ช่างเหนื่อยล้า จึงแบ่งภาระออกเป็นส่วน"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "note"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "After-work fatigue was a context the team considered, not a directly measured research finding. Reducing drop-off was the goal, but post-launch results are not available.",
+                "th": "ความเหนื่อยหลังเลิกงานเป็นบริบทที่ทีมคำนึงถึง ไม่ได้ระบุว่าเป็นผลวิจัยที่วัดโดยตรง เป้าหมายคือแก้ drop-off แต่ยังไม่มีผลหลังเปิดใช้จริง"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sections",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "02 / TECHNICIAN EXPERIENCE",
+                "th": "02 / TECHNICIAN EXPERIENCE"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Complete what you can, then return",
+                "th": "ทำเท่าที่พร้อม แล้วกลับมาทำต่อ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Registration was split into five sections. Applicants could complete them separately when ready, leave the app, and return. The overview summarized the information and status of each section.",
+                "th": "แบ่งการสมัครเป็น 5 ส่วน ผู้สมัครเลือกทำแยกกันตามความพร้อมและออกจากแอปแล้วกลับมาทำต่อได้ หน้าภาพรวมสรุปข้อมูลและสถานะของแต่ละส่วน"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "table",
+          "children": [
+            {
+              "kind": "element",
+              "tag": "thead",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "tr",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "th",
+                      "attributes": {
+                        "scope": "col"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Section",
+                            "th": "ส่วน"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "th",
+                      "attributes": {
+                        "scope": "col"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "What to prepare",
+                            "th": "สิ่งที่ต้องเตรียม"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "tbody",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "tr",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Personal details",
+                            "th": "ข้อมูลส่วนตัว"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "ID card and personal information",
+                            "th": "บัตรประชาชนและข้อมูลส่วนตัว"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "tr",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Address details",
+                            "th": "ข้อมูลที่อยู่"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Current address and address for documents",
+                            "th": "ที่อยู่ปัจจุบันและที่อยู่สำหรับออกเอกสาร"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "tr",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Select services",
+                            "th": "เลือกบริการ"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Types of work to accept",
+                            "th": "งานที่ต้องการรับ"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "tr",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Select service areas",
+                            "th": "เลือกพื้นที่รับงาน"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Areas where you can work",
+                            "th": "พื้นที่ที่สะดวกรับงาน"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "tr",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Work and payment documents",
+                            "th": "เอกสารการรับงานและเงิน"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Supporting application documents",
+                            "th": "หลักฐานประกอบการสมัคร"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "The design included both completed and incomplete information states. This screenshot shows pending approval, so form-completion progress must be distinguished from approval status.",
+                "th": "ในแบบมีทั้ง “ใส่ข้อมูลแล้ว” และ “ยังใส่ข้อมูลไม่ครบ” ส่วนภาพนี้แสดง “รอการอนุมัติ” จึงต้องแยกความคืบหน้าการกรอกออกจากสถานะตรวจอนุมัติ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "figure",
+          "attributes": {
+            "class": "evidence"
+          },
+          "children": [
+            {
+              "kind": "element",
+              "tag": "button",
+              "attributes": {
+                "class": "image-button",
+                "data-media-id": "buddy-onboarding",
+                "data-caption": {
+                  "en": "The image shows submitted sections awaiting approval, not the state of an applicant who has just started.",
+                  "th": "ภาพแสดงรายการที่ส่งแล้วและรอการอนุมัติ ไม่ใช่สถานะของผู้สมัครที่เพิ่งเริ่มกรอก"
+                },
+                "aria-label": {
+                  "en": "Enlarge image: Technician registration divided into five sections",
+                  "th": "ขยายภาพ: หน้าสมัครเป็นช่าง แบ่งข้อมูลห้าส่วน"
+                }
+              },
+              "children": [
+                {
+                  "kind": "image",
+                  "mediaId": "buddy-onboarding",
+                  "alt": {
+                    "en": "Technician registration divided into five sections",
+                    "th": "หน้าสมัครเป็นช่าง แบ่งข้อมูลห้าส่วน"
+                  }
+                },
+                {
+                  "kind": "element",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "zoom-hint"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Enlarge image ↗",
+                        "th": "ขยายภาพ ↗"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "figcaption",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "The image shows submitted sections awaiting approval, not the state of an applicant who has just started.",
+                    "th": "ภาพแสดงรายการที่ส่งแล้วและรอการอนุมัติ ไม่ใช่สถานะของผู้สมัครที่เพิ่งเริ่มกรอก"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "feedback",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "03 / TECHNICIAN EXPERIENCE",
+                "th": "03 / TECHNICIAN EXPERIENCE"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Test participants valued gradual completion",
+                "th": "ผู้ทดสอบเห็นคุณค่าของการค่อย ๆ ทำ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "blockquote",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "“This is better than when I applied. I can come back and do a little at a time. Otherwise, with 20 things to fill in at once, I would not know when I would finish.”",
+                "th": "“แบบนี้ดีกว่าตอนพี่สมัคร ค่อย ๆ กลับมาทำได้ ไม่งั้นกรอกที 20 อย่าง ไม่รู้จะเสร็จเมื่อไร”"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "This feedback suggests that the participant recognized the value of completing the application gradually and returning later, compared with their own previous registration experience.",
+                "th": "ฟีดแบ็กนี้สะท้อนว่าผู้ทดสอบรับรู้คุณค่าของการทยอยทำและกลับมาทำต่อ เมื่อเทียบกับประสบการณ์สมัครเดิมของตนเอง"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "note"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "The quote is recalled from memory, edited for readability, and translated here; it is not a verbatim transcript. “20 things” was the participant’s description, not a verified field count. I left the team before the app launched, so I cannot confirm a reduction in drop-off.",
+                "th": "คำพูดเล่าจากความทรงจำและปรับสะกดให้อ่านง่าย ไม่ใช่การถอดเสียงโดยตรง “20 อย่าง” เป็นคำของผู้ทดสอบ ไม่ใช่จำนวนฟิลด์ที่ตรวจนับ ผู้ทำงานออกจากทีมก่อนปล่อยแอป จึงไม่มีข้อมูลยืนยันว่า drop-off ลดลงจริง"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "service-details",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "04 / TECHNICIAN EXPERIENCE",
+                "th": "04 / TECHNICIAN EXPERIENCE"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Understand pay and scope before selecting work",
+                "th": "รู้ค่าจ้างและขอบเขตก่อนเลือกงาน"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Separated job items with pay and pricing units, such as per installation point, alongside required equipment, work standards, and certification requirements for some services.",
+                "th": "แยกรายการงานพร้อมค่าจ้างและหน่วยคิดราคา เช่น ต่อจุด พร้อมอุปกรณ์ที่ต้องเตรียม มาตรฐานการทำงาน และเงื่อนไขใบรับรองของบางบริการ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "figure",
+          "attributes": {
+            "class": "evidence"
+          },
+          "children": [
+            {
+              "kind": "element",
+              "tag": "button",
+              "attributes": {
+                "class": "image-button",
+                "data-media-id": "buddy-services",
+                "data-caption": {
+                  "en": "Service details organized by job, with equipment and work standards",
+                  "th": "รายละเอียดบริการแยกตามงาน พร้อมส่วนอุปกรณ์และมาตรฐานการทำงาน"
+                },
+                "aria-label": {
+                  "en": "Enlarge image: Water-heater installation jobs with pay, equipment, and standards",
+                  "th": "ขยายภาพ: รายการงานติดตั้งเครื่องทำน้ำอุ่น พร้อมราคา อุปกรณ์ และมาตรฐาน"
+                }
+              },
+              "children": [
+                {
+                  "kind": "image",
+                  "mediaId": "buddy-services",
+                  "alt": {
+                    "en": "Water-heater installation jobs with pay, equipment, and standards",
+                    "th": "รายการงานติดตั้งเครื่องทำน้ำอุ่น พร้อมราคา อุปกรณ์ และมาตรฐาน"
+                  }
+                },
+                {
+                  "kind": "element",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "zoom-hint"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Enlarge image ↗",
+                        "th": "ขยายภาพ ↗"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "figcaption",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Service details organized by job, with equipment and work standards",
+                    "th": "รายละเอียดบริการแยกตามงาน พร้อมส่วนอุปกรณ์และมาตรฐานการทำงาน"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "note"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "This section describes the design and available screens. I do not remember the full background, so I have not added an original problem or business outcome that I cannot substantiate.",
+                "th": "ส่วนนี้เล่าตามสิ่งที่ออกแบบและภาพที่มี ผู้ทำงานจำเรื่องเบื้องหลังได้ไม่ครบ จึงไม่เติมปัญหาเดิมหรือผลลัพธ์ทางธุรกิจ"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "learning",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "05 / TECHNICIAN EXPERIENCE",
+                "th": "05 / TECHNICIAN EXPERIENCE"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "A learning framework for technician development",
+                "th": "กรอบการเรียนรู้สำหรับฝ่ายพัฒนาช่าง"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Prepared an introductory lesson and quiz structure for the technician-development team to use before training. It included Q-CHANG 101 and sections based on the services selected by the applicant.",
+                "th": "เตรียมโครงสร้างหน้าบทเรียนและแบบทดสอบเบื้องต้นไว้ให้ฝ่ายพัฒนาช่างนำไปใช้ก่อนอบรม มีทั้ง Q-CHANG 101 และส่วนตามบริการที่ผู้สมัครเลือก"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "ul",
+          "children": [
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Lessons and quizzes separated into general and job-specific content",
+                    "th": "รายการบทเรียนและแบบทดสอบ แยกส่วนกลางกับส่วนเฉพาะงาน"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Status for each module and progress within it",
+                    "th": "สถานะรายชุดและความคืบหน้าระหว่างทำ"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Options for retrying incorrect answers and confirming before submission",
+                    "th": "แบบที่ตอบผิดแล้วเลือกใหม่ และตัวเลือกยืนยันก่อนส่ง"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "My scope was to design a framework for the responsible team to develop further; actual adoption has not been confirmed. The Figma file contains multiple drafts and options, which should not be treated as one final flow.",
+                "th": "ขอบเขตงานคือการออกแบบกรอบให้ฝ่ายที่รับผิดชอบนำไปใช้ต่อ ยังไม่มีข้อมูลยืนยันการนำไปใช้จริง หน้า Figma มีหลาย draft และ option จึงไม่รวมทุกหน้าว่าเป็น flow สุดท้ายเดียวกัน"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "kind": "element",
+    "tag": "div",
+    "attributes": {
+      "class": "source-links"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "https://www.figma.com/design/ZtJ1fRuQiehSYg1lRn0mnt/?node-id=12851-220583",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Figma · Onboarding ↗",
+              "th": "Figma · Onboarding ↗"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "https://www.figma.com/design/ZtJ1fRuQiehSYg1lRn0mnt/?node-id=3837-82478",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Figma · Learning framework ↗",
+              "th": "Figma · กรอบบทเรียน ↗"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "next": {
+    "kind": "element",
+    "tag": "div",
+    "attributes": {
+      "class": "next-case"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "change-date.html"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "eyebrow"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "NEXT CASE / SERVICE & OPERATIONS",
+                      "th": "NEXT CASE / SERVICE & OPERATIONS"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "h2",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Change Date",
+                      "th": "Change Date"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "class": "next-arrow",
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "↗",
+                  "th": "↗"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

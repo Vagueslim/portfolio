@@ -15,7 +15,7 @@ test('English is the default even for a Thai browser; both languages work on eve
     expect(response?.status()).toBe(200);
     await expect(page.locator('html')).toHaveAttribute('lang', language);
     await expect(page.locator('.language-switch a[aria-current="true"]')).toHaveText(language.toUpperCase());
-    await expect(page.locator('.brand-logo')).toHaveAttribute('src', `${language === 'th' ? '../' : ''}assets/brand/logo.svg`);
+    await expect(page.locator('.brand-logo')).toHaveAttribute('src', '/assets/brand/logo.svg');
     const text = await page.locator('body').innerText();
     expect(/[\u0e00-\u0e7f]/.test(text)).toBe(language === 'th');
     await page.evaluate(async () => { await document.fonts.ready; await Promise.all([...document.querySelectorAll<HTMLImageElement>('img[src]')].map(async img => { img.loading = 'eager'; await img.decode(); })); });
@@ -83,8 +83,8 @@ test('Favicons use the supplied t mark with black/light and white/dark variants'
     await page.emulateMedia({ colorScheme: scheme });
     await page.goto('/');
     const href = await page.locator(`link[rel="icon"][media="(prefers-color-scheme: ${scheme})"]`).getAttribute('href');
-    expect(href).toBe(`assets/favicon-${scheme}.svg`);
-    const response = await page.request.get(`/${href}`);
+    expect(href).toBe(`/assets/favicon-${scheme}.svg`);
+    const response = await page.request.get(href!);
     expect(response.ok()).toBe(true);
   }
   await page.goto('/assets/favicon.svg');

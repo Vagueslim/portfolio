@@ -1,0 +1,853 @@
+{
+  "metadata": {
+    "title": {
+      "en": "WCF Digital — Dhittawat Thongkhum",
+      "th": "WCF Digital — Dhittawat Thongkhum"
+    },
+    "description": {
+      "en": "Designed UX/UI for a staff-facing workers’ compensation system, understanding invoice workflows, document checks, and cross-system constraints with BAs, SAs, and developers.",
+      "th": "ออกแบบ UX/UI ระบบเงินทดแทนสำหรับเจ้าหน้าที่ โดยทำความเข้าใจ workflow ใบแจ้งหนี้ การตรวจเอกสาร และข้อจำกัดข้ามระบบร่วมกับ BA, SA และ Developer"
+    }
+  },
+  "head": {
+    "kind": "element",
+    "tag": "section",
+    "attributes": {
+      "class": "case-head"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "breadcrumb"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "project.html"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "Project",
+                  "th": "Project"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "/",
+                  "th": "/"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "WCF Digital",
+                  "th": "WCF Digital"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "eyebrow"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "04 / INTERNAL SYSTEMS",
+              "th": "04 / INTERNAL SYSTEMS"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "h1",
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "WCF Digital",
+              "th": "WCF Digital"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "case-statement"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Connecting rules, information, and exceptions",
+              "th": "ให้กฎ ข้อมูล และข้อยกเว้นทำงานร่วมกัน"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "case-intro thai"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Designed UX/UI for a staff-facing workers’ compensation system, understanding invoice workflows, document checks, and cross-system constraints with BAs, SAs, and developers.",
+              "th": "ออกแบบ UX/UI ระบบเงินทดแทนสำหรับเจ้าหน้าที่ โดยทำความเข้าใจ workflow ใบแจ้งหนี้ การตรวจเอกสาร และข้อจำกัดข้ามระบบร่วมกับ BA, SA และ Developer"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "dl",
+        "attributes": {
+          "class": "case-facts"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Role",
+                      "th": "Role"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "UX/UI · Requirement gathering",
+                      "th": "UX/UI · Requirement gathering"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Scope",
+                      "th": "Scope"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Hospital Billing · Document workflow",
+                      "th": "Hospital Billing · Document workflow"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Collaboration",
+                      "th": "Collaboration"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Operational staff · BA · SA · Developers",
+                      "th": "เจ้าหน้าที่ · BA · SA · Developer"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Evidence",
+                      "th": "Evidence"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "SIT · UAT · Training and handover",
+                      "th": "SIT · UAT · การอบรมและส่งมอบ"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "overview": {
+    "kind": "single",
+    "mediaId": "wcf-medical-categories",
+    "alt": {
+      "en": "A screen organizing medical expenses and comparing billed, payable, and published prices",
+      "th": "หน้าจอแบ่งหมวดค่ารักษาและเปรียบเทียบราคาที่เรียกเก็บ จ่ายได้ และราคาประกาศ"
+    }
+  },
+  "visualClass": "case-hero wcf",
+  "caption": {
+    "kind": "element",
+    "tag": "p",
+    "attributes": {
+      "class": "caption",
+      "style": "margin-top:13px"
+    },
+    "children": [
+      {
+        "kind": "text",
+        "value": {
+          "en": "A screen organizing medical expenses and comparing billed, payable, and published prices",
+          "th": "หน้าจอแบ่งหมวดค่ารักษาและเปรียบเทียบราคาที่เรียกเก็บ จ่ายได้ และราคาประกาศ"
+        }
+      }
+    ]
+  },
+  "toc": {
+    "kind": "element",
+    "tag": "aside",
+    "attributes": {
+      "class": "case-toc"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "eyebrow"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "IN THIS CASE",
+              "th": "IN THIS CASE"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "nav",
+        "attributes": {
+          "aria-label": {
+            "en": "Case study contents",
+            "th": "สารบัญเคส"
+          }
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#legacy"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "01 / Problems within and beyond the screen",
+                  "th": "01 / ปัญหาทั้งในและนอกหน้าจอ"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#billing"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "02 / Design around the work staff need to do",
+                  "th": "02 / ออกแบบตามงานที่เจ้าหน้าที่ต้องทำ"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#boundaries"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "03 / Make system boundaries clear in the UI",
+                  "th": "03 / ทำให้ขอบเขตระบบเข้าใจได้บน UI"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#delivery"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "04 / Verify the workflow in testing and training",
+                  "th": "04 / พิสูจน์ workflow ในการทดสอบและอบรม"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "chapters": [
+    {
+      "id": "legacy",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "01 / INTERNAL SYSTEMS",
+                "th": "01 / INTERNAL SYSTEMS"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Problems within and beyond the screen",
+                "th": "ปัญหาทั้งในและนอกหน้าจอ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "WCF Digital supports compensation processes for work-related injuries and illnesses. The previous system had accumulated many rules and exceptions, with important knowledge also held in staff members’ experience.",
+                "th": "WCF Digital รองรับกระบวนการเงินทดแทนจากการบาดเจ็บหรือเจ็บป่วยเนื่องจากการทำงาน ระบบเดิมสะสมกฎและข้อยกเว้นจำนวนมาก ความรู้สำคัญส่วนหนึ่งอยู่ในประสบการณ์ของเจ้าหน้าที่"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "For invoices, staff first prepared documents and calculations in Excel outside the system, then entered the results into WCF. The existing screens were dense and did not fully support how the work was actually done.",
+                "th": "ในงานใบแจ้งหนี้ เจ้าหน้าที่ทำเอกสารและคำนวณใน Excel ภายนอกระบบก่อน แล้วนำผลกลับมาคีย์ใน WCF หน้าจอเดิมหนาแน่นและยังไม่รองรับวิธีทำงานจริงได้ครบ"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "billing",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "02 / INTERNAL SYSTEMS",
+                "th": "02 / INTERNAL SYSTEMS"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Design around the work staff need to do",
+                "th": "ออกแบบตามงานที่เจ้าหน้าที่ต้องทำ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Gathered requirements directly from experienced claims officers, then worked with BAs, SAs, and developers to translate rules, documents, and states into connected screens.",
+                "th": "เก็บ requirement โดยตรงกับเจ้าหน้าที่วินิจฉัยที่มีประสบการณ์ แล้วทำงานกับ BA, SA และทีมพัฒนาเพื่อแปลงกฎ เอกสาร และ state ให้เป็นหน้าจอที่ทำงานสัมพันธ์กัน"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "ul",
+          "children": [
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Organize information by hospital and treatment period",
+                    "th": "จัดข้อมูลตามสถานพยาบาลและช่วงเวลารักษา"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Support multiple invoices or receipts within one case",
+                    "th": "รองรับใบแจ้งหนี้หรือใบเสร็จหลายรายการในเคสเดียว"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Separate costs into standard categories",
+                    "th": "แยกค่าใช้จ่ายตามหมวดมาตรฐาน"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Compare billed, payable, and published prices",
+                    "th": "เปรียบเทียบราคาที่เรียกเก็บ ราคาที่จ่ายได้ และราคาประกาศ"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Connect supporting documents with the information being reviewed",
+                    "th": "เชื่อมเอกสารหลักฐานกับข้อมูลที่ตรวจ"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "figure",
+          "attributes": {
+            "class": "evidence"
+          },
+          "children": [
+            {
+              "kind": "element",
+              "tag": "button",
+              "attributes": {
+                "class": "image-button",
+                "data-media-id": "wcf-medical-categories",
+                "data-caption": {
+                  "en": "An example UI using item categories and price columns to make each type of information clear",
+                  "th": "ตัวอย่าง UI ที่ใช้หมวดรายการและคอลัมน์ราคาแยกหน้าที่ข้อมูลให้เห็นชัด"
+                },
+                "aria-label": {
+                  "en": "Enlarge image: Medical-expense categories and price columns",
+                  "th": "ขยายภาพ: หน้าจอหมวดค่ารักษาพยาบาลและคอลัมน์ราคา"
+                }
+              },
+              "children": [
+                {
+                  "kind": "image",
+                  "mediaId": "wcf-medical-categories",
+                  "alt": {
+                    "en": "Medical-expense categories and price columns",
+                    "th": "หน้าจอหมวดค่ารักษาพยาบาลและคอลัมน์ราคา"
+                  }
+                },
+                {
+                  "kind": "element",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "zoom-hint"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Enlarge image ↗",
+                        "th": "ขยายภาพ ↗"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "figcaption",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "An example UI using item categories and price columns to make each type of information clear",
+                    "th": "ตัวอย่าง UI ที่ใช้หมวดรายการและคอลัมน์ราคาแยกหน้าที่ข้อมูลให้เห็นชัด"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "boundaries",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "03 / INTERNAL SYSTEMS",
+                "th": "03 / INTERNAL SYSTEMS"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Make system boundaries clear in the UI",
+                "th": "ทำให้ขอบเขตระบบเข้าใจได้บน UI"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "The work covered WCF interactions and states, and cross-system information coordination with BAs and SAs, including document checks connected to ECPS, a system developed by another company.",
+                "th": "งานครอบคลุม interaction/state ฝั่ง WCF และการสื่อสารข้อมูลข้ามระบบกับ BA/SA รวมถึงงานตรวจเอกสารที่เชื่อมกับ ECPS ซึ่งเป็นระบบของอีกบริษัทหนึ่ง"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "I owned the WCF-side screens and helped connect the flow. I did not own the system architecture, develop ECPS or its APIs, or set pricing policy.",
+                "th": "รับผิดชอบหน้าจอฝั่ง WCF และร่วมทำให้ flow เชื่อมต่อกันได้ ไม่ใช่เจ้าของ system architecture ผู้พัฒนา ECPS/API หรือผู้กำหนดนโยบายราคา"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "delivery",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "04 / INTERNAL SYSTEMS",
+                "th": "04 / INTERNAL SYSTEMS"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Verify the workflow in testing and training",
+                "th": "พิสูจน์ workflow ในการทดสอบและอบรม"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "According to the case documentation, Hospital Billing passed SIT and UAT. During testing and training, staff could complete the workflow in WCF, from entering information and classifying expenses to checking prices and issuing documents. The system was handed over.",
+                "th": "ตามเอกสารเคส งาน Hospital Billing ผ่าน SIT และ UAT เจ้าหน้าที่ทำ flow ตั้งแต่กรอกข้อมูล แยกหมวด ตรวจราคา ถึงออกเอกสารจาก WCF ได้ในการทดสอบและอบรม ระบบถูกส่งมอบแล้ว"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "note"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "The confirmed results relate to testing, training, and handover. The scheduled go-live and real-world outcomes, such as time, error rates, and adoption, have not been confirmed.",
+                "th": "ผลที่ยืนยันได้อยู่ในช่วงทดสอบ อบรม และส่งมอบ ยังไม่ยืนยัน Go Live ตามกำหนดหรือผลหลังใช้งานจริง เช่น เวลา อัตราความผิดพลาด และ adoption"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "This case connects domain understanding with design and developer handoff, making system constraints understandable rather than leaving staff to work them out alone.",
+                "th": "เคสนี้แสดงการเชื่อมความเข้าใจ domain กับงานออกแบบและการส่งต่อให้ทีมพัฒนา โดยไม่ให้ข้อจำกัดระบบกลายเป็นสิ่งที่เจ้าหน้าที่ต้องเดาเอง"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "next": {
+    "kind": "element",
+    "tag": "div",
+    "attributes": {
+      "class": "next-case"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "smart-asset.html"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "eyebrow"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "NEXT CASE / ASSET MANAGEMENT",
+                      "th": "NEXT CASE / ASSET MANAGEMENT"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "h2",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "PEC Smart Asset",
+                      "th": "PEC Smart Asset"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "class": "next-arrow",
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "↗",
+                  "th": "↗"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

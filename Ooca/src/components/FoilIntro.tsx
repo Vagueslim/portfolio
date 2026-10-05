@@ -1,7 +1,7 @@
+import { SiteLink } from './SiteLink';
 import { useState } from 'react';
-import { getMedia, getProject, home } from '../content';
+import { useContent } from '../content';
 import { useLiquidText } from '../hooks/useLiquidText';
-import { t } from '../content/localization';
 
 // Repeated dark-to-silver bands turn smooth noise into fine marble veins.
 // The final alpha mask keeps the actual text edges sharp and selectable.
@@ -15,6 +15,7 @@ const marbleChannels = [
 }).join(' '));
 
 export function FoilIntro() {
+  const { home, getMedia, getProject, ui } = useContent();
   const { foil } = home;
   const motion = useLiquidText();
   const [hovered, setHovered] = useState<string | null>(null);
@@ -41,11 +42,11 @@ export function FoilIntro() {
         {foil.lines.map(line => <p key={line.projectId}>
           <span className="project-thought">{line.thought}</span>{' '}
           <span className="project-reference"><span className="project-separator" aria-hidden="true">/</span>{' '}
-            <a className="ink-link" href={getProject(line.projectId).href} aria-label={`${line.label} — ${t('อ่านเคส')}`}
+            <SiteLink className="ink-link" href={getProject(line.projectId).href} aria-label={`${line.label} — ${ui.readCase}`}
               onPointerEnter={() => setHovered(line.destination)} onPointerLeave={() => setHovered(null)}
               onFocus={() => setFocused(line.destination)} onBlur={() => setFocused(null)}>
               <span className="liquid-ink" aria-hidden="true">{line.label}</span>
-            </a>
+            </SiteLink>
           </span>
         </p>)}
       </div>

@@ -1,12 +1,11 @@
 import { test, expect } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 
-const evidence = JSON.parse(readFileSync('data/smart-asset-evidence.json', 'utf8')) as {
-  title: string;
-  items: { src: string; width: number; height: number; title: string; alt: string }[];
-};
-const dictionary: Record<string, string> = JSON.parse(readFileSync('data/locales/en.json', 'utf8'));
-
+import { localize } from '../src/content/localization';
+import { media } from '../src/content';
+const rawEvidence = JSON.parse(readFileSync('data/smart-asset-evidence.json', 'utf8'));
+const evidenceFor = (locale: 'en' | 'th') => localize<{title: string; items: {mediaId: string; title: string; alt: string}[]}>(rawEvidence, locale);
+const evidence = evidenceFor('th');
 test('Smart Asset cover is section two and both flow sections fit in both languages', async ({ page }) => {
   const errors: string[] = [];
   page.on('pageerror', error => errors.push(error.message));
@@ -35,17 +34,17 @@ test('Smart Asset cover is section two and both flow sections fit in both langua
       }
     }
     const section = page.locator('#system-flow-evidence');
-    await expect(section.locator('h2').first()).toHaveText(locale === 'en' ? dictionary[evidence.title] : evidence.title);
+    await expect(section.locator('h2').first()).toHaveText(locale === 'en' ? evidenceFor('en').title : evidence.title);
     const cards = section.locator('.flow-evidence-trigger');
     await expect(cards).toHaveCount(6);
-    await expect(cards.locator('strong')).toHaveText(evidence.items.map(item => locale === 'en' ? dictionary[item.title] : item.title));
+    await expect(cards.locator('strong')).toHaveText(evidence.items.map(item => locale === 'en' ? evidenceFor('en').items.find(i => i.mediaId === item.mediaId)!.title : item.title));
     const images = await cards.locator('img').evaluateAll(async nodes => Promise.all(nodes.map(async node => {
       const image = node as HTMLImageElement;
       image.loading = 'eager';
       await image.decode();
       return [image.naturalWidth, image.naturalHeight];
     })));
-    expect(images).toEqual(evidence.items.map(item => [item.width, item.height]));
+    expect(images).toEqual(evidence.items.map(item => [media[item.mediaId].width, media[item.mediaId].height]));
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     expect(await section.evaluate(node => Boolean(node.compareDocumentPosition(document.querySelector('.next-case')!) & Node.DOCUMENT_POSITION_FOLLOWING))).toBe(true);
     await cards.last().focus();
@@ -64,11 +63,11 @@ test('Every appendix diagram opens at original resolution and returns keyboard f
       await trigger.focus();
       await page.keyboard.press(index % 2 ? 'Enter' : 'Space');
       await expect(dialog).toBeVisible();
-      await expect(dialog).toHaveAccessibleName(locale === 'en' ? dictionary[item.title] : item.title);
-      await expect(dialog.locator('img')).toHaveAttribute('alt', locale === 'en' ? dictionary[item.alt] : item.alt);
-      expect(await dialog.locator('img').evaluate(async image => { await (image as HTMLImageElement).decode(); return (image as HTMLImageElement).naturalWidth; })).toBe(item.width);
+      await expect(dialog).toHaveAccessibleName(locale === 'en' ? evidenceFor('en').items[index].title : item.title);
+      await expect(dialog.locator('img')).toHaveAttribute('alt', locale === 'en' ? evidenceFor('en').items.find(i => i.mediaId === item.mediaId)!.alt : item.alt);
+      expect(await dialog.locator('img').evaluate(async image => { await (image as HTMLImageElement).decode(); return (image as HTMLImageElement).naturalWidth; })).toBe(media[item.mediaId].width);
       const original = dialog.locator('.flow-diagram-original');
-      await expect(original).toHaveAttribute('href', `${locale === 'th' ? '../' : ''}${item.src}`);
+      await expect(original).toHaveAttribute('href', '/' + media[item.mediaId].src);
       await expect(original).toHaveAttribute('target', '_blank');
       await expect(dialog.locator('.flow-diagram-close')).toBeFocused();
       if (index % 2) await dialog.locator('.flow-diagram-close').click();
