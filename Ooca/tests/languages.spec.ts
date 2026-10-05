@@ -27,6 +27,10 @@ test('English is the default even for a Thai browser; both languages work on eve
 
 for (const width of [320, 390, 552, 768, 1440]) test(`English header, SVG logo and language controls fit at ${width}px`, async ({ page }) => {
   await page.setViewportSize({ width, height: 900 });
+  if (width === 390) {
+    const session = await page.context().newCDPSession(page);
+    await session.send('Emulation.setCPUThrottlingRate', { rate: 6 });
+  }
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto('/');
   await page.evaluate(async () => {
@@ -53,6 +57,8 @@ for (const width of [320, 390, 552, 768, 1440]) test(`English header, SVG logo a
   await expect(page.locator('html')).toHaveAttribute('lang', 'th');
   await page.locator('.ink-link').first().click();
   await expect(page).toHaveURL(/\/th\/wcf-digital.html$/);
+  // Client navigation updates the URL before React commits the destination menu.
+  await expect(page.locator('h1')).toHaveText('WCF Digital');
   if (await page.locator('.menu-toggle').isVisible()) await page.locator('.menu-toggle').click();
   await page.locator('.language-switch a[lang="en"]').click();
   await expect(page).toHaveURL(/(?<!\/th)\/wcf-digital.html$/);
