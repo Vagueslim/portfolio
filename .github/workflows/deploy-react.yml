@@ -37,8 +37,16 @@ jobs:
           cache-dependency-path: Ooca/package-lock.json
       - name: Install locked dependencies
         run: npm ci
-      - name: Validate and build React Home and case pages
+      - name: Install test browser
+        run: npx playwright install --with-deps chromium
+      - name: Verify the bilingual React site
+        run: npm test
+      - name: Build all React pages for GitHub Pages
         run: npm run build
+        env:
+          PORTFOLIO_BASE_PATH: /portfolio/
+      - name: Verify the deployment base and direct links
+        run: npm run verify:pages
       - name: Record deployed revision
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         run: printf '%s\n' "$GITHUB_SHA" > dist/revision.txt

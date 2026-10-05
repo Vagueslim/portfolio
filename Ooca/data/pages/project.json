@@ -1,0 +1,868 @@
+{
+  "metadata": {
+    "title": {
+      "en": "Project — Dhittawat Thongkhum",
+      "th": "Project — Dhittawat Thongkhum"
+    },
+    "description": {
+      "en": "Selected design work with reasoning and evidence: customer experiences, technician apps, service coordination, and internal systems.",
+      "th": "ผลงานพร้อมเหตุผลและหลักฐาน: ประสบการณ์ลูกค้า แอปฝั่งช่าง การประสานบริการ และระบบภายใน"
+    }
+  },
+  "intro": {
+    "kind": "element",
+    "tag": "section",
+    "attributes": {
+      "class": "page-head"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "eyebrow"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "[ PROJECT / SELECTED CASES ]",
+              "th": "[ PROJECT / SELECTED CASES ]"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "h1",
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Work, with",
+              "th": "Work, with"
+            }
+          },
+          {
+            "kind": "element",
+            "tag": "br",
+            "children": []
+          },
+          {
+            "kind": "text",
+            "value": {
+              "en": "the thinking.",
+              "th": "the thinking."
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "thai"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Design work and the thinking behind it",
+              "th": "งานออกแบบและเหตุผลที่อยู่เบื้องหลัง"
+            }
+          },
+          {
+            "kind": "element",
+            "tag": "br",
+            "children": []
+          },
+          {
+            "kind": "text",
+            "value": {
+              "en": "Three perspectives on Q-CHANG, alongside internal systems for WCF and Smart Asset.",
+              "th": "สามมุมของ Q-CHANG และงานระบบภายใน WCF กับ Smart Asset"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "filters": [
+    {
+      "id": "all",
+      "label": {
+        "en": "All projects",
+        "th": "All projects"
+      }
+    },
+    {
+      "id": "customer",
+      "label": {
+        "en": "Customer UX",
+        "th": "Customer UX"
+      }
+    },
+    {
+      "id": "mobile",
+      "label": {
+        "en": "Mobile UX",
+        "th": "Mobile UX"
+      }
+    },
+    {
+      "id": "service",
+      "label": {
+        "en": "Service design",
+        "th": "Service design"
+      }
+    },
+    {
+      "id": "internal",
+      "label": {
+        "en": "Internal systems",
+        "th": "Internal systems"
+      }
+    }
+  ],
+  "count": {
+    "en": "Showing 5 projects",
+    "th": "แสดง 5 ผลงาน"
+  },
+  "items": [
+    {
+      "projectId": "q-chang-web",
+      "category": "customer",
+      "visualClass": "work-visual visual-web",
+      "caption": {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "work-caption"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "eyebrow"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "01 / CUSTOMER EXPERIENCE",
+                      "th": "01 / CUSTOMER EXPERIENCE"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "h3",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Q-CHANG Web",
+                      "th": "Q-CHANG Web"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "thai"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "From finding a service\nto booking and returning",
+                      "th": "จากค้นหาบริการ ถึงจองและกลับมาใช้ซ้ำ"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "class": "card-arrow",
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "↗",
+                  "th": "↗"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "coverAlt": {
+        "en": "Q-CHANG design overview — artwork illustrating the scope of the work",
+        "th": "ภาพรวมการออกแบบ Q-CHANG — artwork ที่ใช้สื่อขอบเขตงาน"
+      }
+    },
+    {
+      "projectId": "buddy-2-0",
+      "category": "mobile",
+      "visualClass": "work-visual visual-buddy",
+      "caption": {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "work-caption"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "eyebrow"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "02 / TECHNICIAN EXPERIENCE",
+                      "th": "02 / TECHNICIAN EXPERIENCE"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "h3",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Buddy App 2.0",
+                      "th": "Buddy App 2.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "thai"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Apply at your own pace.\nPause and come back.",
+                      "th": "สมัครตามความพร้อม พักแล้วกลับมาทำต่อได้"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "class": "card-arrow",
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "↗",
+                  "th": "↗"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "coverAlt": {
+        "en": "Technician registration overview — an example of the pending-approval state",
+        "th": "หน้าภาพรวมสมัครเป็นช่าง — ตัวอย่างสถานะรอการอนุมัติ"
+      }
+    },
+    {
+      "projectId": "change-date",
+      "category": "service",
+      "visualClass": "work-visual visual-date",
+      "caption": {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "work-caption"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "eyebrow"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "03 / SERVICE & OPERATIONS",
+                      "th": "03 / SERVICE & OPERATIONS"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "h3",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Change Date",
+                      "th": "Change Date"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "thai"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Who is affected\nwhen a booking date changes?",
+                      "th": "การเปลี่ยนวันนัดหนึ่งครั้ง กระทบใครบ้าง"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "class": "card-arrow",
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "↗",
+                  "th": "↗"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "supplementary": [
+        {
+          "kind": "element",
+          "tag": "div",
+          "attributes": {
+            "class": "date-map-label eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "ONE DATE · MANY PEOPLE",
+                "th": "ONE DATE · MANY PEOPLE"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "div",
+          "attributes": {
+            "class": "date-map"
+          },
+          "children": [
+            {
+              "kind": "element",
+              "tag": "div",
+              "attributes": {
+                "class": "date-node"
+              },
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "node-icon",
+                    "aria-hidden": "true"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "↻",
+                        "th": "↻"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "strong",
+                  "attributes": {
+                    "class": "thai"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Customer",
+                        "th": "ลูกค้า"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "small",
+                  "attributes": {
+                    "class": "thai"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Requests a new date",
+                        "th": "ขอเปลี่ยนวันนัด"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "div",
+              "attributes": {
+                "class": "date-node"
+              },
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "node-icon",
+                    "aria-hidden": "true"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "↔",
+                        "th": "↔"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "strong",
+                  "attributes": {
+                    "class": "thai"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "CS",
+                        "th": "CS"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "small",
+                  "attributes": {
+                    "class": "thai"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Reviews the request",
+                        "th": "ตรวจคำขอ"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "div",
+              "attributes": {
+                "class": "date-node"
+              },
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "node-icon",
+                    "aria-hidden": "true"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "▦",
+                        "th": "▦"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "strong",
+                  "attributes": {
+                    "class": "thai"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Technician",
+                        "th": "ช่าง"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "small",
+                  "attributes": {
+                    "class": "thai"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Confirms availability",
+                        "th": "ยืนยันวันว่าง"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "div",
+              "attributes": {
+                "class": "date-node"
+              },
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "node-icon",
+                    "aria-hidden": "true"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "⇄",
+                        "th": "⇄"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "strong",
+                  "attributes": {
+                    "class": "thai"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "IS",
+                        "th": "IS"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "small",
+                  "attributes": {
+                    "class": "thai"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Coordinates a replacement team",
+                        "th": "ประสานทีมทดแทน"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "div",
+              "attributes": {
+                "class": "date-node"
+              },
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "node-icon",
+                    "aria-hidden": "true"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "✓",
+                        "th": "✓"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "strong",
+                  "attributes": {
+                    "class": "thai"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Customer",
+                        "th": "ลูกค้า"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "small",
+                  "attributes": {
+                    "class": "thai"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Confirms the new appointment",
+                        "th": "ยืนยันนัดใหม่"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "projectId": "wcf-digital",
+      "category": "internal",
+      "visualClass": "work-visual visual-wcf",
+      "caption": {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "work-caption"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "eyebrow"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "04 / INTERNAL SYSTEMS",
+                      "th": "04 / INTERNAL SYSTEMS"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "h3",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "WCF Digital",
+                      "th": "WCF Digital"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "thai"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Connecting rules, information, and exceptions",
+                      "th": "ให้กฎ ข้อมูล และข้อยกเว้นทำงานร่วมกัน"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "class": "card-arrow",
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "↗",
+                  "th": "↗"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "projectId": "smart-asset",
+      "category": "internal",
+      "visualClass": "work-visual visual-asset",
+      "caption": {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "work-caption"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "eyebrow"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "05 / ASSET MANAGEMENT",
+                      "th": "05 / ASSET MANAGEMENT"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "h3",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "PEC Smart Asset",
+                      "th": "PEC Smart Asset"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "thai"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Different assets. One clear workflow.",
+                      "th": "Different assets. One clear workflow."
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "class": "card-arrow",
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "↗",
+                  "th": "↗"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1259 @@
+{
+  "metadata": {
+    "title": {
+      "en": "Q-CHANG Web — Dhittawat Thongkhum",
+      "th": "Q-CHANG Web — Dhittawat Thongkhum"
+    },
+    "description": {
+      "en": "Redesigned the customer website, from service categories and details to cart and booking, using test feedback and transaction observations to revisit design decisions.",
+      "th": "ปรับเว็บไซต์ฝั่งลูกค้า ตั้งแต่ทางเข้าหมวดบริการ รายละเอียด ตะกร้า และการจอง โดยใช้ฟีดแบ็กทดสอบกับข้อมูลธุรกรรมทบทวนการออกแบบ"
+    }
+  },
+  "head": {
+    "kind": "element",
+    "tag": "section",
+    "attributes": {
+      "class": "case-head"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "breadcrumb"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "project.html"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "Project",
+                  "th": "Project"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "/",
+                  "th": "/"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "Q-CHANG Web",
+                  "th": "Q-CHANG Web"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "eyebrow"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "01 / CUSTOMER EXPERIENCE",
+              "th": "01 / CUSTOMER EXPERIENCE"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "h1",
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Q-CHANG Web",
+              "th": "Q-CHANG Web"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "case-statement"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "From finding a service\nto booking and returning",
+              "th": "จากค้นหาบริการ ถึงจองและกลับมาใช้ซ้ำ"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "case-intro thai"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Redesigned the customer website, from service categories and details to cart and booking, using test feedback and transaction observations to revisit design decisions.",
+              "th": "ปรับเว็บไซต์ฝั่งลูกค้า ตั้งแต่ทางเข้าหมวดบริการ รายละเอียด ตะกร้า และการจอง โดยใช้ฟีดแบ็กทดสอบกับข้อมูลธุรกรรมทบทวนการออกแบบ"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "dl",
+        "attributes": {
+          "class": "case-facts"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Role",
+                      "th": "Role"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "UX/UI Design",
+                      "th": "UX/UI Design"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Scope",
+                      "th": "Scope"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Homepage → Category → PDP → Booking",
+                      "th": "Homepage → Category → PDP → Booking"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Collaboration",
+                      "th": "Collaboration"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Reviews and testing with the PO and team",
+                      "th": "รีวิวและทดสอบร่วมกับ PO และทีม"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Evidence",
+                      "th": "Evidence"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Usability test + Transaction insight",
+                      "th": "Usability test + Transaction insight"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "overview": {
+    "kind": "single",
+    "mediaId": "qchang-overview",
+    "alt": {
+      "en": "Q-CHANG design overview — artwork illustrating the scope of the work",
+      "th": "ภาพรวมการออกแบบ Q-CHANG — artwork ที่ใช้สื่อขอบเขตงาน"
+    }
+  },
+  "visualClass": "case-hero web",
+  "caption": {
+    "kind": "element",
+    "tag": "p",
+    "attributes": {
+      "class": "caption",
+      "style": "margin-top:13px"
+    },
+    "children": [
+      {
+        "kind": "text",
+        "value": {
+          "en": "Q-CHANG design overview — artwork illustrating the scope of the work",
+          "th": "ภาพรวมการออกแบบ Q-CHANG — artwork ที่ใช้สื่อขอบเขตงาน"
+        }
+      }
+    ]
+  },
+  "toc": {
+    "kind": "element",
+    "tag": "aside",
+    "attributes": {
+      "class": "case-toc"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "eyebrow"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "IN THIS CASE",
+              "th": "IN THIS CASE"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "nav",
+        "attributes": {
+          "aria-label": {
+            "en": "Case study contents",
+            "th": "สารบัญเคส"
+          }
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#service-entry"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "01 / Start with what people want to do",
+                  "th": "01 / เลือกทางเข้าจากสิ่งที่อยากทำ"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#promotion"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "02 / Found the service. Where are the promotions?",
+                  "th": "02 / หาบริการเจอแล้ว แต่โปรโมชั่นอยู่ไหน?"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#pdp"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "03 / One service, with options in one place",
+                  "th": "03 / บริการเดียว เลือกตัวเลือกในจุดเดียว"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#cart"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "04 / Convenience also needs a reason to use it",
+                  "th": "04 / ความสะดวก ต้องมีเหตุให้ใช้ด้วย"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#returning"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "05 / Less repeated entry for returning customers",
+                  "th": "05 / ช่วยลูกค้าเดิมลดการกรอกซ้ำ"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "chapters": [
+    {
+      "id": "service-entry",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "01 / CUSTOMER EXPERIENCE",
+                "th": "01 / CUSTOMER EXPERIENCE"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Start with what people want to do",
+                "th": "เลือกทางเข้าจากสิ่งที่อยากทำ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "I inherited the existing website while both the brand and the back-office system were changing. The first problem was the large number of service categories, which customers struggled to distinguish and find. I began with labels broad enough to cover related services, but specific enough for people to recognize where their needs belonged.",
+                "th": "ได้รับเว็บไซต์เดิมมาปรับในช่วงที่แบรนด์และระบบหลังบ้านกำลังเปลี่ยน ปัญหาแรกคือหมวดบริการจำนวนมากที่ลูกค้าแยกและค้นหาได้ยาก จึงเริ่มจากคำที่ครอบคลุมบริการย่อย แต่เฉพาะพอให้คนรู้ว่าความต้องการของตนอยู่กลุ่มไหน"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "div",
+          "attributes": {
+            "class": "concept-row"
+          },
+          "children": [
+            {
+              "kind": "element",
+              "tag": "div",
+              "attributes": {
+                "class": "concept-item"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Clean",
+                    "th": "ล้าง"
+                  }
+                },
+                {
+                  "kind": "element",
+                  "tag": "small",
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Cleaning services",
+                        "th": "ทำความสะอาด"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "div",
+              "attributes": {
+                "class": "concept-item"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Repair",
+                    "th": "ซ่อม"
+                  }
+                },
+                {
+                  "kind": "element",
+                  "tag": "small",
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Fix what is already there",
+                        "th": "แก้สิ่งที่มีอยู่"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "div",
+              "attributes": {
+                "class": "concept-item"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Build",
+                    "th": "สร้าง"
+                  }
+                },
+                {
+                  "kind": "element",
+                  "tag": "small",
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Create something new",
+                        "th": "ทำสิ่งใหม่"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "div",
+              "attributes": {
+                "class": "concept-item"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Extend",
+                    "th": "ต่อเติม"
+                  }
+                },
+                {
+                  "kind": "element",
+                  "tag": "small",
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Add usable space",
+                        "th": "เพิ่มพื้นที่ใช้งาน"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Roof services therefore had different entry points based on intent: repairing a leaking roof or adding a roof extension. People could choose what they wanted to do before choosing a specific service.",
+                "th": "หลังคาจึงมีทางเข้าต่างกันตามสิ่งที่ลูกค้าต้องการทำ: ซ่อมหลังคาที่รั่ว หรือทำหลังคาต่อเติม แนวทางนี้ให้ผู้ใช้เลือกความต้องการ ก่อนลงไปเลือกรายการบริการเฉพาะ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "note"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "The panel above illustrates the categorization principle; it is not a product screenshot.",
+                "th": "แผงด้านบนเป็นภาพอธิบายหลักการจัดหมวด ไม่ใช่ภาพหน้าจอผลิตภัณฑ์"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "promotion",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "02 / CUSTOMER EXPERIENCE",
+                "th": "02 / CUSTOMER EXPERIENCE"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Found the service. Where are the promotions?",
+                "th": "หาบริการเจอแล้ว แต่โปรโมชั่นอยู่ไหน?"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "I reviewed the design with the PO and team, then we tested it with approximately 10–12 participants recruited through acquaintances and referrals. We began with unguided exploration, followed by tasks such as finding help for a leaking roof or a dirty air conditioner.",
+                "th": "นำแบบไปรีวิวกับ PO และทีม แล้วร่วมทดสอบกับผู้เข้าร่วมประมาณ 10–12 คน ผ่านคนรู้จักและการแนะนำต่อ เริ่มจากให้สำรวจโดยไม่ชี้นำ แล้วจึงให้โจทย์ เช่น หลังคามีน้ำหยดหรือแอร์สกปรก"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "We observed no difficulty using the category tabs for the assigned tasks, but participants asked, “Where are the promotions?” I adjusted both the entry point and the space used to communicate promotions.",
+                "th": "ไม่พบจุดติดขัดในการใช้แท็บหมวดบริการตามโจทย์ที่ให้ แต่มีคำถามว่า “โปรโมชั่นอยู่ไหน?” จึงปรับทั้งทางเข้าและพื้นที่สื่อสารโปรโมชั่น"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "ul",
+          "children": [
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Added an all-promotions button at the top",
+                    "th": "เพิ่มปุ่มรวมโปรโมชั่นไว้ด้านบน"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Increased the height of the hero section",
+                    "th": "ขยายความสูงของ Hero section"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Added a clear next-step CTA to the banner",
+                    "th": "เพิ่ม CTA บนแบนเนอร์ให้มีทางไปต่อชัดเจน"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "In the follow-up test, the same questions about the location of promotions did not recur. Participants began scrolling through other sections and said the page addressed their home-service needs.",
+                "th": "ในการลองหลังปรับ ไม่พบคำถามเรื่องตำแหน่งโปรโมชั่นแบบเดิม ผู้เข้าร่วมเริ่มเลื่อนสำรวจส่วนต่าง ๆ และมีความเห็นว่าหน้านี้ตอบโจทย์เมื่อมีเรื่องเกี่ยวกับบ้าน"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "note"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "These are qualitative observations from the test group, not conversion results. The individual effects of the changes cannot be separated from this evidence.",
+                "th": "เป็นข้อสังเกตเชิงคุณภาพจากกลุ่มทดสอบ ไม่ใช่ผลวัด conversion และยังแยกผลของการปรับแต่ละส่วนออกจากกันไม่ได้"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pdp",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "03 / CUSTOMER EXPERIENCE",
+                "th": "03 / CUSTOMER EXPERIENCE"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "One service, with options in one place",
+                "th": "บริการเดียว เลือกตัวเลือกในจุดเดียว"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Previously, one service was split into separate listings by size and price. I hypothesized that reading many similar listings could be tiring, and grouped the options on one service-detail page — for example, BTU size and price for air-conditioner cleaning.",
+                "th": "เดิมบริการเดียวกันถูกแยกเป็นหลายรายการตามขนาดและราคา ตั้งสมมติฐานว่าการอ่านรายการที่คล้ายกันจำนวนมากอาจทำให้ลูกค้าล้า จึงรวมตัวเลือกไว้ในหน้ารายละเอียดบริการเดียว เช่น ขนาด BTU กับราคาของบริการล้างแอร์"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "table",
+          "children": [
+            {
+              "kind": "element",
+              "tag": "thead",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "tr",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "th",
+                      "attributes": {
+                        "scope": "col"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Structure",
+                            "th": "โครงสร้าง"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "th",
+                      "attributes": {
+                        "scope": "col"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "How customers choose",
+                            "th": "วิธีเลือกบริการ"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "tbody",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "tr",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Before",
+                            "th": "ก่อน"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "One service, multiple sizes, multiple listings",
+                            "th": "บริการเดียว หลายขนาด หลายรายการ"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "tr",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "After",
+                            "th": "หลัง"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "One service page, with size and price options together",
+                            "th": "หน้าบริการเดียว เลือกขนาดและดูราคาภายในหน้า"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "I used familiar e-commerce patterns, such as choosing shoe size and color on one page, as a reference. The observed trial went well, but there are no before-and-after measurements of time or errors.",
+                "th": "ใช้ความคุ้นเคยจาก E-commerce เช่น การเลือกสีและขนาดรองเท้าในหน้าเดียวเป็นแนวทาง การลองใช้งานผ่านไปได้ด้วยดีตามที่สังเกต แต่ไม่มีตัวเลขเปรียบเทียบเวลาและความผิดพลาดก่อน–หลัง"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cart",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "04 / CUSTOMER EXPERIENCE",
+                "th": "04 / CUSTOMER EXPERIENCE"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Convenience also needs a reason to use it",
+                "th": "ความสะดวก ต้องมีเหตุให้ใช้ด้วย"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "The shared cart came later because it affected several back-office systems. The hypothesis was that it would help customers buying multiple services; interview participants described it as convenient.",
+                "th": "ตะกร้ารวมตามมาในช่วงท้าย เพราะกระทบระบบหลังบ้านหลายส่วน สมมติฐานคือช่วยลูกค้าที่ต้องการซื้อหลายบริการ ผู้เข้าร่วมสัมภาษณ์ให้ความเห็นว่าสะดวก"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "After launch, the transactions the team reviewed showed that customers usually booked just one service. Cross-service purchases, such as air-conditioner cleaning together with house cleaning, were uncommon.",
+                "th": "หลังเปิดใช้ ข้อมูลธุรกรรมที่ทีมตรวจพบว่าลูกค้าส่วนใหญ่ทำรายการบริการเดียว และมีการซื้อข้ามบริการร่วมกันน้อย เช่น ล้างแอร์พร้อมทำความสะอาด"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "blockquote",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Calling something “convenient” does not tell us how often customers will have a reason to use it.",
+                "th": "ความเห็นว่า “สะดวก” ยังไม่ได้บอกว่าลูกค้าจะมีเหตุให้ใช้ฟีเจอร์นั้นบ่อยเพียงใด"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "The team kept the cart and moved on to support returning customers, without concluding that the cart had no value or claiming a measured effect on sales.",
+                "th": "ทีมคงตะกร้าไว้ แล้วพัฒนาส่วนที่รองรับลูกค้าเดิมต่อ โดยไม่สรุปว่าตะกร้าไม่มีประโยชน์หรือทำให้ยอดขายเปลี่ยนเท่าใด"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "returning",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "05 / CUSTOMER EXPERIENCE",
+                "th": "05 / CUSTOMER EXPERIENCE"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Less repeated entry for returning customers",
+                "th": "ช่วยลูกค้าเดิมลดการกรอกซ้ำ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "The same phone numbers appeared across multiple transactions, suggesting repeat bookings. I added saved addresses, the most recently used address, and account information.",
+                "th": "ข้อมูลธุรกรรมมีเบอร์โทรเดิมปรากฏซ้ำในหลายรายการ เป็นสัญญาณของการกลับมาจอง จึงเพิ่มที่อยู่ที่บันทึกไว้ ที่อยู่ที่ใช้ล่าสุด และข้อมูลบัญชีผู้ใช้"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Service policy still required a phone number at which the customer could be reached. Selecting an address automatically filled its associated phone number, which the customer could edit before confirming.",
+                "th": "การจองยังต้องมีเบอร์ที่ติดต่อลูกค้าได้ตามนโยบายบริการ เมื่อเลือกที่อยู่ ระบบนำเบอร์ที่ผูกกับที่อยู่นั้นขึ้นมาให้อัตโนมัติ และลูกค้าแก้ก่อนยืนยันได้"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "note"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "I owned UX/UI across the customer journey and reviewed and tested the work with the team. This case does not have measured results for repeat-booking rates or booking duration.",
+                "th": "รับผิดชอบ UX/UI ตลอดเส้นทางฝั่งลูกค้า และร่วมรีวิว/ทดสอบกับทีม ผลต่ออัตราจองซ้ำหรือระยะเวลาจองยังไม่มีตัวเลขสำหรับอ้างในเคสนี้"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "figure",
+          "attributes": {
+            "class": "evidence"
+          },
+          "children": [
+            {
+              "kind": "element",
+              "tag": "button",
+              "attributes": {
+                "class": "image-button",
+                "data-media-id": "evidence-qchang-overview",
+                "data-caption": {
+                  "en": "The cover is illustrative artwork. Findings and test observations are based on the designer’s account of the work.",
+                  "th": "ภาพปกประกอบเรื่อง เป็น artwork; ข้อค้นพบและผลการทดสอบอ้างอิงคำเล่าของผู้ทำงาน"
+                },
+                "aria-label": {
+                  "en": "Enlarge image: Q-CHANG Web overview on desktop and mobile",
+                  "th": "ขยายภาพ: ภาพรวม Q-CHANG Web บน desktop และ mobile"
+                }
+              },
+              "children": [
+                {
+                  "kind": "image",
+                  "mediaId": "evidence-qchang-overview",
+                  "alt": {
+                    "en": "Q-CHANG Web overview on desktop and mobile",
+                    "th": "ภาพรวม Q-CHANG Web บน desktop และ mobile"
+                  }
+                },
+                {
+                  "kind": "element",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "zoom-hint"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Enlarge image ↗",
+                        "th": "ขยายภาพ ↗"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "figcaption",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "The cover is illustrative artwork. Findings and test observations are based on the designer’s account of the work.",
+                    "th": "ภาพปกประกอบเรื่อง เป็น artwork; ข้อค้นพบและผลการทดสอบอ้างอิงคำเล่าของผู้ทำงาน"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "kind": "element",
+    "tag": "div",
+    "attributes": {
+      "class": "source-links"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "https://dhittawat.framer.ai/work/roverride/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Original case study ↗",
+              "th": "หน้าเคสเดิม ↗"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "next": {
+    "kind": "element",
+    "tag": "div",
+    "attributes": {
+      "class": "next-case"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "buddy-2-0.html"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "eyebrow"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "NEXT CASE / TECHNICIAN EXPERIENCE",
+                      "th": "NEXT CASE / TECHNICIAN EXPERIENCE"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "h2",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Buddy App 2.0",
+                      "th": "Buddy App 2.0"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "class": "next-arrow",
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "↗",
+                  "th": "↗"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

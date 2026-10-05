@@ -1,0 +1,3203 @@
+{
+  "metadata": {
+    "title": {
+      "en": "About — Dhittawat Thongkhum",
+      "th": "About — Dhittawat Thongkhum"
+    },
+    "description": {
+      "en": "Meet Dhittawat Thongkhum and explore a Product / UX/UI design practice shaped by people, information, rules, and workflows.",
+      "th": "รู้จัก Dhittawat Thongkhum และวิธีทำงาน Product / UX/UI Design กับคน ข้อมูล กฎ และ workflow"
+    }
+  },
+  "intro": {
+    "kind": "element",
+    "tag": "section",
+    "attributes": {
+      "class": "page-head",
+      "aria-labelledby": "about-title"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "eyebrow"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "[ ABOUT / THE PERSON BEHIND THE WORK ]",
+              "th": "[ ABOUT / THE PERSON BEHIND THE WORK ]"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "h1",
+        "attributes": {
+          "id": "about-title"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Curious about people.",
+              "th": "Curious about people."
+            }
+          },
+          {
+            "kind": "element",
+            "tag": "br",
+            "children": []
+          },
+          {
+            "kind": "text",
+            "value": {
+              "en": "Careful with details.",
+              "th": "Careful with details."
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "thai"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "From customer websites and apps to the systems teams work with — my experience, approach, and what I am learning next.",
+              "th": "จากเว็บไซต์และแอปของผู้ใช้ ถึงระบบที่ทีมใช้ทำงาน — ประสบการณ์ วิธีคิด และสิ่งที่ผมกำลังเรียนรู้ต่อ"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "lead": {
+    "kind": "element",
+    "tag": "section",
+    "attributes": {
+      "class": "about-lead",
+      "aria-label": {
+        "en": "Meet Dhittawat Thongkhum",
+        "th": "รู้จัก Dhittawat Thongkhum"
+      }
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "div",
+        "children": [
+          {
+            "kind": "element",
+            "tag": "p",
+            "attributes": {
+              "class": "about-statement"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "I am interested in what people are trying to do, and what makes it difficult to move forward.",
+                  "th": "ผมสนใจว่าคนกำลังพยายามทำอะไร และอะไรทำให้เขาไปต่อได้ยาก"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "attributes": {
+              "class": "profile-panel"
+            },
+            "children": [
+              {
+                "kind": "element",
+                "tag": "h2",
+                "attributes": {
+                  "class": "profile-name"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Dhittawat",
+                      "th": "Dhittawat"
+                    }
+                  },
+                  {
+                    "kind": "element",
+                    "tag": "br",
+                    "children": []
+                  },
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Thongkhum",
+                      "th": "Thongkhum"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dl",
+                "children": [
+                  {
+                    "kind": "element",
+                    "tag": "div",
+                    "children": [
+                      {
+                        "kind": "element",
+                        "tag": "dt",
+                        "children": [
+                          {
+                            "kind": "text",
+                            "value": {
+                              "en": "Practice",
+                              "th": "Practice"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "element",
+                        "tag": "dd",
+                        "children": [
+                          {
+                            "kind": "text",
+                            "value": {
+                              "en": "Product / UX/UI Design",
+                              "th": "Product / UX/UI Design"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "element",
+                    "tag": "div",
+                    "children": [
+                      {
+                        "kind": "element",
+                        "tag": "dt",
+                        "children": [
+                          {
+                            "kind": "text",
+                            "value": {
+                              "en": "Based in",
+                              "th": "Based in"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "element",
+                        "tag": "dd",
+                        "children": [
+                          {
+                            "kind": "text",
+                            "value": {
+                              "en": "Bangkok, Thailand",
+                              "th": "Bangkok, Thailand"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "element",
+                    "tag": "div",
+                    "children": [
+                      {
+                        "kind": "element",
+                        "tag": "dt",
+                        "children": [
+                          {
+                            "kind": "text",
+                            "value": {
+                              "en": "Focus",
+                              "th": "Focus"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "element",
+                        "tag": "dd",
+                        "children": [
+                          {
+                            "kind": "text",
+                            "value": {
+                              "en": "Workflow & Information",
+                              "th": "Workflow & Information"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "element",
+                    "tag": "div",
+                    "children": [
+                      {
+                        "kind": "element",
+                        "tag": "dt",
+                        "children": [
+                          {
+                            "kind": "text",
+                            "value": {
+                              "en": "Collaboration",
+                              "th": "Collaboration"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "element",
+                        "tag": "dd",
+                        "children": [
+                          {
+                            "kind": "text",
+                            "value": {
+                              "en": "Product · BA · SA · Dev",
+                              "th": "Product · BA · SA · Dev"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "element",
+                    "tag": "div",
+                    "children": [
+                      {
+                        "kind": "element",
+                        "tag": "dt",
+                        "children": [
+                          {
+                            "kind": "text",
+                            "value": {
+                              "en": "Work preference",
+                              "th": "Work preference"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "element",
+                        "tag": "dd",
+                        "children": [
+                          {
+                            "kind": "text",
+                            "value": {
+                              "en": "Bangkok · On-site / Hybrid",
+                              "th": "กรุงเทพฯ · On-site / Hybrid"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "element",
+                    "tag": "div",
+                    "children": [
+                      {
+                        "kind": "element",
+                        "tag": "dt",
+                        "children": [
+                          {
+                            "kind": "text",
+                            "value": {
+                              "en": "Languages",
+                              "th": "Languages"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "element",
+                        "tag": "dd",
+                        "children": [
+                          {
+                            "kind": "text",
+                            "value": {
+                              "en": "Thai · Native",
+                              "th": "ภาษาไทย · ภาษาแม่"
+                            }
+                          },
+                          {
+                            "kind": "element",
+                            "tag": "br",
+                            "children": []
+                          },
+                          {
+                            "kind": "text",
+                            "value": {
+                              "en": "English · Used at work",
+                              "th": "ภาษาอังกฤษ · ใช้ในการทำงาน"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "body thai"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "p",
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "I work on products where information, rules, and multiple teams need to connect: customer experiences, field-team apps, and internal systems.",
+                  "th": "ผมทำงานกับผลิตภัณฑ์ที่ข้อมูล กฎ และคนหลายฝ่ายต้องทำงานสัมพันธ์กัน ทั้งประสบการณ์ฝั่งลูกค้า แอปของทีมภาคสนาม และระบบที่เจ้าหน้าที่ใช้ทำงาน"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "p",
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "My design work starts with understanding the task, then organizing information, steps, states, and exceptions so people can see a way forward.",
+                  "th": "งานออกแบบเริ่มจากทำความเข้าใจสิ่งที่ผู้ใช้ต้องทำ แล้วจัดโครงสร้างข้อมูล ลำดับขั้น สถานะ และข้อยกเว้นให้คนเห็นทางไปต่อได้"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "p",
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "I revisit ideas through testing and observations from use, while keeping the scope of my contribution and the available evidence clear.",
+                  "th": "ผมใช้การทดสอบและสิ่งที่พบจากการใช้งานทบทวนแนวคิด พร้อมอธิบายขอบเขตงานและหลักฐานให้ตรงกับสิ่งที่ทำจริง"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "p",
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "My Q-CHANG work includes end-to-end UX/UI ownership of the customer journey as well as collaboration with the design team. WCF shows work with operational staff, BAs, SAs, and developers on a system with complex rules.",
+                  "th": "ในเคส Q-CHANG มีทั้งงานที่รับผิดชอบ UX/UI ตลอดเส้นทางฝั่งลูกค้า และงานที่ทำร่วมกับทีม ส่วน WCF แสดงการทำงานกับเจ้าหน้าที่ BA, SA และทีมพัฒนาในระบบที่มีกฎซับซ้อน"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "p",
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "I am currently developing my system-analysis practice as a UX × SA Intern at Code(Hard), connecting design with data rules, technical constraints, and closer collaboration with software engineers.",
+                  "th": "ปัจจุบันผมต่อยอดความเข้าใจฝั่ง System Analysis ผ่านบทบาท UX × SA Intern ที่ Code(Hard) เพื่อเชื่อมงานออกแบบกับกติกาข้อมูล ข้อจำกัดทางเทคนิค และการทำงานร่วมกับ Software Engineer ให้ใกล้ชิดขึ้น"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "class": "text-link about-work-link",
+              "href": "project.html"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "Explore the work ↗",
+                  "th": "ดูตัวอย่างในผลงาน ↗"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "jump": {
+    "kind": "element",
+    "tag": "nav",
+    "attributes": {
+      "class": "about-jump",
+      "aria-label": {
+        "en": "About page sections",
+        "th": "ส่วนต่าง ๆ ในหน้า About"
+      }
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "#career"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Experience ",
+              "th": "ประสบการณ์ "
+            }
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "↓",
+                  "th": "↓"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "#research"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Personal projects ",
+              "th": "โปรเจกต์ส่วนตัว "
+            }
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "↓",
+                  "th": "↓"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "#capabilities"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Skills & education ",
+              "th": "ทักษะและการศึกษา "
+            }
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "↓",
+                  "th": "↓"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "kind": "element",
+      "tag": "section",
+      "attributes": {
+        "class": "section",
+        "id": "career",
+        "aria-labelledby": "career-title"
+      },
+      "children": [
+        {
+          "kind": "element",
+          "tag": "div",
+          "attributes": {
+            "class": "section-heading"
+          },
+          "children": [
+            {
+              "kind": "element",
+              "tag": "p",
+              "attributes": {
+                "class": "eyebrow"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "[ CAREER / 2015—NOW ]",
+                    "th": "[ CAREER / 2015—NOW ]"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "h2",
+              "attributes": {
+                "id": "career-title"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Different contexts.",
+                    "th": "Different contexts."
+                  }
+                },
+                {
+                  "kind": "element",
+                  "tag": "br",
+                  "children": []
+                },
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "A connected practice.",
+                    "th": "A connected practice."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "ol",
+          "attributes": {
+            "class": "about-timeline"
+          },
+          "children": [
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "article",
+                  "attributes": {
+                    "class": "timeline-row"
+                  },
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "p",
+                      "attributes": {
+                        "class": "eyebrow muted"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "2026—Present",
+                            "th": "2026—ปัจจุบัน"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "div",
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "h3",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Code(Hard)",
+                                "th": "Code(Hard)"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "p",
+                          "attributes": {
+                            "class": "position"
+                          },
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "UX × SA Intern",
+                                "th": "UX × SA Intern"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "div",
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "p",
+                          "attributes": {
+                            "class": "description thai"
+                          },
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Extending my product-design practice through system analysis, data rules, and technical constraints. Working closely with software engineers on Smart Asset, from initial specifications and UX/UI to feedback from use.",
+                                "th": "ต่อยอดงาน Product Design ด้วยการวิเคราะห์ระบบ กติกาข้อมูล และข้อจำกัดทางเทคนิค ทำงานใกล้ชิดกับ Software Engineer ใน Smart Asset ตั้งแต่ข้อกำหนดเบื้องต้น UX/UI ไปจนถึงฟีดแบ็กจากการใช้งาน"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "ul",
+                          "attributes": {
+                            "class": "career-projects",
+                            "aria-label": {
+                              "en": "Related projects",
+                              "th": "โปรเจกต์ที่เกี่ยวข้อง"
+                            }
+                          },
+                          "children": [
+                            {
+                              "kind": "element",
+                              "tag": "li",
+                              "children": [
+                                {
+                                  "kind": "element",
+                                  "tag": "a",
+                                  "attributes": {
+                                    "href": "smart-asset.html"
+                                  },
+                                  "children": [
+                                    {
+                                      "kind": "text",
+                                      "value": {
+                                        "en": "Assets Management ",
+                                        "th": "Assets Management "
+                                      }
+                                    },
+                                    {
+                                      "kind": "element",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "aria-hidden": "true"
+                                      },
+                                      "children": [
+                                        {
+                                          "kind": "text",
+                                          "value": {
+                                            "en": "↗",
+                                            "th": "↗"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "article",
+                  "attributes": {
+                    "class": "timeline-row"
+                  },
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "p",
+                      "attributes": {
+                        "class": "eyebrow muted"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "2024—2026",
+                            "th": "2024—2026"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "div",
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "h3",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Depthfirst Co., Ltd.",
+                                "th": "Depthfirst Co., Ltd."
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "p",
+                          "attributes": {
+                            "class": "position"
+                          },
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Senior UX / Product Designer",
+                                "th": "Senior UX / Product Designer"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "div",
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "p",
+                          "attributes": {
+                            "class": "description thai"
+                          },
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Designed policy-driven services, workers’ compensation workflows, documents, and handoffs with BAs, SAs, and developers, including support for testing and staff use.",
+                                "th": "ออกแบบบริการที่ขับเคลื่อนด้วยกฎและนโยบาย งานเงินทดแทน เอกสาร และการส่งต่องาน โดยร่วมกับ BA, SA และทีมพัฒนา รวมถึงสนับสนุนการทดสอบและการใช้งานของเจ้าหน้าที่"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "ul",
+                          "attributes": {
+                            "class": "career-projects",
+                            "aria-label": {
+                              "en": "Related projects",
+                              "th": "โปรเจกต์ที่เกี่ยวข้อง"
+                            }
+                          },
+                          "children": [
+                            {
+                              "kind": "element",
+                              "tag": "li",
+                              "children": [
+                                {
+                                  "kind": "element",
+                                  "tag": "a",
+                                  "attributes": {
+                                    "href": "wcf-digital.html"
+                                  },
+                                  "children": [
+                                    {
+                                      "kind": "text",
+                                      "value": {
+                                        "en": "WCF Digital ",
+                                        "th": "WCF Digital "
+                                      }
+                                    },
+                                    {
+                                      "kind": "element",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "aria-hidden": "true"
+                                      },
+                                      "children": [
+                                        {
+                                          "kind": "text",
+                                          "value": {
+                                            "en": "↗",
+                                            "th": "↗"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "kind": "element",
+                              "tag": "li",
+                              "children": [
+                                {
+                                  "kind": "text",
+                                  "value": {
+                                    "en": "SSO Core",
+                                    "th": "SSO Core"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "article",
+                  "attributes": {
+                    "class": "timeline-row"
+                  },
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "p",
+                      "attributes": {
+                        "class": "eyebrow muted"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "2023—2024",
+                            "th": "2023—2024"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "div",
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "h3",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Code(Hard)",
+                                "th": "Code(Hard)"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "p",
+                          "attributes": {
+                            "class": "position"
+                          },
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "UX Systems Consultant",
+                                "th": "UX Systems Consultant"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "div",
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "p",
+                          "attributes": {
+                            "class": "description thai"
+                          },
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Connected UX strategy with delivery through requirements, task maps, client reviews, proofs of concept, testing, and production handoff.",
+                                "th": "เชื่อม UX strategy กับข้อเท็จจริงในการส่งมอบ ผ่าน requirement, task map, client review, proof of concept, testing และ production handoff"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "ul",
+                          "attributes": {
+                            "class": "career-projects",
+                            "aria-label": {
+                              "en": "Related projects",
+                              "th": "โปรเจกต์ที่เกี่ยวข้อง"
+                            }
+                          },
+                          "children": [
+                            {
+                              "kind": "element",
+                              "tag": "li",
+                              "children": [
+                                {
+                                  "kind": "text",
+                                  "value": {
+                                    "en": "Mobile POS",
+                                    "th": "Mobile POS"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "kind": "element",
+                              "tag": "li",
+                              "children": [
+                                {
+                                  "kind": "text",
+                                  "value": {
+                                    "en": "Cargo Project",
+                                    "th": "Cargo Project"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "kind": "element",
+                              "tag": "li",
+                              "children": [
+                                {
+                                  "kind": "text",
+                                  "value": {
+                                    "en": "Company Website",
+                                    "th": "Company Website"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "article",
+                  "attributes": {
+                    "class": "timeline-row"
+                  },
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "p",
+                      "attributes": {
+                        "class": "eyebrow muted"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "2021—2023",
+                            "th": "2021—2023"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "div",
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "h3",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Q-CHANG",
+                                "th": "Q-CHANG"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "p",
+                          "attributes": {
+                            "class": "position"
+                          },
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Senior UX/UI · CX Strategy",
+                                "th": "Senior UX/UI · CX Strategy"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "div",
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "p",
+                          "attributes": {
+                            "class": "description thai"
+                          },
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Designed experiences for customers, technicians, and operations teams on a home-service platform: service discovery and booking, technician registration, and research into rescheduling problems.",
+                                "th": "ออกแบบประสบการณ์ของลูกค้า ช่าง และทีมปฏิบัติการในแพลตฟอร์มบริการบ้าน ตั้งแต่เว็บไซต์ค้นหาและจองบริการ การสมัครเป็นช่าง ไปจนถึงการวิเคราะห์ปัญหาเปลี่ยนวันนัด"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "ul",
+                          "attributes": {
+                            "class": "career-projects",
+                            "aria-label": {
+                              "en": "Related projects",
+                              "th": "โปรเจกต์ที่เกี่ยวข้อง"
+                            }
+                          },
+                          "children": [
+                            {
+                              "kind": "element",
+                              "tag": "li",
+                              "children": [
+                                {
+                                  "kind": "element",
+                                  "tag": "a",
+                                  "attributes": {
+                                    "href": "q-chang-web.html"
+                                  },
+                                  "children": [
+                                    {
+                                      "kind": "text",
+                                      "value": {
+                                        "en": "Q-CHANG Website ",
+                                        "th": "Q-CHANG Website "
+                                      }
+                                    },
+                                    {
+                                      "kind": "element",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "aria-hidden": "true"
+                                      },
+                                      "children": [
+                                        {
+                                          "kind": "text",
+                                          "value": {
+                                            "en": "↗",
+                                            "th": "↗"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "kind": "element",
+                              "tag": "li",
+                              "children": [
+                                {
+                                  "kind": "element",
+                                  "tag": "a",
+                                  "attributes": {
+                                    "href": "change-date.html"
+                                  },
+                                  "children": [
+                                    {
+                                      "kind": "text",
+                                      "value": {
+                                        "en": "Customer Change Date ",
+                                        "th": "Customer Change Date "
+                                      }
+                                    },
+                                    {
+                                      "kind": "element",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "aria-hidden": "true"
+                                      },
+                                      "children": [
+                                        {
+                                          "kind": "text",
+                                          "value": {
+                                            "en": "↗",
+                                            "th": "↗"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "kind": "element",
+                              "tag": "li",
+                              "children": [
+                                {
+                                  "kind": "element",
+                                  "tag": "a",
+                                  "attributes": {
+                                    "href": "buddy-2-0.html"
+                                  },
+                                  "children": [
+                                    {
+                                      "kind": "text",
+                                      "value": {
+                                        "en": "Buddy 2.0 App ",
+                                        "th": "Buddy 2.0 App "
+                                      }
+                                    },
+                                    {
+                                      "kind": "element",
+                                      "tag": "span",
+                                      "attributes": {
+                                        "aria-hidden": "true"
+                                      },
+                                      "children": [
+                                        {
+                                          "kind": "text",
+                                          "value": {
+                                            "en": "↗",
+                                            "th": "↗"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "article",
+                  "attributes": {
+                    "class": "timeline-row"
+                  },
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "p",
+                      "attributes": {
+                        "class": "eyebrow muted"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "2020—2021",
+                            "th": "2020—2021"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "div",
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "h3",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Wedev",
+                                "th": "Wedev"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "p",
+                          "attributes": {
+                            "class": "position"
+                          },
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Senior UX/UI Designer",
+                                "th": "Senior UX/UI Designer"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "div",
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "p",
+                          "attributes": {
+                            "class": "description thai"
+                          },
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Expanded into product-team collaboration, Agile delivery, mentoring junior designers, and operational dashboards.",
+                                "th": "ขยายบทบาทสู่การทำงานร่วมกับทีมผลิตภัณฑ์ การส่งมอบแบบ Agile การดูแลนักออกแบบรุ่นน้อง และ operational dashboard"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "article",
+                  "attributes": {
+                    "class": "timeline-row"
+                  },
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "p",
+                      "attributes": {
+                        "class": "eyebrow muted"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "2019—2020",
+                            "th": "2019—2020"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "div",
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "h3",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Benchachinda Group",
+                                "th": "Benchachinda Group"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "p",
+                          "attributes": {
+                            "class": "position"
+                          },
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Senior UX/UI Designer",
+                                "th": "Senior UX/UI Designer"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "div",
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "p",
+                          "attributes": {
+                            "class": "description thai"
+                          },
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Designed for field teams managing physical telecommunications infrastructure in Thailand, Myanmar, and Laos.",
+                                "th": "ออกแบบสำหรับทีมภาคสนามที่ดูแลทรัพย์สินโครงข่ายโทรคมนาคมจริงในไทย เมียนมา และลาว"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "ul",
+                          "attributes": {
+                            "class": "career-projects",
+                            "aria-label": {
+                              "en": "Related projects",
+                              "th": "โปรเจกต์ที่เกี่ยวข้อง"
+                            }
+                          },
+                          "children": [
+                            {
+                              "kind": "element",
+                              "tag": "li",
+                              "children": [
+                                {
+                                  "kind": "text",
+                                  "value": {
+                                    "en": "MAXI TASK (Telecom GIS)",
+                                    "th": "MAXI TASK (Telecom GIS)"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "article",
+                  "attributes": {
+                    "class": "timeline-row"
+                  },
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "p",
+                      "attributes": {
+                        "class": "eyebrow muted"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "2018—2019",
+                            "th": "2018—2019"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "div",
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "h3",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "ClickNext",
+                                "th": "ClickNext"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "p",
+                          "attributes": {
+                            "class": "position"
+                          },
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "UX/UI Designer",
+                                "th": "UX/UI Designer"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "div",
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "p",
+                          "attributes": {
+                            "class": "description thai"
+                          },
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Turned complex requirements and existing processes into structured workflows for financial, trading, compliance, and registration products.",
+                                "th": "แปลง requirement ที่ซับซ้อนและกระบวนการเดิมให้เป็น workflow ที่มีโครงสร้าง สำหรับผลิตภัณฑ์การเงิน การซื้อขาย compliance และการลงทะเบียน"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "ul",
+                          "attributes": {
+                            "class": "career-projects",
+                            "aria-label": {
+                              "en": "Related projects",
+                              "th": "โปรเจกต์ที่เกี่ยวข้อง"
+                            }
+                          },
+                          "children": [
+                            {
+                              "kind": "element",
+                              "tag": "li",
+                              "children": [
+                                {
+                                  "kind": "text",
+                                  "value": {
+                                    "en": "MY EXIM",
+                                    "th": "MY EXIM"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "kind": "element",
+                              "tag": "li",
+                              "children": [
+                                {
+                                  "kind": "text",
+                                  "value": {
+                                    "en": "InterGOLD",
+                                    "th": "InterGOLD"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "kind": "element",
+                              "tag": "li",
+                              "children": [
+                                {
+                                  "kind": "text",
+                                  "value": {
+                                    "en": "Oil Reserve Reporting System",
+                                    "th": "Oil Reserve Reporting System"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "kind": "element",
+                              "tag": "li",
+                              "children": [
+                                {
+                                  "kind": "text",
+                                  "value": {
+                                    "en": "ASEAN Summit 2019",
+                                    "th": "ASEAN Summit 2019"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "li",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "article",
+                  "attributes": {
+                    "class": "timeline-row"
+                  },
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "p",
+                      "attributes": {
+                        "class": "eyebrow muted"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "2015—2018",
+                            "th": "2015—2018"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "div",
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "h3",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Digitech 4.0 / iBusiness Corp.",
+                                "th": "Digitech 4.0 / iBusiness Corp."
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "p",
+                          "attributes": {
+                            "class": "position"
+                          },
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Web Designer",
+                                "th": "Web Designer"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "div",
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "p",
+                          "attributes": {
+                            "class": "description thai"
+                          },
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Designed client web applications from requirements, user flows, and screens through feedback and developer handoff.",
+                                "th": "ออกแบบเว็บแอปพลิเคชันให้ลูกค้า ตั้งแต่ทำความเข้าใจ requirement, user flow และหน้าจอ รับฟีดแบ็ก จนถึงการส่งต่อแบบให้ทีมพัฒนา"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "element",
+      "tag": "section",
+      "attributes": {
+        "class": "section",
+        "id": "research",
+        "aria-labelledby": "research-title"
+      },
+      "children": [
+        {
+          "kind": "element",
+          "tag": "div",
+          "attributes": {
+            "class": "section-heading"
+          },
+          "children": [
+            {
+              "kind": "element",
+              "tag": "p",
+              "attributes": {
+                "class": "eyebrow"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "[ PERSONAL PROJECTS ]",
+                    "th": "[ PERSONAL PROJECTS ]"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "h2",
+              "attributes": {
+                "id": "research-title"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Questions I keep",
+                    "th": "Questions I keep"
+                  }
+                },
+                {
+                  "kind": "element",
+                  "tag": "br",
+                  "children": []
+                },
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "working on.",
+                    "th": "working on."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "div",
+          "attributes": {
+            "class": "about-research-grid"
+          },
+          "children": [
+            {
+              "kind": "element",
+              "tag": "article",
+              "attributes": {
+                "class": "about-research-item"
+              },
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "p",
+                  "attributes": {
+                    "class": "eyebrow muted"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "2020—2021",
+                        "th": "2020—2021"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "h3",
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "ThaiWater / War Room",
+                        "th": "ThaiWater / War Room"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "p",
+                  "attributes": {
+                    "class": "thai research-context"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Water and disaster monitoring",
+                        "th": "การติดตามสถานการณ์น้ำและภัยพิบัติ"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "p",
+                  "attributes": {
+                    "class": "thai"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Mapped journeys, designed dashboard UX/UI and operational states, and collaborated with the product team.",
+                        "th": "ทำ journey mapping ออกแบบ Dashboard UX/UI สถานะปฏิบัติการ และทำงานร่วมกับทีมผลิตภัณฑ์"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "p",
+                  "attributes": {
+                    "class": "research-flow thai"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Real-time data → monitoring dashboard → situational awareness → field coordination",
+                        "th": "ข้อมูล realtime → monitoring dashboard → รับรู้เหตุการณ์ → ประสานงานภาคสนาม"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "article",
+              "attributes": {
+                "class": "about-research-item"
+              },
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "p",
+                  "attributes": {
+                    "class": "eyebrow muted"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "2026",
+                        "th": "2026"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "h3",
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "LCCS Personal Research",
+                        "th": "LCCS Personal Research"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "p",
+                  "attributes": {
+                    "class": "thai research-context"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Crisis coordination / public response",
+                        "th": "การประสานงานวิกฤต / การตอบสนองสาธารณะ"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "p",
+                  "attributes": {
+                    "class": "thai"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Framing the research, mapping stakeholders, and designing information architecture for task coordination.",
+                        "th": "วางกรอบงานวิจัย ทำแผนที่ผู้เกี่ยวข้อง และออกแบบสถาปัตยกรรมข้อมูลสำหรับจัดการภารกิจ"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "p",
+                  "attributes": {
+                    "class": "research-flow thai"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Identity and roles → event registry → resources → task status",
+                        "th": "ตัวตนและบทบาท → ทะเบียนเหตุการณ์ → ทรัพยากร → สถานะภารกิจ"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "element",
+      "tag": "section",
+      "attributes": {
+        "class": "section",
+        "id": "capabilities",
+        "aria-labelledby": "capabilities-title"
+      },
+      "children": [
+        {
+          "kind": "element",
+          "tag": "div",
+          "attributes": {
+            "class": "section-heading"
+          },
+          "children": [
+            {
+              "kind": "element",
+              "tag": "p",
+              "attributes": {
+                "class": "eyebrow"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "[ CAPABILITIES & EDUCATION ]",
+                    "th": "[ CAPABILITIES & EDUCATION ]"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "h2",
+              "attributes": {
+                "id": "capabilities-title"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "What I bring",
+                    "th": "What I bring"
+                  }
+                },
+                {
+                  "kind": "element",
+                  "tag": "br",
+                  "children": []
+                },
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "to the work.",
+                    "th": "to the work."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "div",
+          "attributes": {
+            "class": "about-qualifications"
+          },
+          "children": [
+            {
+              "kind": "element",
+              "tag": "article",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "h3",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "svg",
+                      "attributes": {
+                        "class": "about-icon",
+                        "viewBox": "0 0 24 24",
+                        "aria-hidden": "true",
+                        "focusable": "false"
+                      },
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "use",
+                          "attributes": {
+                            "href": "assets/icons/ant-design-outlined.svg#bulb",
+                            "width": "24",
+                            "height": "24"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "span",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Capabilities",
+                            "th": "Capabilities"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "ul",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "li",
+                      "attributes": {
+                        "class": "about-icon-row"
+                      },
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "svg",
+                          "attributes": {
+                            "class": "about-icon",
+                            "viewBox": "0 0 24 24",
+                            "aria-hidden": "true",
+                            "focusable": "false"
+                          },
+                          "children": [
+                            {
+                              "kind": "element",
+                              "tag": "use",
+                              "attributes": {
+                                "href": "assets/icons/ant-design-outlined.svg#cluster",
+                                "width": "24",
+                                "height": "24"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "span",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "System analysis",
+                                "th": "การวิเคราะห์ระบบ"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "li",
+                      "attributes": {
+                        "class": "about-icon-row"
+                      },
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "svg",
+                          "attributes": {
+                            "class": "about-icon",
+                            "viewBox": "0 0 24 24",
+                            "aria-hidden": "true",
+                            "focusable": "false"
+                          },
+                          "children": [
+                            {
+                              "kind": "element",
+                              "tag": "use",
+                              "attributes": {
+                                "href": "assets/icons/ant-design-outlined.svg#compass",
+                                "width": "24",
+                                "height": "24"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "span",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "UX strategy",
+                                "th": "กลยุทธ์ UX"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "li",
+                      "attributes": {
+                        "class": "about-icon-row"
+                      },
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "svg",
+                          "attributes": {
+                            "class": "about-icon",
+                            "viewBox": "0 0 24 24",
+                            "aria-hidden": "true",
+                            "focusable": "false"
+                          },
+                          "children": [
+                            {
+                              "kind": "element",
+                              "tag": "use",
+                              "attributes": {
+                                "href": "assets/icons/ant-design-outlined.svg#branches",
+                                "width": "24",
+                                "height": "24"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "span",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Workflow design",
+                                "th": "การออกแบบ workflow"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "li",
+                      "attributes": {
+                        "class": "about-icon-row"
+                      },
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "svg",
+                          "attributes": {
+                            "class": "about-icon",
+                            "viewBox": "0 0 24 24",
+                            "aria-hidden": "true",
+                            "focusable": "false"
+                          },
+                          "children": [
+                            {
+                              "kind": "element",
+                              "tag": "use",
+                              "attributes": {
+                                "href": "assets/icons/ant-design-outlined.svg#apartment",
+                                "width": "24",
+                                "height": "24"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "span",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Information architecture",
+                                "th": "สถาปัตยกรรมข้อมูล"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "li",
+                      "attributes": {
+                        "class": "about-icon-row"
+                      },
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "svg",
+                          "attributes": {
+                            "class": "about-icon",
+                            "viewBox": "0 0 24 24",
+                            "aria-hidden": "true",
+                            "focusable": "false"
+                          },
+                          "children": [
+                            {
+                              "kind": "element",
+                              "tag": "use",
+                              "attributes": {
+                                "href": "assets/icons/ant-design-outlined.svg#layout",
+                                "width": "24",
+                                "height": "24"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "span",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Product UX/UI",
+                                "th": "Product UX/UI"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "li",
+                      "attributes": {
+                        "class": "about-icon-row"
+                      },
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "svg",
+                          "attributes": {
+                            "class": "about-icon",
+                            "viewBox": "0 0 24 24",
+                            "aria-hidden": "true",
+                            "focusable": "false"
+                          },
+                          "children": [
+                            {
+                              "kind": "element",
+                              "tag": "use",
+                              "attributes": {
+                                "href": "assets/icons/ant-design-outlined.svg#team",
+                                "width": "24",
+                                "height": "24"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "span",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Cross-functional delivery",
+                                "th": "การส่งมอบร่วมกับทีมข้ามสายงาน"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "article",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "h3",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "svg",
+                      "attributes": {
+                        "class": "about-icon",
+                        "viewBox": "0 0 24 24",
+                        "aria-hidden": "true",
+                        "focusable": "false"
+                      },
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "use",
+                          "attributes": {
+                            "href": "assets/icons/ant-design-outlined.svg#tool",
+                            "width": "24",
+                            "height": "24"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "span",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Tools & methods",
+                            "th": "Tools & methods"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "ul",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "li",
+                      "attributes": {
+                        "class": "about-icon-row"
+                      },
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "svg",
+                          "attributes": {
+                            "class": "about-icon",
+                            "viewBox": "0 0 24 24",
+                            "aria-hidden": "true",
+                            "focusable": "false"
+                          },
+                          "children": [
+                            {
+                              "kind": "element",
+                              "tag": "use",
+                              "attributes": {
+                                "href": "assets/icons/ant-design-outlined.svg#border-outer",
+                                "width": "24",
+                                "height": "24"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "span",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Figma",
+                                "th": "Figma"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "li",
+                      "attributes": {
+                        "class": "about-icon-row"
+                      },
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "svg",
+                          "attributes": {
+                            "class": "about-icon",
+                            "viewBox": "0 0 24 24",
+                            "aria-hidden": "true",
+                            "focusable": "false"
+                          },
+                          "children": [
+                            {
+                              "kind": "element",
+                              "tag": "use",
+                              "attributes": {
+                                "href": "assets/icons/ant-design-outlined.svg#play-circle",
+                                "width": "24",
+                                "height": "24"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "span",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Framer",
+                                "th": "Framer"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "li",
+                      "attributes": {
+                        "class": "about-icon-row"
+                      },
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "svg",
+                          "attributes": {
+                            "class": "about-icon",
+                            "viewBox": "0 0 24 24",
+                            "aria-hidden": "true",
+                            "focusable": "false"
+                          },
+                          "children": [
+                            {
+                              "kind": "element",
+                              "tag": "use",
+                              "attributes": {
+                                "href": "assets/icons/ant-design-outlined.svg#bg-colors",
+                                "width": "24",
+                                "height": "24"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "span",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Adobe",
+                                "th": "Adobe"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "li",
+                      "attributes": {
+                        "class": "about-icon-row"
+                      },
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "svg",
+                          "attributes": {
+                            "class": "about-icon",
+                            "viewBox": "0 0 24 24",
+                            "aria-hidden": "true",
+                            "focusable": "false"
+                          },
+                          "children": [
+                            {
+                              "kind": "element",
+                              "tag": "use",
+                              "attributes": {
+                                "href": "assets/icons/ant-design-outlined.svg#file-text",
+                                "width": "24",
+                                "height": "24"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "span",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Notion",
+                                "th": "Notion"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "li",
+                      "attributes": {
+                        "class": "about-icon-row"
+                      },
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "svg",
+                          "attributes": {
+                            "class": "about-icon",
+                            "viewBox": "0 0 24 24",
+                            "aria-hidden": "true",
+                            "focusable": "false"
+                          },
+                          "children": [
+                            {
+                              "kind": "element",
+                              "tag": "use",
+                              "attributes": {
+                                "href": "assets/icons/ant-design-outlined.svg#project",
+                                "width": "24",
+                                "height": "24"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "span",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Jira",
+                                "th": "Jira"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "li",
+                      "attributes": {
+                        "class": "about-icon-row"
+                      },
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "svg",
+                          "attributes": {
+                            "class": "about-icon",
+                            "viewBox": "0 0 24 24",
+                            "aria-hidden": "true",
+                            "focusable": "false"
+                          },
+                          "children": [
+                            {
+                              "kind": "element",
+                              "tag": "use",
+                              "attributes": {
+                                "href": "assets/icons/ant-design-outlined.svg#robot",
+                                "width": "24",
+                                "height": "24"
+                              },
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "span",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Claude",
+                                "th": "Claude"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "p",
+                  "attributes": {
+                    "class": "thai about-method about-icon-row"
+                  },
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "svg",
+                      "attributes": {
+                        "class": "about-icon",
+                        "viewBox": "0 0 24 24",
+                        "aria-hidden": "true",
+                        "focusable": "false"
+                      },
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "use",
+                          "attributes": {
+                            "href": "assets/icons/ant-design-outlined.svg#experiment",
+                            "width": "24",
+                            "height": "24"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "span",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "AI-assisted prototyping",
+                            "th": "การทำต้นแบบโดยใช้ AI ช่วย"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "article",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "h3",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "svg",
+                      "attributes": {
+                        "class": "about-icon",
+                        "viewBox": "0 0 24 24",
+                        "aria-hidden": "true",
+                        "focusable": "false"
+                      },
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "use",
+                          "attributes": {
+                            "href": "assets/icons/ant-design-outlined.svg#read",
+                            "width": "24",
+                            "height": "24"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "span",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Education",
+                            "th": "Education"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "p",
+                  "attributes": {
+                    "class": "about-icon-row thai education-degree"
+                  },
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "svg",
+                      "attributes": {
+                        "class": "about-icon",
+                        "viewBox": "0 0 24 24",
+                        "aria-hidden": "true",
+                        "focusable": "false"
+                      },
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "use",
+                          "attributes": {
+                            "href": "assets/icons/ant-design-outlined.svg#safety-certificate",
+                            "width": "24",
+                            "height": "24"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "span",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Bachelor of Fine Arts in Art and Design",
+                            "th": "ศิลปบัณฑิตด้านศิลปะและการออกแบบ"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "p",
+                  "attributes": {
+                    "class": "about-icon-row thai "
+                  },
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "svg",
+                      "attributes": {
+                        "class": "about-icon",
+                        "viewBox": "0 0 24 24",
+                        "aria-hidden": "true",
+                        "focusable": "false"
+                      },
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "use",
+                          "attributes": {
+                            "href": "assets/icons/ant-design-outlined.svg#format-painter",
+                            "width": "24",
+                            "height": "24"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "span",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Visual Communication Design",
+                            "th": "การออกแบบนิเทศศิลป์"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "p",
+                  "attributes": {
+                    "class": "about-icon-row thai "
+                  },
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "svg",
+                      "attributes": {
+                        "class": "about-icon",
+                        "viewBox": "0 0 24 24",
+                        "aria-hidden": "true",
+                        "focusable": "false"
+                      },
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "use",
+                          "attributes": {
+                            "href": "assets/icons/ant-design-outlined.svg#bank",
+                            "width": "24",
+                            "height": "24"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "span",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Rangsit University, Thailand · 2014",
+                            "th": "มหาวิทยาลัยรังสิต ประเทศไทย · 2014"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "p",
+                  "attributes": {
+                    "class": "about-icon-row thai education-meta"
+                  },
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "svg",
+                      "attributes": {
+                        "class": "about-icon",
+                        "viewBox": "0 0 24 24",
+                        "aria-hidden": "true",
+                        "focusable": "false"
+                      },
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "use",
+                          "attributes": {
+                            "href": "assets/icons/ant-design-outlined.svg#trophy",
+                            "width": "24",
+                            "height": "24"
+                          },
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "span",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "GPA 2.91",
+                            "th": "GPA 2.91"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "element",
+      "tag": "section",
+      "attributes": {
+        "class": "section",
+        "aria-labelledby": "working-title"
+      },
+      "children": [
+        {
+          "kind": "element",
+          "tag": "div",
+          "attributes": {
+            "class": "approach"
+          },
+          "children": [
+            {
+              "kind": "element",
+              "tag": "div",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "p",
+                  "attributes": {
+                    "class": "eyebrow"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "[ WORKING TOGETHER ]",
+                        "th": "[ WORKING TOGETHER ]"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "h2",
+                  "attributes": {
+                    "class": "thai",
+                    "id": "working-title"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Understand the problem together",
+                        "th": "เข้าใจโจทย์ร่วมกัน"
+                      }
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "br",
+                      "children": []
+                    },
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "before working through the details",
+                        "th": "ก่อนลงรายละเอียด"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "div",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "article",
+                  "attributes": {
+                    "class": "principle"
+                  },
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "span",
+                      "attributes": {
+                        "class": "num"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "01",
+                            "th": "01"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "div",
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "h3",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Build the structure",
+                                "th": "จัดโครงสร้าง"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "p",
+                          "attributes": {
+                            "class": "thai"
+                          },
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Information architecture · User flow · Workflow mapping",
+                                "th": "Information architecture · User flow · Workflow mapping"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "article",
+                  "attributes": {
+                    "class": "principle"
+                  },
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "span",
+                      "attributes": {
+                        "class": "num"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "02",
+                            "th": "02"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "div",
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "h3",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Design and test",
+                                "th": "ออกแบบและทดสอบ"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "p",
+                          "attributes": {
+                            "class": "thai"
+                          },
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "UX/UI · Prototyping · Usability testing",
+                                "th": "UX/UI · Prototyping · Usability testing"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "article",
+                  "attributes": {
+                    "class": "principle"
+                  },
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "span",
+                      "attributes": {
+                        "class": "num"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "03",
+                            "th": "03"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "div",
+                      "children": [
+                        {
+                          "kind": "element",
+                          "tag": "h3",
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "Support delivery",
+                                "th": "ส่งต่อให้ทำงานจริง"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "element",
+                          "tag": "p",
+                          "attributes": {
+                            "class": "thai"
+                          },
+                          "children": [
+                            {
+                              "kind": "text",
+                              "value": {
+                                "en": "UI specification · Cross-functional review · UAT support",
+                                "th": "UI specification · Cross-functional review · UAT support"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

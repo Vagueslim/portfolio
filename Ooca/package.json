@@ -4,19 +4,22 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": ">=22.18.0"
+    "node": ">=24.0.0"
   },
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 4173 --strictPort",
     "typecheck": "tsc --noEmit",
-    "check:content": "node scripts/check-home-content.mjs",
-    "build": "npm run typecheck && npm run check:content && vite build",
+    "check:content": "node scripts/check-content.mjs",
+    "build": "npm run typecheck && npm run check:content && vite build && vite build --ssr src/entry-server.tsx --outDir .prerender && node scripts/prerender.mjs",
     "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
-    "test": "playwright test"
+    "test": "playwright test",
+    "verify:pages": "node scripts/verify-pages.mjs",
+    "qa:visual": "node scripts/capture-migration.mjs"
   },
   "dependencies": {
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "react-router": "8.4.0"
   },
   "devDependencies": {
     "@playwright/test": "1.63.0",

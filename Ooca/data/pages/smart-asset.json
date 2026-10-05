@@ -1,0 +1,988 @@
+{
+  "metadata": {
+    "title": {
+      "en": "PEC Smart Asset — Dhittawat Thongkhum",
+      "th": "PEC Smart Asset — Dhittawat Thongkhum"
+    },
+    "description": {
+      "en": "Initial specifications and UX/UI for Master Asset, connecting Category, SKU, and physical assets through close work with a software engineer and learning from use.",
+      "th": "สเปกเบื้องต้นและ UX/UI ของ Master Asset ที่เชื่อม Category, SKU และทรัพย์สินจริง โดยทำงานร่วมกับ Software Engineer แล้วเรียนรู้จากการใช้งาน"
+    }
+  },
+  "head": {
+    "kind": "element",
+    "tag": "section",
+    "attributes": {
+      "class": "case-head"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "breadcrumb"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "project.html"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "Project",
+                  "th": "Project"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "/",
+                  "th": "/"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "PEC Smart Asset",
+                  "th": "PEC Smart Asset"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "eyebrow"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "05 / ASSET MANAGEMENT",
+              "th": "05 / ASSET MANAGEMENT"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "h1",
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "PEC Smart Asset",
+              "th": "PEC Smart Asset"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "case-statement"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Different assets. One clear workflow.",
+              "th": "Different assets. One clear workflow."
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "case-intro thai"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Initial specifications and UX/UI for Master Asset, connecting Category, SKU, and physical assets through close work with a software engineer and learning from use.",
+              "th": "สเปกเบื้องต้นและ UX/UI ของ Master Asset ที่เชื่อม Category, SKU และทรัพย์สินจริง โดยทำงานร่วมกับ Software Engineer แล้วเรียนรู้จากการใช้งาน"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "dl",
+        "attributes": {
+          "class": "case-facts"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Role",
+                      "th": "Role"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "UX × SA Intern",
+                      "th": "UX × SA Intern"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Scope",
+                      "th": "Scope"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Initial specifications · Master Asset UX/UI",
+                      "th": "Initial specifications · Master Asset UX/UI"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Collaboration",
+                      "th": "Collaboration"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Software Engineer",
+                      "th": "Software Engineer"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Evidence",
+                      "th": "Evidence"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Design artifacts · Feedback from use",
+                      "th": "Design artifacts · Feedback from use"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "overview": {
+    "kind": "single",
+    "mediaId": "smart-asset-master-flow",
+    "alt": {
+      "en": "Master Asset workflow: relationships between Category, SKU, and physical assets — design and specification evidence",
+      "th": "ภาพ flow งาน Master Asset: ความสัมพันธ์ของ Category, SKU และทรัพย์สินจริง — หลักฐานการออกแบบและสเปก"
+    }
+  },
+  "visualClass": "case-hero asset",
+  "caption": {
+    "kind": "element",
+    "tag": "p",
+    "attributes": {
+      "class": "caption",
+      "style": "margin-top:13px"
+    },
+    "children": [
+      {
+        "kind": "text",
+        "value": {
+          "en": "Master Asset workflow: relationships between Category, SKU, and physical assets — design and specification evidence",
+          "th": "ภาพ flow งาน Master Asset: ความสัมพันธ์ของ Category, SKU และทรัพย์สินจริง — หลักฐานการออกแบบและสเปก"
+        }
+      }
+    ]
+  },
+  "toc": {
+    "kind": "element",
+    "tag": "aside",
+    "attributes": {
+      "class": "case-toc"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "eyebrow"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "IN THIS CASE",
+              "th": "IN THIS CASE"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "nav",
+        "attributes": {
+          "aria-label": {
+            "en": "Case study contents",
+            "th": "สารบัญเคส"
+          }
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#different-assets"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "01 / One menu, many kinds of assets",
+                  "th": "01 / เมนูเดียว แต่ทรัพย์สินมีหลายแบบ"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#connected-workflow"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "02 / Make the relationships visible: Category → SKU → Asset",
+                  "th": "02 / ทำความสัมพันธ์ให้เห็น: Category → SKU → Asset"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#engineering-collaboration"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "03 / From initial specifications to designing with an engineer",
+                  "th": "03 / จากสเปกเบื้องต้น สู่การออกแบบร่วมกับ Engineer"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#feedback-from-use"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "04 / A sound data structure still needs a clear entry point",
+                  "th": "04 / โครงข้อมูลที่ถูกต้อง ยังต้องมีทางเข้าที่เข้าใจได้"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "chapters": [
+    {
+      "id": "different-assets",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "01 / ASSET MANAGEMENT",
+                "th": "01 / ASSET MANAGEMENT"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "One menu, many kinds of assets",
+                "th": "เมนูเดียว แต่ทรัพย์สินมีหลายแบบ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "PEC Smart Asset supports asset management and rental operations. This case focuses on Master Asset: defining the information different asset types need, then connecting it to registration and inspection of individual assets.",
+                "th": "PEC Smart Asset รองรับการจัดการทรัพย์สินและงานเช่า เคสนี้เลือกเล่าส่วน Master Asset ซึ่งกำหนดข้อมูลที่ทรัพย์สินต่างชนิดต้องใช้ แล้วเชื่อมไปสู่การลงทะเบียนและตรวจดูทรัพย์สินจริง"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "A car, a drill, a bag of cement, and a renewable document have different identities, quantities, and lifecycles. One identical form cannot communicate the specific information each task needs.",
+                "th": "รถยนต์ สว่าน ปูนหนึ่งถุง และเอกสารต่ออายุมีตัวตน จำนวน และวงจรการใช้งานต่างกัน การใช้แบบฟอร์มเดียวกันทั้งหมดจึงไม่ช่วยแสดงข้อมูลเฉพาะที่แต่ละงานต้องใช้"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "connected-workflow",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "02 / ASSET MANAGEMENT",
+                "th": "02 / ASSET MANAGEMENT"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Make the relationships visible: Category → SKU → Asset",
+                "th": "ทำความสัมพันธ์ให้เห็น: Category → SKU → Asset"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "table",
+          "children": [
+            {
+              "kind": "element",
+              "tag": "thead",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "tr",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "th",
+                      "attributes": {
+                        "scope": "col"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Information",
+                            "th": "ข้อมูล"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "th",
+                      "attributes": {
+                        "scope": "col"
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Role in the workflow",
+                            "th": "หน้าที่ใน workflow"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "tbody",
+              "children": [
+                {
+                  "kind": "element",
+                  "tag": "tr",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Category",
+                            "th": "Category"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Define rules and fields by category",
+                            "th": "กำหนดกติกาและช่องข้อมูลตามประเภท"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "tr",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "SKU",
+                            "th": "SKU"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Store a reusable product definition",
+                            "th": "เก็บนิยามสินค้าที่ใช้ซ้ำได้"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "element",
+                  "tag": "tr",
+                  "children": [
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "Asset",
+                            "th": "Asset"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "element",
+                      "tag": "td",
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "An individual physical asset with its own identity, QR code, status, and site context",
+                            "th": "ทรัพย์สินจริงรายชิ้น มีตัวตน QR สถานะ และบริบทไซต์ของตัวเอง"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Used these relationships to frame the initial specifications and UX/UI, carrying shared information from SKU to asset while preserving each item’s identity.",
+                "th": "ใช้ความสัมพันธ์นี้เป็นกรอบของสเปกเบื้องต้นและ UX/UI เพื่อส่งต่อข้อมูลร่วมจาก SKU ไปยังทรัพย์สิน โดยยังคงตัวตนของแต่ละชิ้นไว้"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "figure",
+          "attributes": {
+            "class": "evidence"
+          },
+          "children": [
+            {
+              "kind": "element",
+              "tag": "button",
+              "attributes": {
+                "class": "image-button",
+                "data-media-id": "smart-asset-master-flow",
+                "data-caption": {
+                  "en": "Original artwork showing the relationships between Master Asset screens and information",
+                  "th": "ภาพต้นฉบับที่แสดงความสัมพันธ์ของหน้าจอและข้อมูลใน Master Asset"
+                },
+                "aria-label": {
+                  "en": "Enlarge image: Workflow from Category and SKU to Asset",
+                  "th": "ขยายภาพ: ภาพ flow จาก Category และ SKU ไปยัง Asset"
+                }
+              },
+              "children": [
+                {
+                  "kind": "image",
+                  "mediaId": "smart-asset-master-flow",
+                  "alt": {
+                    "en": "Workflow from Category and SKU to Asset",
+                    "th": "ภาพ flow จาก Category และ SKU ไปยัง Asset"
+                  }
+                },
+                {
+                  "kind": "element",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "zoom-hint"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Enlarge image ↗",
+                        "th": "ขยายภาพ ↗"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "figcaption",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Original artwork showing the relationships between Master Asset screens and information",
+                    "th": "ภาพต้นฉบับที่แสดงความสัมพันธ์ของหน้าจอและข้อมูลใน Master Asset"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "engineering-collaboration",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "03 / ASSET MANAGEMENT",
+                "th": "03 / ASSET MANAGEMENT"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "From initial specifications to designing with an engineer",
+                "th": "จากสเปกเบื้องต้น สู่การออกแบบร่วมกับ Engineer"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "As a UX × SA Intern, I owned the initial specifications and co-designed the UX/UI and workflow with a software engineer. I used Codex to assist with specifications and design, then reviewed requirements and constraints with the engineer.",
+                "th": "ในบทบาท UX × SA Intern รับผิดชอบสเปกเบื้องต้นและร่วมออกแบบ UX/UI กับ workflow คู่กับ Software Engineer ใช้ Codex ช่วยงานสเปกและการออกแบบ แล้วตรวจ requirement และข้อจำกัดร่วมกับ Engineer"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "figure",
+          "attributes": {
+            "class": "evidence"
+          },
+          "children": [
+            {
+              "kind": "element",
+              "tag": "button",
+              "attributes": {
+                "class": "image-button",
+                "data-media-id": "smart-asset-bu-permissions",
+                "data-caption": {
+                  "en": "A screen showing Page / Feature, Permission Code, and available actions as supporting UI evidence",
+                  "th": "หน้าจอแสดง Page / Feature, Permission Code และสิทธิ์การทำงาน เป็นหลักฐาน UI ประกอบเคส"
+                },
+                "aria-label": {
+                  "en": "Enlarge image: Business-unit relationships and Page / Feature permissions",
+                  "th": "ขยายภาพ: ตัวอย่าง UI ความสัมพันธ์ระดับ BU และสิทธิ์ตาม Page หรือ Feature"
+                }
+              },
+              "children": [
+                {
+                  "kind": "image",
+                  "mediaId": "smart-asset-bu-permissions",
+                  "alt": {
+                    "en": "Business-unit relationships and Page / Feature permissions",
+                    "th": "ตัวอย่าง UI ความสัมพันธ์ระดับ BU และสิทธิ์ตาม Page หรือ Feature"
+                  }
+                },
+                {
+                  "kind": "element",
+                  "tag": "span",
+                  "attributes": {
+                    "class": "zoom-hint"
+                  },
+                  "children": [
+                    {
+                      "kind": "text",
+                      "value": {
+                        "en": "Enlarge image ↗",
+                        "th": "ขยายภาพ ↗"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "figcaption",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "A screen showing Page / Feature, Permission Code, and available actions as supporting UI evidence",
+                    "th": "หน้าจอแสดง Page / Feature, Permission Code และสิทธิ์การทำงาน เป็นหลักฐาน UI ประกอบเคส"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "feedback-from-use",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "04 / ASSET MANAGEMENT",
+                "th": "04 / ASSET MANAGEMENT"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "A sound data structure still needs a clear entry point",
+                "th": "โครงข้อมูลที่ถูกต้อง ยังต้องมีทางเข้าที่เข้าใจได้"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "According to the original case, Master Asset was delivered and entered use. Users still did not understand why a SKU had to be created before an individual asset. Meanwhile, data from two migration rounds was incomplete, making bulk entry difficult.",
+                "th": "ตามเนื้อหาเคสเดิม ส่วน Master Asset ส่งมอบและเริ่มใช้งานแล้ว การใช้งานทำให้พบว่าผู้ใช้ยังไม่เข้าใจว่าทำไมต้องสร้าง SKU ก่อนทรัพย์สินจริง ขณะเดียวกันข้อมูลจากการย้ายระบบสองรอบยังมาไม่ครบ ทำให้การเพิ่มข้อมูลจำนวนมากติดขัด"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "The planned next steps were to complete and refine imported data and add a direct entry point for viewing assets, while preserving the SKU relationship and the SKU requirement when creating an asset.",
+                "th": "แนวทางถัดไปที่วางไว้คือเติมและปรับข้อมูลนำเข้า พร้อมเพิ่มทางเข้าดู Asset โดยตรง โดยยังคงความสัมพันธ์กับ SKU และข้อกำหนด SKU ในขั้นตอนสร้าง Asset"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "note"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Direct asset access was a planned improvement in the original case, with no post-change assessment yet. Master Asset is the confirmed live scope, not every rental module.",
+                "th": "ทางเข้าดู Asset โดยตรงเป็นแผนปรับปรุงในเคสเดิม ยังไม่ได้ประเมินผลหลังปรับ ขอบเขตที่ยืนยันว่าเริ่มใช้จริงคือ Master Asset ไม่ใช่ทุกโมดูลในงานเช่า"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "next": {
+    "kind": "element",
+    "tag": "div",
+    "attributes": {
+      "class": "next-case"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "q-chang-web.html"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "eyebrow"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "NEXT CASE / CUSTOMER EXPERIENCE",
+                      "th": "NEXT CASE / CUSTOMER EXPERIENCE"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "h2",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Q-CHANG Web",
+                      "th": "Q-CHANG Web"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "class": "next-arrow",
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "↗",
+                  "th": "↗"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

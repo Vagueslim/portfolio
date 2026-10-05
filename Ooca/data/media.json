@@ -1,88 +1,257 @@
 {
   "qchang-overview": {
     "src": "assets/images/qchang-service-booking-cover.png",
-    "alt": "ภาพประกอบขอบเขตงาน Q-CHANG ตั้งแต่ค้นหาบริการจนถึงการจอง",
+    "alt": {
+      "en": "Illustration of the Q-CHANG project scope, from service discovery to booking",
+      "th": "ภาพประกอบขอบเขตงาน Q-CHANG ตั้งแต่ค้นหาบริการจนถึงการจอง"
+    },
     "width": 1672,
     "height": 941
   },
   "buddy-onboarding": {
     "src": "assets/images/buddy-onboarding.png",
-    "alt": "Buddy แบ่งข้อมูลสมัครเป็นช่างออกเป็นส่วน แสดงสถานะของแต่ละส่วน",
+    "alt": {
+      "en": "Buddy technician registration divided into sections, each showing its status",
+      "th": "Buddy แบ่งข้อมูลสมัครเป็นช่างออกเป็นส่วน แสดงสถานะของแต่ละส่วน"
+    },
     "width": 372,
     "height": 1016
   },
   "buddy-services": {
     "src": "assets/images/buddy-services.png",
-    "alt": "หน้าจอเลือกบริการและรายละเอียดราคา อุปกรณ์ และมาตรฐานงานช่าง",
+    "alt": {
+      "en": "Service-selection screens with pricing, equipment, and technician work standards",
+      "th": "หน้าจอเลือกบริการและรายละเอียดราคา อุปกรณ์ และมาตรฐานงานช่าง"
+    },
     "width": 848,
     "height": 1118
   },
   "wcf-medical-categories": {
     "src": "assets/images/wcf-medical-categories.png",
-    "alt": "หน้าจอ WCF แบ่งหมวดค่ารักษาและเปรียบเทียบราคาสำหรับเจ้าหน้าที่",
+    "alt": {
+      "en": "WCF screen organizing medical expenses and comparing prices for staff",
+      "th": "หน้าจอ WCF แบ่งหมวดค่ารักษาและเปรียบเทียบราคาสำหรับเจ้าหน้าที่"
+    },
     "width": 1163,
     "height": 857
   },
   "smart-asset-master-flow": {
     "src": "assets/images/smart-asset-master-flow.png",
-    "alt": "ภาพ flow ของ Smart Asset จาก Category และ SKU ไปสู่การลงทะเบียนทรัพย์สินและการใช้งานในไซต์",
+    "alt": {
+      "en": "Smart Asset workflow from Category and SKU to asset registration and site use",
+      "th": "ภาพ flow ของ Smart Asset จาก Category และ SKU ไปสู่การลงทะเบียนทรัพย์สินและการใช้งานในไซต์"
+    },
     "width": 864,
     "height": 556
   },
   "smart-asset-bu-permissions": {
     "src": "assets/images/smart-asset-bu-permissions.png",
-    "alt": "ตัวอย่างหน้าจอความสัมพันธ์ระดับ BU และสิทธิ์ตาม Page หรือ Feature",
+    "alt": {
+      "en": "Example screen for business-unit relationships and Page / Feature permissions",
+      "th": "ตัวอย่างหน้าจอความสัมพันธ์ระดับ BU และสิทธิ์ตาม Page หรือ Feature"
+    },
     "width": 428,
     "height": 264
   },
   "smart-asset-warehouse": {
     "src": "assets/images/smart-asset-warehouse.png",
-    "alt": "",
+    "alt": {
+      "en": "",
+      "th": ""
+    },
     "width": 167,
     "height": 126
   },
   "silver-rainbow-foil-v1": {
     "src": "assets/images/silver-rainbow-foil-v1.png",
-    "alt": ""
+    "alt": {
+      "en": "",
+      "th": ""
+    }
   },
   "smart-asset-cover": {
     "src": "assets/images/smart-asset-cover.png",
-    "alt": "ภาพรวม Smart Asset พร้อม flow การจัดการทรัพย์สินและหน้าจอกำหนดสิทธิ์ระดับ BU",
+    "alt": {
+      "en": "Smart Asset overview with asset-management workflows and business-unit permission settings",
+      "th": "ภาพรวม Smart Asset พร้อม flow การจัดการทรัพย์สินและหน้าจอกำหนดสิทธิ์ระดับ BU"
+    },
     "width": 868,
     "height": 624
   },
   "wcf-cover": {
     "src": "assets/images/wcf-cover.png",
-    "alt": "ภาพรวม WCF Digital แสดงหน้าจอและ flow การทำงานของระบบภายใน",
+    "alt": {
+      "en": "WCF Digital overview showing internal-system screens and workflows",
+      "th": "ภาพรวม WCF Digital แสดงหน้าจอและ flow การทำงานของระบบภายใน"
+    },
     "width": 810,
     "height": 630
   },
   "change-date-research": {
     "src": "assets/images/change-date-research.png",
-    "alt": "ข้อมูลรายการเปลี่ยนวันนัดที่นำมาวิเคราะห์"
+    "alt": {
+      "en": "Rescheduling records used for analysis",
+      "th": "ข้อมูลรายการเปลี่ยนวันนัดที่นำมาวิเคราะห์"
+    }
   },
   "change-date-home-overview": {
     "src": "assets/images/change-date-home-overview.png",
-    "alt": "ภาพประกอบ Q-CHANG Change Date: วิเคราะห์คำขอเปลี่ยนวันนัด 3,999 รายการ ผ่านเจ้าหน้าที่ 3,545 รายการ และลูกค้าทำเอง 454 รายการ แสดงการประสานงานของลูกค้า ทีมงาน และช่าง เป็นข้อมูลที่ศึกษา ไม่ใช่ผลลัพธ์หลังออกแบบ",
+    "alt": {
+      "en": "Q-CHANG Change Date illustration: analysis of 3,999 rescheduling requests, including 3,545 staff-assisted and 454 self-service records, showing coordination between customers, staff, and technicians. Research data, not a post-design outcome.",
+      "th": "ภาพประกอบ Q-CHANG Change Date: วิเคราะห์คำขอเปลี่ยนวันนัด 3,999 รายการ ผ่านเจ้าหน้าที่ 3,545 รายการ และลูกค้าทำเอง 454 รายการ แสดงการประสานงานของลูกค้า ทีมงาน และช่าง เป็นข้อมูลที่ศึกษา ไม่ใช่ผลลัพธ์หลังออกแบบ"
+    },
     "width": 1672,
     "height": 941
   },
   "wcf-workflow": {
     "src": "assets/images/wcf-workflow.webp",
-    "alt": "ภาพ Flow งาน WCF เชื่อมหน้าจอใบแจ้งหนี้ หมวดค่ารักษา และการตรวจข้อมูล",
+    "alt": {
+      "en": "WCF workflow connecting invoice screens, medical-expense categories, and information checks",
+      "th": "ภาพ Flow งาน WCF เชื่อมหน้าจอใบแจ้งหนี้ หมวดค่ารักษา และการตรวจข้อมูล"
+    },
     "width": 2600,
     "height": 1997
   },
   "wcf-notice-list": {
     "src": "assets/images/wcf-notice-list.png",
-    "alt": "หน้าจอ WCF สำหรับค้นหาและแสดงรายการออกหนังสือ",
+    "alt": {
+      "en": "WCF screen for searching and listing letters to issue",
+      "th": "หน้าจอ WCF สำหรับค้นหาและแสดงรายการออกหนังสือ"
+    },
     "width": 1976,
     "height": 2229
   },
   "wcf-worker-illustration": {
     "src": "assets/images/wcf-worker-illustration.webp",
-    "alt": "",
+    "alt": {
+      "en": "",
+      "th": ""
+    },
     "width": 360,
     "height": 270
+  },
+  "evidence-qchang-overview": {
+    "src": "assets/images/qchang-overview.png",
+    "alt": {
+      "en": "",
+      "th": ""
+    }
+  },
+  "smart-asset-cover-flow-category": {
+    "src": "assets/images/smart-asset-cover-flow/category.webp",
+    "alt": {
+      "en": "Product Category list defining Smart Asset product groups",
+      "th": "รายการ Product Category สำหรับกำหนดกลุ่มสินค้าใน Smart Asset"
+    },
+    "width": 1455,
+    "height": 1267
+  },
+  "smart-asset-cover-flow-category-rules": {
+    "src": "assets/images/smart-asset-cover-flow/category-rules.webp",
+    "alt": {
+      "en": "Product group form configuring category-specific fields",
+      "th": "ฟอร์ม Product Group สำหรับกำหนดข้อมูลเฉพาะของ Category"
+    },
+    "width": 1327,
+    "height": 886
+  },
+  "smart-asset-cover-flow-sku": {
+    "src": "assets/images/smart-asset-cover-flow/sku.webp",
+    "alt": {
+      "en": "Smart Asset create SKU interface",
+      "th": "หน้าจอสร้าง SKU ใน Smart Asset"
+    },
+    "width": 1440,
+    "height": 735
+  },
+  "smart-asset-cover-flow-sku-detail": {
+    "src": "assets/images/smart-asset-cover-flow/sku-detail.webp",
+    "alt": {
+      "en": "SKU detail and registered inventory list",
+      "th": "รายละเอียด SKU และรายการทรัพย์สินที่ลงทะเบียน"
+    },
+    "width": 1440,
+    "height": 990
+  },
+  "smart-asset-cover-flow-asset": {
+    "src": "assets/images/smart-asset-cover-flow/asset.webp",
+    "alt": {
+      "en": "Physical asset registration interface with QR identity",
+      "th": "หน้าจอลงทะเบียนทรัพย์สินจริงพร้อม QR identity"
+    },
+    "width": 1440,
+    "height": 1015
+  },
+  "smart-asset-cover-flow-site": {
+    "src": "assets/images/smart-asset-cover-flow/site.webp",
+    "alt": {
+      "en": "Site detail showing assigned Smart Asset records",
+      "th": "รายละเอียด Site พร้อมทรัพย์สินที่ได้รับมอบหมาย"
+    },
+    "width": 1340,
+    "height": 843
+  },
+  "smart-asset-cover-flow-status": {
+    "src": "assets/images/smart-asset-cover-flow/status.webp",
+    "alt": {
+      "en": "Site asset list showing tracked items and assigned owners",
+      "th": "รายการทรัพย์สินในไซต์พร้อมรายการติดตามและผู้รับผิดชอบ"
+    },
+    "width": 1360,
+    "height": 671
+  },
+  "smart-asset-evidence-flow-order-to-invoice": {
+    "src": "assets/images/smart-asset-evidence/flow-order-to-invoice.png",
+    "alt": {
+      "en": "Order-to-Invoice overview activity diagram",
+      "th": "แผนภาพกิจกรรม ภาพรวม Order-to-Invoice"
+    },
+    "width": 8400,
+    "height": 1280
+  },
+  "smart-asset-evidence-flow-01-request-to-order": {
+    "src": "assets/images/smart-asset-evidence/flow-01-request-to-order.png",
+    "alt": {
+      "en": "Request to Order activity diagram",
+      "th": "แผนภาพกิจกรรม จากคำขอสู่ออเดอร์"
+    },
+    "width": 1784,
+    "height": 1736
+  },
+  "smart-asset-evidence-flow-02-reservation-to-delivery": {
+    "src": "assets/images/smart-asset-evidence/flow-02-reservation-to-delivery.png",
+    "alt": {
+      "en": "Reservation to Delivery activity diagram",
+      "th": "แผนภาพกิจกรรม จากการจองสู่การส่งมอบ"
+    },
+    "width": 1784,
+    "height": 1763
+  },
+  "smart-asset-evidence-flow-03-site-receiving": {
+    "src": "assets/images/smart-asset-evidence/flow-03-site-receiving.png",
+    "alt": {
+      "en": "Site Receiving activity diagram",
+      "th": "แผนภาพกิจกรรม การรับของที่ไซต์"
+    },
+    "width": 1784,
+    "height": 1673
+  },
+  "smart-asset-evidence-flow-04-use-and-extension": {
+    "src": "assets/images/smart-asset-evidence/flow-04-use-and-extension.png",
+    "alt": {
+      "en": "Use and Extension activity diagram",
+      "th": "แผนภาพกิจกรรม การใช้งานและต่อระยะเวลา"
+    },
+    "width": 1784,
+    "height": 1513
+  },
+  "smart-asset-evidence-flow-05-return-intake-and-close": {
+    "src": "assets/images/smart-asset-evidence/flow-05-return-intake-and-close.png",
+    "alt": {
+      "en": "Return Intake and Close activity diagram",
+      "th": "แผนภาพกิจกรรม การรับคืนและปิดงาน"
+    },
+    "width": 1784,
+    "height": 1718
   }
 }

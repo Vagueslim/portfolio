@@ -1,60 +1,126 @@
 {
-  "label": "ภาคผนวก",
-  "title": "หลักฐานการเข้าใจ flow ของระบบ",
-  "intro": "บันทึกแบบกระชับว่างานขยายจากการตัดสินใจบนหน้าจอไปสู่ขั้นตอนปฏิบัติการอย่างไร กดแต่ละภาพเพื่อดู activity diagram ฉบับเต็ม",
-  "open": "เปิดแผนภาพเต็ม",
-  "close": "ปิดแผนภาพ",
-  "original": "เปิดภาพความละเอียดต้นฉบับ",
-  "error": "โหลดภาพไม่สำเร็จ เปิดภาพต้นฉบับเพื่อลองอีกครั้ง",
-  "loading": "กำลังโหลดแผนภาพ…",
+  "label": {
+    "en": "Appendix",
+    "th": "ภาคผนวก"
+  },
+  "title": {
+    "en": "System flow evidence",
+    "th": "หลักฐานการเข้าใจ flow ของระบบ"
+  },
+  "intro": {
+    "en": "A compact record of how the work expanded from interface decisions into operational stages. Open any snapshot to inspect the full activity diagram.",
+    "th": "บันทึกแบบกระชับว่างานขยายจากการตัดสินใจบนหน้าจอไปสู่ขั้นตอนปฏิบัติการอย่างไร กดแต่ละภาพเพื่อดู activity diagram ฉบับเต็ม"
+  },
+  "open": {
+    "en": "Open full diagram",
+    "th": "เปิดแผนภาพเต็ม"
+  },
+  "close": {
+    "en": "Close diagram",
+    "th": "ปิดแผนภาพ"
+  },
+  "original": {
+    "en": "Open original resolution",
+    "th": "เปิดภาพความละเอียดต้นฉบับ"
+  },
+  "error": {
+    "en": "The diagram could not load. Open the original image to try again.",
+    "th": "โหลดภาพไม่สำเร็จ เปิดภาพต้นฉบับเพื่อลองอีกครั้ง"
+  },
+  "loading": {
+    "en": "Loading diagram…",
+    "th": "กำลังโหลดแผนภาพ…"
+  },
   "items": [
     {
-      "src": "assets/images/smart-asset-evidence/flow-order-to-invoice.png",
-      "width": 8400,
-      "height": 1280,
-      "title": "ภาพรวม Order-to-Invoice",
-      "description": "ภาพรวมสถานะตั้งแต่คำขอและใบเสนอราคา ไปจนถึงการส่งมอบ การคืน และการวางบิล",
-      "alt": "แผนภาพกิจกรรม ภาพรวม Order-to-Invoice"
+      "title": {
+        "en": "Order-to-Invoice overview",
+        "th": "ภาพรวม Order-to-Invoice"
+      },
+      "description": {
+        "en": "The wider status flow from request and quotation through delivery, return, and billing.",
+        "th": "ภาพรวมสถานะตั้งแต่คำขอและใบเสนอราคา ไปจนถึงการส่งมอบ การคืน และการวางบิล"
+      },
+      "alt": {
+        "en": "Order-to-Invoice overview activity diagram",
+        "th": "แผนภาพกิจกรรม ภาพรวม Order-to-Invoice"
+      },
+      "mediaId": "smart-asset-evidence-flow-order-to-invoice"
     },
     {
-      "src": "assets/images/smart-asset-evidence/flow-01-request-to-order.png",
-      "width": 1784,
-      "height": 1736,
-      "title": "จากคำขอสู่ออเดอร์",
-      "description": "เปลี่ยนความต้องการเช่าเป็นใบเสนอราคาที่มีเวอร์ชัน การตัดสินใจของลูกค้า และออเดอร์ที่ยืนยันแล้ว",
-      "alt": "แผนภาพกิจกรรม จากคำขอสู่ออเดอร์"
+      "title": {
+        "en": "Request to Order",
+        "th": "จากคำขอสู่ออเดอร์"
+      },
+      "description": {
+        "en": "Turns a rental need into a versioned quotation, customer decision, and confirmed order.",
+        "th": "เปลี่ยนความต้องการเช่าเป็นใบเสนอราคาที่มีเวอร์ชัน การตัดสินใจของลูกค้า และออเดอร์ที่ยืนยันแล้ว"
+      },
+      "alt": {
+        "en": "Request to Order activity diagram",
+        "th": "แผนภาพกิจกรรม จากคำขอสู่ออเดอร์"
+      },
+      "mediaId": "smart-asset-evidence-flow-01-request-to-order"
     },
     {
-      "src": "assets/images/smart-asset-evidence/flow-02-reservation-to-delivery.png",
-      "width": 1784,
-      "height": 1763,
-      "title": "จากการจองสู่การส่งมอบ",
-      "description": "แยกการจอง การเตรียมของ รอบส่ง และการเคลื่อนย้ายทรัพย์สินหรือ lot จริงออกจากกัน",
-      "alt": "แผนภาพกิจกรรม จากการจองสู่การส่งมอบ"
+      "title": {
+        "en": "Reservation to Delivery",
+        "th": "จากการจองสู่การส่งมอบ"
+      },
+      "description": {
+        "en": "Separates reservation, preparation, delivery rounds, and the movement of real assets or lots.",
+        "th": "แยกการจอง การเตรียมของ รอบส่ง และการเคลื่อนย้ายทรัพย์สินหรือ lot จริงออกจากกัน"
+      },
+      "alt": {
+        "en": "Reservation to Delivery activity diagram",
+        "th": "แผนภาพกิจกรรม จากการจองสู่การส่งมอบ"
+      },
+      "mediaId": "smart-asset-evidence-flow-02-reservation-to-delivery"
     },
     {
-      "src": "assets/images/smart-asset-evidence/flow-03-site-receiving.png",
-      "width": 1784,
-      "height": 1673,
-      "title": "การรับของที่ไซต์",
-      "description": "ใช้ QR ของการส่งและ QR ถาวรของทรัพย์สินเพื่อบันทึกผลรับจริงและกรณียกเว้นที่ต้นทาง",
-      "alt": "แผนภาพกิจกรรม การรับของที่ไซต์"
+      "title": {
+        "en": "Site Receiving",
+        "th": "การรับของที่ไซต์"
+      },
+      "description": {
+        "en": "Uses delivery and permanent asset QR codes to record actual receiving and exceptions at the source.",
+        "th": "ใช้ QR ของการส่งและ QR ถาวรของทรัพย์สินเพื่อบันทึกผลรับจริงและกรณียกเว้นที่ต้นทาง"
+      },
+      "alt": {
+        "en": "Site Receiving activity diagram",
+        "th": "แผนภาพกิจกรรม การรับของที่ไซต์"
+      },
+      "mediaId": "smart-asset-evidence-flow-03-site-receiving"
     },
     {
-      "src": "assets/images/smart-asset-evidence/flow-04-use-and-extension.png",
-      "width": 1784,
-      "height": 1513,
-      "title": "การใช้งานและต่อระยะเวลา",
-      "description": "แยกสถานะทรัพย์สินออกจากการเตือนกำหนดคืนและการต่อระยะเวลาเช่าแบบ manual",
-      "alt": "แผนภาพกิจกรรม การใช้งานและต่อระยะเวลา"
+      "title": {
+        "en": "Use and Extension",
+        "th": "การใช้งานและต่อระยะเวลา"
+      },
+      "description": {
+        "en": "Keeps asset status separate from due-date reminders and manual rental extensions.",
+        "th": "แยกสถานะทรัพย์สินออกจากการเตือนกำหนดคืนและการต่อระยะเวลาเช่าแบบ manual"
+      },
+      "alt": {
+        "en": "Use and Extension activity diagram",
+        "th": "แผนภาพกิจกรรม การใช้งานและต่อระยะเวลา"
+      },
+      "mediaId": "smart-asset-evidence-flow-04-use-and-extension"
     },
     {
-      "src": "assets/images/smart-asset-evidence/flow-05-return-intake-and-close.png",
-      "width": 1784,
-      "height": 1718,
-      "title": "การรับคืนและปิดงาน",
-      "description": "รองรับการคืนบางส่วน หลักฐาน การตรวจสภาพ การพักทรัพย์สิน และการปิดงานเชิงบริหาร",
-      "alt": "แผนภาพกิจกรรม การรับคืนและปิดงาน"
+      "title": {
+        "en": "Return Intake and Close",
+        "th": "การรับคืนและปิดงาน"
+      },
+      "description": {
+        "en": "Handles partial returns, evidence, inspection decisions, holds, and administrative closure.",
+        "th": "รองรับการคืนบางส่วน หลักฐาน การตรวจสภาพ การพักทรัพย์สิน และการปิดงานเชิงบริหาร"
+      },
+      "alt": {
+        "en": "Return Intake and Close activity diagram",
+        "th": "แผนภาพกิจกรรม การรับคืนและปิดงาน"
+      },
+      "mediaId": "smart-asset-evidence-flow-05-return-intake-and-close"
     }
   ]
 }

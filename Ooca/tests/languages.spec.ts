@@ -15,7 +15,7 @@ test('English is the default even for a Thai browser; both languages work on eve
     expect(response?.status()).toBe(200);
     await expect(page.locator('html')).toHaveAttribute('lang', language);
     await expect(page.locator('.language-switch a[aria-current="true"]')).toHaveText(language.toUpperCase());
-    await expect(page.locator('.brand-logo')).toHaveAttribute('src', `${language === 'th' ? '../' : ''}assets/brand/logo.svg`);
+    await expect(page.locator('.brand-logo')).toHaveAttribute('src', '/assets/brand/logo.svg');
     const text = await page.locator('body').innerText();
     expect(/[\u0e00-\u0e7f]/.test(text)).toBe(language === 'th');
     await page.evaluate(async () => { await document.fonts.ready; await Promise.all([...document.querySelectorAll<HTMLImageElement>('img[src]')].map(async img => { img.loading = 'eager'; await img.decode(); })); });
@@ -27,6 +27,10 @@ test('English is the default even for a Thai browser; both languages work on eve
 
 for (const width of [320, 390, 552, 768, 1440]) test(`English header, SVG logo and language controls fit at ${width}px`, async ({ page }) => {
   await page.setViewportSize({ width, height: 900 });
+  if (width === 390) {
+    const session = await page.context().newCDPSession(page);
+    await session.send('Emulation.setCPUThrottlingRate', { rate: 6 });
+  }
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto('/');
   await page.evaluate(async () => {
@@ -53,6 +57,8 @@ for (const width of [320, 390, 552, 768, 1440]) test(`English header, SVG logo a
   await expect(page.locator('html')).toHaveAttribute('lang', 'th');
   await page.locator('.ink-link').first().click();
   await expect(page).toHaveURL(/\/th\/wcf-digital.html$/);
+  // Client navigation updates the URL before React commits the destination menu.
+  await expect(page.locator('h1')).toHaveText('WCF Digital');
   if (await page.locator('.menu-toggle').isVisible()) await page.locator('.menu-toggle').click();
   await page.locator('.language-switch a[lang="en"]').click();
   await expect(page).toHaveURL(/(?<!\/th)\/wcf-digital.html$/);
@@ -83,8 +89,8 @@ test('Favicons use the supplied t mark with black/light and white/dark variants'
     await page.emulateMedia({ colorScheme: scheme });
     await page.goto('/');
     const href = await page.locator(`link[rel="icon"][media="(prefers-color-scheme: ${scheme})"]`).getAttribute('href');
-    expect(href).toBe(`assets/favicon-${scheme}.svg`);
-    const response = await page.request.get(`/${href}`);
+    expect(href).toBe(`/assets/favicon-${scheme}.svg`);
+    const response = await page.request.get(href!);
     expect(response.ok()).toBe(true);
   }
   await page.goto('/assets/favicon.svg');
