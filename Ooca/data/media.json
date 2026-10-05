@@ -8,6 +8,15 @@
     "width": 1672,
     "height": 941
   },
+  "buddy-job-selection-cover": {
+    "src": "assets/images/buddy-job-selection-cover.png",
+    "alt": {
+      "en": "Buddy App 2.0 cover showing service selection, pay, equipment, and work standards before choosing a job",
+      "th": "ภาพปก Buddy App 2.0 แสดงการเลือกบริการ ค่าจ้าง อุปกรณ์ และมาตรฐานงานก่อนเลือกรับงาน"
+    },
+    "width": 1672,
+    "height": 941
+  },
   "buddy-onboarding": {
     "src": "assets/images/buddy-onboarding.png",
     "alt": {

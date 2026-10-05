@@ -21,8 +21,9 @@
 .inner-page .project-grid .work-visual { height:auto; min-height:0; padding:0; border:0; border-radius:0; aspect-ratio:16/10; overflow:hidden; background:var(--web-surface); }
 .inner-page .project-grid .work-visual img { width:100%; height:100%; max-height:none; object-fit:contain; transform:none; box-shadow:none; border-radius:0; }
 .inner-page .project-grid .visual-buddy { background:var(--buddy-surface); }
-.inner-page .project-grid .visual-buddy img { width:100%; padding:24px; }
 .inner-page .project-grid .visual-date { background:var(--date-surface); }
+.inner-page .project-grid :is(.visual-buddy,.visual-date) { aspect-ratio:auto; }
+.inner-page .project-grid :is(.visual-buddy,.visual-date) img { width:100%; height:auto; padding:0; border:0; }
 .inner-page .work-caption { padding:0; gap:24px; align-items:start; }
 .inner-page .work-caption h3 { font-size:clamp(30px,3.2vw,52px); font-weight:400; letter-spacing:-.035em; line-height:1.25; }
 .inner-page .work-caption p { font-size:clamp(16px,1.3vw,21px); }

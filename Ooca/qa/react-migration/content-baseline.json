@@ -377,8 +377,12 @@
         "alt": "Q-CHANG design overview — artwork illustrating the scope of the work"
       },
       {
-        "src": "assets/images/buddy-onboarding.png",
-        "alt": "Technician registration overview — an example of the pending-approval state"
+        "src": "assets/images/buddy-job-selection-cover.png",
+        "alt": "Buddy App 2.0 cover showing service selection, pay, equipment, and work standards before choosing a job"
+      },
+      {
+        "src": "assets/images/change-date-home-overview.png",
+        "alt": "Q-CHANG Change Date illustration: analysis of 3,999 rescheduling requests, including 3,545 staff-assisted and 454 self-service records, showing coordination between customers, staff, and technicians. Research data, not a post-design outcome."
       },
       {
         "src": "assets/images/wcf-cover.png",
@@ -456,8 +460,12 @@
         "alt": "ภาพรวมการออกแบบ Q-CHANG — artwork ที่ใช้สื่อขอบเขตงาน"
       },
       {
-        "src": "assets/images/buddy-onboarding.png",
-        "alt": "หน้าภาพรวมสมัครเป็นช่าง — ตัวอย่างสถานะรอการอนุมัติ"
+        "src": "assets/images/buddy-job-selection-cover.png",
+        "alt": "ภาพปก Buddy App 2.0 แสดงการเลือกบริการ ค่าจ้าง อุปกรณ์ และมาตรฐานงานก่อนเลือกรับงาน"
+      },
+      {
+        "src": "assets/images/change-date-home-overview.png",
+        "alt": "ภาพประกอบ Q-CHANG Change Date: วิเคราะห์คำขอเปลี่ยนวันนัด 3,999 รายการ ผ่านเจ้าหน้าที่ 3,545 รายการ และลูกค้าทำเอง 454 รายการ แสดงการประสานงานของลูกค้า ทีมงาน และช่าง เป็นข้อมูลที่ศึกษา ไม่ใช่ผลลัพธ์หลังออกแบบ"
       },
       {
         "src": "assets/images/wcf-cover.png",
