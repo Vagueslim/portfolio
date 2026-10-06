@@ -8,12 +8,14 @@ import page3 from '../../data/pages/buddy-2-0.json' with { type: 'json' };
 import page4 from '../../data/pages/change-date.json' with { type: 'json' };
 import page5 from '../../data/pages/wcf-digital.json' with { type: 'json' };
 import page6 from '../../data/pages/smart-asset.json' with { type: 'json' };
+import page7 from '../../data/pages/maxi-task.json' with { type: 'json' };
+import page8 from '../../data/pages/asean-summit-2019.json' with { type: 'json' };
 import uiJson from '../../data/ui.json' with { type: 'json' };
 import type { HomeContent, MediaItem, Project } from './types';
 import type { CaseStudy, AboutContent, ListingContent } from './page-types';
 import { localize, useLanguage, assetPath, type Language } from './localization';
 
-const pagesJson = {'about': page0, 'project': page1, 'q-chang-web': page2, 'buddy-2-0': page3, 'change-date': page4, 'wcf-digital': page5, 'smart-asset': page6};
+const pagesJson = {'about': page0, 'project': page1, 'q-chang-web': page2, 'buddy-2-0': page3, 'change-date': page4, 'wcf-digital': page5, 'smart-asset': page6, 'maxi-task': page7, 'asean-summit-2019': page8};
 
 const contentByLanguage = Object.fromEntries((['en', 'th'] as const).map(locale => [locale, {
   home: localize<HomeContent>(homeJson, locale),

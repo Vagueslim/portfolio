@@ -67,6 +67,8 @@ h1,h2,h3{padding-block:.17em}
 .career-projects li{max-width:100%;min-height:30px;display:flex;align-items:center}
 .career-projects a{display:inline-flex;align-items:center;gap:8px;min-height:44px;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
 .career-projects a:hover{color:#447c35}
+&:has(.imported-case-cover) .chapter p{white-space:pre-line}
+&:has(.imported-case-cover) .image-button img{width:100%;height:auto;max-height:800px}
 .about-research-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:50px}
 .about-research-item{border-top:1px solid var(--line);padding-top:26px}
 .about-research-item h3{font-size:28px;line-height:1.35;margin-top:12px}

@@ -1,0 +1,988 @@
+{
+  "metadata": {
+    "title": {
+      "en": "ASEAN Summit 2019 — Dhittawat Thongkhum",
+      "th": "ASEAN Summit 2019 — Dhittawat Thongkhum"
+    },
+    "description": {
+      "en": "Designing registration around diplomatic accuracy and shared responsibility.",
+      "th": "ออกแบบการลงทะเบียนโดยคำนึงถึงความถูกต้องทางการทูตและความรับผิดชอบร่วมกัน"
+    }
+  },
+  "head": {
+    "kind": "element",
+    "tag": "section",
+    "attributes": {
+      "class": "case-head"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "breadcrumb"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "about.html#career"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "About",
+                  "th": "เกี่ยวกับผม"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": " / ASEAN Summit 2019",
+                  "th": " / ASEAN Summit 2019"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "eyebrow"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "DIPLOMATIC REGISTRATION / MULTI-COUNTRY COORDINATION",
+              "th": "DIPLOMATIC REGISTRATION / MULTI-COUNTRY COORDINATION"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "h1",
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "ASEAN Summit 2019",
+              "th": "ASEAN Summit 2019"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "case-statement"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Designing registration around diplomatic accuracy and shared responsibility.",
+              "th": "ออกแบบการลงทะเบียนโดยคำนึงถึงความถูกต้องทางการทูตและความรับผิดชอบร่วมกัน"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "dl",
+        "attributes": {
+          "class": "case-facts"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Project year",
+                      "th": "ปีที่ทำโครงการ"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "2018",
+                      "th": "2018"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "My role",
+                      "th": "บทบาทของผม"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "UX/UI Design",
+                      "th": "UX/UI Design"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Contributors",
+                      "th": "ผู้ร่วมงาน"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Three (UX/UI) / P’Ann (Lead Design) / Look Kleaw (BA) / P’WIN (CEO)",
+                      "th": "Three (UX/UI) / P’Ann (Lead Design) / Look Kleaw (BA) / P’WIN (CEO)"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "overview": {
+    "kind": "single",
+    "mediaId": "asean-summit-2019-1"
+  },
+  "visualClass": "case-hero imported-case-cover",
+  "caption": {
+    "kind": "element",
+    "tag": "p",
+    "attributes": {
+      "class": "caption"
+    },
+    "children": [
+      {
+        "kind": "text",
+        "value": {
+          "en": "Cover from the original case study on Framer.",
+          "th": "ภาพปกจากเคสต้นฉบับบน Framer"
+        }
+      }
+    ]
+  },
+  "toc": {
+    "kind": "element",
+    "tag": "nav",
+    "attributes": {
+      "class": "case-toc",
+      "aria-label": {
+        "en": "Case contents",
+        "th": "สารบัญเคส"
+      }
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "eyebrow"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "IN THIS CASE",
+              "th": "สารบัญเคส"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "#problem"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Accuracy before submission",
+              "th": "ความถูกต้องก่อนส่งข้อมูล"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "#workflow"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Host → DAO → Delegate → DAO recheck → Host review",
+              "th": "Host → DAO → Delegate → DAO ตรวจซ้ำ → Host ตรวจรับ"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "#identity"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Challenge 1 — Pending brand identity",
+              "th": "ความท้าทายที่ 1 — อัตลักษณ์ยังไม่ผ่านการอนุมัติ"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "#stakeholders"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Challenge 2 — Digital literacy and stakeholder complexity",
+              "th": "ความท้าทายที่ 2 — ความคุ้นเคยดิจิทัลและผู้เกี่ยวข้องหลายฝ่าย"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "#verification"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Challenge 3 — Speed versus accuracy",
+              "th": "ความท้าทายที่ 3 — ความเร็วกับความถูกต้อง"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "#modules"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Connected registration modules",
+              "th": "โมดูลลงทะเบียนที่เชื่อมโยงกัน"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "#reflection"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Pride, dreams, and lessons",
+              "th": "สิ่งที่ภูมิใจ ความมุ่งหวัง และบทเรียน"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "chapters": [
+    {
+      "id": "problem",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Accuracy before submission",
+                "th": "ความถูกต้องก่อนส่งข้อมูล"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "ASEAN Summit 2019 required a registration system The system allowed countries to submit delegate data directly to the central host without country-level validation, creating a single point of failure. This increased the risk of errors in names, roles, and travel details, potentially impacting multiple agencies. In a high-stakes international context, corrections required significant coordination, time, and operational cost.",
+                "th": "ASEAN Summit 2019 ต้องการระบบลงทะเบียน โดยรูปแบบเดิมเปิดให้แต่ละประเทศส่งข้อมูลผู้แทนตรงไปยังเจ้าภาพโดยไม่มีการตรวจสอบในระดับประเทศ ทำให้ความเสี่ยงไปรวมที่จุดเดียว ข้อผิดพลาดของชื่อ บทบาท และข้อมูลเดินทางอาจกระทบหลายหน่วยงาน ในบริบทระหว่างประเทศที่มีความสำคัญสูง การแก้ไขต้องใช้การประสานงาน เวลา และต้นทุนปฏิบัติการมาก"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "figure",
+          "children": [
+            {
+              "kind": "element",
+              "tag": "button",
+              "attributes": {
+                "class": "image-button",
+                "data-media-id": "asean-summit-2019-2",
+                "data-caption": {
+                  "en": "Registration system overview and role responsibilities",
+                  "th": "ภาพรวมระบบลงทะเบียนและความรับผิดชอบของแต่ละบทบาท"
+                },
+                "aria-label": {
+                  "en": "Enlarge: Registration system overview and role responsibilities",
+                  "th": "ขยายภาพ: ภาพรวมระบบลงทะเบียนและความรับผิดชอบของแต่ละบทบาท"
+                }
+              },
+              "children": [
+                {
+                  "kind": "image",
+                  "mediaId": "asean-summit-2019-2",
+                  "alt": {
+                    "en": "Registration system overview and role responsibilities",
+                    "th": "ภาพรวมระบบลงทะเบียนและความรับผิดชอบของแต่ละบทบาท"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "figcaption",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Registration system overview and role responsibilities",
+                    "th": "ภาพรวมระบบลงทะเบียนและความรับผิดชอบของแต่ละบทบาท"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workflow",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Host → DAO → Delegate → DAO recheck → Host review",
+                "th": "Host → DAO → Delegate → DAO ตรวจซ้ำ → Host ตรวจรับ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Introduced a country-level validation layer (DAO – Delegate Affairs Officer) to ensure each country reviews and confirms delegate data before submission. This reduced upstream errors and distributed responsibility across stakeholders. The system was designed with clear flows for validation, status tracking, and issue handling, enabling better error recovery and significantly reducing the operational burden on the central host.\n\n\n\n\n\n\n\nThe system involves three main roles: Host (Admin), DAO (country representative), and Delegates. Invitations are sent via email, guiding users into a web-based registration flow. Delegates submit their data, which is first reviewed and validated by DAO before reaching the Host. This structure ensures accuracy, distributes responsibility, and reduces the risk of errors in a multi-country environment.",
+                "th": "เพิ่มชั้นตรวจสอบในระดับประเทศโดย DAO (Delegate Affairs Officer) เพื่อให้แต่ละประเทศทบทวนและยืนยันข้อมูลผู้แทนก่อนส่ง ช่วยลดข้อผิดพลาดตั้งแต่ต้นทางและกระจายความรับผิดชอบ ระบบมีขั้นตอนตรวจสอบ ติดตามสถานะ และจัดการปัญหาที่ชัดเจน เพื่อแก้ข้อผิดพลาดได้ง่ายขึ้นและลดภาระของเจ้าภาพส่วนกลาง\n\nระบบมีสามบทบาทหลัก ได้แก่ Host (ผู้ดูแลระบบ), DAO (ผู้ประสานงานประเทศ) และ Delegate (ผู้แทน) คำเชิญส่งทางอีเมลเพื่อนำผู้ใช้เข้าสู่การลงทะเบียนบนเว็บ ผู้แทนส่งข้อมูลให้ DAO ตรวจสอบและยืนยันก่อนถึง Host โครงสร้างนี้ช่วยตรวจความถูกต้อง กระจายความรับผิดชอบ และลดความเสี่ยงของข้อผิดพลาดในการทำงานหลายประเทศ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "figure",
+          "children": [
+            {
+              "kind": "element",
+              "tag": "button",
+              "attributes": {
+                "class": "image-button",
+                "data-media-id": "asean-summit-2019-4",
+                "data-caption": {
+                  "en": "Delegated registration flow: Host, DAO and Delegate",
+                  "th": "ขั้นตอนลงทะเบียนผ่าน Host, DAO และ Delegate"
+                },
+                "aria-label": {
+                  "en": "Enlarge: Delegated registration flow: Host, DAO and Delegate",
+                  "th": "ขยายภาพ: ขั้นตอนลงทะเบียนผ่าน Host, DAO และ Delegate"
+                }
+              },
+              "children": [
+                {
+                  "kind": "image",
+                  "mediaId": "asean-summit-2019-4",
+                  "alt": {
+                    "en": "Delegated registration flow: Host, DAO and Delegate",
+                    "th": "ขั้นตอนลงทะเบียนผ่าน Host, DAO และ Delegate"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "figcaption",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Delegated registration flow: Host, DAO and Delegate",
+                    "th": "ขั้นตอนลงทะเบียนผ่าน Host, DAO และ Delegate"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "identity",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Challenge 1 — Pending brand identity",
+                "th": "ความท้าทายที่ 1 — อัตลักษณ์ยังไม่ผ่านการอนุมัติ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Problem: The project required immediate development, but the official logo and CI (Corporate Identity) were still awaiting committee approval.\n\nSolution: Built a Centralized Stylesheet system (Pre-Design System) using Sketch and InVision. By decoupling UI logic from visual assets, I could \"flip the switch\" and update the entire platform’s branding across all 4 modules instantly once approved.",
+                "th": "ปัญหา: โครงการต้องเริ่มพัฒนาทันที แต่โลโก้และ CI ทางการยังรอคณะกรรมการอนุมัติ\n\nแนวทาง: ผมสร้างระบบ Centralized Stylesheet ซึ่งเป็นแนวทางก่อนพัฒนาเป็น Design System โดยใช้ Sketch และ InVision แยกตรรกะของ UI ออกจากองค์ประกอบภาพ เพื่ออัปเดตแบรนด์ทั่วแพลตฟอร์มทั้ง 4 โมดูลได้จากจุดกลางเมื่อได้รับอนุมัติ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "figure",
+          "children": [
+            {
+              "kind": "element",
+              "tag": "button",
+              "attributes": {
+                "class": "image-button",
+                "data-media-id": "asean-summit-2019-5",
+                "data-caption": {
+                  "en": "Registration interface and validation states",
+                  "th": "หน้าจอลงทะเบียนและสถานะการตรวจสอบ"
+                },
+                "aria-label": {
+                  "en": "Enlarge: Registration interface and validation states",
+                  "th": "ขยายภาพ: หน้าจอลงทะเบียนและสถานะการตรวจสอบ"
+                }
+              },
+              "children": [
+                {
+                  "kind": "image",
+                  "mediaId": "asean-summit-2019-5",
+                  "alt": {
+                    "en": "Registration interface and validation states",
+                    "th": "หน้าจอลงทะเบียนและสถานะการตรวจสอบ"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "figcaption",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Registration interface and validation states",
+                    "th": "หน้าจอลงทะเบียนและสถานะการตรวจสอบ"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stakeholders",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Challenge 2 — Digital literacy and stakeholder complexity",
+                "th": "ความท้าทายที่ 2 — ความคุ้นเคยดิจิทัลและผู้เกี่ยวข้องหลายฝ่าย"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Problem: Users (Host Staff) were accustomed to manual email-based workflows, and the system had to serve 25+ different government agencies with varying protocols.\n\nSolution: Conducted Contextual Inquiry at the Ministry of Foreign Affairs. I mapped the \"delegated management\" flow, recognizing that staff—not the leaders—were the primary users, and designed the UI to mirror their real-world coordination tasks.",
+                "th": "ปัญหา: เจ้าหน้าที่ฝั่ง Host คุ้นเคยกับการทำงานผ่านอีเมลด้วยตนเอง และระบบต้องรองรับหน่วยงานภาครัฐมากกว่า 25 หน่วยงานที่มีแนวปฏิบัติต่างกัน\n\nแนวทาง: ผมทำ Contextual Inquiry ที่กระทรวงการต่างประเทศ และทำแผนผังการจัดการผ่านผู้ประสานงาน โดยตระหนักว่าผู้ใช้หลักคือเจ้าหน้าที่ จึงออกแบบ UI ให้สอดคล้องกับงานประสานงานที่พวกเขาทำจริง"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "figure",
+          "children": [
+            {
+              "kind": "element",
+              "tag": "button",
+              "attributes": {
+                "class": "image-button",
+                "data-media-id": "asean-summit-2019-7",
+                "data-caption": {
+                  "en": "Registration workflow and interface planning",
+                  "th": "แผนผังงานและการวางแผนหน้าจอลงทะเบียน"
+                },
+                "aria-label": {
+                  "en": "Enlarge: Registration workflow and interface planning",
+                  "th": "ขยายภาพ: แผนผังงานและการวางแผนหน้าจอลงทะเบียน"
+                }
+              },
+              "children": [
+                {
+                  "kind": "image",
+                  "mediaId": "asean-summit-2019-7",
+                  "alt": {
+                    "en": "Registration workflow and interface planning",
+                    "th": "แผนผังงานและการวางแผนหน้าจอลงทะเบียน"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "figcaption",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Registration workflow and interface planning",
+                    "th": "แผนผังงานและการวางแผนหน้าจอลงทะเบียน"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verification",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Challenge 3 — Speed versus accuracy",
+                "th": "ความท้าทายที่ 3 — ความเร็วกับความถูกต้อง"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "During SIT, stakeholders pushed for an “instant-send” data flow to maximize speed, which risked national-level errors in diplomatic titles and sensitive data.",
+                "th": "ระหว่าง SIT ผู้เกี่ยวข้องต้องการส่งข้อมูลได้ทันทีเพื่อเพิ่มความเร็ว แต่เสี่ยงต่อข้อผิดพลาดระดับประเทศในตำแหน่งทางการทูตและข้อมูลอ่อนไหว"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "I advocated for Intentional Friction by implementing a “Data Holding Area” for manual verification (DAO Approval). I defended this “slower” process to protect data integrity and avoid the workload of post-submission corrections.",
+                "th": "ผมเสนอ Intentional Friction ด้วยพื้นที่พักข้อมูลเพื่อให้คนตรวจสอบก่อนส่ง (DAO Approval) และยืนยันเหตุผลของกระบวนการที่ช้าลงนี้ เพื่อปกป้องความถูกต้องของข้อมูลและเลี่ยงภาระแก้ไขหลังส่ง"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "The original case describes “100% data integrity” as the intention behind this decision, rather than presenting a measured error-rate result.",
+                "th": "ต้นฉบับกล่าวถึงความถูกต้องของข้อมูล 100% ในฐานะเจตนาของการตัดสินใจนี้ ไม่ได้แสดงผลการวัดอัตราความผิดพลาด"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "figure",
+          "children": [
+            {
+              "kind": "element",
+              "tag": "button",
+              "attributes": {
+                "class": "image-button",
+                "data-media-id": "asean-summit-2019-6",
+                "data-caption": {
+                  "en": "Comparison of the old and new registration flow",
+                  "th": "ภาพเปรียบเทียบขั้นตอนลงทะเบียนเดิมและใหม่"
+                },
+                "aria-label": {
+                  "en": "Enlarge: Comparison of the old and new registration flow",
+                  "th": "ขยายภาพ: ภาพเปรียบเทียบขั้นตอนลงทะเบียนเดิมและใหม่"
+                }
+              },
+              "children": [
+                {
+                  "kind": "image",
+                  "mediaId": "asean-summit-2019-6",
+                  "alt": {
+                    "en": "Comparison of the old and new registration flow",
+                    "th": "ภาพเปรียบเทียบขั้นตอนลงทะเบียนเดิมและใหม่"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "figcaption",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Comparison of the old and new registration flow",
+                    "th": "ภาพเปรียบเทียบขั้นตอนลงทะเบียนเดิมและใหม่"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "modules",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Connected registration modules",
+                "th": "โมดูลลงทะเบียนที่เชื่อมโยงกัน"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "figure",
+          "children": [
+            {
+              "kind": "element",
+              "tag": "button",
+              "attributes": {
+                "class": "image-button",
+                "data-media-id": "asean-summit-2019-3",
+                "data-caption": {
+                  "en": "Registration modules and connected workflows",
+                  "th": "โมดูลลงทะเบียนและขั้นตอนที่เชื่อมโยงกัน"
+                },
+                "aria-label": {
+                  "en": "Enlarge: Registration modules and connected workflows",
+                  "th": "ขยายภาพ: โมดูลลงทะเบียนและขั้นตอนที่เชื่อมโยงกัน"
+                }
+              },
+              "children": [
+                {
+                  "kind": "image",
+                  "mediaId": "asean-summit-2019-3",
+                  "alt": {
+                    "en": "Registration modules and connected workflows",
+                    "th": "โมดูลลงทะเบียนและขั้นตอนที่เชื่อมโยงกัน"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "figcaption",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Registration modules and connected workflows",
+                    "th": "โมดูลลงทะเบียนและขั้นตอนที่เชื่อมโยงกัน"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reflection",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Pride, dreams, and lessons",
+                "th": "สิ่งที่ภูมิใจ ความมุ่งหวัง และบทเรียน"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "PRIDE\nDesigning UX for diplomatic accuracy.\n\nI helped turn a complex Host–DAO–Delegate workflow into a controlled registration system where each role had clear responsibility. Host → DAO → Delegate → DAO Recheck → Host Review My pride in this project is that I helped design a system that respected real diplomatic behavior, reduced data mismatch, and gave each role a clear responsibility inside the process.\n\nDREAMS\nTo design systems that can support international coordination without losing human control.\n\nASEAN Summit showed me that UX can work beyond normal business software. It can support ministries, country representatives, delegates, liaison officers, and host teams working across different languages, roles, and trust levels. My dream is to keep designing systems that help large organizations coordinate across borders — systems where UX becomes the quiet structure behind trust, accuracy, and operational calm.\n\nLESSONS\nIn sensitive systems, friction is not always a problem. Sometimes, friction is protection.\n\nThe biggest lesson from ASEAN Summit was that “faster” is not always better. For a normal product, fewer steps may feel like better UX. But in this project, some steps needed to exist because the cost of wrong information was too high. DAO review, invitation status, delegate verification, need-attention requests, and host approval were not extra complexity. They were safeguards. I learned that good UX is not always about removing friction. Sometimes, good UX means designing the right friction at the right moment so the system becomes safer, clearer, and more trustworthy.",
+                "th": "สิ่งที่ภูมิใจ\nออกแบบ UX เพื่อความถูกต้องทางการทูต\n\nผมช่วยเปลี่ยนงานที่ซับซ้อนระหว่าง Host–DAO–Delegate ให้เป็นระบบลงทะเบียนที่ควบคุมขั้นตอนและแบ่งความรับผิดชอบชัดเจน: Host → DAO → Delegate → DAO ตรวจซ้ำ → Host ตรวจรับ สิ่งที่ภูมิใจคือการมีส่วนออกแบบระบบที่เคารพวิธีทำงานทางการทูตจริง ลดข้อมูลที่ไม่ตรงกัน และทำให้แต่ละบทบาทรู้หน้าที่ของตนในกระบวนการ\n\nความมุ่งหวัง\nประสานงานระหว่างประเทศโดยคนยังควบคุมได้\n\nASEAN Summit ทำให้ผมเห็นว่า UX ทำงานได้ไกลกว่าซอฟต์แวร์ธุรกิจทั่วไป โดยช่วยกระทรวง ผู้แทนประเทศ ผู้เข้าร่วม เจ้าหน้าที่ประสานงาน และทีมเจ้าภาพทำงานข้ามภาษา บทบาท และระดับความไว้วางใจ ผมอยากออกแบบระบบที่ช่วยองค์กรขนาดใหญ่ประสานงานข้ามพรมแดนต่อไป โดยมี UX เป็นโครงสร้างเบื้องหลังความไว้วางใจ ความถูกต้อง และการปฏิบัติงานที่ราบรื่น\n\nบทเรียน\nบางครั้งขั้นตอนที่เพิ่มขึ้นคือการปกป้อง\n\nบทเรียนสำคัญที่สุดคือเร็วกว่าไม่ได้ดีกว่าเสมอไป ผลิตภัณฑ์ทั่วไปอาจรู้สึกใช้ง่ายขึ้นเมื่อมีขั้นตอนน้อยลง แต่ในงานนี้บางขั้นตอนจำเป็น เพราะต้นทุนของข้อมูลที่ผิดสูงเกินไป การตรวจโดย DAO สถานะคำเชิญ การยืนยันผู้แทน คำขอที่ต้องติดตาม และการอนุมัติของ Host เป็นมาตรการป้องกัน\n\nผมเรียนรู้ว่า UX ที่ดีไม่ใช่การลดขั้นตอนเสมอไป บางครั้งคือการออกแบบขั้นตอนตรวจสอบให้เหมาะกับช่วงเวลา เพื่อให้ระบบปลอดภัย ชัดเจน และน่าเชื่อถือขึ้น"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "kind": "element",
+    "tag": "aside",
+    "attributes": {
+      "class": "source-links"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "https://dhittawat.framer.ai/work/asean-summit-2019/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Original case study on Framer ↗",
+              "th": "เคสต้นฉบับบน Framer ↗"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "next": {
+    "kind": "element",
+    "tag": "div",
+    "attributes": {
+      "class": "next-case"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "maxi-task.html"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "eyebrow"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "NEXT CASE",
+                      "th": "เคสถัดไป"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "h2",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "MAXI TASK",
+                      "th": "MAXI TASK"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "class": "next-arrow",
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "↗",
+                  "th": "↗"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

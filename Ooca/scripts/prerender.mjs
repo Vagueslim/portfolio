@@ -27,4 +27,4 @@ for (const locale of ['en', 'th']) for (const file of [...pageFiles, '404.html']
   if (file === '404.html') output = output.replace(/<script[^>]*type="module"[^>]*>[\s\S]*?<\/script>/g, '');
   await writeFile('dist/' + prefix + file, output);
 }
-console.log('Prerendered 16 bilingual pages and two 404 documents.');
+console.log(`Prerendered ${pageFiles.length * 2} bilingual pages and two 404 documents.`);

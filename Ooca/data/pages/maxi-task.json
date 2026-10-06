@@ -1,0 +1,884 @@
+{
+  "metadata": {
+    "title": {
+      "en": "MAXI TASK — Dhittawat Thongkhum",
+      "th": "MAXI TASK — Dhittawat Thongkhum"
+    },
+    "description": {
+      "en": "Making telecom infrastructure easier to find, trace, and understand.",
+      "th": "ช่วยให้ค้นหา ติดตาม และเข้าใจโครงสร้างพื้นฐานโทรคมนาคมได้ง่ายขึ้น"
+    }
+  },
+  "head": {
+    "kind": "element",
+    "tag": "section",
+    "attributes": {
+      "class": "case-head"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "breadcrumb"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "about.html#career"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "About",
+                  "th": "เกี่ยวกับผม"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": " / MAXI TASK",
+                  "th": " / MAXI TASK"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "eyebrow"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "TELECOM / GIS NETWORK PLATFORM",
+              "th": "TELECOM / GIS NETWORK PLATFORM"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "h1",
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "MAXI TASK",
+              "th": "MAXI TASK"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "case-statement"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Making telecom infrastructure easier to find, trace, and understand.",
+              "th": "ช่วยให้ค้นหา ติดตาม และเข้าใจโครงสร้างพื้นฐานโทรคมนาคมได้ง่ายขึ้น"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "dl",
+        "attributes": {
+          "class": "case-facts"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Project year",
+                      "th": "ปีที่ทำโครงการ"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "2020",
+                      "th": "2020"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "My role",
+                      "th": "บทบาทของผม"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "UX/UI Design",
+                      "th": "UX/UI Design"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "dt",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Contributors",
+                      "th": "ผู้ร่วมงาน"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "dd",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Three (UX/UI) / P’Ton (Lead Dev) / Boss (Project co) / P’Tee (Mobile Dev)",
+                      "th": "Three (UX/UI) / P’Ton (Lead Dev) / Boss (Project co) / P’Tee (Mobile Dev)"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "overview": {
+    "kind": "single",
+    "mediaId": "maxi-task-1"
+  },
+  "visualClass": "case-hero imported-case-cover",
+  "caption": {
+    "kind": "element",
+    "tag": "p",
+    "attributes": {
+      "class": "caption"
+    },
+    "children": [
+      {
+        "kind": "text",
+        "value": {
+          "en": "Cover from the original case study on Framer.",
+          "th": "ภาพปกจากเคสต้นฉบับบน Framer"
+        }
+      }
+    ]
+  },
+  "toc": {
+    "kind": "element",
+    "tag": "nav",
+    "attributes": {
+      "class": "case-toc",
+      "aria-label": {
+        "en": "Case contents",
+        "th": "สารบัญเคส"
+      }
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "eyebrow"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "IN THIS CASE",
+              "th": "สารบัญเคส"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "#problem"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Operational blindness in complex infrastructure",
+              "th": "เมื่อข้อมูลสำคัญมองไม่เห็นในโครงข่ายที่ซับซ้อน"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "#solution"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Make the network visible",
+              "th": "ทำให้มองเห็นโครงข่ายและข้อมูลที่ต้องใช้"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "#performance"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Fixing performance through UX, not just code",
+              "th": "แก้ประสิทธิภาพผ่าน UX ไม่ใช่แค่โค้ด"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "#delivery"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Thinking beyond screens",
+              "th": "คิดให้ไกลกว่าหน้าจอ"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "#adoption"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Adoption and acceptance",
+              "th": "การนำไปใช้และการยอมรับ"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "#reflection"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Pride, dreams, and lessons",
+              "th": "สิ่งที่ภูมิใจ ความมุ่งหวัง และบทเรียน"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "chapters": [
+    {
+      "id": "problem",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Operational blindness in complex infrastructure",
+                "th": "เมื่อข้อมูลสำคัญมองไม่เห็นในโครงข่ายที่ซับซ้อน"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Problem — Operational Blindness in Complex Infrastructure\nThe issue is not just “too much data” —\nbut critical data is not visible when it matters most.\nTelecom infrastructure is inherently complex, but the system forces users to remember instead of see\nTracing network issues takes time due to fragmented information across screens",
+                "th": "ปัญหาไม่ใช่แค่ข้อมูลมากเกินไป แต่คือข้อมูลสำคัญไม่ปรากฏในเวลาที่ต้องใช้\nโครงสร้างพื้นฐานโทรคมนาคมซับซ้อนอยู่แล้ว แต่ระบบกลับบังคับให้ผู้ใช้จำแทนที่จะมองเห็น\nการติดตามปัญหาโครงข่ายจึงใช้เวลา เพราะข้อมูลกระจัดกระจายอยู่หลายหน้าจอ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "MaxiTask is a system used by telecom teams to manage network infrastructure — mainly by field engineers, operations, and planning teams who rely on it to search, trace, and make decisions quickly.",
+                "th": "MaxiTask เป็นระบบจัดการโครงสร้างพื้นฐานเครือข่ายสำหรับทีมโทรคมนาคม โดยมีวิศวกรภาคสนาม ทีมปฏิบัติการ และทีมวางแผนเป็นผู้ใช้หลัก ซึ่งต้องค้นหา ติดตาม และตัดสินใจได้รวดเร็ว"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "This project didn’t start with a goal to “make things look better.” It started with a very simple problem: the system was slow — and it was slowing people down.",
+                "th": "งานนี้ไม่ได้เริ่มจากเป้าหมายที่จะทำให้ดูดีขึ้น แต่เริ่มจากปัญหาง่าย ๆ ว่าระบบช้า และทำให้คนทำงานช้าลงไปด้วย"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "solution",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Make the network visible",
+                "th": "ทำให้มองเห็นโครงข่ายและข้อมูลที่ต้องใช้"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Re-structured data to surface what truly matters at the right moment\nReduced fragmented screens into context-rich single views\nDesigned UI for visual scanning, not heavy reading\nIntegrated Map + Asset + Core network into one coherent mental model\nTransformed network tracing into a seamless, continuous flow",
+                "th": "จัดโครงสร้างข้อมูลใหม่ให้สิ่งสำคัญปรากฏในเวลาที่เหมาะสม\nรวมข้อมูลจากหน้าจอที่กระจัดกระจายไว้ในมุมมองที่มีบริบทครบขึ้น\nออกแบบ UI ให้กวาดตามองหาได้ โดยไม่ต้องอ่านข้อมูลจำนวนมาก\nเชื่อมแผนที่ ทรัพย์สิน และ Core network ให้เข้าใจเป็นระบบเดียวกัน\nทำให้การติดตามโครงข่ายเป็นขั้นตอนที่ต่อเนื่อง"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "figure",
+          "children": [
+            {
+              "kind": "element",
+              "tag": "button",
+              "attributes": {
+                "class": "image-button",
+                "data-media-id": "maxi-task-2",
+                "data-caption": {
+                  "en": "Network search, area selection and fiber tracing screens",
+                  "th": "หน้าจอค้นหาโครงข่าย เลือกพื้นที่ และติดตามสายใยแก้ว"
+                },
+                "aria-label": {
+                  "en": "Enlarge: Network search, area selection and fiber tracing screens",
+                  "th": "ขยายภาพ: หน้าจอค้นหาโครงข่าย เลือกพื้นที่ และติดตามสายใยแก้ว"
+                }
+              },
+              "children": [
+                {
+                  "kind": "image",
+                  "mediaId": "maxi-task-2",
+                  "alt": {
+                    "en": "Network search, area selection and fiber tracing screens",
+                    "th": "หน้าจอค้นหาโครงข่าย เลือกพื้นที่ และติดตามสายใยแก้ว"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "figcaption",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Network search, area selection and fiber tracing screens",
+                    "th": "หน้าจอค้นหาโครงข่าย เลือกพื้นที่ และติดตามสายใยแก้ว"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "performance",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Fixing performance through UX, not just code",
+                "th": "แก้ประสิทธิภาพผ่าน UX ไม่ใช่แค่โค้ด"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Instead of loading everything at once, I introduced a simple rule:\nusers must select an area first.\nThis reduced system load dramatically and made the map responsive again — especially on low-spec machines.\n\nI began by talking to real users to understand how they actually use the system.\nWhat I found was consistent across teams:\n\nEveryone comes in to search first —\nwhether it’s to locate an issue, trace a fiber line, or check network connections.\n\nBut the system was forcing them to remember and navigate,\ninstead of helping them see and understand instantly.",
+                "th": "แทนที่จะโหลดทุกอย่างพร้อมกัน ผมเพิ่มกติกาง่าย ๆ ว่าผู้ใช้ต้องเลือกพื้นที่ก่อน วิธีนี้ช่วยลดภาระการโหลดของระบบและทำให้แผนที่ตอบสนองได้อีกครั้ง โดยเฉพาะเครื่องที่มีสเปกต่ำ\n\nผมเริ่มจากคุยกับผู้ใช้จริงเพื่อเข้าใจวิธีทำงาน สิ่งที่พบตรงกันในหลายทีมคือ ทุกคนเข้ามาค้นหาก่อน ไม่ว่าจะเป็นการหาจุดที่มีปัญหา ติดตามสายใยแก้ว หรือตรวจสอบการเชื่อมต่อโครงข่าย\n\nแต่ระบบกลับบังคับให้พวกเขาจดจำและไล่เปิดหน้าจอ แทนที่จะช่วยให้เห็นและเข้าใจได้ทันที"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "figure",
+          "children": [
+            {
+              "kind": "element",
+              "tag": "button",
+              "attributes": {
+                "class": "image-button",
+                "data-media-id": "maxi-task-4",
+                "data-caption": {
+                  "en": "MAXI TASK map and network interface screens",
+                  "th": "หน้าจอแผนที่และข้อมูลโครงข่าย MAXI TASK"
+                },
+                "aria-label": {
+                  "en": "Enlarge: MAXI TASK map and network interface screens",
+                  "th": "ขยายภาพ: หน้าจอแผนที่และข้อมูลโครงข่าย MAXI TASK"
+                }
+              },
+              "children": [
+                {
+                  "kind": "image",
+                  "mediaId": "maxi-task-4",
+                  "alt": {
+                    "en": "MAXI TASK map and network interface screens",
+                    "th": "หน้าจอแผนที่และข้อมูลโครงข่าย MAXI TASK"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "figcaption",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "MAXI TASK map and network interface screens",
+                    "th": "หน้าจอแผนที่และข้อมูลโครงข่าย MAXI TASK"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "delivery",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Thinking beyond screens",
+                "th": "คิดให้ไกลกว่าหน้าจอ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Another important shift for me in this project\nwas learning how to think beyond screens.\n\nFor the first time, I had to break everything down into:\n\nmodules\n\npages\n\ncases and states\n\nactual tasks that could be handed to developers",
+                "th": "อีกจุดเปลี่ยนสำคัญของงานนี้คือการเรียนรู้ที่จะคิดให้ไกลกว่าหน้าจอ เป็นครั้งแรกที่ผมต้องแยกงานทั้งหมดออกเป็น:\n\nโมดูล\nหน้า\nกรณีการใช้งานและสถานะ\nงานที่ส่งต่อให้นักพัฒนาลงมือทำได้จริง"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Design is not finished until you know how it will be built — and when it will be done.",
+                "th": "งานออกแบบยังไม่จบ จนกว่าจะรู้ว่าจะสร้างอย่างไร และจะเสร็จเมื่อไร"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "figure",
+          "children": [
+            {
+              "kind": "element",
+              "tag": "button",
+              "attributes": {
+                "class": "image-button",
+                "data-media-id": "maxi-task-5",
+                "data-caption": {
+                  "en": "Module, task and delivery planning worksheet",
+                  "th": "ตารางวางแผนโมดูล งาน และการส่งมอบ"
+                },
+                "aria-label": {
+                  "en": "Enlarge: Module, task and delivery planning worksheet",
+                  "th": "ขยายภาพ: ตารางวางแผนโมดูล งาน และการส่งมอบ"
+                }
+              },
+              "children": [
+                {
+                  "kind": "image",
+                  "mediaId": "maxi-task-5",
+                  "alt": {
+                    "en": "Module, task and delivery planning worksheet",
+                    "th": "ตารางวางแผนโมดูล งาน และการส่งมอบ"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "figcaption",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Module, task and delivery planning worksheet",
+                    "th": "ตารางวางแผนโมดูล งาน และการส่งมอบ"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adoption",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Adoption and acceptance",
+                "th": "การนำไปใช้และการยอมรับ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "In the end, the success of this project wasn’t just the new UI.\n\nIt was the fact that a system used for over 10 years\nwas replaced and accepted within 2 weeks.\n\nThe complaints faded in the first week.",
+                "th": "ท้ายที่สุด ความสำเร็จของงานนี้ไม่ได้มีแค่ UI ใหม่ แต่เป็นการเปลี่ยนระบบที่ใช้งานมากว่า 10 ปี และได้รับการยอมรับภายใน 2 สัปดาห์ โดยเสียงร้องเรียนลดลงในสัปดาห์แรก"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "This is the adoption experience described in the original case study; no measured performance benchmark is provided there.",
+                "th": "นี่คือประสบการณ์การนำระบบไปใช้ที่เล่าไว้ในเคสต้นฉบับ โดยต้นฉบับไม่ได้ระบุผลการวัดประสิทธิภาพเชิงตัวเลข"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reflection",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Pride, dreams, and lessons",
+                "th": "สิ่งที่ภูมิใจ ความมุ่งหวัง และบทเรียน"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "PRIDE\nI redesigned telecom infrastructure data into a system people could scan, understand, and act on.\n\nMaxiTask made me proud because I was not only redesigning a map interface. I was helping users work with complex telecom infrastructure — sites, fiber routes, core networks, copper networks, FTTx, microwave, customer layers, and operational records.\n\nDREAMS\nDesigning UX for invisible infrastructure.\n\nMaxiTask showed me that UX can make hidden national networks easier to understand, trace, and maintain.\n\nLESSONS\nComplex data needs recognition, not decoration.\n\nI learned that users do not always need less data. They need better hierarchy, filtering, color memory, and context to find what matters quickly.",
+                "th": "สิ่งที่ภูมิใจ\nผมจัดข้อมูลโครงสร้างพื้นฐานโทรคมนาคมใหม่ ให้ผู้ใช้กวาดตาดู เข้าใจ และลงมือทำงานต่อได้\n\nMaxiTask ทำให้ผมภูมิใจเพราะไม่ได้เพียงออกแบบหน้าแผนที่ใหม่ แต่ช่วยให้คนทำงานกับข้อมูลที่ซับซ้อน ทั้งไซต์ เส้นทางใยแก้ว Core network โครงข่ายทองแดง FTTx ไมโครเวฟ ชั้นข้อมูลลูกค้า และบันทึกปฏิบัติการ\n\nความมุ่งหวัง\nออกแบบ UX ให้โครงสร้างพื้นฐานที่มองไม่เห็น\n\nMaxiTask ทำให้ผมเห็นว่า UX ช่วยให้โครงข่ายระดับประเทศที่ซ่อนอยู่เข้าใจง่ายขึ้น ติดตามได้ และดูแลรักษาได้ง่ายขึ้น\n\nบทเรียน\nข้อมูลซับซ้อนต้องช่วยให้จำแนกได้ ไม่ใช่แค่ตกแต่ง\n\nผมเรียนรู้ว่าผู้ใช้ไม่ได้ต้องการข้อมูลน้อยลงเสมอไป แต่ต้องการลำดับความสำคัญ ตัวกรอง สีที่ช่วยจดจำ และบริบทที่ดีขึ้น เพื่อค้นหาสิ่งสำคัญได้รวดเร็ว"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "figure",
+          "children": [
+            {
+              "kind": "element",
+              "tag": "button",
+              "attributes": {
+                "class": "image-button",
+                "data-media-id": "maxi-task-3",
+                "data-caption": {
+                  "en": "Four design principles carried forward from MAXI TASK",
+                  "th": "หลักการออกแบบสี่ข้อที่ได้เรียนรู้จาก MAXI TASK"
+                },
+                "aria-label": {
+                  "en": "Enlarge: Four design principles carried forward from MAXI TASK",
+                  "th": "ขยายภาพ: หลักการออกแบบสี่ข้อที่ได้เรียนรู้จาก MAXI TASK"
+                }
+              },
+              "children": [
+                {
+                  "kind": "image",
+                  "mediaId": "maxi-task-3",
+                  "alt": {
+                    "en": "Four design principles carried forward from MAXI TASK",
+                    "th": "หลักการออกแบบสี่ข้อที่ได้เรียนรู้จาก MAXI TASK"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "element",
+              "tag": "figcaption",
+              "attributes": {
+                "class": "caption"
+              },
+              "children": [
+                {
+                  "kind": "text",
+                  "value": {
+                    "en": "Four design principles carried forward from MAXI TASK",
+                    "th": "หลักการออกแบบสี่ข้อที่ได้เรียนรู้จาก MAXI TASK"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "kind": "element",
+    "tag": "aside",
+    "attributes": {
+      "class": "source-links"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "https://dhittawat.framer.ai/work/maxi-task/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Original case study on Framer ↗",
+              "th": "เคสต้นฉบับบน Framer ↗"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "next": {
+    "kind": "element",
+    "tag": "div",
+    "attributes": {
+      "class": "next-case"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "asean-summit-2019.html"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "eyebrow"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "NEXT CASE",
+                      "th": "เคสถัดไป"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "h2",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "ASEAN Summit 2019",
+                      "th": "ASEAN Summit 2019"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "class": "next-arrow",
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "↗",
+                  "th": "↗"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

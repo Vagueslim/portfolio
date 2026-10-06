@@ -54,4 +54,4 @@ for (const locale of ['en', 'th']) {
   }
 }
 if (errors.length) throw Error(errors.join('\n'));
-console.log('Validated both languages, 8 routes, 5 cases and ' + Object.keys(media).length + ' shared images.');
+console.log(`Validated both languages, ${pageFiles.length} routes, ${Object.keys(projects).length} cases and ${Object.keys(media).length} shared images.`);

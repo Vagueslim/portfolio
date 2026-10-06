@@ -262,5 +262,113 @@
     },
     "width": 1784,
     "height": 1718
+  },
+  "maxi-task-1": {
+    "src": "assets/cases/maxi-task/1.png",
+    "alt": {
+      "en": "MAXI TASK telecom infrastructure cover",
+      "th": "ภาพปกโครงข่ายโทรคมนาคม MAXI TASK"
+    },
+    "width": 1086,
+    "height": 1448
+  },
+  "maxi-task-2": {
+    "src": "assets/cases/maxi-task/2.png",
+    "alt": {
+      "en": "Network search, area selection and fiber tracing screens",
+      "th": "หน้าจอค้นหาโครงข่าย เลือกพื้นที่ และติดตามสายใยแก้ว"
+    },
+    "width": 1920,
+    "height": 1080
+  },
+  "maxi-task-3": {
+    "src": "assets/cases/maxi-task/3.png",
+    "alt": {
+      "en": "Four design principles carried forward from MAXI TASK",
+      "th": "หลักการออกแบบสี่ข้อที่ได้เรียนรู้จาก MAXI TASK"
+    },
+    "width": 1448,
+    "height": 1086
+  },
+  "maxi-task-4": {
+    "src": "assets/cases/maxi-task/4.png",
+    "alt": {
+      "en": "MAXI TASK map and network interface screens",
+      "th": "หน้าจอแผนที่และข้อมูลโครงข่าย MAXI TASK"
+    },
+    "width": 1237,
+    "height": 558
+  },
+  "maxi-task-5": {
+    "src": "assets/cases/maxi-task/5.png",
+    "alt": {
+      "en": "Module, task and delivery planning worksheet",
+      "th": "ตารางวางแผนโมดูล งาน และการส่งมอบ"
+    },
+    "width": 2396,
+    "height": 1118
+  },
+  "asean-summit-2019-1": {
+    "src": "assets/cases/asean-summit-2019/1.png",
+    "alt": {
+      "en": "ASEAN Summit 2019 cover",
+      "th": "ภาพปก ASEAN Summit 2019"
+    },
+    "width": 1086,
+    "height": 1448
+  },
+  "asean-summit-2019-2": {
+    "src": "assets/cases/asean-summit-2019/2.png",
+    "alt": {
+      "en": "Registration system overview and role responsibilities",
+      "th": "ภาพรวมระบบลงทะเบียนและความรับผิดชอบของแต่ละบทบาท"
+    },
+    "width": 1122,
+    "height": 1402
+  },
+  "asean-summit-2019-3": {
+    "src": "assets/cases/asean-summit-2019/3.png",
+    "alt": {
+      "en": "Registration modules and connected workflows",
+      "th": "โมดูลลงทะเบียนและขั้นตอนที่เชื่อมโยงกัน"
+    },
+    "width": 1086,
+    "height": 1448
+  },
+  "asean-summit-2019-4": {
+    "src": "assets/cases/asean-summit-2019/4.png",
+    "alt": {
+      "en": "Delegated registration flow: Host, DAO and Delegate",
+      "th": "ขั้นตอนลงทะเบียนผ่าน Host, DAO และ Delegate"
+    },
+    "width": 1672,
+    "height": 941
+  },
+  "asean-summit-2019-5": {
+    "src": "assets/cases/asean-summit-2019/5.png",
+    "alt": {
+      "en": "Registration interface and validation states",
+      "th": "หน้าจอลงทะเบียนและสถานะการตรวจสอบ"
+    },
+    "width": 1164,
+    "height": 701
+  },
+  "asean-summit-2019-6": {
+    "src": "assets/cases/asean-summit-2019/6.png",
+    "alt": {
+      "en": "Comparison of the old and new registration flow",
+      "th": "ภาพเปรียบเทียบขั้นตอนลงทะเบียนเดิมและใหม่"
+    },
+    "width": 1186,
+    "height": 200
+  },
+  "asean-summit-2019-7": {
+    "src": "assets/cases/asean-summit-2019/7.png",
+    "alt": {
+      "en": "Registration workflow and interface planning",
+      "th": "แผนผังงานและการวางแผนหน้าจอลงทะเบียน"
+    },
+    "width": 1003,
+    "height": 552
   }
 }

@@ -38,5 +38,21 @@
     },
     "href": "smart-asset.html",
     "coverMediaId": "smart-asset-cover"
+  },
+  "maxi-task": {
+    "title": {
+      "en": "MAXI TASK",
+      "th": "MAXI TASK"
+    },
+    "href": "maxi-task.html",
+    "coverMediaId": "maxi-task-1"
+  },
+  "asean-summit-2019": {
+    "title": {
+      "en": "ASEAN Summit 2019",
+      "th": "ASEAN Summit 2019"
+    },
+    "href": "asean-summit-2019.html",
+    "coverMediaId": "asean-summit-2019-1"
   }
 }
