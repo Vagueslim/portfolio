@@ -78,3 +78,27 @@ test('Every appendix diagram opens at original resolution and returns keyboard f
     }
   }
 });
+
+test('A delayed dialog close does not interrupt Space on the next diagram', async ({ page }) => {
+  await page.goto('/smart-asset.html#system-flow-evidence');
+  const dialog = page.locator('.flow-diagram');
+  const triggers = page.locator('.flow-evidence-trigger');
+  await triggers.first().click();
+  await expect(dialog).toBeVisible();
+  // Pin the native close event between keydown and keyup, as seen in Chromium CI.
+  await page.evaluate(() => document.addEventListener('close', event => event.stopImmediatePropagation(), { capture: true, once: true }));
+  await dialog.locator('.flow-diagram-close').click();
+  await expect(dialog).not.toBeVisible();
+  await triggers.nth(1).focus();
+  await page.keyboard.down('Space');
+  await page.evaluate(() => new Promise<void>(resolve => {
+    document.querySelector('.flow-diagram')!.dispatchEvent(new Event('close'));
+    requestAnimationFrame(() => requestAnimationFrame(() => resolve()));
+  }));
+  await page.keyboard.up('Space');
+  await expect(dialog).toBeVisible();
+  await expect(dialog).toHaveAccessibleName(evidenceFor('en').items[1].title);
+  await page.keyboard.press('Escape');
+  await expect(dialog).not.toBeVisible();
+  await expect(triggers.nth(1)).toBeFocused();
+});
