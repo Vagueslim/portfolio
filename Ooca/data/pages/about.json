@@ -1463,11 +1463,20 @@
                               "tag": "li",
                               "children": [
                                 {
-                                  "kind": "text",
-                                  "value": {
-                                    "en": "MAXI TASK (Telecom GIS)",
-                                    "th": "MAXI TASK (Telecom GIS)"
-                                  }
+                                  "kind": "element",
+                                  "tag": "a",
+                                  "attributes": {
+                                    "href": "maxi-task.html"
+                                  },
+                                  "children": [
+                                    {
+                                      "kind": "text",
+                                      "value": {
+                                        "en": "MAXI TASK (Telecom GIS)",
+                                        "th": "MAXI TASK (Telecom GIS)"
+                                      }
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -1577,11 +1586,26 @@
                               "tag": "li",
                               "children": [
                                 {
-                                  "kind": "text",
-                                  "value": {
-                                    "en": "MY EXIM",
-                                    "th": "MY EXIM"
-                                  }
+                                  "kind": "element",
+                                  "tag": "a",
+                                  "attributes": {
+                                    "href": "assets/career/my-exim-overview.png",
+                                    "target": "_blank",
+                                    "rel": "noopener noreferrer",
+                                    "aria-label": {
+                                      "en": "MY EXIM — View image (opens in a new tab)",
+                                      "th": "MY EXIM — ดูภาพผลงาน (เปิดแท็บใหม่)"
+                                    }
+                                  },
+                                  "children": [
+                                    {
+                                      "kind": "text",
+                                      "value": {
+                                        "en": "MY EXIM",
+                                        "th": "MY EXIM"
+                                      }
+                                    }
+                                  ]
                                 }
                               ]
                             },
@@ -1590,11 +1614,26 @@
                               "tag": "li",
                               "children": [
                                 {
-                                  "kind": "text",
-                                  "value": {
-                                    "en": "InterGOLD",
-                                    "th": "InterGOLD"
-                                  }
+                                  "kind": "element",
+                                  "tag": "a",
+                                  "attributes": {
+                                    "href": "assets/career/intergold-overview.png",
+                                    "target": "_blank",
+                                    "rel": "noopener noreferrer",
+                                    "aria-label": {
+                                      "en": "InterGOLD — View image (opens in a new tab)",
+                                      "th": "InterGOLD — ดูภาพผลงาน (เปิดแท็บใหม่)"
+                                    }
+                                  },
+                                  "children": [
+                                    {
+                                      "kind": "text",
+                                      "value": {
+                                        "en": "InterGOLD",
+                                        "th": "InterGOLD"
+                                      }
+                                    }
+                                  ]
                                 }
                               ]
                             },
@@ -1616,11 +1655,20 @@
                               "tag": "li",
                               "children": [
                                 {
-                                  "kind": "text",
-                                  "value": {
-                                    "en": "ASEAN Summit 2019",
-                                    "th": "ASEAN Summit 2019"
-                                  }
+                                  "kind": "element",
+                                  "tag": "a",
+                                  "attributes": {
+                                    "href": "asean-summit-2019.html"
+                                  },
+                                  "children": [
+                                    {
+                                      "kind": "text",
+                                      "value": {
+                                        "en": "ASEAN Summit 2019",
+                                        "th": "ASEAN Summit 2019"
+                                      }
+                                    }
+                                  ]
                                 }
                               ]
                             }
