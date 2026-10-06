@@ -55,6 +55,14 @@ test('Smart Asset cover is section two and both flow sections fit in both langua
 
 test('Every appendix diagram opens at original resolution and returns keyboard focus', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
+  await page.addInitScript(() => {
+    const debug = window as unknown as { diagramEvents: unknown[] };
+    debug.diagramEvents = [];
+    for (const type of ['focusin', 'focusout', 'keydown', 'keyup', 'click', 'close', 'cancel']) document.addEventListener(type, event => {
+      debug.diagramEvents.push({ type, key: (event as KeyboardEvent).key, time: performance.now(), target: (event.target as HTMLElement)?.className, active: document.activeElement?.className, index: [...document.querySelectorAll('.flow-evidence-trigger')].indexOf(document.activeElement!) });
+      debug.diagramEvents = debug.diagramEvents.slice(-50);
+    }, true);
+  });
   for (const locale of ['en', 'th']) {
     await page.goto(`/${locale === 'th' ? 'th/' : ''}smart-asset.html#system-flow-evidence`);
     const dialog = page.locator('.flow-diagram');
@@ -62,7 +70,11 @@ test('Every appendix diagram opens at original resolution and returns keyboard f
       const trigger = page.locator('.flow-evidence-trigger').nth(index);
       await trigger.focus();
       await page.keyboard.press(index % 2 ? 'Enter' : 'Space');
-      await expect(dialog).toBeVisible();
+      try { await expect(dialog).toBeVisible(); }
+      catch (error) {
+        console.log('[DEBUG-diagram-keyboard]', JSON.stringify({ locale, index, events: await page.evaluate(() => (window as unknown as { diagramEvents: unknown[] }).diagramEvents) }));
+        throw error;
+      }
       await expect(dialog).toHaveAccessibleName(locale === 'en' ? evidenceFor('en').items[index].title : item.title);
       await expect(dialog.locator('img')).toHaveAttribute('alt', locale === 'en' ? evidenceFor('en').items.find(i => i.mediaId === item.mediaId)!.alt : item.alt);
       expect(await dialog.locator('img').evaluate(async image => { await (image as HTMLImageElement).decode(); return (image as HTMLImageElement).naturalWidth; })).toBe(media[item.mediaId].width);
