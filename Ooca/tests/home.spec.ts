@@ -18,7 +18,14 @@ for (const width of [320, 390, 552, 768, 1440]) {
       await document.fonts.ready;
       await Promise.all([...document.images].map(async image => { image.loading = 'eager'; await image.decode(); }));
     });
-    await expect(page.locator('h1')).toHaveText('I’M DHITTAWAT.');
+    await expect(page.locator('h1')).toHaveText('I’M THREE DHITTAWAT.');
+    const titleFit = await page.locator('h1').evaluate(element => {
+      const range = document.createRange();
+      range.selectNodeContents(element);
+      return { textWidth: range.getBoundingClientRect().width, availableWidth: element.clientWidth };
+    });
+    expect(titleFit.textWidth).toBeLessThanOrEqual(titleFit.availableWidth + 1);
+    expect(titleFit.textWidth / titleFit.availableWidth).toBeGreaterThan(0.98);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     const before = baseline.find(item => item.width === width)!;
     const comparisons = [];

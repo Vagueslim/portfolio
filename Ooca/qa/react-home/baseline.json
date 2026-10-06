@@ -7,21 +7,21 @@
         "x": 0,
         "y": 0,
         "width": 320,
-        "height": 161.34375,
-        "text": "t\nHome\n\\\nAbout\n\\\nProject\nI’M DHITTAWAT.\n\nProduct Design \\ UX/UI Designer"
+        "height": 144.984375,
+        "text": "t\nHome\n\\\nAbout\n\\\nProject\nI’M THREE DHITTAWAT.\n\nProduct Design \\ UX/UI Designer"
       },
       {
         "selector": ".masthead-title",
         "x": 18,
         "y": 60,
         "width": 284,
-        "height": 54.546875,
-        "text": "I’M DHITTAWAT."
+        "height": 38.1875,
+        "text": "I’M THREE DHITTAWAT."
       },
       {
         "selector": ".paper",
         "x": 0,
-        "y": 161.34375,
+        "y": 144.984375,
         "width": 320,
         "height": 789.765625,
         "text": "Think through complexity.\n/ WCF\n\nLook deeper into the problem.\n/ Customer Change Date\n\nWork closely with engineering.\n/ Assets Management\n\nShape the customer journey on the web.\n/ Q-CHANG Website\n\nCare for the details on mobile.\n/ Buddy 2.0 App\n\nEXPLORE MY WORK ↗"
@@ -29,7 +29,7 @@
       {
         "selector": ".editorial-intro",
         "x": 0,
-        "y": 951.109375,
+        "y": 934.75,
         "width": 320,
         "height": 583.53125,
         "text": "THREE PERSPECTIVES.\nONE SERVICE.\n\nออกแบบให้คน\nไปต่อได้\n\nจากลูกค้าที่กำลังหาบริการ ช่างที่กำลังสมัครรับงาน ถึงทีมที่ช่วยประสานให้นัดหมายเกิดขึ้น — สามมุมของ Q-CHANG ที่ฉันได้เข้าไปทำความเข้าใจและออกแบบ\n\nรู้จักวิธีทำงาน\n↗"
@@ -37,7 +37,7 @@
       {
         "selector": ".editorial-selected",
         "x": 0,
-        "y": 1534.640625,
+        "y": 1518.28125,
         "width": 320,
         "height": 2335.6875,
         "text": "ผลงานที่เลือกมา03\nดูผลงานทั้งหมด\n↗\n\n01 / Q-CHANG Web\n\nWEBSITE · UX/UI\n\n01 — CUSTOMER EXPERIENCE\n\nจากค้นหาบริการ\nถึงจองและกลับมาใช้ซ้ำ\n\nเริ่มจากหมวดบริการที่หายาก จัดกลุ่มตามสิ่งที่ลูกค้าอยากทำ แล้วเชื่อมไปถึงรายละเอียดบริการและการจอง\n\nUX/UI design · Information architecture · Usability testing\n\nอ่านเรื่องนี้\n↗\n\n02 / Buddy App 2.0\n\nMOBILE · UX/UI\n\n02 — TECHNICIAN EXPERIENCE\n\nสมัครตามความพร้อม\nพักแล้วกลับมาทำต่อได้\n\nแบ่งแบบฟอร์มยาวให้บันทึกเป็นส่วน ช่างเตรียมเอกสารและกลับมาสมัครต่อได้ โดยไม่ต้องกรอกทุกอย่างในครั้งเดียว\n\nOnboarding UX/UI · Prototype · Usability testing\nฟีดแบ็กจากการทดสอบก่อนเปิดใช้\n\nอ่านเรื่องนี้\n↗\n\n03 / Q-CHANG · Change Date\n\nSERVICE & OPERATIONS\n\n03 — SERVICE & OPERATIONS\n\nการเปลี่ยนวันนัดหนึ่งครั้ง\nกระทบใครบ้าง\n\nตามคำขอหนึ่งครั้งผ่านลูกค้า ช่าง และทีมประสาน เพื่อให้เห็นข้อจำกัดที่อยู่หลังวันที่เปลี่ยน ก่อนนำเสนอทางเลือกให้ทีม\n\nResearch analysis · Workflow mapping · เสนอแนวทาง\n\nอ่านเรื่องนี้\n↗"
@@ -45,7 +45,7 @@
       {
         "selector": ".editorial-backup",
         "x": 0,
-        "y": 3870.328125,
+        "y": 3853.96875,
         "width": 320,
         "height": 797.71875,
         "text": "อีกมุมของงาน / INTERNAL SYSTEMS\n04 / WCF DIGITAL\n\nWCF Digital\nกระบวนการเงินทดแทน\n\nให้กฎ ข้อมูล\nและข้อยกเว้น ทำงานร่วมกัน\n\nออกแบบงานภายใน ตั้งแต่ใบแจ้งหนี้ถึงการตรวจเอกสารและหมวดค่ารักษา โดยเชื่อมความต้องการของเจ้าหน้าที่กับการทำงานของระบบ\n\nดูงานระบบภายใน\n↗"
@@ -53,7 +53,7 @@
       {
         "selector": ".smart-project",
         "x": 0,
-        "y": 4668.046875,
+        "y": 4651.6875,
         "width": 320,
         "height": 807.515625,
         "text": "05 / PEC SMART ASSET\nASSET MANAGEMENT\n\nAsset\nManagement\n\nDifferent assets\nOne clear workflow.\n\nInitial specifications → UX/UI → engineering collaboration → feedback from use\n\nPEC Smart Asset · UX × SA Intern\n\nอ่านเรื่องนี้\n↗"
@@ -61,7 +61,7 @@
       {
         "selector": ".editorial-conversation",
         "x": 22,
-        "y": 5475.5625,
+        "y": 5459.203125,
         "width": 276,
         "height": 927.90625,
         "text": "BEHIND THE WORK / วิธีคิดและทำงาน\n\nหน้าจอที่ดี\nเริ่มจากเข้าใจ\nสิ่งที่คนต้องทำ\n\nมองตั้งแต่ความตั้งใจของคน กฎที่อยู่หลังงาน ไปจนถึงสิ่งที่เกิดขึ้นเมื่อได้ลองใช้\n\nอ่านเกี่ยวกับฉัน\n↗\n01\nเริ่มจากความตั้งใจของผู้ใช้\n\nจัดหมวดบริการจากสิ่งที่ลูกค้าอยากทำ และให้ช่างสมัครตามความพร้อมของตัวเอง เพื่อให้ขั้นตอนสอดคล้องกับสถานการณ์ที่คนกำลังเจอ\n\n02\nมองสิ่งที่อยู่หลังหน้าจอ\n03\nกลับมาดูสิ่งที่เกิดขึ้นจริง"
@@ -69,7 +69,7 @@
       {
         "selector": "footer.portfolio-lower",
         "x": 0,
-        "y": 6403.46875,
+        "y": 6387.109375,
         "width": 320,
         "height": 735.359375,
         "text": "LET’S TALK ABOUT THE WORK\n\nA good conversation.\nA clearer next step.\n\nถ้ามีโจทย์ที่อยากทำความเข้าใจร่วมกัน\nเริ่มจากคุยเรื่องคน งาน และข้อจำกัดที่เจอได้เลย\n\nคุยเรื่องงาน\n↗\nDhittawat.\nLinkedIn\n↗\n© 2026 Dhittawat Thongkhum\nPRODUCT DESIGN · BANGKOK\nกลับด้านบน ↑"
@@ -84,21 +84,21 @@
         "x": 0,
         "y": 0,
         "width": 390,
-        "height": 177.6875,
-        "text": "t\nHome\n\\\nAbout\n\\\nProject\nI’M DHITTAWAT.\n\nProduct Design \\ UX/UI Designer"
+        "height": 157.28125,
+        "text": "t\nHome\n\\\nAbout\n\\\nProject\nI’M THREE DHITTAWAT.\n\nProduct Design \\ UX/UI Designer"
       },
       {
         "selector": ".masthead-title",
         "x": 18,
         "y": 60,
         "width": 354,
-        "height": 68,
-        "text": "I’M DHITTAWAT."
+        "height": 47.59375,
+        "text": "I’M THREE DHITTAWAT."
       },
       {
         "selector": ".paper",
         "x": 0,
-        "y": 177.6875,
+        "y": 157.28125,
         "width": 390,
         "height": 695.78125,
         "text": "Think through complexity.\n/ WCF\n\nLook deeper into the problem.\n/ Customer Change Date\n\nWork closely with engineering.\n/ Assets Management\n\nShape the customer journey on the web.\n/ Q-CHANG Website\n\nCare for the details on mobile.\n/ Buddy 2.0 App\n\nEXPLORE MY WORK ↗"
@@ -106,7 +106,7 @@
       {
         "selector": ".editorial-intro",
         "x": 0,
-        "y": 873.46875,
+        "y": 853.0625,
         "width": 390,
         "height": 551.140625,
         "text": "THREE PERSPECTIVES.\nONE SERVICE.\n\nออกแบบให้คน\nไปต่อได้\n\nจากลูกค้าที่กำลังหาบริการ ช่างที่กำลังสมัครรับงาน ถึงทีมที่ช่วยประสานให้นัดหมายเกิดขึ้น — สามมุมของ Q-CHANG ที่ฉันได้เข้าไปทำความเข้าใจและออกแบบ\n\nรู้จักวิธีทำงาน\n↗"
@@ -114,7 +114,7 @@
       {
         "selector": ".editorial-selected",
         "x": 0,
-        "y": 1424.609375,
+        "y": 1404.203125,
         "width": 390,
         "height": 2272.703125,
         "text": "ผลงานที่เลือกมา03\nดูผลงานทั้งหมด\n↗\n\n01 / Q-CHANG Web\n\nWEBSITE · UX/UI\n\n01 — CUSTOMER EXPERIENCE\n\nจากค้นหาบริการ\nถึงจองและกลับมาใช้ซ้ำ\n\nเริ่มจากหมวดบริการที่หายาก จัดกลุ่มตามสิ่งที่ลูกค้าอยากทำ แล้วเชื่อมไปถึงรายละเอียดบริการและการจอง\n\nUX/UI design · Information architecture · Usability testing\n\nอ่านเรื่องนี้\n↗\n\n02 / Buddy App 2.0\n\nMOBILE · UX/UI\n\n02 — TECHNICIAN EXPERIENCE\n\nสมัครตามความพร้อม\nพักแล้วกลับมาทำต่อได้\n\nแบ่งแบบฟอร์มยาวให้บันทึกเป็นส่วน ช่างเตรียมเอกสารและกลับมาสมัครต่อได้ โดยไม่ต้องกรอกทุกอย่างในครั้งเดียว\n\nOnboarding UX/UI · Prototype · Usability testing\nฟีดแบ็กจากการทดสอบก่อนเปิดใช้\n\nอ่านเรื่องนี้\n↗\n\n03 / Q-CHANG · Change Date\n\nSERVICE & OPERATIONS\n\n03 — SERVICE & OPERATIONS\n\nการเปลี่ยนวันนัดหนึ่งครั้ง\nกระทบใครบ้าง\n\nตามคำขอหนึ่งครั้งผ่านลูกค้า ช่าง และทีมประสาน เพื่อให้เห็นข้อจำกัดที่อยู่หลังวันที่เปลี่ยน ก่อนนำเสนอทางเลือกให้ทีม\n\nResearch analysis · Workflow mapping · เสนอแนวทาง\n\nอ่านเรื่องนี้\n↗"
@@ -122,7 +122,7 @@
       {
         "selector": ".editorial-backup",
         "x": 0,
-        "y": 3697.3125,
+        "y": 3676.90625,
         "width": 390,
         "height": 765.28125,
         "text": "อีกมุมของงาน / INTERNAL SYSTEMS\n04 / WCF DIGITAL\n\nWCF Digital\nกระบวนการเงินทดแทน\n\nให้กฎ ข้อมูล\nและข้อยกเว้น ทำงานร่วมกัน\n\nออกแบบงานภายใน ตั้งแต่ใบแจ้งหนี้ถึงการตรวจเอกสารและหมวดค่ารักษา โดยเชื่อมความต้องการของเจ้าหน้าที่กับการทำงานของระบบ\n\nดูงานระบบภายใน\n↗"
@@ -130,7 +130,7 @@
       {
         "selector": ".smart-project",
         "x": 0,
-        "y": 4462.59375,
+        "y": 4442.1875,
         "width": 390,
         "height": 757.03125,
         "text": "05 / PEC SMART ASSET\nASSET MANAGEMENT\n\nAsset\nManagement\n\nDifferent assets\nOne clear workflow.\n\nInitial specifications → UX/UI → engineering collaboration → feedback from use\n\nPEC Smart Asset · UX × SA Intern\n\nอ่านเรื่องนี้\n↗"
@@ -138,7 +138,7 @@
       {
         "selector": ".editorial-conversation",
         "x": 22,
-        "y": 5219.625,
+        "y": 5199.21875,
         "width": 346,
         "height": 866.515625,
         "text": "BEHIND THE WORK / วิธีคิดและทำงาน\n\nหน้าจอที่ดี\nเริ่มจากเข้าใจ\nสิ่งที่คนต้องทำ\n\nมองตั้งแต่ความตั้งใจของคน กฎที่อยู่หลังงาน ไปจนถึงสิ่งที่เกิดขึ้นเมื่อได้ลองใช้\n\nอ่านเกี่ยวกับฉัน\n↗\n01\nเริ่มจากความตั้งใจของผู้ใช้\n\nจัดหมวดบริการจากสิ่งที่ลูกค้าอยากทำ และให้ช่างสมัครตามความพร้อมของตัวเอง เพื่อให้ขั้นตอนสอดคล้องกับสถานการณ์ที่คนกำลังเจอ\n\n02\nมองสิ่งที่อยู่หลังหน้าจอ\n03\nกลับมาดูสิ่งที่เกิดขึ้นจริง"
@@ -146,7 +146,7 @@
       {
         "selector": "footer.portfolio-lower",
         "x": 0,
-        "y": 6086.140625,
+        "y": 6065.734375,
         "width": 390,
         "height": 644.96875,
         "text": "LET’S TALK ABOUT THE WORK\n\nA good conversation.\nA clearer next step.\n\nถ้ามีโจทย์ที่อยากทำความเข้าใจร่วมกัน\nเริ่มจากคุยเรื่องคน งาน และข้อจำกัดที่เจอได้เลย\n\nคุยเรื่องงาน\n↗\nDhittawat.\nLinkedIn\n↗\n© 2026 Dhittawat Thongkhum\nPRODUCT DESIGN · BANGKOK\nกลับด้านบน ↑"
@@ -161,21 +161,21 @@
         "x": 0,
         "y": 0,
         "width": 552,
-        "height": 218.65625,
-        "text": "t\nHome\n\\\nAbout\n\\\nProject\nI’M DHITTAWAT.\n\nProduct Design \\ UX/UI Designer"
+        "height": 188.921875,
+        "text": "t\nHome\n\\\nAbout\n\\\nProject\nI’M THREE DHITTAWAT.\n\nProduct Design \\ UX/UI Designer"
       },
       {
         "selector": ".masthead-title",
         "x": 18,
         "y": 60,
         "width": 516,
-        "height": 99.109375,
-        "text": "I’M DHITTAWAT."
+        "height": 69.375,
+        "text": "I’M THREE DHITTAWAT."
       },
       {
         "selector": ".paper",
         "x": 0,
-        "y": 218.65625,
+        "y": 188.921875,
         "width": 552,
         "height": 659.484375,
         "text": "Think through complexity.\n/ WCF\n\nLook deeper into the problem.\n/ Customer Change Date\n\nWork closely with engineering.\n/ Assets Management\n\nShape the customer journey on the web.\n/ Q-CHANG Website\n\nCare for the details on mobile.\n/ Buddy 2.0 App\n\nEXPLORE MY WORK ↗"
@@ -183,7 +183,7 @@
       {
         "selector": ".editorial-intro",
         "x": 0,
-        "y": 878.140625,
+        "y": 848.40625,
         "width": 552,
         "height": 518.75,
         "text": "THREE PERSPECTIVES.\nONE SERVICE.\n\nออกแบบให้คน\nไปต่อได้\n\nจากลูกค้าที่กำลังหาบริการ ช่างที่กำลังสมัครรับงาน ถึงทีมที่ช่วยประสานให้นัดหมายเกิดขึ้น — สามมุมของ Q-CHANG ที่ฉันได้เข้าไปทำความเข้าใจและออกแบบ\n\nรู้จักวิธีทำงาน\n↗"
@@ -191,7 +191,7 @@
       {
         "selector": ".editorial-selected",
         "x": 0,
-        "y": 1396.890625,
+        "y": 1367.15625,
         "width": 552,
         "height": 2435.4375,
         "text": "ผลงานที่เลือกมา03\nดูผลงานทั้งหมด\n↗\n\n01 / Q-CHANG Web\n\nWEBSITE · UX/UI\n\n01 — CUSTOMER EXPERIENCE\n\nจากค้นหาบริการ\nถึงจองและกลับมาใช้ซ้ำ\n\nเริ่มจากหมวดบริการที่หายาก จัดกลุ่มตามสิ่งที่ลูกค้าอยากทำ แล้วเชื่อมไปถึงรายละเอียดบริการและการจอง\n\nUX/UI design · Information architecture · Usability testing\n\nอ่านเรื่องนี้\n↗\n\n02 / Buddy App 2.0\n\nMOBILE · UX/UI\n\n02 — TECHNICIAN EXPERIENCE\n\nสมัครตามความพร้อม\nพักแล้วกลับมาทำต่อได้\n\nแบ่งแบบฟอร์มยาวให้บันทึกเป็นส่วน ช่างเตรียมเอกสารและกลับมาสมัครต่อได้ โดยไม่ต้องกรอกทุกอย่างในครั้งเดียว\n\nOnboarding UX/UI · Prototype · Usability testing\nฟีดแบ็กจากการทดสอบก่อนเปิดใช้\n\nอ่านเรื่องนี้\n↗\n\n03 / Q-CHANG · Change Date\n\nSERVICE & OPERATIONS\n\n03 — SERVICE & OPERATIONS\n\nการเปลี่ยนวันนัดหนึ่งครั้ง\nกระทบใครบ้าง\n\nตามคำขอหนึ่งครั้งผ่านลูกค้า ช่าง และทีมประสาน เพื่อให้เห็นข้อจำกัดที่อยู่หลังวันที่เปลี่ยน ก่อนนำเสนอทางเลือกให้ทีม\n\nResearch analysis · Workflow mapping · เสนอแนวทาง\n\nอ่านเรื่องนี้\n↗"
@@ -199,7 +199,7 @@
       {
         "selector": ".editorial-backup",
         "x": 0,
-        "y": 3832.328125,
+        "y": 3802.59375,
         "width": 552,
         "height": 887.203125,
         "text": "อีกมุมของงาน / INTERNAL SYSTEMS\n04 / WCF DIGITAL\n\nWCF Digital\nกระบวนการเงินทดแทน\n\nให้กฎ ข้อมูล\nและข้อยกเว้น ทำงานร่วมกัน\n\nออกแบบงานภายใน ตั้งแต่ใบแจ้งหนี้ถึงการตรวจเอกสารและหมวดค่ารักษา โดยเชื่อมความต้องการของเจ้าหน้าที่กับการทำงานของระบบ\n\nดูงานระบบภายใน\n↗"
@@ -207,7 +207,7 @@
       {
         "selector": ".smart-project",
         "x": 0,
-        "y": 4719.53125,
+        "y": 4689.796875,
         "width": 552,
         "height": 864.96875,
         "text": "05 / PEC SMART ASSET\nASSET MANAGEMENT\n\nAsset\nManagement\n\nDifferent assets\nOne clear workflow.\n\nInitial specifications → UX/UI → engineering collaboration → feedback from use\n\nPEC Smart Asset · UX × SA Intern\n\nอ่านเรื่องนี้\n↗"
@@ -215,7 +215,7 @@
       {
         "selector": ".editorial-conversation",
         "x": 23.171875,
-        "y": 5584.5,
+        "y": 5554.765625,
         "width": 505.65625,
         "height": 807.328125,
         "text": "BEHIND THE WORK / วิธีคิดและทำงาน\n\nหน้าจอที่ดี\nเริ่มจากเข้าใจ\nสิ่งที่คนต้องทำ\n\nมองตั้งแต่ความตั้งใจของคน กฎที่อยู่หลังงาน ไปจนถึงสิ่งที่เกิดขึ้นเมื่อได้ลองใช้\n\nอ่านเกี่ยวกับฉัน\n↗\n01\nเริ่มจากความตั้งใจของผู้ใช้\n\nจัดหมวดบริการจากสิ่งที่ลูกค้าอยากทำ และให้ช่างสมัครตามความพร้อมของตัวเอง เพื่อให้ขั้นตอนสอดคล้องกับสถานการณ์ที่คนกำลังเจอ\n\n02\nมองสิ่งที่อยู่หลังหน้าจอ\n03\nกลับมาดูสิ่งที่เกิดขึ้นจริง"
@@ -223,7 +223,7 @@
       {
         "selector": "footer.portfolio-lower",
         "x": 0,
-        "y": 6391.828125,
+        "y": 6362.09375,
         "width": 552,
         "height": 602.15625,
         "text": "LET’S TALK ABOUT THE WORK\n\nA good conversation.\nA clearer next step.\n\nถ้ามีโจทย์ที่อยากทำความเข้าใจร่วมกัน\nเริ่มจากคุยเรื่องคน งาน และข้อจำกัดที่เจอได้เลย\n\nคุยเรื่องงาน\n↗\nDhittawat.\nLinkedIn\n↗\n© 2026 Dhittawat Thongkhum\nPRODUCT DESIGN · BANGKOK\nกลับด้านบน ↑"
@@ -238,21 +238,21 @@
         "x": 0,
         "y": 0,
         "width": 768,
-        "height": 278.03125,
-        "text": "t\nHome\n\\\nAbout\n\\\nProject\nI’M DHITTAWAT.\n\nProduct Design \\ UX/UI Designer"
+        "height": 238.09375,
+        "text": "t\nHome\n\\\nAbout\n\\\nProject\nI’M THREE DHITTAWAT.\n\nProduct Design \\ UX/UI Designer"
       },
       {
         "selector": ".masthead-title",
         "x": 21.5,
         "y": 74,
         "width": 725,
-        "height": 133.109375,
-        "text": "I’M DHITTAWAT."
+        "height": 93.171875,
+        "text": "I’M THREE DHITTAWAT."
       },
       {
         "selector": ".paper",
         "x": 0,
-        "y": 278.03125,
+        "y": 238.09375,
         "width": 768,
         "height": 463.875,
         "text": "Think through complexity. / WCF\n\nLook deeper into the problem. / Customer Change Date\n\nWork closely with engineering. / Assets Management\n\nShape the customer journey on the web. / Q-CHANG Website\n\nCare for the details on mobile. / Buddy 2.0 App\n\nEXPLORE MY WORK ↗"
@@ -260,7 +260,7 @@
       {
         "selector": ".editorial-intro",
         "x": 0,
-        "y": 741.90625,
+        "y": 701.96875,
         "width": 768,
         "height": 500.984375,
         "text": "THREE PERSPECTIVES.\nONE SERVICE.\n\nออกแบบให้คน\nไปต่อได้\n\nจากลูกค้าที่กำลังหาบริการ ช่างที่กำลังสมัครรับงาน ถึงทีมที่ช่วยประสานให้นัดหมายเกิดขึ้น — สามมุมของ Q-CHANG ที่ฉันได้เข้าไปทำความเข้าใจและออกแบบ\n\nรู้จักวิธีทำงาน\n↗"
@@ -268,7 +268,7 @@
       {
         "selector": ".editorial-selected",
         "x": 0,
-        "y": 1242.890625,
+        "y": 1202.953125,
         "width": 768,
         "height": 1819.546875,
         "text": "ผลงานที่เลือกมา03\nดูผลงานทั้งหมด\n↗\n\n01 / Q-CHANG Web\n\nWEBSITE · UX/UI\n\n01 — CUSTOMER EXPERIENCE\n\nจากค้นหาบริการ\nถึงจองและกลับมาใช้ซ้ำ\n\nเริ่มจากหมวดบริการที่หายาก จัดกลุ่มตามสิ่งที่ลูกค้าอยากทำ แล้วเชื่อมไปถึงรายละเอียดบริการและการจอง\n\nUX/UI design · Information architecture · Usability testing\n\nอ่านเรื่องนี้\n↗\n\n02 / Buddy App 2.0\n\nMOBILE · UX/UI\n\n02 — TECHNICIAN EXPERIENCE\n\nสมัครตามความพร้อม\nพักแล้วกลับมาทำต่อได้\n\nแบ่งแบบฟอร์มยาวให้บันทึกเป็นส่วน ช่างเตรียมเอกสารและกลับมาสมัครต่อได้ โดยไม่ต้องกรอกทุกอย่างในครั้งเดียว\n\nOnboarding UX/UI · Prototype · Usability testing\nฟีดแบ็กจากการทดสอบก่อนเปิดใช้\n\nอ่านเรื่องนี้\n↗\n\n03 / Q-CHANG · Change Date\n\nSERVICE & OPERATIONS\n\n03 — SERVICE & OPERATIONS\n\nการเปลี่ยนวันนัดหนึ่งครั้ง\nกระทบใครบ้าง\n\nตามคำขอหนึ่งครั้งผ่านลูกค้า ช่าง และทีมประสาน เพื่อให้เห็นข้อจำกัดที่อยู่หลังวันที่เปลี่ยน ก่อนนำเสนอทางเลือกให้ทีม\n\nResearch analysis · Workflow mapping · เสนอแนวทาง\n\nอ่านเรื่องนี้\n↗"
@@ -276,7 +276,7 @@
       {
         "selector": ".editorial-backup",
         "x": 0,
-        "y": 3062.4375,
+        "y": 3022.5,
         "width": 768,
         "height": 1157.53125,
         "text": "อีกมุมของงาน / INTERNAL SYSTEMS\n04 / WCF DIGITAL\n\nWCF Digital\nกระบวนการเงินทดแทน\n\nให้กฎ ข้อมูล\nและข้อยกเว้น ทำงานร่วมกัน\n\nออกแบบงานภายใน ตั้งแต่ใบแจ้งหนี้ถึงการตรวจเอกสารและหมวดค่ารักษา โดยเชื่อมความต้องการของเจ้าหน้าที่กับการทำงานของระบบ\n\nดูงานระบบภายใน\n↗"
@@ -284,7 +284,7 @@
       {
         "selector": ".smart-project",
         "x": 0,
-        "y": 4219.96875,
+        "y": 4180.03125,
         "width": 768,
         "height": 579.90625,
         "text": "05 / PEC SMART ASSET\nASSET MANAGEMENT\n\nAsset\nManagement\n\nDifferent assets\nOne clear workflow.\n\nInitial specifications → UX/UI → engineering collaboration → feedback from use\n\nPEC Smart Asset · UX × SA Intern\n\nอ่านเรื่องนี้\n↗"
@@ -292,7 +292,7 @@
       {
         "selector": ".editorial-conversation",
         "x": 32.25,
-        "y": 4799.875,
+        "y": 4759.9375,
         "width": 703.5,
         "height": 519.953125,
         "text": "BEHIND THE WORK / วิธีคิดและทำงาน\n\nหน้าจอที่ดี\nเริ่มจากเข้าใจ\nสิ่งที่คนต้องทำ\n\nมองตั้งแต่ความตั้งใจของคน กฎที่อยู่หลังงาน ไปจนถึงสิ่งที่เกิดขึ้นเมื่อได้ลองใช้\n\nอ่านเกี่ยวกับฉัน\n↗\n01\nเริ่มจากความตั้งใจของผู้ใช้\n\nจัดหมวดบริการจากสิ่งที่ลูกค้าอยากทำ และให้ช่างสมัครตามความพร้อมของตัวเอง เพื่อให้ขั้นตอนสอดคล้องกับสถานการณ์ที่คนกำลังเจอ\n\n02\nมองสิ่งที่อยู่หลังหน้าจอ\n03\nกลับมาดูสิ่งที่เกิดขึ้นจริง"
@@ -300,7 +300,7 @@
       {
         "selector": "footer.portfolio-lower",
         "x": 0,
-        "y": 5319.828125,
+        "y": 5279.890625,
         "width": 768,
         "height": 596.5625,
         "text": "LET’S TALK ABOUT THE WORK\n\nA good conversation.\nA clearer next step.\n\nถ้ามีโจทย์ที่อยากทำความเข้าใจร่วมกัน\nเริ่มจากคุยเรื่องคน งาน และข้อจำกัดที่เจอได้เลย\n\nคุยเรื่องงาน\n↗\nDhittawat.\nLinkedIn\n↗\n© 2026 Dhittawat Thongkhum\nPRODUCT DESIGN · BANGKOK\nกลับด้านบน ↑"
@@ -315,21 +315,21 @@
         "x": 0,
         "y": 0,
         "width": 1440,
-        "height": 425.359375,
-        "text": "t\nHome\n\\\nAbout\n\\\nProject\nI’M DHITTAWAT.\n\nProduct Design \\ UX/UI Designer"
+        "height": 350.484375,
+        "text": "t\nHome\n\\\nAbout\n\\\nProject\nI’M THREE DHITTAWAT.\n\nProduct Design \\ UX/UI Designer"
       },
       {
         "selector": ".masthead-title",
         "x": 40.3125,
         "y": 74.390625,
         "width": 1359.375,
-        "height": 249.578125,
-        "text": "I’M DHITTAWAT."
+        "height": 174.703125,
+        "text": "I’M THREE DHITTAWAT."
       },
       {
         "selector": ".paper",
         "x": 0,
-        "y": 425.359375,
+        "y": 350.484375,
         "width": 1440,
         "height": 588.171875,
         "text": "Think through complexity. / WCF\n\nLook deeper into the problem. / Customer Change Date\n\nWork closely with engineering. / Assets Management\n\nShape the customer journey on the web. / Q-CHANG Website\n\nCare for the details on mobile. / Buddy 2.0 App\n\nEXPLORE MY WORK ↗"
@@ -337,7 +337,7 @@
       {
         "selector": ".editorial-intro",
         "x": 0,
-        "y": 1013.53125,
+        "y": 938.65625,
         "width": 1440,
         "height": 617.140625,
         "text": "THREE PERSPECTIVES.\nONE SERVICE.\n\nออกแบบให้คน\nไปต่อได้\n\nจากลูกค้าที่กำลังหาบริการ ช่างที่กำลังสมัครรับงาน ถึงทีมที่ช่วยประสานให้นัดหมายเกิดขึ้น — สามมุมของ Q-CHANG ที่ฉันได้เข้าไปทำความเข้าใจและออกแบบ\n\nรู้จักวิธีทำงาน\n↗"
@@ -345,7 +345,7 @@
       {
         "selector": ".editorial-selected",
         "x": 0,
-        "y": 1630.671875,
+        "y": 1555.796875,
         "width": 1440,
         "height": 1894.25,
         "text": "ผลงานที่เลือกมา03\nดูผลงานทั้งหมด\n↗\n\n01 / Q-CHANG Web\n\nWEBSITE · UX/UI\n\n01 — CUSTOMER EXPERIENCE\n\nจากค้นหาบริการ\nถึงจองและกลับมาใช้ซ้ำ\n\nเริ่มจากหมวดบริการที่หายาก จัดกลุ่มตามสิ่งที่ลูกค้าอยากทำ แล้วเชื่อมไปถึงรายละเอียดบริการและการจอง\n\nUX/UI design · Information architecture · Usability testing\n\nอ่านเรื่องนี้\n↗\n\n02 / Buddy App 2.0\n\nMOBILE · UX/UI\n\n02 — TECHNICIAN EXPERIENCE\n\nสมัครตามความพร้อม\nพักแล้วกลับมาทำต่อได้\n\nแบ่งแบบฟอร์มยาวให้บันทึกเป็นส่วน ช่างเตรียมเอกสารและกลับมาสมัครต่อได้ โดยไม่ต้องกรอกทุกอย่างในครั้งเดียว\n\nOnboarding UX/UI · Prototype · Usability testing\nฟีดแบ็กจากการทดสอบก่อนเปิดใช้\n\nอ่านเรื่องนี้\n↗\n\n03 / Q-CHANG · Change Date\n\nSERVICE & OPERATIONS\n\n03 — SERVICE & OPERATIONS\n\nการเปลี่ยนวันนัดหนึ่งครั้ง\nกระทบใครบ้าง\n\nตามคำขอหนึ่งครั้งผ่านลูกค้า ช่าง และทีมประสาน เพื่อให้เห็นข้อจำกัดที่อยู่หลังวันที่เปลี่ยน ก่อนนำเสนอทางเลือกให้ทีม\n\nResearch analysis · Workflow mapping · เสนอแนวทาง\n\nอ่านเรื่องนี้\n↗"
@@ -353,7 +353,7 @@
       {
         "selector": ".editorial-backup",
         "x": 0,
-        "y": 3524.921875,
+        "y": 3450.046875,
         "width": 1440,
         "height": 705.40625,
         "text": "อีกมุมของงาน / INTERNAL SYSTEMS\n04 / WCF DIGITAL\n\nWCF Digital\nกระบวนการเงินทดแทน\n\nให้กฎ ข้อมูล\nและข้อยกเว้น ทำงานร่วมกัน\n\nออกแบบงานภายใน ตั้งแต่ใบแจ้งหนี้ถึงการตรวจเอกสารและหมวดค่ารักษา โดยเชื่อมความต้องการของเจ้าหน้าที่กับการทำงานของระบบ\n\nดูงานระบบภายใน\n↗"
@@ -361,7 +361,7 @@
       {
         "selector": ".smart-project",
         "x": 0,
-        "y": 4230.328125,
+        "y": 4155.453125,
         "width": 1440,
         "height": 662.8125,
         "text": "05 / PEC SMART ASSET\nASSET MANAGEMENT\n\nAsset\nManagement\n\nDifferent assets\nOne clear workflow.\n\nInitial specifications → UX/UI → engineering collaboration → feedback from use\n\nPEC Smart Asset · UX × SA Intern\n\nอ่านเรื่องนี้\n↗"
@@ -369,7 +369,7 @@
       {
         "selector": ".editorial-conversation",
         "x": 60.46875,
-        "y": 4893.140625,
+        "y": 4818.265625,
         "width": 1319.0625,
         "height": 611.59375,
         "text": "BEHIND THE WORK / วิธีคิดและทำงาน\n\nหน้าจอที่ดี\nเริ่มจากเข้าใจ\nสิ่งที่คนต้องทำ\n\nมองตั้งแต่ความตั้งใจของคน กฎที่อยู่หลังงาน ไปจนถึงสิ่งที่เกิดขึ้นเมื่อได้ลองใช้\n\nอ่านเกี่ยวกับฉัน\n↗\n01\nเริ่มจากความตั้งใจของผู้ใช้\n\nจัดหมวดบริการจากสิ่งที่ลูกค้าอยากทำ และให้ช่างสมัครตามความพร้อมของตัวเอง เพื่อให้ขั้นตอนสอดคล้องกับสถานการณ์ที่คนกำลังเจอ\n\n02\nมองสิ่งที่อยู่หลังหน้าจอ\n03\nกลับมาดูสิ่งที่เกิดขึ้นจริง"
@@ -377,7 +377,7 @@
       {
         "selector": "footer.portfolio-lower",
         "x": 0,
-        "y": 5504.734375,
+        "y": 5429.859375,
         "width": 1440,
         "height": 768.625,
         "text": "LET’S TALK ABOUT THE WORK\n\nA good conversation.\nA clearer next step.\n\nถ้ามีโจทย์ที่อยากทำความเข้าใจร่วมกัน\nเริ่มจากคุยเรื่องคน งาน และข้อจำกัดที่เจอได้เลย\n\nคุยเรื่องงาน\n↗\nDhittawat.\nLinkedIn\n↗\n© 2026 Dhittawat Thongkhum\nPRODUCT DESIGN · BANGKOK\nกลับด้านบน ↑"
