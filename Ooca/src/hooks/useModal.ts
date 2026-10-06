@@ -11,7 +11,10 @@ export function useModal(session: unknown) {
     return () => {
       if (dialog.open) dialog.close();
       document.body.style.overflow = overflow;
-      if (trigger?.isConnected) trigger.focus({ preventScroll: true });
+      // Native close restores focus. Do not steal a newer focus when its event arrives later.
+      if (trigger?.isConnected && (document.activeElement === document.body || dialog.contains(document.activeElement))) {
+        trigger.focus({ preventScroll: true });
+      }
     };
   }, [session]);
   return ref;
