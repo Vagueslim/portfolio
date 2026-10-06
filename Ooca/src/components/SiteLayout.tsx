@@ -43,7 +43,7 @@ function NavigationEffects() {
 export function SiteLayout({ children }: { children: ReactNode }) {
   const location = useLocation(), info = routeInfo(location.pathname);
   const metadata = info.home ? {
-    title: 'Dhittawat · Silver foil portfolio',
+    title: 'Dhittawat Thongkhum · Product Designer',
     description: 'Dhittawat’s selected product design work: Q-CHANG Web, Buddy 2.0, Change Date, WCF Digital, and PEC Smart Asset. Explore the people, decisions, and processes behind the interface.',
   } : info.known ? getPage<{ metadata: Metadata }>(info.id, info.locale).metadata : { title: '404 · Dhittawat', description: 'Page not found' };
   return <LanguageContext value={info.locale}>
