@@ -115,6 +115,37 @@ test('Project links, anchors, keyboard and accordion', async ({ page }) => {
   }
 });
 
+test('Delayed navigation restoration preserves a newer accordion focus and scroll position', async ({ page }) => {
+  await page.goto('/');
+  await page.locator('.ink-link').first().click();
+  await expect(page.locator('main')).toBeFocused();
+  // Hold the route's font-dependent restoration so the user can interact first.
+  await page.evaluate(() => {
+    const ready = new Promise<void>(resolve => {
+      (window as unknown as { releaseNavigationFonts: () => void }).releaseNavigationFonts = resolve;
+    });
+    Object.defineProperty(document.fonts, 'ready', { configurable: true, value: ready });
+  });
+  await page.locator('.brand').click();
+  const details = page.locator('.editorial-qa details').nth(1);
+  const summary = details.locator('summary');
+  await summary.evaluate(element => element.scrollIntoView({ behavior: 'instant', block: 'center' }));
+  await summary.focus();
+  await page.keyboard.press('Enter');
+  await expect(details).toHaveAttribute('open', '');
+  const scrollAfterInteraction = await page.evaluate(() => window.scrollY);
+  expect(scrollAfterInteraction).toBeGreaterThan(0);
+  await page.evaluate(async () => {
+    (window as unknown as { releaseNavigationFonts: () => void }).releaseNavigationFonts();
+    // Flush the queued restoration frame, including callbacks queued by font readiness.
+    await new Promise<void>(resolve => requestAnimationFrame(() => requestAnimationFrame(() => resolve())));
+  });
+  await expect(summary).toBeFocused();
+  expect(await page.evaluate(() => window.scrollY)).toBe(scrollAfterInteraction);
+  await page.keyboard.press('Enter');
+  await expect(details).not.toHaveAttribute('open', '');
+});
+
 test('Dither waves paint all five links, pause when inactive and retain reduced-motion/forced-colors text', async ({ page }) => {
   const errors: string[] = [];
   page.on('pageerror', error => errors.push(error.message));

@@ -17,9 +17,12 @@ function NavigationEffects() {
     document.documentElement.lang = info.locale;
     let alive = true, frame = 0;
     const last = previous.current;
+    const focusAtNavigation = document.activeElement;
     const apply = () => {
       if (!alive) return;
       frame = requestAnimationFrame(() => {
+        // Font loading may outlast the user's next interaction; keep their newer focus and scroll.
+        if (document.activeElement !== focusAtNavigation) return;
         const samePage = last?.id === info.id;
         if (action === 'POP' && positions.has(location.key)) window.scrollTo({ top: positions.get(location.key)!, behavior: 'instant' });
         else if (location.hash) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView({ behavior: 'instant' });
