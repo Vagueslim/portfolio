@@ -65,7 +65,7 @@ Home คงชื่อขนาดใหญ่และฟอยล์ ส่�
 
 `DitherWaveText` เก็บข้อความจริงไว้เพื่อรักษาระยะ การเลือกข้อความ และลิงก์เดิม เมื่อปิด JavaScript, ใช้ canvas ไม่ได้, ตั้งค่าลดการเคลื่อนไหว หรือเปิด High Contrast จะแสดงข้อความสีทึบแทน
 
-พื้นหลัง `FoilBackground` ใช้ภาพฟอยล์เดิมทำ texture displacement ตามพรีวิวที่เลือกไว้ในไฟล์ส่งต่อ `OOCA-foil-motion-handoff.md` (9 ต.ค. 2026) โดยคงการครอปของ CSS และไม่ขยับตำแหน่งข้อความ ค่าเริ่มต้นใน `src/effects/foilTexture.ts` คือ **0.36 shader-time/วินาที** (0.09 × 4 แล้ว ไม่ต้องคูณซ้ำ) และ strength 0.85; shader อยู่ใน `src/effects/foil-texture.frag`
+พื้นหลัง `FoilBackground` ใช้ภาพฟอยล์เดิมทำ texture displacement ตามพรีวิวที่เลือกไว้ในไฟล์ส่งต่อ `OOCA-foil-motion-handoff.md` (9 ต.ค. 2026) โดยคงการครอปของ CSS และไม่ขยับตำแหน่งข้อความ ปรับจังหวะบนเครื่องให้เร็วขึ้น 2 เท่าจากพรีวิวเดิม 4× เป็น **8×**: ค่าเริ่มต้นใน `src/effects/foilTexture.ts` คือ **0.72 shader-time/วินาที** (0.09 × 8 แล้ว ไม่ต้องคูณซ้ำ) และ strength 0.85; shader อยู่ใน `src/effects/foil-texture.frag`
 
 พื้นหลังมีวงรอบแยกจากเอฟเฟกต์ชื่อ จำกัด 30 FPS, DPR 1.5 และ 1.4 ล้านพิกเซล หยุดเมื่อพ้นจอ/ซ่อนแท็บ ใช้ภาพนิ่งเมื่อ reduced motion, High Contrast หรือ WebGL ใช้ไม่ได้ และสร้าง resources ใหม่เมื่อ WebGL context กลับมา โดยไม่เพิ่มปุ่มเครื่องมือจากพรีวิวลงหน้าเว็บ
 

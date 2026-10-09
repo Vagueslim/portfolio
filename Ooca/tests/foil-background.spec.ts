@@ -97,8 +97,8 @@ test('Foil uses the selected shader speed and strength, paints at capped FPS and
   expect(frames.length).toBeGreaterThan(5);
   const elapsed = (frames.at(-1)!.stamp - frames[0].stamp) / 1000;
   const speed = (frames.at(-1)!.time - frames[0].time) / elapsed;
-  expect(speed).toBeGreaterThan(0.33);
-  expect(speed).toBeLessThan(0.39);
+  expect(speed).toBeGreaterThan(0.66);
+  expect(speed).toBeLessThan(0.78);
   expect(frames.length - 1).toBeLessThanOrEqual(Math.ceil(elapsed * 30) + 1);
   expect(frames.every(frame => Math.abs(frame.strength - 0.85) < 0.00001)).toBe(true);
   expect(frames.at(-1)!.position).toEqual([0.5, 0.5]);

@@ -1,8 +1,8 @@
 import fragmentSource from './foil-texture.frag?raw';
 
 // Port of the approved silver-foil-motion-4x preview (9 Oct 2026).
-// 4x is already included here: 0.09 * 4, never multiplied again.
-export const FOIL_MOTION = { speed: .36, strength: .85, fps: 30, maxDpr: 1.5, maxPixels: 1_400_000 } as const;
+// Faster 8x preview: 0.09 * 8, twice the original 4x motion; never multiplied again.
+export const FOIL_MOTION = { speed: .72, strength: .85, fps: 30, maxDpr: 1.5, maxPixels: 1_400_000 } as const;
 
 export function createFoilTexture(canvas: HTMLCanvasElement, image: HTMLImageElement) {
   const gl = canvas.getContext('webgl', {
