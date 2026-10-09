@@ -1,10 +1,52 @@
-import { test, expect, type Locator } from '@playwright/test';
+import { test, expect, type Locator, type Page } from '@playwright/test';
 import { readFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { home, media, projects } from '../src/content';
 import { parseVisual, resolveHomeVisual, visualMediaIds } from '../src/content/visuals';
+import conversation from './fixtures/home-conversation.json' with { type: 'json' };
 
 const baseline = JSON.parse(readFileSync('qa/react-home/baseline.json', 'utf8')) as { width: number; sections: { selector: string; x: number; y: number; width: number; height: number; text: string }[] }[];
+
+async function expectOriginalConversation(page: Page, locale: 'en' | 'th') {
+  const original = conversation.locales[locale];
+  const section = page.locator('section#conversation');
+  await expect(section).toHaveAttribute('aria-labelledby', 'approach-heading');
+  await expect(section.locator('.editorial-kicker')).toHaveText(original.kicker);
+  await expect(section.locator('h2#approach-heading')).toHaveText(original.title);
+  await expect(section.getByText(original.description, { exact: true })).toHaveCount(1);
+  await expect(section.getByText(conversation.count, { exact: true })).toHaveCount(1);
+  await expect(section.locator('blockquote')).toHaveCount(0);
+  const details = section.locator('details');
+  await expect(details).toHaveCount(5);
+  expect(await details.evaluateAll(elements => elements.map(element => (element as HTMLDetailsElement).open))).toEqual([true, false, false, false, false]);
+  for (const [index, item] of original.items.entries()) {
+    await expect(details.nth(index).locator('summary').getByText(item.title, { exact: true })).toHaveCount(1);
+    // textContent checks every paragraph in the prerendered DOM, including closed answers.
+    await expect(details.nth(index).locator('.qa-answer > p')).toHaveText(item.paragraphs);
+  }
+}
+
+async function exerciseNativeConversation(page: Page) {
+  const details = page.locator('#conversation details');
+  await details.first().locator('summary').click();
+  await expect(details.first()).not.toHaveAttribute('open', '');
+  for (const detail of await details.all()) {
+    const summary = detail.locator('summary');
+    await summary.click();
+    await expect(detail).toHaveAttribute('open', '');
+    await summary.click();
+    await expect(detail).not.toHaveAttribute('open', '');
+    await summary.focus();
+    for (const key of ['Enter', 'Space']) {
+      await page.keyboard.press(key);
+      await expect(detail).toHaveAttribute('open', '');
+      await expect(detail.locator('.qa-answer')).toBeVisible();
+      await page.keyboard.press(key);
+      await expect(detail).not.toHaveAttribute('open', '');
+      await expect(summary).toBeFocused();
+    }
+  }
+}
 
 const canvasPixels = (canvas: Locator) => canvas.evaluate(element => (element as HTMLCanvasElement).toDataURL());
 const hasPaint = (canvas: Locator) => canvas.evaluate(element => {
@@ -43,6 +85,9 @@ for (const width of [320, 390, 552, 768, 1440]) {
     expect(titleFit.textWidth / titleFit.availableWidth).toBeGreaterThan(0.98);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     const before = baseline.find(item => item.width === width)!;
+    const originalConversation = before.sections.find(section => section.selector === '.editorial-conversation')!;
+    const restoredConversation = (await page.locator('#conversation').boundingBox())!;
+    const conversationHeightChange = restoredConversation.height - originalConversation.height;
     const comparisons = [];
     for (const section of before.sections) {
       const locator = page.locator(section.selector);
@@ -50,11 +95,20 @@ for (const width of [320, 390, 552, 768, 1440]) {
       comparisons.push({ selector: section.selector, before: section, after });
       if (section.selector === '.masthead') {
         await expect(locator.locator('.nav a')).toHaveText(['Home', 'About', 'Project', 'EN', 'TH']);
+      } else if (section.selector === '.editorial-conversation') {
+        await expectOriginalConversation(page, 'th');
+        expect(after.height).toBeGreaterThan(0);
       } else {
         expect((await locator.innerText()).replace(/\s+/g, ' ').trim()).toBe(section.text.replace(/\s+/g, ' ').trim());
       }
-      for (const dimension of ['x', 'y', 'width', 'height'] as const) expect(Math.abs(after[dimension] - section[dimension]), `${section.selector} ${dimension}`).toBeLessThanOrEqual(1);
+      for (const dimension of ['x', 'y', 'width', 'height'] as const) {
+        // Only the restored conversation's height and the following footer's position change.
+        if (section.selector === '.editorial-conversation' && dimension === 'height') continue;
+        const expected = section[dimension] + (section.selector === 'footer.portfolio-lower' && dimension === 'y' ? conversationHeightChange : 0);
+        expect(Math.abs(after[dimension] - expected), `${section.selector} ${dimension}`).toBeLessThanOrEqual(1);
+      }
     }
+    expect(await page.locator('#conversation').evaluate(element => element.scrollWidth <= element.clientWidth)).toBe(true);
     await page.screenshot({ path: `qa/react-home/after-${width}.png`, fullPage: true });
     await test.info().attach('layout-comparison', { body: JSON.stringify(comparisons, null, 2), contentType: 'application/json' });
     await expect(page.locator('.exploration, .copy-signoff, .foil-controls')).toHaveCount(0);
@@ -89,7 +143,7 @@ test('Project links, anchors, keyboard and accordion', async ({ page }) => {
   await page.locator('.brand').click();
   await expect(page.locator('.masthead-title')).toBeVisible();
   const details = page.locator('.editorial-qa details');
-  expect(await details.evaluateAll(elements => elements.map(el => (el as HTMLDetailsElement).open))).toEqual([true, false, false]);
+  expect(await details.evaluateAll(elements => elements.map(el => (el as HTMLDetailsElement).open))).toEqual([true, false, false, false, false]);
   await details.nth(1).locator('summary').focus();
   await page.keyboard.press('Enter');
   await expect(details.nth(1)).toHaveAttribute('open', '');
@@ -114,6 +168,27 @@ test('Project links, anchors, keyboard and accordion', async ({ page }) => {
     }
   }
 });
+
+for (const locale of ['en', 'th'] as const) {
+  const prefix = locale === 'th' ? '/th/' : '/';
+  test(`Home restores the original five conversation answers and native controls in ${locale}`, async ({ page }) => {
+    await page.emulateMedia({ reducedMotion: 'reduce' });
+    await page.goto(prefix);
+    await expectOriginalConversation(page, locale);
+    await exerciseNativeConversation(page);
+  });
+
+  test(`Home conversation remains complete and interactive without JavaScript in ${locale}`, async ({ browser, baseURL }) => {
+    const context = await browser.newContext({ javaScriptEnabled: false, baseURL });
+    const page = await context.newPage();
+    try {
+      const response = await page.goto(prefix);
+      expect(response?.status()).toBe(200);
+      await expectOriginalConversation(page, locale);
+      await exerciseNativeConversation(page);
+    } finally { await context.close(); }
+  });
+}
 
 test('Delayed navigation restoration preserves a newer accordion focus and scroll position', async ({ page }) => {
   await page.goto('/');

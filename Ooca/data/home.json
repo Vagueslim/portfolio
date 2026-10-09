@@ -361,59 +361,106 @@
   },
   "approach": {
     "kicker": {
-      "en": "BEHIND THE WORK / HOW I APPROACH DESIGN",
-      "th": "BEHIND THE WORK / วิธีคิดและทำงาน"
+      "en": "Before we wrap up / A conversation about work",
+      "th": "ก่อนจบ / คุยเรื่องการทำงาน"
     },
     "title": {
-      "en": "Good screens start\nwith understanding\nthe work",
-      "th": "หน้าจอที่ดี\nเริ่มจากเข้าใจ\nสิ่งที่คนต้องทำ"
+      "en": "If we work together",
+      "th": "ถ้าเราได้ทำงานด้วยกัน"
     },
     "description": {
-      "en": "Look at people’s intentions, the rules behind the task, and what happens when they try it.",
-      "th": "มองตั้งแต่ความตั้งใจของคน กฎที่อยู่หลังงาน ไปจนถึงสิ่งที่เกิดขึ้นเมื่อได้ลองใช้"
-    },
-    "link": {
-      "label": {
-        "en": "More about me",
-        "th": "อ่านเกี่ยวกับฉัน"
-      },
-      "href": "about.html"
+      "en": "Five questions about how I think, listen, and work with others.",
+      "th": "5 คำถาม ว่าฉันคิดอย่างไร รับฟังอย่างไร และทำงานร่วมกับคนอื่นอย่างไร"
     },
     "items": [
       {
-        "id": "principle-1",
+        "id": "shared-goal",
         "title": {
-          "en": "Start with what people want to do",
-          "th": "เริ่มจากความตั้งใจของผู้ใช้"
+          "en": "How do you help a team move forward when work gets stuck?",
+          "th": "เมื่องานติดข้อจำกัด คุณพาทีมไปต่ออย่างไร?"
         },
-        "answer": {
-          "en": "Organize services around what customers want to do, and let technicians apply at their own pace, so the steps fit the situation people are in.",
-          "th": "จัดหมวดบริการจากสิ่งที่ลูกค้าอยากทำ และให้ช่างสมัครตามความพร้อมของตัวเอง เพื่อให้ขั้นตอนสอดคล้องกับสถานการณ์ที่คนกำลังเจอ"
-        },
+        "answer": [
+          {
+            "en": "I return to our shared goal, then brainstorm the options that are still possible. The solution is rarely the same from one situation to another.",
+            "th": "ฉันจะกลับมาดูจุดหมายร่วมกัน แล้วระดมความคิดว่ามีทางไหนยังเป็นไปได้ วิธีแก้แต่ละครั้งมักไม่เหมือนกัน"
+          },
+          {
+            "en": "In Smart Asset, habits from the previous system led users to create a SKU for each physical asset, producing duplicate SKUs. When we could not change the SKUs directly, the solution was a tool to map and migrate the data from SKUs into assets.",
+            "th": "อย่าง Smart Asset ผู้ใช้คุ้นกับระบบเดิม จึงสร้าง SKU เสมือนเป็น Asset แต่ละชิ้น ทำให้เกิด SKU ซ้ำ เมื่อปรับ SKU โดยตรงไม่ได้ ทางออกคือทำเครื่องมือช่วยย้ายข้อมูลจาก SKU ไปเป็น Asset ด้วยการ mapping"
+          }
+        ],
         "open": true
       },
       {
-        "id": "principle-2",
+        "id": "advice",
         "title": {
-          "en": "Look behind the screen",
-          "th": "มองสิ่งที่อยู่หลังหน้าจอ"
+          "en": "What advice changed the way you think?",
+          "th": "คำแนะนำไหนเปลี่ยนวิธีคิดของคุณ?"
         },
-        "answer": {
-          "en": "",
-          "th": ""
-        },
+        "answer": [
+          {
+            "en": "“Do not become attached to a technique, or trust a conclusion more than reality.”",
+            "th": "“อย่ายึดติดกับเทคนิค หรือเชื่อผลสรุปมากกว่าความจริง”"
+          },
+          {
+            "en": "That advice stayed with me. It reminds me to return to what is actually happening, listen to feedback, and reconsider my assumptions.",
+            "th": "เป็นคำแนะนำที่ฉันจำได้ และใช้เตือนตัวเองให้กลับมาดูสิ่งที่เกิดขึ้นจริง พร้อมรับคำแนะนำและทบทวนสิ่งที่คิดไว้"
+          }
+        ],
         "open": false
       },
       {
-        "id": "principle-3",
+        "id": "mentoring",
         "title": {
-          "en": "Return to what happens in practice",
-          "th": "กลับมาดูสิ่งที่เกิดขึ้นจริง"
+          "en": "How do you help other designers grow?",
+          "th": "คุณช่วยให้ดีไซเนอร์คนอื่นเติบโตอย่างไร?"
         },
-        "answer": {
-          "en": "",
-          "th": ""
+        "answer": [
+          {
+            "en": "I usually mentor two designers at a time. I want them to grow in their own direction. My experience combines several disciplines, so I am careful not to expect everyone to follow my path.",
+            "th": "ส่วนใหญ่ฉันดูแลดีไซเนอร์ครั้งละสองคน ฉันอยากให้น้องเติบโตตามแนวทางของตัวเอง และระวังที่จะไม่ให้น้องโตมาเป็นฉัน เพราะประสบการณ์ของฉันผสมหลายด้าน"
+          },
+          {
+            "en": "One designer shifted their focus from becoming a Team Lead to Design Operations. I supported that direction and saw them do well in their own way. For someone less comfortable with business topics, I break the work into smaller parts and involve them in working through it together.",
+            "th": "มีน้องที่เปลี่ยนเส้นทางจากการอยากเป็น Team Lead มาทำงานด้าน Design Operations ฉันก็แนะนำตามทางนั้น และเห็นว่าเขาทำได้ดีในแบบของเขา ส่วนคนที่ยังไม่ถนัดด้านธุรกิจ ฉันจะย่อยโจทย์และแบ่งส่วนให้เข้ามาช่วยทำงานร่วมกัน"
+          }
+        ],
+        "open": false
+      },
+      {
+        "id": "constraints",
+        "title": {
+          "en": "How do you design with limited time and people?",
+          "th": "คุณออกแบบอย่างไร เมื่อเวลาและกำลังคนจำกัด?"
         },
+        "answer": [
+          {
+            "en": "On the G11 promotion project, time for gathering user requirements was limited, and the company could not add people for the extension.",
+            "th": "ในงาน G11 งานส่งเสริม เรามีเวลาจำกัดในการเก็บความต้องการผู้ใช้ และเป็นส่วนขยายที่บริษัทเพิ่มกำลังคนให้ไม่ได้"
+          },
+          {
+            "en": "I designed within those constraints, rechecked our understanding, and discussed limitations with the backend team so another team could continue development.",
+            "th": "ฉันจึงออกแบบภายใต้ข้อจำกัดที่มี ตรวจทานความเข้าใจ และคุยกับทีมหลังบ้านถึงข้อจำกัดต่าง ๆ เพื่อให้อีกทีมพัฒนาต่อได้"
+          }
+        ],
+        "open": false
+      },
+      {
+        "id": "priorities",
+        "title": {
+          "en": "How do you prioritize when several projects need attention?",
+          "th": "ถ้าหลายงานต้องเดินพร้อมกัน คุณเลือกอะไรทำก่อน?"
+        },
+        "answer": [
+          {
+            "en": "I consult the PO and leadership to understand which options are feasible with the resources available.",
+            "th": "ฉันจะปรึกษา PO และทีมบริหาร เพื่อดูว่าทางไหนพอเป็นไปได้ภายใต้ทรัพยากรที่มี"
+          },
+          {
+            "en": "I also ask which completed work can become a foundation for what comes next. That helps us decide the order together.",
+            "th": "อีกคำถามที่ใช้พิจารณาคือ งานไหนเมื่อทำเสร็จแล้วจะนำไปต่อยอดได้ เพื่อช่วยกันจัดลำดับงานที่ต้องทำ"
+          }
+        ],
         "open": false
       }
     ]
