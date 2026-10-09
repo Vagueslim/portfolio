@@ -73,10 +73,10 @@ test('Case-study evidence boundaries and translated dynamic controls are preserv
   await expect(page.locator('main')).toContainText('left the team before the app launched');
   await page.goto('/project.html');
   await page.locator('[data-filter="internal"]').click();
-  await expect(page.locator('.filter-count')).toHaveText('Showing 2 projects');
+  await expect(page.locator('.filter-count')).toHaveText('Showing 4 projects');
   await page.goto('/th/project.html');
   await page.locator('[data-filter="internal"]').click();
-  await expect(page.locator('.filter-count')).toHaveText('แสดง 2 ผลงาน');
+  await expect(page.locator('.filter-count')).toHaveText('แสดง 4 ผลงาน');
 });
 
 test('Favicons use the supplied t mark with black/light and white/dark variants', async ({ page }) => {

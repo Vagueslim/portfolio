@@ -264,8 +264,8 @@
           {
             "kind": "text",
             "value": {
-              "en": "Operational blindness in complex infrastructure",
-              "th": "เมื่อข้อมูลสำคัญมองไม่เห็นในโครงข่ายที่ซับซ้อน"
+              "en": "The problem",
+              "th": "ปัญหา"
             }
           }
         ]
@@ -280,8 +280,8 @@
           {
             "kind": "text",
             "value": {
-              "en": "Make the network visible",
-              "th": "ทำให้มองเห็นโครงข่ายและข้อมูลที่ต้องใช้"
+              "en": "Bring network data together",
+              "th": "รวมข้อมูลให้เห็นในที่เดียว"
             }
           }
         ]
@@ -296,8 +296,8 @@
           {
             "kind": "text",
             "value": {
-              "en": "Fixing performance through UX, not just code",
-              "th": "แก้ประสิทธิภาพผ่าน UX ไม่ใช่แค่โค้ด"
+              "en": "Select an area before loading",
+              "th": "เลือกพื้นที่ก่อนโหลด"
             }
           }
         ]
@@ -312,8 +312,8 @@
           {
             "kind": "text",
             "value": {
-              "en": "Thinking beyond screens",
-              "th": "คิดให้ไกลกว่าหน้าจอ"
+              "en": "Prepare the development handoff",
+              "th": "เตรียมงานให้ทีมพัฒนา"
             }
           }
         ]
@@ -328,8 +328,8 @@
           {
             "kind": "text",
             "value": {
-              "en": "Adoption and acceptance",
-              "th": "การนำไปใช้และการยอมรับ"
+              "en": "Adoption",
+              "th": "ผลจากการใช้งาน"
             }
           }
         ]
@@ -344,8 +344,8 @@
           {
             "kind": "text",
             "value": {
-              "en": "Pride, dreams, and lessons",
-              "th": "สิ่งที่ภูมิใจ ความมุ่งหวัง และบทเรียน"
+              "en": "What I learned",
+              "th": "บทเรียน"
             }
           }
         ]
@@ -363,8 +363,8 @@
             {
               "kind": "text",
               "value": {
-                "en": "Operational blindness in complex infrastructure",
-                "th": "เมื่อข้อมูลสำคัญมองไม่เห็นในโครงข่ายที่ซับซ้อน"
+                "en": "The problem",
+                "th": "ปัญหา"
               }
             }
           ]
@@ -376,34 +376,8 @@
             {
               "kind": "text",
               "value": {
-                "en": "Problem — Operational Blindness in Complex Infrastructure\nThe issue is not just “too much data” —\nbut critical data is not visible when it matters most.\nTelecom infrastructure is inherently complex, but the system forces users to remember instead of see\nTracing network issues takes time due to fragmented information across screens",
-                "th": "ปัญหาไม่ใช่แค่ข้อมูลมากเกินไป แต่คือข้อมูลสำคัญไม่ปรากฏในเวลาที่ต้องใช้\nโครงสร้างพื้นฐานโทรคมนาคมซับซ้อนอยู่แล้ว แต่ระบบกลับบังคับให้ผู้ใช้จำแทนที่จะมองเห็น\nการติดตามปัญหาโครงข่ายจึงใช้เวลา เพราะข้อมูลกระจัดกระจายอยู่หลายหน้าจอ"
-              }
-            }
-          ]
-        },
-        {
-          "kind": "element",
-          "tag": "p",
-          "children": [
-            {
-              "kind": "text",
-              "value": {
-                "en": "MaxiTask is a system used by telecom teams to manage network infrastructure — mainly by field engineers, operations, and planning teams who rely on it to search, trace, and make decisions quickly.",
-                "th": "MaxiTask เป็นระบบจัดการโครงสร้างพื้นฐานเครือข่ายสำหรับทีมโทรคมนาคม โดยมีวิศวกรภาคสนาม ทีมปฏิบัติการ และทีมวางแผนเป็นผู้ใช้หลัก ซึ่งต้องค้นหา ติดตาม และตัดสินใจได้รวดเร็ว"
-              }
-            }
-          ]
-        },
-        {
-          "kind": "element",
-          "tag": "p",
-          "children": [
-            {
-              "kind": "text",
-              "value": {
-                "en": "This project didn’t start with a goal to “make things look better.” It started with a very simple problem: the system was slow — and it was slowing people down.",
-                "th": "งานนี้ไม่ได้เริ่มจากเป้าหมายที่จะทำให้ดูดีขึ้น แต่เริ่มจากปัญหาง่าย ๆ ว่าระบบช้า และทำให้คนทำงานช้าลงไปด้วย"
+                "en": "MAXI TASK helps field engineers, operations, and planning teams manage telecom networks. Data was spread across screens, making network tracing slow and forcing users to remember connections.",
+                "th": "MAXI TASK เป็นระบบจัดการโครงข่ายโทรคมนาคมสำหรับวิศวกรภาคสนาม ทีมปฏิบัติการ และทีมวางแผน ข้อมูลเดิมกระจายหลายหน้าจอ ทำให้ติดตามปัญหาช้าและต้องจำการเชื่อมต่อเอง"
               }
             }
           ]
@@ -420,8 +394,8 @@
             {
               "kind": "text",
               "value": {
-                "en": "Make the network visible",
-                "th": "ทำให้มองเห็นโครงข่ายและข้อมูลที่ต้องใช้"
+                "en": "Bring network data together",
+                "th": "รวมข้อมูลให้เห็นในที่เดียว"
               }
             }
           ]
@@ -433,8 +407,8 @@
             {
               "kind": "text",
               "value": {
-                "en": "Re-structured data to surface what truly matters at the right moment\nReduced fragmented screens into context-rich single views\nDesigned UI for visual scanning, not heavy reading\nIntegrated Map + Asset + Core network into one coherent mental model\nTransformed network tracing into a seamless, continuous flow",
-                "th": "จัดโครงสร้างข้อมูลใหม่ให้สิ่งสำคัญปรากฏในเวลาที่เหมาะสม\nรวมข้อมูลจากหน้าจอที่กระจัดกระจายไว้ในมุมมองที่มีบริบทครบขึ้น\nออกแบบ UI ให้กวาดตามองหาได้ โดยไม่ต้องอ่านข้อมูลจำนวนมาก\nเชื่อมแผนที่ ทรัพย์สิน และ Core network ให้เข้าใจเป็นระบบเดียวกัน\nทำให้การติดตามโครงข่ายเป็นขั้นตอนที่ต่อเนื่อง"
+                "en": "I connected map, asset, and core-network data in one view, with clearer hierarchy and filters to support visual scanning and continuous tracing.",
+                "th": "ผมรวมแผนที่ ทรัพย์สิน และ Core network ในมุมมองเดียว จัดลำดับข้อมูลและตัวกรองให้ค้นหาและติดตามโครงข่ายต่อได้ง่ายขึ้น"
               }
             }
           ]
@@ -499,8 +473,8 @@
             {
               "kind": "text",
               "value": {
-                "en": "Fixing performance through UX, not just code",
-                "th": "แก้ประสิทธิภาพผ่าน UX ไม่ใช่แค่โค้ด"
+                "en": "Select an area before loading",
+                "th": "เลือกพื้นที่ก่อนโหลด"
               }
             }
           ]
@@ -512,8 +486,8 @@
             {
               "kind": "text",
               "value": {
-                "en": "Instead of loading everything at once, I introduced a simple rule:\nusers must select an area first.\nThis reduced system load dramatically and made the map responsive again — especially on low-spec machines.\n\nI began by talking to real users to understand how they actually use the system.\nWhat I found was consistent across teams:\n\nEveryone comes in to search first —\nwhether it’s to locate an issue, trace a fiber line, or check network connections.\n\nBut the system was forcing them to remember and navigate,\ninstead of helping them see and understand instantly.",
-                "th": "แทนที่จะโหลดทุกอย่างพร้อมกัน ผมเพิ่มกติกาง่าย ๆ ว่าผู้ใช้ต้องเลือกพื้นที่ก่อน วิธีนี้ช่วยลดภาระการโหลดของระบบและทำให้แผนที่ตอบสนองได้อีกครั้ง โดยเฉพาะเครื่องที่มีสเปกต่ำ\n\nผมเริ่มจากคุยกับผู้ใช้จริงเพื่อเข้าใจวิธีทำงาน สิ่งที่พบตรงกันในหลายทีมคือ ทุกคนเข้ามาค้นหาก่อน ไม่ว่าจะเป็นการหาจุดที่มีปัญหา ติดตามสายใยแก้ว หรือตรวจสอบการเชื่อมต่อโครงข่าย\n\nแต่ระบบกลับบังคับให้พวกเขาจดจำและไล่เปิดหน้าจอ แทนที่จะช่วยให้เห็นและเข้าใจได้ทันที"
+                "en": "User interviews showed that most tasks started with a search. I made area selection the first step, so the system no longer loaded the entire network at once. This reduced load and improved map responsiveness on low-spec machines.",
+                "th": "จากการคุยกับผู้ใช้ พบว่างานส่วนใหญ่เริ่มจากการค้นหา ผมจึงให้เลือกพื้นที่ก่อนโหลด แทนการดึงทั้งโครงข่ายพร้อมกัน ช่วยลดภาระระบบและให้แผนที่ตอบสนองดีขึ้นบนเครื่องสเปกต่ำ"
               }
             }
           ]
@@ -578,8 +552,8 @@
             {
               "kind": "text",
               "value": {
-                "en": "Thinking beyond screens",
-                "th": "คิดให้ไกลกว่าหน้าจอ"
+                "en": "Prepare the development handoff",
+                "th": "เตรียมงานให้ทีมพัฒนา"
               }
             }
           ]
@@ -591,21 +565,8 @@
             {
               "kind": "text",
               "value": {
-                "en": "Another important shift for me in this project\nwas learning how to think beyond screens.\n\nFor the first time, I had to break everything down into:\n\nmodules\n\npages\n\ncases and states\n\nactual tasks that could be handed to developers",
-                "th": "อีกจุดเปลี่ยนสำคัญของงานนี้คือการเรียนรู้ที่จะคิดให้ไกลกว่าหน้าจอ เป็นครั้งแรกที่ผมต้องแยกงานทั้งหมดออกเป็น:\n\nโมดูล\nหน้า\nกรณีการใช้งานและสถานะ\nงานที่ส่งต่อให้นักพัฒนาลงมือทำได้จริง"
-              }
-            }
-          ]
-        },
-        {
-          "kind": "element",
-          "tag": "p",
-          "children": [
-            {
-              "kind": "text",
-              "value": {
-                "en": "Design is not finished until you know how it will be built — and when it will be done.",
-                "th": "งานออกแบบยังไม่จบ จนกว่าจะรู้ว่าจะสร้างอย่างไร และจะเสร็จเมื่อไร"
+                "en": "I broke the design into modules, pages, cases, and states, then mapped them to development tasks and a delivery plan.",
+                "th": "ผมแยกงานเป็นโมดูล หน้า กรณีใช้งาน และสถานะ แล้วจัดเป็นงานสำหรับทีมพัฒนาพร้อมแผนส่งมอบ"
               }
             }
           ]
@@ -670,8 +631,8 @@
             {
               "kind": "text",
               "value": {
-                "en": "Adoption and acceptance",
-                "th": "การนำไปใช้และการยอมรับ"
+                "en": "Adoption",
+                "th": "ผลจากการใช้งาน"
               }
             }
           ]
@@ -683,8 +644,8 @@
             {
               "kind": "text",
               "value": {
-                "en": "In the end, the success of this project wasn’t just the new UI.\n\nIt was the fact that a system used for over 10 years\nwas replaced and accepted within 2 weeks.\n\nThe complaints faded in the first week.",
-                "th": "ท้ายที่สุด ความสำเร็จของงานนี้ไม่ได้มีแค่ UI ใหม่ แต่เป็นการเปลี่ยนระบบที่ใช้งานมากว่า 10 ปี และได้รับการยอมรับภายใน 2 สัปดาห์ โดยเสียงร้องเรียนลดลงในสัปดาห์แรก"
+                "en": "The new system replaced one used for over 10 years. Complaints eased in the first week, and users accepted the change within two weeks.",
+                "th": "ระบบใหม่แทนระบบเดิมที่ใช้มากว่า 10 ปี เสียงร้องเรียนลดลงในสัปดาห์แรก และผู้ใช้ยอมรับการเปลี่ยนแปลงภายใน 2 สัปดาห์"
               }
             }
           ]
@@ -696,8 +657,8 @@
             {
               "kind": "text",
               "value": {
-                "en": "This is the adoption experience described in the original case study; no measured performance benchmark is provided there.",
-                "th": "นี่คือประสบการณ์การนำระบบไปใช้ที่เล่าไว้ในเคสต้นฉบับ โดยต้นฉบับไม่ได้ระบุผลการวัดประสิทธิภาพเชิงตัวเลข"
+                "en": "Based on the adoption experience described in the original case, not a measured performance benchmark.",
+                "th": "เป็นข้อสังเกตจากการนำระบบไปใช้ตามเคสต้นฉบับ ไม่ใช่ผลทดสอบประสิทธิภาพ"
               }
             }
           ]
@@ -714,8 +675,8 @@
             {
               "kind": "text",
               "value": {
-                "en": "Pride, dreams, and lessons",
-                "th": "สิ่งที่ภูมิใจ ความมุ่งหวัง และบทเรียน"
+                "en": "What I learned",
+                "th": "บทเรียน"
               }
             }
           ]
@@ -727,8 +688,8 @@
             {
               "kind": "text",
               "value": {
-                "en": "PRIDE\nI redesigned telecom infrastructure data into a system people could scan, understand, and act on.\n\nMaxiTask made me proud because I was not only redesigning a map interface. I was helping users work with complex telecom infrastructure — sites, fiber routes, core networks, copper networks, FTTx, microwave, customer layers, and operational records.\n\nDREAMS\nDesigning UX for invisible infrastructure.\n\nMaxiTask showed me that UX can make hidden national networks easier to understand, trace, and maintain.\n\nLESSONS\nComplex data needs recognition, not decoration.\n\nI learned that users do not always need less data. They need better hierarchy, filtering, color memory, and context to find what matters quickly.",
-                "th": "สิ่งที่ภูมิใจ\nผมจัดข้อมูลโครงสร้างพื้นฐานโทรคมนาคมใหม่ ให้ผู้ใช้กวาดตาดู เข้าใจ และลงมือทำงานต่อได้\n\nMaxiTask ทำให้ผมภูมิใจเพราะไม่ได้เพียงออกแบบหน้าแผนที่ใหม่ แต่ช่วยให้คนทำงานกับข้อมูลที่ซับซ้อน ทั้งไซต์ เส้นทางใยแก้ว Core network โครงข่ายทองแดง FTTx ไมโครเวฟ ชั้นข้อมูลลูกค้า และบันทึกปฏิบัติการ\n\nความมุ่งหวัง\nออกแบบ UX ให้โครงสร้างพื้นฐานที่มองไม่เห็น\n\nMaxiTask ทำให้ผมเห็นว่า UX ช่วยให้โครงข่ายระดับประเทศที่ซ่อนอยู่เข้าใจง่ายขึ้น ติดตามได้ และดูแลรักษาได้ง่ายขึ้น\n\nบทเรียน\nข้อมูลซับซ้อนต้องช่วยให้จำแนกได้ ไม่ใช่แค่ตกแต่ง\n\nผมเรียนรู้ว่าผู้ใช้ไม่ได้ต้องการข้อมูลน้อยลงเสมอไป แต่ต้องการลำดับความสำคัญ ตัวกรอง สีที่ช่วยจดจำ และบริบทที่ดีขึ้น เพื่อค้นหาสิ่งสำคัญได้รวดเร็ว"
+                "en": "Complex systems need clear hierarchy, filters, and context. These help users recognize connections and find what matters without removing the detail they need.",
+                "th": "ระบบซับซ้อนต้องจัดลำดับข้อมูล ตัวกรอง และบริบทให้ชัด เพื่อให้ผู้ใช้เห็นความเชื่อมโยงและค้นหาสิ่งสำคัญได้ โดยยังมีรายละเอียดที่ต้องใช้"
               }
             }
           ]

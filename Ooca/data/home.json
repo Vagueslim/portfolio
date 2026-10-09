@@ -156,7 +156,7 @@
     },
     "link": {
       "label": {
-        "en": "View all projects",
+        "en": "View all",
         "th": "ดูผลงานทั้งหมด"
       },
       "href": "project.html"
@@ -228,11 +228,8 @@
           "th": "อ่านเรื่องนี้"
         },
         "visual": {
-          "kind": "pair",
-          "mediaIds": [
-            "buddy-onboarding",
-            "buddy-services"
-          ]
+          "kind": "single",
+          "mediaId": "buddy-job-selection-cover"
         }
       },
       {

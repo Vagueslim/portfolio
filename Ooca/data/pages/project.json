@@ -82,6 +82,18 @@
               "en": "Three perspectives on Q-CHANG, alongside internal systems for WCF and Smart Asset.",
               "th": "สามมุมของ Q-CHANG และงานระบบภายใน WCF กับ Smart Asset"
             }
+          },
+          {
+            "kind": "element",
+            "tag": "br",
+            "children": []
+          },
+          {
+            "kind": "text",
+            "value": {
+              "en": "Also includes telecom operations and diplomatic registration.",
+              "th": "รวมถึงโครงข่ายโทรคมนาคมและการลงทะเบียนผู้แทนระหว่างประเทศ"
+            }
           }
         ]
       }
@@ -125,8 +137,8 @@
     }
   ],
   "count": {
-    "en": "Showing 5 projects",
-    "th": "แสดง 5 ผลงาน"
+    "en": "Showing 7 projects",
+    "th": "แสดง 7 ผลงาน"
   },
   "items": [
     {
@@ -834,6 +846,170 @@
                     "value": {
                       "en": "Different assets. One clear workflow.",
                       "th": "Different assets. One clear workflow."
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "class": "card-arrow",
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "↗",
+                  "th": "↗"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "projectId": "maxi-task",
+      "category": "internal",
+      "visualClass": "work-visual",
+      "caption": {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "work-caption"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "eyebrow"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "06 / TELECOM OPERATIONS",
+                      "th": "06 / TELECOM OPERATIONS"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "h3",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "MAXI TASK",
+                      "th": "MAXI TASK"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "thai"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Find, trace, and understand telecom infrastructure.",
+                      "th": "ค้นหา ติดตาม และเข้าใจโครงข่ายโทรคมนาคม"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "class": "card-arrow",
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "↗",
+                  "th": "↗"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "projectId": "asean-summit-2019",
+      "category": "internal",
+      "visualClass": "work-visual",
+      "caption": {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "work-caption"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "eyebrow"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "07 / DIPLOMATIC REGISTRATION",
+                      "th": "07 / DIPLOMATIC REGISTRATION"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "h3",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "ASEAN Summit 2019",
+                      "th": "ASEAN Summit 2019"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "thai"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Clear review steps for delegate registration.",
+                      "th": "ลงทะเบียนผู้แทน พร้อมขั้นตอนตรวจสอบที่ชัดเจน"
                     }
                   }
                 ]

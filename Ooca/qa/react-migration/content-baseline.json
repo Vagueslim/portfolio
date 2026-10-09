@@ -328,12 +328,13 @@
       "the thinking.",
       "Design work and the thinking behind it",
       "Three perspectives on Q-CHANG, alongside internal systems for WCF and Smart Asset.",
+      "Also includes telecom operations and diplomatic registration.",
       "All projects",
       "Customer UX",
       "Mobile UX",
       "Service design",
       "Internal systems",
-      "Showing 5 projects",
+      "Showing 7 projects",
       "01 / CUSTOMER EXPERIENCE",
       "Q-CHANG Web",
       "From finding a service to booking and returning",
@@ -341,6 +342,10 @@
       "02 / TECHNICIAN EXPERIENCE",
       "Buddy App 2.0",
       "Apply at your own pace. Pause and come back.",
+      "↗",
+      "03 / SERVICE & OPERATIONS",
+      "Change Date",
+      "Who is affected when a booking date changes?",
       "↗",
       "ONE DATE · MANY PEOPLE",
       "↻",
@@ -358,10 +363,6 @@
       "✓",
       "Customer",
       "Confirms the new appointment",
-      "03 / SERVICE & OPERATIONS",
-      "Change Date",
-      "Who is affected when a booking date changes?",
-      "↗",
       "04 / INTERNAL SYSTEMS",
       "WCF Digital",
       "Connecting rules, information, and exceptions",
@@ -369,6 +370,14 @@
       "05 / ASSET MANAGEMENT",
       "PEC Smart Asset",
       "Different assets. One clear workflow.",
+      "↗",
+      "06 / TELECOM OPERATIONS",
+      "MAXI TASK",
+      "Find, trace, and understand telecom infrastructure.",
+      "↗",
+      "07 / DIPLOMATIC REGISTRATION",
+      "ASEAN Summit 2019",
+      "Clear review steps for delegate registration.",
       "↗"
     ],
     "images": [
@@ -391,6 +400,14 @@
       {
         "src": "assets/images/smart-asset-cover.png",
         "alt": "Smart Asset overview with asset-management workflows and business-unit permission settings"
+      },
+      {
+        "src": "assets/cases/maxi-task/1.png",
+        "alt": "MAXI TASK telecom infrastructure cover"
+      },
+      {
+        "src": "assets/cases/asean-summit-2019/1.png",
+        "alt": "ASEAN Summit 2019 cover"
       }
     ],
     "links": [
@@ -398,7 +415,9 @@
       "buddy-2-0.html",
       "change-date.html",
       "wcf-digital.html",
-      "smart-asset.html"
+      "smart-asset.html",
+      "maxi-task.html",
+      "asean-summit-2019.html"
     ],
     "ids": [
       "main"
@@ -411,12 +430,13 @@
       "the thinking.",
       "งานออกแบบและเหตุผลที่อยู่เบื้องหลัง",
       "สามมุมของ Q-CHANG และงานระบบภายใน WCF กับ Smart Asset",
+      "รวมถึงโครงข่ายโทรคมนาคมและการลงทะเบียนผู้แทนระหว่างประเทศ",
       "All projects",
       "Customer UX",
       "Mobile UX",
       "Service design",
       "Internal systems",
-      "แสดง 5 ผลงาน",
+      "แสดง 7 ผลงาน",
       "01 / CUSTOMER EXPERIENCE",
       "Q-CHANG Web",
       "จากค้นหาบริการ ถึงจองและกลับมาใช้ซ้ำ",
@@ -424,6 +444,10 @@
       "02 / TECHNICIAN EXPERIENCE",
       "Buddy App 2.0",
       "สมัครตามความพร้อม พักแล้วกลับมาทำต่อได้",
+      "↗",
+      "03 / SERVICE & OPERATIONS",
+      "Change Date",
+      "การเปลี่ยนวันนัดหนึ่งครั้ง กระทบใครบ้าง",
       "↗",
       "ONE DATE · MANY PEOPLE",
       "↻",
@@ -441,10 +465,6 @@
       "✓",
       "ลูกค้า",
       "ยืนยันนัดใหม่",
-      "03 / SERVICE & OPERATIONS",
-      "Change Date",
-      "การเปลี่ยนวันนัดหนึ่งครั้ง กระทบใครบ้าง",
-      "↗",
       "04 / INTERNAL SYSTEMS",
       "WCF Digital",
       "ให้กฎ ข้อมูล และข้อยกเว้นทำงานร่วมกัน",
@@ -452,6 +472,14 @@
       "05 / ASSET MANAGEMENT",
       "PEC Smart Asset",
       "Different assets. One clear workflow.",
+      "↗",
+      "06 / TELECOM OPERATIONS",
+      "MAXI TASK",
+      "ค้นหา ติดตาม และเข้าใจโครงข่ายโทรคมนาคม",
+      "↗",
+      "07 / DIPLOMATIC REGISTRATION",
+      "ASEAN Summit 2019",
+      "ลงทะเบียนผู้แทน พร้อมขั้นตอนตรวจสอบที่ชัดเจน",
       "↗"
     ],
     "images": [
@@ -474,6 +502,14 @@
       {
         "src": "assets/images/smart-asset-cover.png",
         "alt": "ภาพรวม Smart Asset พร้อม flow การจัดการทรัพย์สินและหน้าจอกำหนดสิทธิ์ระดับ BU"
+      },
+      {
+        "src": "assets/cases/maxi-task/1.png",
+        "alt": "ภาพปกโครงข่ายโทรคมนาคม MAXI TASK"
+      },
+      {
+        "src": "assets/cases/asean-summit-2019/1.png",
+        "alt": "ภาพปก ASEAN Summit 2019"
       }
     ],
     "links": [
@@ -481,7 +517,9 @@
       "buddy-2-0.html",
       "change-date.html",
       "wcf-digital.html",
-      "smart-asset.html"
+      "smart-asset.html",
+      "maxi-task.html",
+      "asean-summit-2019.html"
     ],
     "ids": [
       "main"

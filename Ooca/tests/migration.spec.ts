@@ -91,6 +91,10 @@ test('Navigating between Home and Smart Asset releases observers and animation w
   await page.emulateMedia({ reducedMotion: 'no-preference' });
   await page.goto('/');
   const counts = () => page.evaluate(() => (window as unknown as { observerCounts: {intersection: number; resize: number} }).observerCounts);
+  await expect(page.locator('.copy')).toHaveAttribute('data-motion', 'running');
+  await expect(page.locator('.dither-ink[data-ready="true"]')).toHaveCount(5);
+  await expect(page.locator('.foil-background')).toHaveAttribute('data-motion', 'running');
+  await expect.poll(counts).toEqual({ intersection: 2, resize: 2 });
   const initial = await counts();
   for (let cycle = 0; cycle < 3; cycle++) {
     await page.locator('.ink-link[href="smart-asset.html"]').click();
@@ -100,8 +104,10 @@ test('Navigating between Home and Smart Asset releases observers and animation w
     await expect.poll(counts).toEqual({ intersection: 0, resize: 0 });
     await page.locator('.brand').click();
     await expect(page.locator('.copy')).toHaveAttribute('data-motion', 'running');
+    await expect(page.locator('.foil-background')).toHaveAttribute('data-motion', 'running');
     await expect.poll(counts).toEqual(initial);
-    await expect(page.locator('#liquid-noise')).toHaveCount(1);
+    await expect(page.locator('.dither-wave')).toHaveCount(5);
+    await expect(page.locator('#liquid-noise')).toHaveCount(0);
   }
 });
 

@@ -21,10 +21,13 @@
 .ink-link{font-weight:800;letter-spacing:0;text-decoration:none;color:var(--link-ink);position:relative;padding-block:.1em;border-bottom:2px solid #b6bdc7;outline-offset:5px;transition:border-color .25s}
 .ink-link:hover,.ink-link:focus-visible{border-color:#556c8b}
 .ink-link:focus-visible{outline:2px solid var(--link-ink)}
-.liquid-ink{display:inline-block;white-space:nowrap;line-height:inherit;font-weight:inherit;color:var(--marble-ink);vertical-align:baseline;filter:url(#liquid-text)}
-.liquid-filters{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}
-/* All marble movement belongs to useLiquidText's single, visibility-aware loop. */
-@media(prefers-reduced-motion:reduce){.liquid-ink{filter:none;color:var(--marble-ink)}}
+.dither-ink{display:inline-block;position:relative;white-space:nowrap;line-height:inherit;font-weight:inherit;color:var(--dither-ink);vertical-align:baseline}
+.dither-wave{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:0}
+.dither-ink[data-ready="true"] .dither-ink-text{color:transparent}
+.dither-ink[data-ready="true"] .dither-wave{opacity:1}
+/* Solid DOM text remains readable without JS, canvas, motion or printed color. */
+@media(prefers-reduced-motion:reduce),(forced-colors:active){.dither-ink[data-ready] .dither-ink-text{color:var(--dither-ink)}.dither-wave{display:none}}
+@media print{.dither-ink[data-ready] .dither-ink-text{color:#000}.dither-wave{display:none}}
 
 .paper-foot{position:absolute;left:clamp(24px,4.5vw,72px);right:clamp(24px,4.5vw,72px);bottom:33px;display:flex;justify-content:space-between;align-items:center;gap:18px;font-size:13px;line-height:1.7;color:#393d44}
 .destination{font-weight:700;white-space:nowrap}
@@ -34,6 +37,10 @@
 @media(max-width:600px){.masthead{padding-top:2px;padding-bottom:14px}.topbar{min-height:58px;gap:12px}.brand{font-size:34px;width:38px;padding-left:5px}.brand::before{width:19px;height:19px}.brand::after{width:15px;height:15px;left:19px;top:27px}.nav{font-size:18px;gap:10px}.nav a{display:flex;align-items:center}.masthead-title{line-height:1.13}.role{border-width:2px;font-size:clamp(13px,3.8vw,22px);padding-block:4px;line-height:1.6}.paper{min-height:560px;padding:95px 24px 113px;background-position:48% center}.paper::before{height:9px}.copy{font-size:30px;line-height:1.6;letter-spacing:-.025em}.paper-foot{left:24px;right:24px;bottom:28px;display:block;font-size:12px;line-height:1.8}.destination{display:block;margin-top:11px}.picker{gap:7px}.pick{padding:8px 0;flex:1;justify-content:center;min-width:44px}.pick b{display:none}.pick span{font-size:14px}.exploration-top{margin-bottom:11px}.eyebrow{font-size:11px;letter-spacing:.04em}.back{font-size:11px}.direction h2{font-size:14px}.direction p{font-size:12px}}
 @media(max-width:360px){.nav{font-size:16px;gap:8px}.copy{font-size:26px}.paper{padding-inline:22px;min-height:550px}.paper-foot{left:22px;right:22px}.back{display:none}}
 .paper--projects{min-height:0;padding-block:var(--foil-padding-top) var(--foil-padding-bottom)}
+.foil-background{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;opacity:0}
+.foil-background[data-ready="true"]{opacity:1}
+@media(prefers-reduced-motion:reduce),(forced-colors:active){.foil-background{display:none}}
+@media print{.foil-background{display:none}}
 .paper--projects .paper-foot{justify-content:flex-end}
 .copy--projects{font-size:var(--foil-copy-size);line-height:1.65;letter-spacing:-.025em}
 .copy--projects p{text-wrap:pretty;padding-block:6px}
