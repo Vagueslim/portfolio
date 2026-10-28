@@ -85,28 +85,32 @@ for (const width of [320, 390, 552, 768, 1440]) {
     expect(titleFit.textWidth / titleFit.availableWidth).toBeGreaterThan(0.98);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     const before = baseline.find(item => item.width === width)!;
-    const originalConversation = before.sections.find(section => section.selector === '.editorial-conversation')!;
-    const restoredConversation = (await page.locator('#conversation').boundingBox())!;
-    const conversationHeightChange = restoredConversation.height - originalConversation.height;
+    const mastheadDelta = (await page.locator('.masthead').boundingBox())!.height - before.sections.find(s => s.selector === '.masthead')!.height;
     const comparisons = [];
-    for (const section of before.sections) {
+    // Keep the original masthead and foil geometry checks; editorial content is intentionally reordered.
+    for (const section of before.sections.filter(s => ['.masthead', '.masthead-title', '.paper'].includes(s.selector))) {
       const locator = page.locator(section.selector);
       const after = (await locator.boundingBox())!;
       comparisons.push({ selector: section.selector, before: section, after });
-      if (section.selector === '.masthead') {
-        await expect(locator.locator('.nav a')).toHaveText(['Home', 'About', 'Project', 'EN', 'TH']);
-      } else if (section.selector === '.editorial-conversation') {
-        await expectOriginalConversation(page, 'th');
-        expect(after.height).toBeGreaterThan(0);
-      } else {
-        expect((await locator.innerText()).replace(/\s+/g, ' ').trim()).toBe(section.text.replace(/\s+/g, ' ').trim());
-      }
+      if (section.selector === '.masthead') await expect(locator.locator('.nav a')).toHaveText(['Home', 'About', 'Project', 'EN', 'TH']);
+      if (section.selector === '.masthead-title') await expect(locator).toHaveText('I’M THREE DHITTAWAT.');
       for (const dimension of ['x', 'y', 'width', 'height'] as const) {
-        // Only the restored conversation's height and the following footer's position change.
-        if (section.selector === '.editorial-conversation' && dimension === 'height') continue;
-        const expected = section[dimension] + (section.selector === 'footer.portfolio-lower' && dimension === 'y' ? conversationHeightChange : 0);
+        if (['.masthead', '.paper'].includes(section.selector) && dimension === 'height') continue;
+        const shift = section.selector === '.paper' ? mastheadDelta : 0;
+        const expected = section[dimension] + (dimension === 'y' ? shift : 0);
         expect(Math.abs(after[dimension] - expected), `${section.selector} ${dimension}`).toBeLessThanOrEqual(1);
       }
+    }
+    await expectOriginalConversation(page, 'th');
+    expect(await page.locator('#selected-work article').evaluateAll(nodes => nodes.map(n => n.getAttribute('data-project')))).toEqual(['wcf-digital', 'smart-asset', 'maxi-task']);
+    await expect(page.locator('[data-project="smart-asset"] .project-role')).toContainText('UX × SA Intern');
+    await expect(page.locator('[data-project="wcf-digital"] .project-role')).toContainText('SIT · UAT');
+    await expect(page.locator('.editorial-backup, .smart-project')).toHaveCount(0);
+    const cards = await page.locator('#selected-work article').all();
+    for (const card of cards) {
+      expect(await card.evaluate(el => el.scrollWidth <= el.clientWidth)).toBe(true);
+      await expect(card.locator('.editorial-visual')).toBeVisible();
+      await expect(card.locator('h3')).toBeVisible();
     }
     expect(await page.locator('#conversation').evaluate(element => element.scrollWidth <= element.clientWidth)).toBe(true);
     await page.screenshot({ path: `qa/react-home/after-${width}.png`, fullPage: true });
@@ -122,7 +126,7 @@ test('Home image override, cover fallback and shared media IDs', async () => {
   expect(resolveHomeVisual(wcf)).toEqual({ kind: 'single', mediaId: 'wcf-cover' });
   expect(resolveHomeVisual({ ...wcf, coverMediaId: 'replacement' })).toEqual({ kind: 'single', mediaId: 'replacement' });
   expect(resolveHomeVisual({ ...wcf, coverMediaId: 'replacement' }, home.wcf.visual)).toEqual(home.wcf.visual);
-  expect(visualMediaIds(home.selected.items[1].visual!)).toEqual(['buddy-job-selection-cover']);
+  expect(visualMediaIds(home.selected.items[1].visual!)).toEqual(['smart-asset-master-flow', 'smart-asset-bu-permissions']);
   expect(visualMediaIds(home.smart.visual!)).toEqual(['smart-asset-master-flow', 'smart-asset-bu-permissions']);
   expect(parseVisual(undefined)).toBeUndefined();
   expect(() => parseVisual({ kind: 'pair', mediaIds: ['only-one'] })).toThrow();
@@ -134,7 +138,7 @@ test('Project links, anchors, keyboard and accordion', async ({ page }) => {
   await page.goto('/index.html');
   await expect(page.locator('.ink-link')).toHaveCount(5);
   const links = await page.locator('.ink-link').evaluateAll(elements => elements.map(el => el.getAttribute('href')));
-  expect(links).toEqual(['wcf-digital.html', 'change-date.html', 'smart-asset.html', 'q-chang-web.html', 'buddy-2-0.html']);
+  expect(links).toEqual(['wcf-digital.html', 'smart-asset.html', 'maxi-task.html', 'q-chang-web.html', 'change-date.html']);
   expect(await page.locator('a[href^="#"]').evaluateAll(elements => elements.every(el => document.getElementById(el.getAttribute('href')!.slice(1))))).toBe(true);
   await page.locator('.ink-link').first().focus();
   await expect(page.locator('.destination')).toHaveText('WCF ↗');
@@ -159,6 +163,9 @@ test('Project links, anchors, keyboard and accordion', async ({ page }) => {
     await page.keyboard.press('Enter');
     await expect(page).toHaveURL(new RegExp(prefix + 'project\\.html$'));
     await expect(page.locator('.filter-count')).toHaveText(locale === 'en' ? 'Showing 7 projects' : 'แสดง 7 ผลงาน');
+    expect(await page.locator('.work-card > a').evaluateAll(nodes => nodes.map(n => n.getAttribute('href')))).toEqual(['wcf-digital.html', 'smart-asset.html', 'maxi-task.html', 'q-chang-web.html', 'change-date.html', 'asean-summit-2019.html', 'buddy-2-0.html']);
+    await expect(page.locator('#personal-project')).toContainText('08 / PERSONAL PROJECT');
+    await expect(page.locator('#personal-project .personal-project-cta')).toHaveAttribute('href', 'https://vagueslim.github.io/LLCS/');
     for (const [id, title] of [['maxi-task', 'MAXI TASK'], ['asean-summit-2019', 'ASEAN Summit 2019']]) {
       await page.locator(`.work-card a[href="${id}.html"]`).click();
       await expect(page.locator('h1')).toHaveText(title);

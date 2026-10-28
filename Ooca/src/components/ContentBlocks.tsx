@@ -25,8 +25,9 @@ function ContentImage({ node }: { node: Extract<ContentNode, { kind: 'image' }> 
 }
 export function ContentBlock({ node }: { node: ContentNode }) {
   const openImage = useContext(ImageContext);
-  const { getMedia } = useContent();
+  const { getMedia, profile } = useContent();
   if (node.kind === 'text') return node.value;
+  if (node.kind === 'profile') return <span lang="en">{profile[node.field]}</span>;
   if (node.kind === 'image') return <ContentImage node={node} />;
   const props: Record<string, unknown> = { ...node.attributes };
   if (props.class) { props.className = props.class; delete props.class; }

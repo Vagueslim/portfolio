@@ -4,7 +4,7 @@ import { assetPath } from '../content/localization';
 import { LanguageSwitch } from './LanguageSwitch';
 import { SiteLink } from './SiteLink';
 export function Masthead({ homePage = true, activePage = 'index.html' }: { homePage?: boolean; activePage?: string }) {
-  const { home: { masthead }, ui } = useContent();
+  const { home: { masthead }, profile, ui } = useContent();
   const [open, setOpen] = useState(false);
   const header = useRef<HTMLElement>(null);
   const toggle = useRef<HTMLButtonElement>(null);
@@ -21,7 +21,7 @@ export function Masthead({ homePage = true, activePage = 'index.html' }: { homeP
     <header ref={header} className={homePage ? 'masthead' : 'masthead inner-masthead site-header'}>
       <div className="topbar">
         <SiteLink className="brand" href="index.html" aria-label="Dhittawat — Home"><img className="brand-logo" src={assetPath('assets/brand/logo.svg')} alt="Dhittawat" width="52" height="62" />
-          {!homePage && <span className="brand-copy"><strong>DHITTAWAT</strong><span>PRODUCT / UX/UI DESIGNER</span></span>}
+          {!homePage && <span className="brand-copy"><strong>DHITTAWAT</strong><span lang="en">{profile.role}</span></span>}
         </SiteLink>
         {!homePage && <button ref={toggle} className="menu-toggle" aria-expanded={open} aria-controls="main-nav" onClick={() => setOpen(!open)}>Menu +</button>}
         <nav id="main-nav" className={'nav' + (open ? ' is-open' : '')} aria-label={ui.mainMenu} onClick={() => setOpen(false)}>
@@ -31,7 +31,7 @@ export function Masthead({ homePage = true, activePage = 'index.html' }: { homeP
           </Fragment>)}<LanguageSwitch />
         </nav>
       </div>
-      {homePage && <><h1 className="masthead-title" lang="en">{masthead.title}</h1><p className="role" lang="en">{masthead.role}</p></>}
+      {homePage && <><h1 className="masthead-title" lang="en">{masthead.title}</h1><p className="role" lang="en"><span>{profile.role}</span><span className="experience">{profile.experience}</span></p></>}
     </header>
   </>;
 }

@@ -1,6 +1,7 @@
 export interface MediaItem { src: string; alt: string; width?: number; height?: number }
 export interface Project { title: string; href: string; coverMediaId: string }
 export interface TextLink { label: string; href: string }
+export interface Profile { name: string; role: string; experience: string; positioning: string; cv: { src: string; label: string; format: string } }
 export type HomeVisual =
   | { kind: 'single'; mediaId: string }
   | { kind: 'pair' | 'collage'; mediaIds: [string, string] }
@@ -18,7 +19,7 @@ export interface HomeProject {
   visual?: HomeVisual;
 }
 export interface HomeContent {
-  masthead: { title: string; role: string; brand: string; skipLabel: string; navigation: TextLink[] };
+  masthead: { title: string; brand: string; skipLabel: string; navigation: TextLink[] };
   foil: { label: string; backgroundMediaId: string; destination: string; lines: { thought: string; label: string; projectId: string; destination: string }[] };
   intro: { kicker: string; title: string; description: string; link: TextLink };
   selected: { title: string; link: TextLink; items: HomeProject[] };

@@ -1,16 +1,17 @@
 import { SiteLink } from './SiteLink';
 import { useContent } from '../content';
 import { EditorialLink, Lines } from './Shared';
+import { CvLink } from './CvLink';
 
-export function ContactFooter({ homePage = true }: { homePage?: boolean }) {
-  const { home, ui } = useContent();
+export function ContactFooter() {
+  const { home, profile } = useContent();
   const { contact, footer } = home;
   return <footer className="portfolio-lower"><div className="editorial-wrap">
     <section className="editorial-contact" aria-labelledby="contact-heading">
-      <p className="editorial-kicker">{homePage ? contact.kicker : ui.innerFooterKicker}</p><h2 id="contact-heading" lang="en"><Lines text={contact.title} /></h2>
-      <div className="editorial-contact-row"><p><Lines text={contact.description} /></p><EditorialLink {...contact.link} /></div>
+      <p className="editorial-kicker">{contact.kicker}</p><h2 id="contact-heading"><Lines text={contact.title} /></h2>
+      <div className="editorial-contact-row"><p><Lines text={contact.description.replace('{role}', profile.role)} /></p><div className="contact-actions"><EditorialLink {...contact.link} /><CvLink /></div></div>
     </section>
     <div className="editorial-footer-top"><span className="editorial-footer-name">{footer.name}</span><EditorialLink {...footer.link} external /></div>
-    <div className="editorial-footer-bottom"><span>{footer.copyright}</span><span>{footer.location}</span><SiteLink href="#top">{footer.backLabel}</SiteLink></div>
+    <div className="editorial-footer-bottom"><span>{footer.copyright}</span><span><span lang="en">{profile.role}</span> · {footer.location}</span><SiteLink href="#top">{footer.backLabel}</SiteLink></div>
   </div></footer>;
 }

@@ -370,5 +370,14 @@
     },
     "width": 1003,
     "height": 552
+  },
+  "lccs-personal-project": {
+    "src": "assets/images/lccs-personal-project.png",
+    "alt": {
+      "en": "LCCS personal project concept: a network map of Thailand with the idea Ready to help is not the same as ready to respond. The artwork contains Thai text.",
+      "th": "ภาพแนวคิดโปรเจกต์ส่วนตัว LCCS แผนที่เครือข่ายประเทศไทย พร้อมข้อความ พร้อมช่วย ไม่เท่ากับ พร้อมปฏิบัติงาน"
+    },
+    "width": 1586,
+    "height": 992
   }
 }

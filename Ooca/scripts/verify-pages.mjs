@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import { chromium } from '@playwright/test';
 import { pageFiles } from '../src/routes.ts';
 const base = '/portfolio/', root = resolve('dist'), errors = [];
-const mime = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.woff2': 'font/woff2', '.ttf': 'font/ttf' };
+const mime = { '.pdf': 'application/pdf', '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.woff2': 'font/woff2', '.ttf': 'font/ttf' };
 const server = createServer(async (request, response) => {
   const pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
   if (!pathname.startsWith(base)) { response.writeHead(404); response.end('Outside deployment base'); return; }
@@ -24,6 +24,7 @@ await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const origin = 'http://127.0.0.1:' + server.address().port;
 const browser = await chromium.launch({ channel: process.platform === 'win32' ? 'msedge' : undefined });
 const checks = [];
+const profile = JSON.parse(await readFile('data/profile.json', 'utf8'));
 try {
   const page = await browser.newPage();
   page.on('pageerror', e => errors.push(e.message));
@@ -37,8 +38,13 @@ try {
     await page.evaluate(async () => { await document.fonts.ready; await Promise.all([...document.images].filter(i => i.src).map(async i => { i.loading='eager'; await i.decode(); })); });
     assert.equal(await page.locator('html').getAttribute('lang'), language);
     await page.reload(); await page.locator('h1').waitFor();
+    const cv = page.locator('footer .cv-link');
+    assert.equal(await cv.getAttribute('href'), base + profile.cv.src);
     checks.push({ url: new URL(url).pathname, direct: true, refresh: true, language });
   }
+  const cvResponse = await page.request.get(origin + base + profile.cv.src);
+  assert.equal(cvResponse.status(), 200);
+  assert.deepEqual(await cvResponse.body(), await readFile(profile.cv.src));
   await page.goto(origin + base);
   await page.evaluate(() => window.deploymentToken = 'same-document');
   await page.locator('.nav a[href="about.html"]').click();
@@ -60,7 +66,7 @@ try {
   assert.deepEqual(errors, []);
   await mkdir('qa/react-migration', { recursive: true });
   await writeFile('qa/react-migration/deployment-checks.json', JSON.stringify({ base, checks, spa: true, noJavaScript: true, notFound: true, errors }, null, 2));
-  console.log('PASS: 16 direct links + refresh, bilingual SPA navigation, static reading and 404 under /portfolio/.');
+  console.log('PASS: 20 direct links + refresh, bilingual SPA navigation, static reading and 404 under /portfolio/.');
 } finally {
   await browser.close();
   await new Promise(resolve => server.close(resolve));

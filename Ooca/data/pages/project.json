@@ -79,8 +79,8 @@
           {
             "kind": "text",
             "value": {
-              "en": "Three perspectives on Q-CHANG, alongside internal systems for WCF and Smart Asset.",
-              "th": "สามมุมของ Q-CHANG และงานระบบภายใน WCF กับ Smart Asset"
+              "en": "Enterprise systems for WCF, Smart Asset, and MAXI TASK, followed by customer and service experiences.",
+              "th": "งานระบบ WCF, Smart Asset และ MAXI TASK ตามด้วยงานประสบการณ์ลูกค้าและบริการ"
             }
           },
           {
@@ -91,8 +91,8 @@
           {
             "kind": "text",
             "value": {
-              "en": "Also includes telecom operations and diplomatic registration.",
-              "th": "รวมถึงโครงข่ายโทรคมนาคมและการลงทะเบียนผู้แทนระหว่างประเทศ"
+              "en": "Seven case studies, plus LCCS as a personal research project.",
+              "th": "7 เคส พร้อม LCCS ในส่วนงานศึกษาส่วนตัว"
             }
           }
         ]
@@ -142,6 +142,252 @@
   },
   "items": [
     {
+      "projectId": "wcf-digital",
+      "category": "internal",
+      "visualClass": "work-visual visual-wcf",
+      "caption": {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "work-caption"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "eyebrow"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "01 / INTERNAL SYSTEMS",
+                      "th": "01 / INTERNAL SYSTEMS"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "h3",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "WCF Digital",
+                      "th": "WCF Digital"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "thai"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Connecting rules, information, and exceptions",
+                      "th": "ให้กฎ ข้อมูล และข้อยกเว้นทำงานร่วมกัน"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "class": "card-arrow",
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "↗",
+                  "th": "↗"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "projectId": "smart-asset",
+      "category": "internal",
+      "visualClass": "work-visual visual-asset",
+      "caption": {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "work-caption"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "eyebrow"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "02 / ASSET MANAGEMENT",
+                      "th": "02 / ASSET MANAGEMENT"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "h3",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "PEC Smart Asset",
+                      "th": "PEC Smart Asset"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "thai"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Different assets. One clear workflow.",
+                      "th": "Different assets. One clear workflow."
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "class": "card-arrow",
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "↗",
+                  "th": "↗"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "projectId": "maxi-task",
+      "category": "internal",
+      "visualClass": "work-visual",
+      "caption": {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "work-caption"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "eyebrow"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "03 / TELECOM OPERATIONS",
+                      "th": "03 / TELECOM OPERATIONS"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "h3",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "MAXI TASK",
+                      "th": "MAXI TASK"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "thai"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Find, trace, and understand telecom infrastructure.",
+                      "th": "ค้นหา ติดตาม และเข้าใจโครงข่ายโทรคมนาคม"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "class": "card-arrow",
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "↗",
+                  "th": "↗"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "projectId": "q-chang-web",
       "category": "customer",
       "visualClass": "work-visual visual-web",
@@ -166,8 +412,8 @@
                   {
                     "kind": "text",
                     "value": {
-                      "en": "01 / CUSTOMER EXPERIENCE",
-                      "th": "01 / CUSTOMER EXPERIENCE"
+                      "en": "04 / CUSTOMER EXPERIENCE",
+                      "th": "04 / CUSTOMER EXPERIENCE"
                     }
                   }
                 ]
@@ -228,88 +474,6 @@
       }
     },
     {
-      "projectId": "buddy-2-0",
-      "category": "mobile",
-      "visualClass": "work-visual visual-buddy",
-      "caption": {
-        "kind": "element",
-        "tag": "div",
-        "attributes": {
-          "class": "work-caption"
-        },
-        "children": [
-          {
-            "kind": "element",
-            "tag": "div",
-            "children": [
-              {
-                "kind": "element",
-                "tag": "p",
-                "attributes": {
-                  "class": "eyebrow"
-                },
-                "children": [
-                  {
-                    "kind": "text",
-                    "value": {
-                      "en": "02 / TECHNICIAN EXPERIENCE",
-                      "th": "02 / TECHNICIAN EXPERIENCE"
-                    }
-                  }
-                ]
-              },
-              {
-                "kind": "element",
-                "tag": "h3",
-                "children": [
-                  {
-                    "kind": "text",
-                    "value": {
-                      "en": "Buddy App 2.0",
-                      "th": "Buddy App 2.0"
-                    }
-                  }
-                ]
-              },
-              {
-                "kind": "element",
-                "tag": "p",
-                "attributes": {
-                  "class": "thai"
-                },
-                "children": [
-                  {
-                    "kind": "text",
-                    "value": {
-                      "en": "Apply at your own pace.\nPause and come back.",
-                      "th": "สมัครตามความพร้อม พักแล้วกลับมาทำต่อได้"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "kind": "element",
-            "tag": "span",
-            "attributes": {
-              "class": "card-arrow",
-              "aria-hidden": "true"
-            },
-            "children": [
-              {
-                "kind": "text",
-                "value": {
-                  "en": "↗",
-                  "th": "↗"
-                }
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
       "projectId": "change-date",
       "category": "service",
       "visualClass": "work-visual visual-date",
@@ -334,8 +498,8 @@
                   {
                     "kind": "text",
                     "value": {
-                      "en": "03 / SERVICE & OPERATIONS",
-                      "th": "03 / SERVICE & OPERATIONS"
+                      "en": "05 / SERVICE & OPERATIONS",
+                      "th": "05 / SERVICE & OPERATIONS"
                     }
                   }
                 ]
@@ -709,252 +873,6 @@
       ]
     },
     {
-      "projectId": "wcf-digital",
-      "category": "internal",
-      "visualClass": "work-visual visual-wcf",
-      "caption": {
-        "kind": "element",
-        "tag": "div",
-        "attributes": {
-          "class": "work-caption"
-        },
-        "children": [
-          {
-            "kind": "element",
-            "tag": "div",
-            "children": [
-              {
-                "kind": "element",
-                "tag": "p",
-                "attributes": {
-                  "class": "eyebrow"
-                },
-                "children": [
-                  {
-                    "kind": "text",
-                    "value": {
-                      "en": "04 / INTERNAL SYSTEMS",
-                      "th": "04 / INTERNAL SYSTEMS"
-                    }
-                  }
-                ]
-              },
-              {
-                "kind": "element",
-                "tag": "h3",
-                "children": [
-                  {
-                    "kind": "text",
-                    "value": {
-                      "en": "WCF Digital",
-                      "th": "WCF Digital"
-                    }
-                  }
-                ]
-              },
-              {
-                "kind": "element",
-                "tag": "p",
-                "attributes": {
-                  "class": "thai"
-                },
-                "children": [
-                  {
-                    "kind": "text",
-                    "value": {
-                      "en": "Connecting rules, information, and exceptions",
-                      "th": "ให้กฎ ข้อมูล และข้อยกเว้นทำงานร่วมกัน"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "kind": "element",
-            "tag": "span",
-            "attributes": {
-              "class": "card-arrow",
-              "aria-hidden": "true"
-            },
-            "children": [
-              {
-                "kind": "text",
-                "value": {
-                  "en": "↗",
-                  "th": "↗"
-                }
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "projectId": "smart-asset",
-      "category": "internal",
-      "visualClass": "work-visual visual-asset",
-      "caption": {
-        "kind": "element",
-        "tag": "div",
-        "attributes": {
-          "class": "work-caption"
-        },
-        "children": [
-          {
-            "kind": "element",
-            "tag": "div",
-            "children": [
-              {
-                "kind": "element",
-                "tag": "p",
-                "attributes": {
-                  "class": "eyebrow"
-                },
-                "children": [
-                  {
-                    "kind": "text",
-                    "value": {
-                      "en": "05 / ASSET MANAGEMENT",
-                      "th": "05 / ASSET MANAGEMENT"
-                    }
-                  }
-                ]
-              },
-              {
-                "kind": "element",
-                "tag": "h3",
-                "children": [
-                  {
-                    "kind": "text",
-                    "value": {
-                      "en": "PEC Smart Asset",
-                      "th": "PEC Smart Asset"
-                    }
-                  }
-                ]
-              },
-              {
-                "kind": "element",
-                "tag": "p",
-                "attributes": {
-                  "class": "thai"
-                },
-                "children": [
-                  {
-                    "kind": "text",
-                    "value": {
-                      "en": "Different assets. One clear workflow.",
-                      "th": "Different assets. One clear workflow."
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "kind": "element",
-            "tag": "span",
-            "attributes": {
-              "class": "card-arrow",
-              "aria-hidden": "true"
-            },
-            "children": [
-              {
-                "kind": "text",
-                "value": {
-                  "en": "↗",
-                  "th": "↗"
-                }
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "projectId": "maxi-task",
-      "category": "internal",
-      "visualClass": "work-visual",
-      "caption": {
-        "kind": "element",
-        "tag": "div",
-        "attributes": {
-          "class": "work-caption"
-        },
-        "children": [
-          {
-            "kind": "element",
-            "tag": "div",
-            "children": [
-              {
-                "kind": "element",
-                "tag": "p",
-                "attributes": {
-                  "class": "eyebrow"
-                },
-                "children": [
-                  {
-                    "kind": "text",
-                    "value": {
-                      "en": "06 / TELECOM OPERATIONS",
-                      "th": "06 / TELECOM OPERATIONS"
-                    }
-                  }
-                ]
-              },
-              {
-                "kind": "element",
-                "tag": "h3",
-                "children": [
-                  {
-                    "kind": "text",
-                    "value": {
-                      "en": "MAXI TASK",
-                      "th": "MAXI TASK"
-                    }
-                  }
-                ]
-              },
-              {
-                "kind": "element",
-                "tag": "p",
-                "attributes": {
-                  "class": "thai"
-                },
-                "children": [
-                  {
-                    "kind": "text",
-                    "value": {
-                      "en": "Find, trace, and understand telecom infrastructure.",
-                      "th": "ค้นหา ติดตาม และเข้าใจโครงข่ายโทรคมนาคม"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "kind": "element",
-            "tag": "span",
-            "attributes": {
-              "class": "card-arrow",
-              "aria-hidden": "true"
-            },
-            "children": [
-              {
-                "kind": "text",
-                "value": {
-                  "en": "↗",
-                  "th": "↗"
-                }
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
       "projectId": "asean-summit-2019",
       "category": "internal",
       "visualClass": "work-visual",
@@ -979,8 +897,8 @@
                   {
                     "kind": "text",
                     "value": {
-                      "en": "07 / DIPLOMATIC REGISTRATION",
-                      "th": "07 / DIPLOMATIC REGISTRATION"
+                      "en": "06 / DIPLOMATIC REGISTRATION",
+                      "th": "06 / DIPLOMATIC REGISTRATION"
                     }
                   }
                 ]
@@ -1035,6 +953,253 @@
           }
         ]
       }
+    },
+    {
+      "projectId": "buddy-2-0",
+      "category": "mobile",
+      "visualClass": "work-visual visual-buddy",
+      "caption": {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "work-caption"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "div",
+            "children": [
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "eyebrow"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "07 / TECHNICIAN EXPERIENCE",
+                      "th": "07 / TECHNICIAN EXPERIENCE"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "h3",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Buddy App 2.0",
+                      "th": "Buddy App 2.0"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "thai"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Apply at your own pace.\nPause and come back.",
+                      "th": "สมัครตามความพร้อม พักแล้วกลับมาทำต่อได้"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "span",
+            "attributes": {
+              "class": "card-arrow",
+              "aria-hidden": "true"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "↗",
+                  "th": "↗"
+                }
+              }
+            ]
+          }
+        ]
+      }
     }
-  ]
+  ],
+  "personalProject": {
+    "kind": "element",
+    "tag": "section",
+    "attributes": {
+      "id": "personal-project",
+      "class": "personal-project",
+      "aria-labelledby": "personal-project-title"
+    },
+    "children": [
+      {
+        "kind": "element",
+        "tag": "p",
+        "attributes": {
+          "class": "eyebrow"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "08 / PERSONAL PROJECT",
+              "th": "08 / PERSONAL PROJECT"
+            }
+          }
+        ]
+      },
+      {
+        "kind": "element",
+        "tag": "div",
+        "attributes": {
+          "class": "personal-project-grid"
+        },
+        "children": [
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "https://vagueslim.github.io/LLCS/",
+              "target": "_blank",
+              "rel": "noopener noreferrer",
+              "class": "personal-project-visual",
+              "aria-label": {
+                "en": "Explore LCCS Research (opens in a new tab)",
+                "th": "สำรวจ LCCS Research (เปิดในแท็บใหม่)"
+              }
+            },
+            "children": [
+              {
+                "kind": "image",
+                "mediaId": "lccs-personal-project",
+                "alt": {
+                  "en": "LCCS personal project concept: a network map of Thailand with the idea Ready to help is not the same as ready to respond. The artwork contains Thai text.",
+                  "th": "ภาพแนวคิดโปรเจกต์ส่วนตัว LCCS แผนที่เครือข่ายประเทศไทย พร้อมข้อความ พร้อมช่วย ไม่เท่ากับ พร้อมปฏิบัติงาน"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "div",
+            "attributes": {
+              "class": "personal-project-copy"
+            },
+            "children": [
+              {
+                "kind": "element",
+                "tag": "h2",
+                "attributes": {
+                  "id": "personal-project-title"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "LCCS Research",
+                      "th": "LCCS Research"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "personal-project-statement"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Ready to help ≠ Ready to respond.",
+                      "th": "พร้อมช่วย ≠ พร้อมปฏิบัติงาน"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "p",
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "A personal exploration of crisis coordination: connecting people, information, resources, and handoffs.",
+                      "th": "งานศึกษาส่วนตัวเรื่องการประสานงานในภาวะวิกฤต เพื่อเชื่อมคน ข้อมูล ทรัพยากร และผู้รับช่วงงาน"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "personal-project-status"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Personal research · Concept exploration · Not field-tested",
+                      "th": "การศึกษาส่วนตัว · สำรวจแนวคิด · ยังไม่ได้ทดสอบภาคสนาม"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "a",
+                "attributes": {
+                  "href": "https://vagueslim.github.io/LLCS/",
+                  "target": "_blank",
+                  "rel": "noopener noreferrer",
+                  "class": "personal-project-cta"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Explore personal project ↗",
+                      "th": "สำรวจโปรเจกต์ส่วนตัว ↗"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "element",
+                "tag": "p",
+                "attributes": {
+                  "class": "personal-project-link-note"
+                },
+                "children": [
+                  {
+                    "kind": "text",
+                    "value": {
+                      "en": "Opens in a new tab",
+                      "th": "เปิดในแท็บใหม่"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

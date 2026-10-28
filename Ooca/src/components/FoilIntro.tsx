@@ -16,7 +16,7 @@ export function FoilIntro() {
 
   return <section className="paper paper--projects" aria-label={foil.label} style={{ backgroundImage: `url("${getMedia(foil.backgroundMediaId).src}")` }}>
       <FoilBackground src={getMedia(foil.backgroundMediaId).src} />
-      <div className="copy copy--projects" lang="en" ref={motion.copyRef}>
+      <div className="copy copy--projects" ref={motion.copyRef}>
         {foil.lines.map(line => <p key={line.projectId}>
           <span className="project-thought">{line.thought}</span>{' '}
           <span className="project-reference"><span className="project-separator" aria-hidden="true">/</span>{' '}

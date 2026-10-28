@@ -1,4 +1,5 @@
 import homeJson from '../../data/home.json' with { type: 'json' };
+import profileJson from '../../data/profile.json' with { type: 'json' };
 import projectsJson from '../../data/projects.json' with { type: 'json' };
 import mediaJson from '../../data/media.json' with { type: 'json' };
 import page0 from '../../data/pages/about.json' with { type: 'json' };
@@ -11,7 +12,7 @@ import page6 from '../../data/pages/smart-asset.json' with { type: 'json' };
 import page7 from '../../data/pages/maxi-task.json' with { type: 'json' };
 import page8 from '../../data/pages/asean-summit-2019.json' with { type: 'json' };
 import uiJson from '../../data/ui.json' with { type: 'json' };
-import type { HomeContent, MediaItem, Project } from './types';
+import type { HomeContent, MediaItem, Project, Profile } from './types';
 import type { CaseStudy, AboutContent, ListingContent } from './page-types';
 import { localize, useLanguage, assetPath, type Language } from './localization';
 
@@ -19,12 +20,14 @@ const pagesJson = {'about': page0, 'project': page1, 'q-chang-web': page2, 'budd
 
 const contentByLanguage = Object.fromEntries((['en', 'th'] as const).map(locale => [locale, {
   home: localize<HomeContent>(homeJson, locale),
+  profile: localize<Profile>(profileJson, locale),
   projects: localize<Record<string, Project>>(projectsJson, locale),
   media: localize<Record<string, MediaItem>>(mediaJson, locale),
   pages: localize<Record<string, unknown>>(pagesJson, locale),
   ui: localize<Record<keyof typeof uiJson, string>>(uiJson, locale),
 }]));
 export const getLocalizedHome = (locale: Language) => contentByLanguage[locale].home;
+export const getProfile = (locale: Language) => contentByLanguage[locale].profile;
 export const projects = localize<Record<string, Project>>(projectsJson, 'en');
 export const media = localize<Record<string, MediaItem>>(mediaJson, 'en');
 export const home = getLocalizedHome('th'); // Fixture API; components use useContent.
@@ -45,7 +48,7 @@ export function getPage<T>(id: string, locale: Language): T {
 }
 export function useContent() {
   const locale = useLanguage();
-  return { locale, home: getLocalizedHome(locale), ui: contentByLanguage[locale].ui,
+  return { locale, profile: getProfile(locale), home: getLocalizedHome(locale), ui: contentByLanguage[locale].ui,
     getProject: (id: string) => getProject(id, locale), getMedia: (id: string) => getMedia(id, locale) };
 }
 export const useCaseStudy = (id: string) => getPage<CaseStudy>(id, useLanguage());

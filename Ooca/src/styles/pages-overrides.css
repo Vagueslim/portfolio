@@ -92,3 +92,18 @@
  .p-cover-flow__intro h2 { grid-column:1 / -1; }
  .p-cover-flow__intro > p:last-child { grid-column:1 / -1; max-width:65ch; }
 }
+
+/* Personal research stays distinct from the seven commissioned case studies. */
+.inner-page .personal-project { border-top:1px solid var(--line); padding-block:40px 80px; }
+.personal-project-grid { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:clamp(24px,5vw,80px); align-items:center; margin-top:24px; }
+.personal-project-visual { display:block; }
+.personal-project-visual img { display:block; width:100%; height:auto; }
+.personal-project-copy h2 { font-size:clamp(30px,3.2vw,52px); font-weight:400; letter-spacing:-.035em; line-height:1.25; margin:0 0 24px; }
+.personal-project-copy p { font-size:clamp(16px,1.3vw,20px); line-height:1.85; margin:0 0 20px; }
+.personal-project-copy .personal-project-statement { font-size:clamp(22px,2vw,30px); line-height:1.5; }
+.personal-project-copy .personal-project-status { color:var(--muted); font-size:14px; }
+.personal-project-cta { display:inline-flex; align-items:center; min-height:48px; padding:10px 20px; border:1px solid var(--ink); text-decoration:none; color:var(--ink); transition:background-color .2s,color .2s; }
+.personal-project-cta:is(:hover,:focus-visible) { color:#fff; background:#181918; }
+.personal-project-visual:focus-visible,.personal-project-cta:focus-visible { outline:2px solid var(--ink); outline-offset:5px; }
+.personal-project-copy .personal-project-link-note { font-size:12px; color:var(--muted); margin-top:10px; }
+@media(max-width:768px) { .personal-project-grid { grid-template-columns:1fr; } .inner-page .personal-project { padding-bottom:48px; } }

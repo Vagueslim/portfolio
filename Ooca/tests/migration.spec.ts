@@ -27,7 +27,7 @@ test('Every original word, evidence image, alt, fragment and link survives in bo
   }
 });
 
-test('All 16 prerendered pages are readable without JavaScript and have page metadata', async ({ browser }) => {
+test('All 20 prerendered pages are readable without JavaScript and have page metadata', async ({ browser }) => {
   const context = await browser.newContext({ javaScriptEnabled: false });
   const page = await context.newPage();
   for (const locale of ['en', 'th']) for (const file of pageFiles) {
@@ -130,7 +130,7 @@ test('Editing the central cover changes listing and case fallback while Home/evi
   await expect(page.locator('.case-overview img')).toHaveAttribute('src', '/assets/images/smart-asset-cover.png');
   await expect(page.locator('.evidence img').first()).toHaveAttribute('src', '/assets/images/wcf-medical-categories.png');
   await page.locator('.brand').click();
-  await expect(page.locator('#wcf .wcf-stage img').first()).toHaveAttribute('src', /wcf-workflow/);
+  await expect(page.locator('#selected-work [data-project="wcf-digital"] .editorial-visual img').first()).toHaveAttribute('src', /wcf-workflow/);
 });
 
 test('Diagram failures have a recoverable state; leaving a modal never leaves body locked', async ({ page }) => {

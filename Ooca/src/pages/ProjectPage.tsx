@@ -17,5 +17,6 @@ export function ProjectPage() {
         <SiteLink href={project.href}><div className={item.visualClass}><img src={image.src} alt={item.coverAlt ?? image.alt} width={image.width} height={image.height} loading="lazy" /></div><div><ContentBlock node={item.caption} />{item.supplementary && <div className="listing-flow"><ContentBlocks nodes={item.supplementary} /></div>}</div></SiteLink>
       </article>;
     })}</section>
+    {content.personalProject && <ContentBlock node={content.personalProject} />}
   </div></main>;
 }

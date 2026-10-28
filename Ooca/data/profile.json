@@ -1,0 +1,17 @@
+{
+  "name": "Dhittawat Thongkhum",
+  "role": "Product Designer",
+  "experience": "10+ years in design",
+  "positioning": {
+    "en": "I design products that connect people, information, rules, and teams.",
+    "th": "ฉันออกแบบงานที่เชื่อมคน ข้อมูล กฎ และหลายทีม"
+  },
+  "cv": {
+    "src": "assets/documents/dhittawat-thongkhum-cv.pdf",
+    "label": {
+      "en": "Download CV",
+      "th": "ดาวน์โหลด CV"
+    },
+    "format": "English PDF"
+  }
+}

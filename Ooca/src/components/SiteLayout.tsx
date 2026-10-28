@@ -4,7 +4,7 @@ import { Masthead } from './Masthead';
 import { ContactFooter } from './ContactFooter';
 import { ImageDialogProvider } from './ContentBlocks';
 import { LanguageContext, assetPath } from '../content/localization';
-import { getPage } from '../content';
+import { getPage, getProfile } from '../content';
 import type { Metadata } from '../content/page-types';
 import { routeInfo } from '../routes';
 
@@ -45,12 +45,14 @@ function NavigationEffects() {
 }
 export function SiteLayout({ children }: { children: ReactNode }) {
   const location = useLocation(), info = routeInfo(location.pathname);
+  const profile = getProfile(info.locale);
   const metadata = info.home ? {
-    title: 'Dhittawat Thongkhum · Product Designer',
-    description: 'Dhittawat’s selected product design work: Q-CHANG Web, Buddy 2.0, Change Date, WCF Digital, and PEC Smart Asset. Explore the people, decisions, and processes behind the interface.',
-  } : info.known ? getPage<{ metadata: Metadata }>(info.id, info.locale).metadata : { title: '404 · Dhittawat', description: 'Page not found' };
+    title: profile.name,
+    description: `${profile.role} · ${profile.experience}. ${profile.positioning}`,
+  } : info.known ? getPage<{ metadata: Pick<Metadata, 'title'> & Partial<Pick<Metadata, 'description'>> }>(info.id, info.locale).metadata : { title: '404 · Dhittawat', description: 'Page not found' };
+  const description = info.id === 'about' ? `${profile.role} · ${profile.experience}. ${profile.positioning}` : metadata.description;
   return <LanguageContext value={info.locale}>
-    <title>{metadata.title}</title><meta name="description" content={metadata.description} />
+    <title>{`${metadata.title} · ${profile.role}`}</title><meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href={assetPath('assets/favicon.svg')} />
     <link rel="icon" type="image/svg+xml" href={assetPath('assets/favicon-light.svg')} media="(prefers-color-scheme: light)" />
     <link rel="icon" type="image/svg+xml" href={assetPath('assets/favicon-dark.svg')} media="(prefers-color-scheme: dark)" />
@@ -61,6 +63,6 @@ export function SiteLayout({ children }: { children: ReactNode }) {
     <ImageDialogProvider key={info.locale + info.file}>
       {children}
     </ImageDialogProvider>
-    <ContactFooter homePage={info.home} />
+    <ContactFooter />
   </LanguageContext>;
 }

@@ -3,10 +3,6 @@
     "title": {
       "en": "About — Dhittawat Thongkhum",
       "th": "About — Dhittawat Thongkhum"
-    },
-    "description": {
-      "en": "Meet Dhittawat Thongkhum and explore a Product / UX/UI design practice shaped by people, information, rules, and workflows.",
-      "th": "รู้จัก Dhittawat Thongkhum และวิธีทำงาน Product / UX/UI Design กับคน ข้อมูล กฎ และ workflow"
     }
   },
   "intro": {
@@ -160,8 +156,8 @@
                           {
                             "kind": "text",
                             "value": {
-                              "en": "Practice",
-                              "th": "Practice"
+                              "en": "Role",
+                              "th": "ตำแหน่ง"
                             }
                           }
                         ]
@@ -171,11 +167,8 @@
                         "tag": "dd",
                         "children": [
                           {
-                            "kind": "text",
-                            "value": {
-                              "en": "Product / UX/UI Design",
-                              "th": "Product / UX/UI Design"
-                            }
+                            "kind": "profile",
+                            "field": "role"
                           }
                         ]
                       }
@@ -425,8 +418,8 @@
               {
                 "kind": "text",
                 "value": {
-                  "en": "I am currently developing my system-analysis practice as a UX × SA Intern at Code(Hard), connecting design with data rules, technical constraints, and closer collaboration with software engineers.",
-                  "th": "ปัจจุบันผมต่อยอดความเข้าใจฝั่ง System Analysis ผ่านบทบาท UX × SA Intern ที่ Code(Hard) เพื่อเชื่อมงานออกแบบกับกติกาข้อมูล ข้อจำกัดทางเทคนิค และการทำงานร่วมกับ Software Engineer ให้ใกล้ชิดขึ้น"
+                  "en": "My UX × SA internship at Code(Hard), from July to October 2026, extended my system-analysis practice, connecting design with data rules, technical constraints, and closer collaboration with software engineers.",
+                  "th": "บทบาท UX × SA Intern ที่ Code(Hard) ช่วงกรกฎาคม–ตุลาคม 2026 เป็นการต่อยอดความเข้าใจด้าน System Analysis เพื่อเชื่อมงานออกแบบกับกติกาข้อมูล ข้อจำกัดทางเทคนิค และการทำงานร่วมกับ Software Engineer"
                 }
               }
             ]
@@ -588,8 +581,8 @@
                 {
                   "kind": "text",
                   "value": {
-                    "en": "[ CAREER / 2015—NOW ]",
-                    "th": "[ CAREER / 2015—NOW ]"
+                    "en": "[ CAREER / 2015—2026 ]",
+                    "th": "[ CAREER / 2015—2026 ]"
                   }
                 }
               ]
@@ -652,8 +645,8 @@
                         {
                           "kind": "text",
                           "value": {
-                            "en": "2026—Present",
-                            "th": "2026—ปัจจุบัน"
+                            "en": "Jul–Oct 2026",
+                            "th": "ก.ค.–ต.ค. 2026"
                           }
                         }
                       ]
@@ -791,8 +784,8 @@
                         {
                           "kind": "text",
                           "value": {
-                            "en": "2024—2026",
-                            "th": "2024—2026"
+                            "en": "Jun 2024–May 2026",
+                            "th": "มิ.ย. 2024–พ.ค. 2026"
                           }
                         }
                       ]
@@ -943,8 +936,8 @@
                         {
                           "kind": "text",
                           "value": {
-                            "en": "2023—2024",
-                            "th": "2023—2024"
+                            "en": "May–Dec 2023",
+                            "th": "พ.ค.–ธ.ค. 2023"
                           }
                         }
                       ]
@@ -1083,8 +1076,8 @@
                         {
                           "kind": "text",
                           "value": {
-                            "en": "2021—2023",
-                            "th": "2021—2023"
+                            "en": "Feb 2022–Apr 2023",
+                            "th": "ก.พ. 2022–เม.ย. 2023"
                           }
                         }
                       ]
@@ -1298,8 +1291,8 @@
                         {
                           "kind": "text",
                           "value": {
-                            "en": "2020—2021",
-                            "th": "2020—2021"
+                            "en": "Aug 2020–Dec 2021",
+                            "th": "ส.ค. 2020–ธ.ค. 2021"
                           }
                         }
                       ]
@@ -1386,8 +1379,8 @@
                         {
                           "kind": "text",
                           "value": {
-                            "en": "2019—2020",
-                            "th": "2019—2020"
+                            "en": "May 2019–Jul 2020",
+                            "th": "พ.ค. 2019–ก.ค. 2020"
                           }
                         }
                       ]
@@ -1509,8 +1502,8 @@
                         {
                           "kind": "text",
                           "value": {
-                            "en": "2018—2019",
-                            "th": "2018—2019"
+                            "en": "Feb 2018–May 2019",
+                            "th": "ก.พ. 2018–พ.ค. 2019"
                           }
                         }
                       ]
@@ -1701,8 +1694,8 @@
                         {
                           "kind": "text",
                           "value": {
-                            "en": "2015—2018",
-                            "th": "2015—2018"
+                            "en": "Feb 2015–Jan 2018",
+                            "th": "ก.พ. 2015–ม.ค. 2018"
                           }
                         }
                       ]
@@ -2935,50 +2928,6 @@
                           "value": {
                             "en": "Rangsit University, Thailand · 2014",
                             "th": "มหาวิทยาลัยรังสิต ประเทศไทย · 2014"
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "kind": "element",
-                  "tag": "p",
-                  "attributes": {
-                    "class": "about-icon-row thai education-meta"
-                  },
-                  "children": [
-                    {
-                      "kind": "element",
-                      "tag": "svg",
-                      "attributes": {
-                        "class": "about-icon",
-                        "viewBox": "0 0 24 24",
-                        "aria-hidden": "true",
-                        "focusable": "false"
-                      },
-                      "children": [
-                        {
-                          "kind": "element",
-                          "tag": "use",
-                          "attributes": {
-                            "href": "assets/icons/ant-design-outlined.svg#trophy",
-                            "width": "24",
-                            "height": "24"
-                          },
-                          "children": []
-                        }
-                      ]
-                    },
-                    {
-                      "kind": "element",
-                      "tag": "span",
-                      "children": [
-                        {
-                          "kind": "text",
-                          "value": {
-                            "en": "GPA 2.91",
-                            "th": "GPA 2.91"
                           }
                         }
                       ]

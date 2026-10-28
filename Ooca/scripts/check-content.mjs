@@ -5,11 +5,13 @@ import { localize } from '../src/content/localization.ts';
 const read = name => JSON.parse(readFileSync('data/' + name + '.json', 'utf8'));
 const media = read('media'), projects = read('projects'), pages = Object.fromEntries(pageFiles.filter(file => file !== 'index.html').map(file => { const id = file.replace('.html', ''); return [id, read('pages/' + id)]; })), home = read('home');
 const errors = [];
+const profile = read('profile');
 const check = (ok, message) => { if (!ok) errors.push(message); };
 const tags = new Set('section p h1 br div h2 dl dt dd a nav span ol li article h3 ul svg use aside small table thead tr th tbody td blockquote figure button figcaption strong'.split(' '));
 function walk(value, path = '') {
   if (!value || typeof value !== 'object') return;
-  if ('kind' in value) check(['text', 'element', 'image', 'single', 'pair', 'collage', 'statistics', 'flow'].includes(value.kind), 'Unsupported content kind: ' + path);
+  if ('kind' in value) check(['text', 'profile', 'element', 'image', 'single', 'pair', 'collage', 'statistics', 'flow'].includes(value.kind), 'Unsupported content kind: ' + path);
+  if (value.kind === 'profile') check(value.field === 'role', 'Unknown profile field: ' + path);
   if (value.kind === 'text') check(typeof value.value?.en === 'string' && typeof value.value?.th === 'string', 'Missing bilingual text: ' + path);
   if (value.kind === 'flow') check(Array.isArray(value.blocks), 'Missing flow blocks: ' + path);
   if ('en' in value || 'th' in value) {
@@ -42,7 +44,9 @@ for (const [id, project] of Object.entries(projects)) {
   const ids = pages[id]?.chapters?.map(chapter => chapter.id) || [];
   check(new Set(ids).size === ids.length, 'Duplicate chapter IDs: ' + id);
 }
-for (const [name, value] of Object.entries({ media, projects, pages, home, cover: read('smart-asset-cover'), evidence: read('smart-asset-evidence'), ui: read('ui') })) walk(value, name);
+check(typeof profile.role === 'string' && !!profile.role, 'Missing primary role');
+check(profile.cv.src.startsWith('assets/documents/') && profile.cv.src.endsWith('.pdf') && existsSync(profile.cv.src), 'Missing CV PDF');
+for (const [name, value] of Object.entries({ profile, media, projects, pages, home, cover: read('smart-asset-cover'), evidence: read('smart-asset-evidence'), ui: read('ui') })) walk(value, name);
 for (const locale of ['en', 'th']) {
   const localizedHome = localize(home, locale);
   for (const item of [...localizedHome.selected.items, localizedHome.wcf, localizedHome.smart]) {

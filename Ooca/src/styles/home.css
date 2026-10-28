@@ -14,6 +14,17 @@
 /* Size is based on the header content width so the name fits even beside a scrollbar. */
 .masthead-title{margin:0;font-family:var(--display);font-size:var(--masthead-size);font-weight:400;line-height:1.08;letter-spacing:.012em;white-space:nowrap;text-transform:uppercase}
 .role{margin:0;border-block:3px solid var(--ink);padding:4px 0 3px;font-size:clamp(16px,3.25vw,44px);font-weight:700;line-height:1.6;letter-spacing:-.025em}
+.role{display:flex;justify-content:space-between;align-items:baseline;gap:8px 24px;flex-wrap:wrap}
+.experience{font-size:clamp(14px,1.8vw,24px);font-weight:400;letter-spacing:0}
+.profile-summary{display:flex;justify-content:space-between;align-items:center;gap:20px 36px;padding-block:20px 8px}
+.profile-summary>p{max-width:720px;margin:0;font-size:clamp(16px,1.5vw,21px);line-height:1.7;text-wrap:pretty}
+.cv-link{display:inline-flex;flex-direction:column;justify-content:center;gap:2px;min-height:52px;padding:10px 18px;border:1px solid var(--ink);text-decoration:none;line-height:1.5;flex:none}
+.cv-link>span{display:flex;justify-content:space-between;gap:24px}
+.cv-link small{font-size:11px;letter-spacing:.04em}
+.cv-link:hover,.cv-link:focus-visible{background:var(--ink);color:var(--surface-page)}
+.contact-actions{display:flex;align-items:center;gap:20px 32px;flex-wrap:wrap}
+.about-cv{margin-block:0 32px}
+@media(max-width:600px){.profile-summary{align-items:flex-start;flex-direction:column;gap:16px}.profile-summary>p{font-size:16px}.experience{font-size:14px}.contact-actions{align-items:flex-start}}
 .paper{position:relative;isolation:isolate;min-height:660px;padding:110px clamp(24px,4.5vw,72px) 118px;display:flex;align-items:center;background-color:var(--foil-surface);background-size:cover;background-position:center}
 .paper::before{content:'';position:absolute;top:0;left:0;right:0;height:12px;background:linear-gradient(100deg,#e8cfed,#d5e6ed 16%,#d5ecdb 30%,#f2e6d2 43%,#e6cde8 55%,#d0e8ec 70%,#e4e8d1 84%,#dcd4f0);opacity:.85}
 .copy{font-size:clamp(30px,4.5vw,68px);font-weight:400;line-height:1.6;letter-spacing:-.026em;max-width:1250px;width:100%;padding-block:6px}
