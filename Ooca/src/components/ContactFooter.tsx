@@ -11,7 +11,7 @@ export function ContactFooter() {
       <p className="editorial-kicker">{contact.kicker}</p><h2 id="contact-heading"><Lines text={contact.title} /></h2>
       <div className="editorial-contact-row"><p><Lines text={contact.description.replace('{role}', profile.role)} /></p><div className="contact-actions"><EditorialLink {...contact.link} /><CvLink /></div></div>
     </section>
-    <div className="editorial-footer-top"><span className="editorial-footer-name">{footer.name}</span><EditorialLink {...footer.link} external /></div>
+    <div className="editorial-footer-top"><span className="editorial-footer-name">{footer.name}</span><div className="editorial-footer-links"><EditorialLink {...profile.phone} /><EditorialLink {...footer.link} external /></div></div>
     <div className="editorial-footer-bottom"><span>{footer.copyright}</span><span><span lang="en">{profile.role}</span> · {footer.location}</span><SiteLink href="#top">{footer.backLabel}</SiteLink></div>
   </div></footer>;
 }

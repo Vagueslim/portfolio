@@ -6,6 +6,14 @@
     "en": "I design products that connect people, information, rules, and teams.",
     "th": "ฉันออกแบบงานที่เชื่อมคน ข้อมูล กฎ และหลายทีม"
   },
+  "phone": {
+    "label": "062-645-4249",
+    "href": "tel:+66626454249",
+    "ariaLabel": {
+      "en": "Call 062-645-4249",
+      "th": "โทร 062-645-4249"
+    }
+  },
   "cv": {
     "src": "assets/documents/dhittawat-thongkhum-cv.pdf",
     "label": {
