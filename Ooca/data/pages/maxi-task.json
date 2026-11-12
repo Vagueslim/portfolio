@@ -208,7 +208,7 @@
   },
   "overview": {
     "kind": "single",
-    "mediaId": "maxi-task-1"
+    "mediaId": "maxi-task-hero-landscape"
   },
   "visualClass": "case-hero imported-case-cover",
   "caption": {
@@ -221,8 +221,8 @@
       {
         "kind": "text",
         "value": {
-          "en": "Cover from the original case study on Framer.",
-          "th": "ภาพปกจากเคสต้นฉบับบน Framer"
+          "en": "MAXITASK cover: a conceptual view of connected telecom infrastructure.",
+          "th": "ภาพปก MAXITASK: ภาพแนวคิดการเชื่อมต่อโครงสร้างพื้นฐานโทรคมนาคม"
         }
       }
     ]

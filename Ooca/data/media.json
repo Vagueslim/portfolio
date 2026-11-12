@@ -451,5 +451,14 @@
     },
     "width": 1364,
     "height": 772
+  },
+  "maxi-task-hero-landscape": {
+    "src": "assets/cases/maxi-task/hero-landscape.png",
+    "alt": {
+      "en": "MAXITASK landscape cover with illuminated telecom links, towers, and buildings on a dark topographic landscape",
+      "th": "ภาพปก MAXITASK แนวนอน แสดงเส้นเชื่อมโครงข่ายเรืองแสง เสาสัญญาณ และอาคารบนภูมิประเทศสีดำ"
+    },
+    "width": 1672,
+    "height": 941
   }
 }
