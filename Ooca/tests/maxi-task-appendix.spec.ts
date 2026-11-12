@@ -6,6 +6,47 @@ import { media } from '../src/content';
 const raw = JSON.parse(readFileSync('data/maxi-task-evidence.json', 'utf8'));
 const evidenceFor = (locale: 'en' | 'th') => localize<{ title: string; items: { mediaId: string; title: string; alt: string }[] }>(raw, locale);
 
+test('MAXI TASK uses the same responsive card strip and image treatment as Smart Asset', async ({ page, context }) => {
+  const reference = await context.newPage();
+  for (const locale of ['en', 'th'] as const) {
+    const prefix = locale === 'th' ? '/th/' : '/';
+    await page.goto(`${prefix}maxi-task.html`);
+    await reference.goto(`${prefix}smart-asset.html`);
+    for (const width of [320, 390, 768, 1440, 2048]) {
+      await page.setViewportSize({ width, height: 900 });
+      await reference.setViewportSize({ width, height: 900 });
+      const styles = await Promise.all([page, reference].map(target => target.locator('.flow-evidence').evaluate(section => {
+        const pick = (selector: string, properties: string[]) => {
+          const style = getComputedStyle(section.querySelector(selector)!);
+          return properties.map(property => style.getPropertyValue(property));
+        };
+        return {
+          header: pick('.flow-evidence-header', ['grid-template-columns', 'gap', 'padding-inline', 'margin-bottom']),
+          heading: pick('h2', ['font-family', 'font-size', 'font-weight', 'line-height']),
+          strip: pick('.flow-evidence-strip', ['grid-auto-flow', 'grid-auto-columns', 'gap', 'overflow-x', 'scroll-snap-type']),
+          card: pick('.flow-evidence-trigger', ['width', 'border', 'background-color']),
+          snapshot: pick('.flow-evidence-snapshot', ['height', 'padding', 'background-color']),
+          image: pick('.flow-evidence-snapshot img', ['object-fit', 'object-position', 'filter']),
+          number: pick('.flow-evidence-index', ['top', 'left', 'padding', 'font-size']),
+        };
+      })));
+      expect(styles[0]).toEqual(styles[1]);
+      expect(await page.locator('.flow-evidence-strip').evaluate(strip => {
+        const items = [...strip.children].map(item => item.getBoundingClientRect());
+        return strip.scrollWidth > strip.clientWidth && items.every(item => Math.abs(item.top - items[0].top) < 1);
+      })).toBe(true);
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    }
+    const lastCard = page.locator('#maxi-task-appendix .flow-evidence-trigger').last();
+    await lastCard.click();
+    await expect(page.locator('.flow-diagram')).toBeVisible();
+    await page.keyboard.press('Escape');
+    await expect(lastCard).toBeFocused();
+    expect(await page.locator('.flow-evidence-strip').evaluate(strip => strip.scrollLeft)).toBeGreaterThan(0);
+  }
+  await reference.close();
+});
+
 test('MAXI TASK appendix preserves all eight screenshots, fits small screens, and has a bilingual anchor', async ({ page }) => {
   const errors: string[] = [];
   page.on('pageerror', error => errors.push(error.message));
