@@ -5,8 +5,8 @@
       "th": "WCF Digital — Dhittawat Thongkhum"
     },
     "description": {
-      "en": "Designed UX/UI for a staff-facing workers’ compensation system, understanding invoice workflows, document checks, and cross-system constraints with BAs, SAs, and developers.",
-      "th": "ออกแบบ UX/UI ระบบเงินทดแทนสำหรับเจ้าหน้าที่ โดยทำความเข้าใจ workflow ใบแจ้งหนี้ การตรวจเอกสาร และข้อจำกัดข้ามระบบร่วมกับ BA, SA และ Developer"
+      "en": "Designing staff-facing workers’ compensation workflows, from medical billing and large data searches to case tracking and user management.",
+      "th": "ออกแบบ UX/UI ระบบเงินทดแทนให้สอดคล้องกับงานจริงของเจ้าหน้าที่ ตั้งแต่ตรวจค่ารักษา ข้อมูลจำนวนมาก และติดตามเคส ไปจนถึงจัดการผู้ใช้และสิทธิ์"
     }
   },
   "head": {
@@ -109,8 +109,8 @@
           {
             "kind": "text",
             "value": {
-              "en": "Connecting rules, information, and exceptions",
-              "th": "ให้กฎ ข้อมูล และข้อยกเว้นทำงานร่วมกัน"
+              "en": "Designing workers’ compensation around the work staff actually do",
+              "th": "ออกแบบระบบเงินทดแทนให้สอดคล้องกับงานจริงของเจ้าหน้าที่"
             }
           }
         ]
@@ -125,8 +125,8 @@
           {
             "kind": "text",
             "value": {
-              "en": "Designed UX/UI for a staff-facing workers’ compensation system, understanding invoice workflows, document checks, and cross-system constraints with BAs, SAs, and developers.",
-              "th": "ออกแบบ UX/UI ระบบเงินทดแทนสำหรับเจ้าหน้าที่ โดยทำความเข้าใจ workflow ใบแจ้งหนี้ การตรวจเอกสาร และข้อจำกัดข้ามระบบร่วมกับ BA, SA และ Developer"
+              "en": "Translate complex rules, information, and processes into interfaces staff can work with, from medical-expense review and large data searches to case handoffs and tracking, in collaboration with operational staff, BAs, SAs, and developers.",
+              "th": "เชื่อมกฎ ข้อมูล และขั้นตอนที่ซับซ้อนให้เป็น UX/UI ที่เจ้าหน้าที่ทำงานต่อได้ ตั้งแต่การตรวจค่ารักษาพยาบาล การทำงานกับข้อมูลจำนวนมาก ไปจนถึงการส่งต่อและติดตามเคส โดยทำงานร่วมกับเจ้าหน้าที่ BA, SA และทีมพัฒนา"
             }
           }
         ]
@@ -194,8 +194,8 @@
                   {
                     "kind": "text",
                     "value": {
-                      "en": "Hospital Billing · Document workflow",
-                      "th": "Hospital Billing · Document workflow"
+                      "en": "Medical billing · Search and case tracking · User management",
+                      "th": "งานค่ารักษา · ค้นหาและติดตามเคส · จัดการผู้ใช้"
                     }
                   }
                 ]
@@ -258,8 +258,8 @@
                   {
                     "kind": "text",
                     "value": {
-                      "en": "SIT · UAT · Training and handover",
-                      "th": "SIT · UAT · การอบรมและส่งมอบ"
+                      "en": "Hospital Billing: SIT · UAT · Training and handover",
+                      "th": "Hospital Billing: SIT · UAT · อบรมและส่งมอบ"
                     }
                   }
                 ]
@@ -349,14 +349,78 @@
             "kind": "element",
             "tag": "a",
             "attributes": {
+              "href": "#discovery"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "02 / Use prototypes to clarify requirements",
+                  "th": "02 / ใช้ต้นแบบค้นหาสิ่งที่ requirement ยังไม่ชัด"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
               "href": "#billing"
             },
             "children": [
               {
                 "kind": "text",
                 "value": {
-                  "en": "02 / Design around the work staff need to do",
-                  "th": "02 / ออกแบบตามงานที่เจ้าหน้าที่ต้องทำ"
+                  "en": "03 / Structure the medical-expense review workflow",
+                  "th": "03 / ทำให้การตรวจค่ารักษาเป็นขั้นตอน"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#large-data"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "04 / G2 · Design the wait for large data searches",
+                  "th": "04 / G2 · ออกแบบการรอเมื่อข้อมูลมีจำนวนมาก"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#case-tracking"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "05 / G7 · Follow a case after handoff",
+                  "th": "05 / G7 · ส่งต่องานแล้วกลับมาติดตามได้"
+                }
+              }
+            ]
+          },
+          {
+            "kind": "element",
+            "tag": "a",
+            "attributes": {
+              "href": "#user-management"
+            },
+            "children": [
+              {
+                "kind": "text",
+                "value": {
+                  "en": "06 / User Management · Turn raw access logic into a usable interface",
+                  "th": "06 / User Management · แปลงโครงสร้างสิทธิ์ให้เป็นหน้าจอที่เข้าใจได้"
                 }
               }
             ]
@@ -371,8 +435,8 @@
               {
                 "kind": "text",
                 "value": {
-                  "en": "03 / Make system boundaries clear in the UI",
-                  "th": "03 / ทำให้ขอบเขตระบบเข้าใจได้บน UI"
+                  "en": "07 / Make system boundaries clear in the UI",
+                  "th": "07 / ทำให้ขอบเขตระบบเข้าใจได้บน UI"
                 }
               }
             ]
@@ -387,8 +451,8 @@
               {
                 "kind": "text",
                 "value": {
-                  "en": "04 / Verify the workflow in testing and training",
-                  "th": "04 / พิสูจน์ workflow ในการทดสอบและอบรม"
+                  "en": "08 / Deliver with the team and identify verified outcomes",
+                  "th": "08 / ส่งมอบร่วมกับทีม และระบุผลที่ยืนยันได้"
                 }
               }
             ]
@@ -455,11 +519,24 @@
               }
             }
           ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "The starting point was understanding the gap between the system and actual work: required information, steps handled outside the system, and exceptions staff needed to resolve.",
+                "th": "โจทย์จึงเริ่มจากการทำความเข้าใจช่องว่างระหว่างระบบกับวิธีทำงานจริง ทั้งข้อมูลที่ต้องใช้ ขั้นตอนที่ทำอยู่นอกระบบ และข้อยกเว้นที่เจ้าหน้าที่ต้องจัดการ"
+              }
+            }
+          ]
         }
       ]
     },
     {
-      "id": "billing",
+      "id": "discovery",
       "blocks": [
         {
           "kind": "element",
@@ -484,8 +561,68 @@
             {
               "kind": "text",
               "value": {
-                "en": "Design around the work staff need to do",
-                "th": "ออกแบบตามงานที่เจ้าหน้าที่ต้องทำ"
+                "en": "Use prototypes to clarify requirements",
+                "th": "ใช้ต้นแบบค้นหาสิ่งที่ requirement ยังไม่ชัด"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Created quick mockups and discussed them with staff and BAs to identify missing information, steps that did not match operational work, and unsupported exceptions.",
+                "th": "ทำ mockup อย่างรวดเร็วแล้วนำไปคุยกับเจ้าหน้าที่และ BA เพื่อดูว่าข้อมูลไหนขาด ขั้นตอนไหนไม่ตรงกับงาน และข้อยกเว้นใดยังไม่รองรับ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Worked with the Backend lead to align screens and data with technical constraints. Prototypes supported requirement gathering and shared understanding during design.",
+                "th": "ทำงานกับหัวหน้าทีม Backend เพื่อให้หน้าจอและข้อมูลสอดคล้องกับข้อจำกัดทางเทคนิค ต้นแบบจึงเป็นเครื่องมือช่วยเก็บ requirement และตรวจสอบความเข้าใจร่วมกันระหว่างออกแบบ"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "billing",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "03 / G1 · HOSPITAL BILLING",
+                "th": "03 / G1 · HOSPITAL BILLING"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Structure the medical-expense review workflow",
+                "th": "ทำให้การตรวจค่ารักษาเป็นขั้นตอน"
               }
             }
           ]
@@ -576,6 +713,19 @@
         },
         {
           "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Reference data, including expense categories, published prices, and ICD-9/10 codes, formed part of the workflow and needed to relate to the case information and documents being reviewed.",
+                "th": "ข้อมูลอ้างอิง เช่น หมวดค่าใช้จ่าย ราคาประกาศ และรหัส ICD-9/10 เป็นส่วนหนึ่งของ workflow ที่ต้องจัดให้สัมพันธ์กับข้อมูลเคสและเอกสารที่ตรวจ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
           "tag": "figure",
           "attributes": {
             "class": "evidence"
@@ -644,6 +794,186 @@
       ]
     },
     {
+      "id": "large-data",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "04 / INTERNAL SYSTEMS",
+                "th": "04 / INTERNAL SYSTEMS"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "G2 · Design the wait for large data searches",
+                "th": "G2 · ออกแบบการรอเมื่อข้อมูลมีจำนวนมาก"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "With searches involving more than 400,000 records, the design considered background processing and result notifications so users could follow progress while waiting.",
+                "th": "เมื่อคำค้นเกี่ยวข้องกับข้อมูลกว่า 400,000 รายการ จึงพิจารณาการประมวลผลเบื้องหลังและการแจ้งผล เพื่อให้ผู้ใช้ติดตามสถานะได้ระหว่างรอ"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "The UX goal was to make request status clear and help avoid repeated submissions during processing. The record count describes the design context; it is not a measured performance outcome.",
+                "th": "โจทย์ UX คือทำให้สถานะของคำสั่งชัดเจนและช่วยหลีกเลี่ยงการกดซ้ำระหว่างประมวลผล จำนวนข้อมูลนี้เป็นบริบทของโจทย์ ไม่ใช่ผลวัดประสิทธิภาพหลังใช้งาน"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "case-tracking",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "05 / INTERNAL SYSTEMS",
+                "th": "05 / INTERNAL SYSTEMS"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "G7 · Follow a case after handoff",
+                "th": "G7 · ส่งต่องานแล้วกลับมาติดตามได้"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Designed a central place to view, search, and track cases after assignment, helping staff return to an existing case and continue their work.",
+                "th": "ออกแบบจุดกลางสำหรับดู ค้นหา และติดตามเคสหลังมอบหมาย เพื่อให้เจ้าหน้าที่กลับมาทำงานต่อกับเคสเดิมได้"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "user-management",
+      "blocks": [
+        {
+          "kind": "element",
+          "tag": "p",
+          "attributes": {
+            "class": "eyebrow"
+          },
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "06 / INTERNAL SYSTEMS",
+                "th": "06 / INTERNAL SYSTEMS"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "h2",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "User Management · Turn raw access logic into a usable interface",
+                "th": "User Management · แปลงโครงสร้างสิทธิ์ให้เป็นหน้าจอที่เข้าใจได้"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "This screen began with a user request for an additional user-management page. I worked directly with the user to understand operational needs and discussed the existing permission structure with the Lead Developer, developing the interface alongside the requirements.",
+                "th": "งานส่วนนี้เริ่มจากผู้ใช้ขอให้เพิ่มหน้า User Management ฉันจึงทำงานตรงกับผู้ใช้เพื่อเข้าใจความต้องการในการปฏิบัติงาน พร้อมคุยกับ Lead Developer เพื่อทำความเข้าใจโครงสร้างสิทธิ์ที่มีอยู่ โดยเริ่มออกแบบไปพร้อมกับการเก็บ requirement"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "Organized access groups, page permissions, resources, status, and available actions into a clearer administrative interface, giving users and developers a shared view of the information.",
+                "th": "นำกลุ่มสิทธิ์ สิทธิ์เข้าถึงหน้าและทรัพยากร สถานะ และการกระทำที่อนุญาต มาจัดเป็นหน้าจอสำหรับผู้ดูแลที่อ่านและตรวจสอบได้เป็นลำดับ เพื่อให้ผู้ใช้กับทีมพัฒนาคุยถึงข้อมูลชุดเดียวกันได้ชัดขึ้น"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "element",
+          "tag": "p",
+          "children": [
+            {
+              "kind": "text",
+              "value": {
+                "en": "The prototype helped align business needs and system logic at the same time. My UX/UI role connected requirement gathering, the presentation of permission logic, and coordination with development.",
+                "th": "ต้นแบบช่วยให้ทีมปรับความเข้าใจด้านงานและตรรกะของระบบไปพร้อมกัน บทบาท UX/UI จึงครอบคลุมการเก็บ requirement การแปลโครงสร้างสิทธิ์ให้เข้าใจง่าย และการประสานกับทีมพัฒนา"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "boundaries",
       "blocks": [
         {
@@ -656,8 +986,8 @@
             {
               "kind": "text",
               "value": {
-                "en": "03 / INTERNAL SYSTEMS",
-                "th": "03 / INTERNAL SYSTEMS"
+                "en": "07 / COLLABORATION",
+                "th": "07 / COLLABORATION"
               }
             }
           ]
@@ -716,8 +1046,8 @@
             {
               "kind": "text",
               "value": {
-                "en": "04 / INTERNAL SYSTEMS",
-                "th": "04 / INTERNAL SYSTEMS"
+                "en": "08 / DELIVERY",
+                "th": "08 / DELIVERY"
               }
             }
           ]
@@ -729,8 +1059,8 @@
             {
               "kind": "text",
               "value": {
-                "en": "Verify the workflow in testing and training",
-                "th": "พิสูจน์ workflow ในการทดสอบและอบรม"
+                "en": "Deliver with the team and identify verified outcomes",
+                "th": "ส่งมอบร่วมกับทีม และระบุผลที่ยืนยันได้"
               }
             }
           ]
@@ -742,8 +1072,8 @@
             {
               "kind": "text",
               "value": {
-                "en": "According to the case documentation, Hospital Billing passed SIT and UAT. During testing and training, staff could complete the workflow in WCF, from entering information and classifying expenses to checking prices and issuing documents. The system was handed over.",
-                "th": "ตามเอกสารเคส งาน Hospital Billing ผ่าน SIT และ UAT เจ้าหน้าที่ทำ flow ตั้งแต่กรอกข้อมูล แยกหมวด ตรวจราคา ถึงออกเอกสารจาก WCF ได้ในการทดสอบและอบรม ระบบถูกส่งมอบแล้ว"
+                "en": "Hospital Billing passed SIT and UAT. During testing and training, staff could complete the workflow in WCF, from entering information and classifying expenses to checking prices and issuing documents. This part of the work was handed over.",
+                "th": "งาน Hospital Billing ผ่าน SIT และ UAT เจ้าหน้าที่ทำ flow ตั้งแต่กรอกข้อมูล แยกหมวด ตรวจราคา ถึงออกเอกสารจาก WCF ได้ในการทดสอบและอบรม ส่วนงานนี้ได้รับการส่งมอบแล้ว"
               }
             }
           ]
