@@ -22,6 +22,7 @@ export function CasePage({ id }: { id: string }) {
       </div></div>
     </div>
     {id === 'smart-asset' && <FlowEvidence />}
+    {id === 'maxi-task' && <FlowEvidence project="maxi-task" />}
     <div className="wrap"><ContentBlock node={content.next} /></div>
   </main>;
 }

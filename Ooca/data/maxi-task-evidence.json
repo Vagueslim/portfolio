@@ -1,0 +1,156 @@
+{
+  "label": {
+    "en": "Appendix",
+    "th": "ภาคผนวก"
+  },
+  "title": {
+    "en": "Interface details & states",
+    "th": "รายละเอียดหน้าจอและสถานะการใช้งาน"
+  },
+  "intro": {
+    "en": "Eight interface examples from MaxiFIBER, covering routes, related assets, alarms, and data editing. Open each image to inspect the original screen in detail.",
+    "th": "ตัวอย่างหน้าจอ MaxiFIBER 8 ภาพ ครอบคลุมเส้นทาง Asset ที่เกี่ยวข้อง การแจ้งเตือน และการแก้ไขข้อมูล กดแต่ละภาพเพื่อดูรายละเอียดจากต้นฉบับ"
+  },
+  "open": {
+    "en": "Open full image",
+    "th": "เปิดภาพเต็ม"
+  },
+  "close": {
+    "en": "Close image",
+    "th": "ปิดภาพ"
+  },
+  "original": {
+    "en": "Open original resolution",
+    "th": "เปิดภาพความละเอียดต้นฉบับ"
+  },
+  "error": {
+    "en": "The image could not load. Open the original image to try again.",
+    "th": "โหลดภาพไม่สำเร็จ เปิดภาพต้นฉบับเพื่อลองอีกครั้ง"
+  },
+  "loading": {
+    "en": "Loading image…",
+    "th": "กำลังโหลดภาพ…"
+  },
+  "items": [
+    {
+      "title": {
+        "en": "Route Members · Route summary",
+        "th": "Route Members · เส้นทางและองค์ประกอบ"
+      },
+      "description": {
+        "en": "A route summary with distance, start and end points, and a table of route components and locations.",
+        "th": "สรุประยะทาง จุดต้นทางและปลายทาง พร้อมรายการองค์ประกอบในเส้นทางและข้อมูลตำแหน่ง"
+      },
+      "alt": {
+        "en": "MaxiFIBER interface: Route Members · Route summary",
+        "th": "หน้าจอ MaxiFIBER: Route Members · เส้นทางและองค์ประกอบ"
+      },
+      "mediaId": "maxi-task-appendix-route-members"
+    },
+    {
+      "title": {
+        "en": "Node · List and create",
+        "th": "Node · รายการและการเพิ่มข้อมูล"
+      },
+      "description": {
+        "en": "Site details alongside the node list, row selection, and a create form for type, subtype, and ID.",
+        "th": "เชื่อมรายละเอียด Site กับรายการ Node การเลือกรายการ และฟอร์มเพิ่ม Node ที่ระบุ Type, Sub Type และ ID"
+      },
+      "alt": {
+        "en": "MaxiFIBER interface: Node · List and create",
+        "th": "หน้าจอ MaxiFIBER: Node · รายการและการเพิ่มข้อมูล"
+      },
+      "mediaId": "maxi-task-appendix-detail-node"
+    },
+    {
+      "title": {
+        "en": "CORE · Related asset selection",
+        "th": "CORE · เลือก Asset ที่เกี่ยวข้อง"
+      },
+      "description": {
+        "en": "Related assets, adding items, and filtering asset types before opening a CORE diagram.",
+        "th": "แสดงรายการ Asset ที่เกี่ยวข้อง การเพิ่มรายการ และตัวกรองประเภท ก่อนเปิด CORE Diagram"
+      },
+      "alt": {
+        "en": "MaxiFIBER interface: CORE · Related asset selection",
+        "th": "หน้าจอ MaxiFIBER: CORE · เลือก Asset ที่เกี่ยวข้อง"
+      },
+      "mediaId": "maxi-task-appendix-core-asset-related"
+    },
+    {
+      "title": {
+        "en": "Alarm · States and filters",
+        "th": "Alarm · สถานะและตัวกรอง"
+      },
+      "description": {
+        "en": "Fiber and RTU alarm states with severity labels, search tools, filters, and a loading state.",
+        "th": "ชุดสถานะของ Fiber alarm และ RTU alarm พร้อมระดับความรุนแรง เครื่องมือค้นหา ตัวกรอง และสถานะกำลังโหลด"
+      },
+      "alt": {
+        "en": "MaxiFIBER interface: Alarm · States and filters",
+        "th": "หน้าจอ MaxiFIBER: Alarm · สถานะและตัวกรอง"
+      },
+      "mediaId": "maxi-task-appendix-alarm-states"
+    },
+    {
+      "title": {
+        "en": "Cut · Before point selection",
+        "th": "Cut · ก่อนเลือกจุดตัด"
+      },
+      "description": {
+        "en": "Step-by-step guidance beside the map and fiber details, with Confirm still disabled.",
+        "th": "แสดงคำแนะนำเป็นขั้นตอนควบคู่กับแผนที่และรายละเอียดสาย โดยปุ่ม Confirm ยังไม่พร้อมใช้งาน"
+      },
+      "alt": {
+        "en": "MaxiFIBER interface: Cut · Before point selection",
+        "th": "หน้าจอ MaxiFIBER: Cut · ก่อนเลือกจุดตัด"
+      },
+      "mediaId": "maxi-task-appendix-cut-before-selection"
+    },
+    {
+      "title": {
+        "en": "Cut · Point selected",
+        "th": "Cut · เมื่อเลือกจุดตัดแล้ว"
+      },
+      "description": {
+        "en": "The selected point on the route and an enabled Confirm button, while fiber details remain visible for review.",
+        "th": "แสดงจุดที่เลือกบนเส้นทางและปุ่ม Confirm ที่พร้อมใช้งาน โดยยังคงรายละเอียดสายไว้ให้ตรวจสอบ"
+      },
+      "alt": {
+        "en": "MaxiFIBER interface: Cut · Point selected",
+        "th": "หน้าจอ MaxiFIBER: Cut · เมื่อเลือกจุดตัดแล้ว"
+      },
+      "mediaId": "maxi-task-appendix-cut-point-selected"
+    },
+    {
+      "title": {
+        "en": "Data Verification · Pass",
+        "th": "Data Verification · ผ่านการตรวจสอบ"
+      },
+      "description": {
+        "en": "The Pass state with employee and source-of-data fields before confirmation.",
+        "th": "สถานะ Pass พร้อมช่องผู้ตรวจสอบและแหล่งที่มาของข้อมูล ก่อนยืนยันผล"
+      },
+      "alt": {
+        "en": "MaxiFIBER interface: Data Verification · Pass",
+        "th": "หน้าจอ MaxiFIBER: Data Verification · ผ่านการตรวจสอบ"
+      },
+      "mediaId": "maxi-task-appendix-verification-pass"
+    },
+    {
+      "title": {
+        "en": "Data Verification · Not pass",
+        "th": "Data Verification · ไม่ผ่านการตรวจสอบ"
+      },
+      "description": {
+        "en": "The Not pass state adds a Verify Reason field to record the reason for the result.",
+        "th": "สถานะ Not pass เพิ่มช่อง Verify Reason เพื่อบันทึกเหตุผลประกอบผลตรวจสอบ"
+      },
+      "alt": {
+        "en": "MaxiFIBER interface: Data Verification · Not pass",
+        "th": "หน้าจอ MaxiFIBER: Data Verification · ไม่ผ่านการตรวจสอบ"
+      },
+      "mediaId": "maxi-task-appendix-verification-not-pass"
+    }
+  ]
+}

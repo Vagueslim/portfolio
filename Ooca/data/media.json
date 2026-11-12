@@ -379,5 +379,77 @@
     },
     "width": 1586,
     "height": 992
+  },
+  "maxi-task-appendix-route-members": {
+    "src": "assets/cases/maxi-task/appendix/route-members.png",
+    "alt": {
+      "en": "MaxiFIBER interface: Route Members · Route summary",
+      "th": "หน้าจอ MaxiFIBER: Route Members · เส้นทางและองค์ประกอบ"
+    },
+    "width": 1367,
+    "height": 782
+  },
+  "maxi-task-appendix-detail-node": {
+    "src": "assets/cases/maxi-task/appendix/detail-node.png",
+    "alt": {
+      "en": "MaxiFIBER interface: Node · List and create",
+      "th": "หน้าจอ MaxiFIBER: Node · รายการและการเพิ่มข้อมูล"
+    },
+    "width": 2048,
+    "height": 1094
+  },
+  "maxi-task-appendix-core-asset-related": {
+    "src": "assets/cases/maxi-task/appendix/core-asset-related.png",
+    "alt": {
+      "en": "MaxiFIBER interface: CORE · Related asset selection",
+      "th": "หน้าจอ MaxiFIBER: CORE · เลือก Asset ที่เกี่ยวข้อง"
+    },
+    "width": 2048,
+    "height": 749
+  },
+  "maxi-task-appendix-alarm-states": {
+    "src": "assets/cases/maxi-task/appendix/alarm-states.png",
+    "alt": {
+      "en": "MaxiFIBER interface: Alarm · States and filters",
+      "th": "หน้าจอ MaxiFIBER: Alarm · สถานะและตัวกรอง"
+    },
+    "width": 2048,
+    "height": 765
+  },
+  "maxi-task-appendix-cut-before-selection": {
+    "src": "assets/cases/maxi-task/appendix/cut-before-selection.png",
+    "alt": {
+      "en": "MaxiFIBER interface: Cut · Before point selection",
+      "th": "หน้าจอ MaxiFIBER: Cut · ก่อนเลือกจุดตัด"
+    },
+    "width": 1364,
+    "height": 772
+  },
+  "maxi-task-appendix-cut-point-selected": {
+    "src": "assets/cases/maxi-task/appendix/cut-point-selected.png",
+    "alt": {
+      "en": "MaxiFIBER interface: Cut · Point selected",
+      "th": "หน้าจอ MaxiFIBER: Cut · เมื่อเลือกจุดตัดแล้ว"
+    },
+    "width": 1364,
+    "height": 772
+  },
+  "maxi-task-appendix-verification-pass": {
+    "src": "assets/cases/maxi-task/appendix/verification-pass.png",
+    "alt": {
+      "en": "MaxiFIBER interface: Data Verification · Pass",
+      "th": "หน้าจอ MaxiFIBER: Data Verification · ผ่านการตรวจสอบ"
+    },
+    "width": 1364,
+    "height": 772
+  },
+  "maxi-task-appendix-verification-not-pass": {
+    "src": "assets/cases/maxi-task/appendix/verification-not-pass.png",
+    "alt": {
+      "en": "MaxiFIBER interface: Data Verification · Not pass",
+      "th": "หน้าจอ MaxiFIBER: Data Verification · ไม่ผ่านการตรวจสอบ"
+    },
+    "width": 1364,
+    "height": 772
   }
 }

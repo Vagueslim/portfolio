@@ -1,15 +1,16 @@
 import { useState } from 'react';
 import data from '../../data/smart-asset-evidence.json' with { type: 'json' };
+import maxiTaskData from '../../data/maxi-task-evidence.json' with { type: 'json' };
 import { useContent } from '../content';
 import { localize, useLanguage } from '../content/localization';
 import { closeOnBackdrop, useModal } from '../hooks/useModal';
 interface Diagram { mediaId: string; alt: string; title: string; description: string }
 interface Evidence { title: string; label: string; intro: string; open: string; close: string; loading: string; error: string; original: string; items: Diagram[] }
-export function FlowEvidence() {
-  const content = localize<Evidence>(data, useLanguage()), { getMedia } = useContent();
+export function FlowEvidence({ project = 'smart-asset' }: { project?: 'smart-asset' | 'maxi-task' }) {
+  const content = localize<Evidence>(project === 'maxi-task' ? maxiTaskData : data, useLanguage()), { getMedia } = useContent();
   const [active, setActive] = useState<Diagram | null>(null), [status, setStatus] = useState<'loading' | 'ready' | 'error'>('loading');
   const ref = useModal(active);
-  return <section className="flow-evidence" id="system-flow-evidence" aria-labelledby="flow-evidence-heading">
+  return <section className={'flow-evidence' + (project === 'maxi-task' ? ' maxi-task-evidence' : '')} id={project === 'maxi-task' ? 'maxi-task-appendix' : 'system-flow-evidence'} aria-labelledby="flow-evidence-heading">
     <div className="flow-evidence-header"><p className="eyebrow">{content.label}</p><h2 id="flow-evidence-heading">{content.title}</h2><p>{content.intro}</p></div>
     <ol className="flow-evidence-strip" aria-labelledby="flow-evidence-heading">{content.items.map((item, i) => { const image = getMedia(item.mediaId); return <li className="flow-evidence-item" key={item.mediaId}>
       <button className="flow-evidence-trigger" type="button" aria-haspopup="dialog" aria-controls="flow-diagram" data-flow-image={image.src} data-caption={item.alt} onClick={() => { setStatus('loading'); setActive(item); }}>

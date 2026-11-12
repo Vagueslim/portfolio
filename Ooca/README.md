@@ -27,6 +27,7 @@ Build สร้าง HTML ล่วงหน้า 16 หน้า พร้อ
 - data/pages/project.json: ตัวกรองและลำดับรายการในหน้า Project
 - data/pages/<project-id>.json: บทนำ ข้อมูลโครงการ สารบัญ chapters หลักฐาน และเคสถัดไป
 - data/smart-asset-cover.json และ data/smart-asset-evidence.json: flow ส่วนที่สองและ appendix ของ Smart Asset
+- data/maxi-task-evidence.json: ภาคผนวกภาพหน้าจอและสถานะของ MaxiFIBER ในเคส MAXI TASK
 - data/ui.json: ข้อความส่วนควบคุมที่ใช้ร่วมกัน
 
 ข้อความเก็บเป็นคู่ เช่น `{ "en": "Read case study", "th": "อ่านเคส" }` โดยตำแหน่งในข้อมูลมีรหัสคงที่ ไม่ใช้ข้อความไทยเป็น key ของคำแปล เปลี่ยนข้อความทั้งสองภาษาในตำแหน่งเดียว

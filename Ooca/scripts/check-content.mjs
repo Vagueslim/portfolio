@@ -46,7 +46,7 @@ for (const [id, project] of Object.entries(projects)) {
 }
 check(typeof profile.role === 'string' && !!profile.role, 'Missing primary role');
 check(profile.cv.src.startsWith('assets/documents/') && profile.cv.src.endsWith('.pdf') && existsSync(profile.cv.src), 'Missing CV PDF');
-for (const [name, value] of Object.entries({ profile, media, projects, pages, home, cover: read('smart-asset-cover'), evidence: read('smart-asset-evidence'), ui: read('ui') })) walk(value, name);
+for (const [name, value] of Object.entries({ profile, media, projects, pages, home, cover: read('smart-asset-cover'), evidence: read('smart-asset-evidence'), maxiTaskEvidence: read('maxi-task-evidence'), ui: read('ui') })) walk(value, name);
 for (const locale of ['en', 'th']) {
   const localizedHome = localize(home, locale);
   for (const item of [...localizedHome.selected.items, localizedHome.wcf, localizedHome.smart]) {

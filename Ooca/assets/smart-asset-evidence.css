@@ -82,3 +82,25 @@ body.flow-diagram-open { overflow: hidden; }
   .flow-diagram-original { margin-top: 8px; }
 }
 @media (prefers-reduced-motion: reduce) { .flow-evidence-snapshot img { transition: none; } }
+
+/* The screen appendix uses a readable grid; Smart Asset keeps its diagram strip. */
+.maxi-task-evidence { scroll-margin-top: 100px; }
+.maxi-task-evidence .flow-evidence-strip {
+  grid-auto-flow: row;
+  grid-auto-columns: auto;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  overflow: visible;
+}
+.maxi-task-evidence .flow-evidence-snapshot {
+  height: auto;
+  aspect-ratio: 16 / 10;
+  padding: 26px 12px 12px;
+  background: #f4f4f8;
+}
+.maxi-task-evidence .flow-evidence-snapshot img { object-fit: contain; object-position: center; filter: none; }
+.maxi-task-evidence .flow-evidence-trigger:hover img { transform: none; }
+.maxi-task-evidence .flow-evidence-index { top: 8px; left: 8px; padding: 2px 6px; font-size: 12px; }
+@media (max-width: 600px) {
+  .maxi-task-evidence .flow-evidence-strip { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+}

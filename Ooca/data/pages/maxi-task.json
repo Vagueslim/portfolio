@@ -349,6 +349,22 @@
             }
           }
         ]
+      },
+      {
+        "kind": "element",
+        "tag": "a",
+        "attributes": {
+          "href": "#maxi-task-appendix"
+        },
+        "children": [
+          {
+            "kind": "text",
+            "value": {
+              "en": "Appendix · Interface details",
+              "th": "ภาคผนวก · รายละเอียดหน้าจอ"
+            }
+          }
+        ]
       }
     ]
   },
