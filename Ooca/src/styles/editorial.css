@@ -184,8 +184,9 @@ a.editorial-visual:hover img{transform:scale(1.015)}
   .editorial-contact-row .editorial-link{margin-top:12px}
   .editorial-footer-top{padding-block:22px}
   .editorial-footer-bottom{display:grid;grid-template-columns:1fr auto;gap:4px 15px;padding-bottom:20px}
-  .editorial-footer-bottom span:nth-child(2){grid-row:2}
-  .editorial-footer-bottom a{grid-column:2;grid-row:1 / 3}
+  .editorial-footer-bottom>span:nth-child(2){grid-row:2}
+  .editorial-footer-bottom .editorial-footer-phone{grid-column:1;grid-row:3;justify-self:start}
+  .editorial-footer-bottom .editorial-back-to-top{grid-column:2;grid-row:1 / 4}
 }
 @media(max-width:400px){
   .editorial-heading{display:block}

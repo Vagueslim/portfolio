@@ -18,11 +18,14 @@ for (const locale of ['en', 'th'] as const) {
         await expect(footer).toContainText(locale === 'th' ? 'ติดต่อเรื่องงาน' : 'Contact me');
         await expect(footer.locator('.cv-link')).toHaveAttribute('href', '/' + profile.cv.src);
         await expect(footer.locator('.cv-link')).toContainText('English PDF');
-        const phone = footer.getByRole('link', { name: profile.phone.ariaLabel[locale], exact: true });
-        await expect(phone).toHaveText('062-645-4249 ↗');
-        await expect(phone).toHaveAttribute('href', 'tel:+66626454249');
-        await phone.focus();
-        await expect(phone).toBeFocused();
+        const phones = footer.getByRole('link', { name: profile.phone.ariaLabel[locale], exact: true });
+        await expect(phones).toHaveText(['062-645-4249 ↗', '062-645-4249']);
+        await expect(footer.locator('.editorial-footer-bottom .editorial-footer-phone')).toHaveText('062-645-4249');
+        for (const phone of await phones.all()) {
+          await expect(phone).toHaveAttribute('href', 'tel:+66626454249');
+          await phone.focus();
+          await expect(phone).toBeFocused();
+        }
       }
       for (const file of ['index.html', 'about.html']) {
         await page.goto(prefix + file);

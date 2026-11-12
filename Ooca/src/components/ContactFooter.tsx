@@ -12,6 +12,6 @@ export function ContactFooter() {
       <div className="editorial-contact-row"><p><Lines text={contact.description.replace('{role}', profile.role)} /></p><div className="contact-actions"><EditorialLink {...contact.link} /><CvLink /></div></div>
     </section>
     <div className="editorial-footer-top"><span className="editorial-footer-name">{footer.name}</span><div className="editorial-footer-links"><EditorialLink {...profile.phone} /><EditorialLink {...footer.link} external /></div></div>
-    <div className="editorial-footer-bottom"><span>{footer.copyright}</span><span><span lang="en">{profile.role}</span> · {footer.location}</span><SiteLink href="#top">{footer.backLabel}</SiteLink></div>
+    <div className="editorial-footer-bottom"><span>{footer.copyright}</span><span><span lang="en">{profile.role}</span> · {footer.location}</span><SiteLink className="editorial-footer-phone" href={profile.phone.href} aria-label={profile.phone.ariaLabel}>{profile.phone.label}</SiteLink><SiteLink className="editorial-back-to-top" href="#top">{footer.backLabel}</SiteLink></div>
   </div></footer>;
 }
