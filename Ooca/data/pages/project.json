@@ -1056,8 +1056,8 @@
           {
             "kind": "text",
             "value": {
-              "en": "08 / PERSONAL PROJECT",
-              "th": "08 / PERSONAL PROJECT"
+              "en": "PERSONAL PROJECT / MY DREAM",
+              "th": "โปรเจกต์ส่วนตัว / MY DREAM"
             }
           }
         ]
@@ -1174,8 +1174,8 @@
                   {
                     "kind": "text",
                     "value": {
-                      "en": "Explore personal project ↗",
-                      "th": "สำรวจโปรเจกต์ส่วนตัว ↗"
+                      "en": "Explore LCCS Research ↗",
+                      "th": "สำรวจ LCCS Research ↗"
                     }
                   }
                 ]

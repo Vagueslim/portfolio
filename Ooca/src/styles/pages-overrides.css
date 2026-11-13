@@ -95,6 +95,10 @@
 
 /* Personal research stays distinct from the seven commissioned case studies. */
 .inner-page .personal-project { border-top:1px solid var(--line); padding-block:40px 80px; }
+.editorial-personal .personal-project { border-top:1px solid var(--editorial-line); padding-block:40px 48px; }
+.about-research-link { text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:.2em; }
+.about-research-link:hover { color:var(--link-ink); }
+.about-research-link:focus-visible { outline:2px solid currentColor; outline-offset:5px; }
 .personal-project-grid { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:clamp(24px,5vw,80px); align-items:center; margin-top:24px; }
 .personal-project-visual { display:block; }
 .personal-project-visual img { display:block; width:100%; height:auto; }

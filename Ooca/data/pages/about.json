@@ -1948,11 +1948,27 @@
                   "tag": "h3",
                   "children": [
                     {
-                      "kind": "text",
-                      "value": {
-                        "en": "LCCS Personal Research",
-                        "th": "LCCS Personal Research"
-                      }
+                      "kind": "element",
+                      "tag": "a",
+                      "attributes": {
+                        "class": "about-research-link",
+                        "href": "https://vagueslim.github.io/LLCS/",
+                        "target": "_blank",
+                        "rel": "noopener noreferrer",
+                        "aria-label": {
+                          "en": "Explore LCCS Research (opens in a new tab)",
+                          "th": "สำรวจ LCCS Research (เปิดในแท็บใหม่)"
+                        }
+                      },
+                      "children": [
+                        {
+                          "kind": "text",
+                          "value": {
+                            "en": "LCCS Personal Research ↗",
+                            "th": "LCCS Personal Research ↗"
+                          }
+                        }
+                      ]
                     }
                   ]
                 },
