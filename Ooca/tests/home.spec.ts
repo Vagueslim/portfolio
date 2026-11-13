@@ -156,6 +156,11 @@ test('Project links, anchors, keyboard and accordion', async ({ page }) => {
   for (const locale of ['en', 'th']) {
     const prefix = locale === 'th' ? '/th/' : '/';
     await page.goto(prefix);
+    const homeLccs = page.locator('#personal-project .personal-project-cta');
+    await expect(homeLccs).toHaveText(locale === 'en' ? 'Explore LCCS Research ↗' : 'สำรวจ LCCS Research ↗');
+    await expect(homeLccs).toHaveAttribute('href', 'https://vagueslim.github.io/LLCS/');
+    await expect(homeLccs).toHaveAttribute('target', '_blank');
+    await expect(homeLccs).toHaveAttribute('rel', 'noopener noreferrer');
     const viewAll = page.locator('#selected-work .editorial-heading a');
     await expect(page.locator('main a[href="project.html"]')).toHaveCount(1);
     await viewAll.focus();
@@ -164,7 +169,7 @@ test('Project links, anchors, keyboard and accordion', async ({ page }) => {
     await expect(page).toHaveURL(new RegExp(prefix + 'project\\.html$'));
     await expect(page.locator('.filter-count')).toHaveText(locale === 'en' ? 'Showing 7 projects' : 'แสดง 7 ผลงาน');
     expect(await page.locator('.work-card > a').evaluateAll(nodes => nodes.map(n => n.getAttribute('href')))).toEqual(['wcf-digital.html', 'smart-asset.html', 'maxi-task.html', 'q-chang-web.html', 'change-date.html', 'asean-summit-2019.html', 'buddy-2-0.html']);
-    await expect(page.locator('#personal-project')).toContainText('08 / PERSONAL PROJECT');
+    await expect(page.locator('#personal-project')).toContainText(locale === 'en' ? 'PERSONAL PROJECT / MY DREAM' : 'โปรเจกต์ส่วนตัว / MY DREAM');
     await expect(page.locator('#personal-project .personal-project-cta')).toHaveAttribute('href', 'https://vagueslim.github.io/LLCS/');
     for (const [id, title] of [['maxi-task', 'MAXI TASK'], ['asean-summit-2019', 'ASEAN Summit 2019']]) {
       await page.locator(`.work-card a[href="${id}.html"]`).click();
@@ -173,6 +178,12 @@ test('Project links, anchors, keyboard and accordion', async ({ page }) => {
       await page.goBack();
       await expect(page.locator('.work-card:visible')).toHaveCount(7);
     }
+    await page.goto(prefix + 'about.html');
+    const aboutLccs = page.locator('.about-research-link');
+    await expect(aboutLccs).toHaveText('LCCS Personal Research ↗');
+    await expect(aboutLccs).toHaveAttribute('href', 'https://vagueslim.github.io/LLCS/');
+    await expect(aboutLccs).toHaveAttribute('target', '_blank');
+    await expect(aboutLccs).toHaveAttribute('rel', 'noopener noreferrer');
   }
 });
 
